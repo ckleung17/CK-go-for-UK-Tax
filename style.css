@@ -70,19 +70,16 @@ footer {
   font-size: 0.9em;
 }
 
-.back-link {
-  margin-top: 25px;
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.back-link,
+.next-link {
   text-align: right;
-}
-
-.back-link a {
-  color: #003366;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.back-link a:hover {
-  text-decoration: underline;
+  margin-top: 2rem;
 }
 
 .note {
