@@ -76,12 +76,6 @@ footer {
   margin-top: 2rem;
 }
 
-.back-link,
-.next-link {
-  text-align: right;
-  margin-top: 2rem;
-}
-
 .note {
   font-size: 0.9rem;
   font-style: italic;
@@ -99,21 +93,122 @@ footer {
 
 .tooltip .tooltip-text {
   visibility: hidden;
-  width: 260px;
+  opacity: 0;
+  width: 300px;
   background-color: #333;
   color: #fff;
   text-align: left;
   padding: 8px;
   border-radius: 5px;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
   bottom: 125%;
   left: 0;
   font-size: 0.85rem;
   font-style: normal;
+  font-weight: normal;
   line-height: 1.3;
+  transition: opacity 0.25s ease;
 }
 
 .tooltip:hover .tooltip-text {
   visibility: visible;
+  opacity: 1;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.sdlt-table {
+  width: 100%;
+  min-width: 1400px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.sdlt-table th,
+.sdlt-table td {
+  border: 1px solid #999;
+  padding: 0.55rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.sdlt-table th {
+  font-weight: bold;
+}
+
+.sdlt-table thead th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.sdlt-table tbody th {
+  vertical-align: top;
+}
+
+.sdlt-table td {
+  line-height: 1.35;
+}
+
+.table-wrap {
+  max-height: 70vh;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+.sticky-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 900px;
+}
+
+.sticky-table th,
+.sticky-table td {
+  border: 1px solid #999;
+  padding: 8px 10px;
+  background: #fff;
+}
+
+/* Freeze top row */
+.sticky-table thead tr.header-row-1 th {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: #f2f2f2;
+}
+
+/* Freeze second header row */
+.sticky-table thead tr.header-row-2 th {
+  position: sticky;
+  top: 40px; /* adjust if your first header row is taller */
+  z-index: 35;
+  background: #f2f2f2;
+}
+
+/* Freeze first column */
+.sticky-col-1 {
+  position: sticky;
+  left: 0;
+  min-width: 160px;
+  width: 160px;
+  z-index: 20;
+}
+
+/* Freeze second column */
+.sticky-col-2 {
+  position: sticky;
+  left: 160px; /* same as first column width */
+  min-width: 150px;
+  width: 150px;
+  z-index: 20;
+}
+
+/* Make top-left frozen cells stay above everything */
+thead .sticky-col-1,
+thead .sticky-col-2 {
+  z-index: 50;
+  background: #f2f2f2;
 }
