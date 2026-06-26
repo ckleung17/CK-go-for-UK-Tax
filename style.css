@@ -221,3 +221,12 @@ thead .sticky-col-1,
 thead .sticky-col-2 {
   z-index: 100;
 }
+
+.calculator-icon {
+  font-size: 0.85rem;
+  font-weight: normal;
+  text-decoration: none;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
