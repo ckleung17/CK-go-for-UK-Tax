@@ -329,9 +329,7 @@ thead .sticky-col-2 {
   .mobile-scroll-note {
     display: block;
   }
-}
 
-@media (max-width: 600px) {
   .calculator-icon {
     width: auto;
     height: 24px;
