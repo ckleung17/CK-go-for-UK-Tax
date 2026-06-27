@@ -217,6 +217,10 @@ thead .sticky-col-2 {
   flex-wrap: wrap;
 }
 
+.section-title-text {
+  display: inline-block;
+}
+
 .calculator-icon {
   display: inline-flex;
   align-items: center;
