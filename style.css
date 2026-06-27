@@ -221,6 +221,7 @@ thead .sticky-col-2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.35rem;
   width: 36px;
   height: 36px;
   border: 1px solid #999;
@@ -233,6 +234,10 @@ thead .sticky-col-2 {
   width: 26px;
   height: 26px;
   display: block;
+}
+
+.calculator-label {
+  display: none;
 }
 
 .calculator-icon:hover {
