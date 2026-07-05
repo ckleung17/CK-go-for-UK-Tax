@@ -59,7 +59,7 @@ footer {
 }
 
 .law-ref {
-  font-size: 0.9em;
+  font-size: 1em;
   margin-left: 4px;
   color: #0056b3;
   white-space: nowrap;
@@ -354,4 +354,71 @@ thead .sticky-col-2 {
     font-weight: normal;
     white-space: nowrap;
   }
+}
+
+  .example-box {
+    background: #f8f9fa;
+    border-left: 4px solid #003366;
+    padding: 12px 16px;
+    margin: 1rem 0;
+    border-radius: 6px;
+  }
+
+  .example-box h3 {
+    margin-top: 0;
+  }
+
+  .example-box p {
+    margin: 0.5rem 0;
+}
+
+.simple-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.sdlt-simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+.sdlt-simple-table th,
+.sdlt-simple-table td {
+  border: 1px solid #999;
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.35;
+}
+
+.sdlt-simple-table thead th {
+  background: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sdlt-simple-table tbody td:last-child {
+  text-align: center;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .sdlt-simple-table {
+    font-size: 0.8rem;
+  }
+
+  .sdlt-simple-table th,
+  .sdlt-simple-table td {
+    padding: 6px 7px;
+    line-height: 1.25;
+  }
+}
+
+.example-list {
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
 }
