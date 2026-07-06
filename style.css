@@ -401,9 +401,9 @@ thead .sticky-col-2 {
 }
 
 .sdlt-simple-table tbody td:last-child {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 @media (max-width: 600px) {
@@ -421,4 +421,72 @@ thead .sticky-col-2 {
 .example-list {
   margin-left: 1.5rem;
   padding-left: 1.5rem;
+}
+
+.relief-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.relief-table th:nth-child(1),
+.relief-table td:nth-child(1) {
+  width: 25%;
+}
+
+.relief-table th:nth-child(2),
+.relief-table td:nth-child(2) {
+  width: 35%;
+}
+
+.relief-table th:nth-child(3),
+.relief-table td:nth-child(3) {
+  width: 40%;
+}
+
+.example-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1rem 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.example-tab-button {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #f2f2f2;
+  color: #003366;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+}
+
+.example-tab-button:hover {
+  background: #e6eef6;
+}
+
+.example-tab-button.active {
+  background: #003366;
+  color: white;
+}
+
+.example-tab-content {
+  display: none;
+  padding-top: 1rem;
+}
+
+.example-tab-content.active {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .example-tabs {
+    gap: 0.25rem;
+  }
+
+  .example-tab-button {
+    padding: 6px 9px;
+    font-size: 0.8rem;
+  }
 }

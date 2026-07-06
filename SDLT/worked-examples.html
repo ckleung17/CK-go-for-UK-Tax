@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDLT - CK Go for UK Tax</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<header>
+    <h1>Stamp Duty Land Tax</h1>
+    <p>My SDLT study notes.</p>
+</header>
+
+<nav>
+    <a href="../index.html">Home</a>
+    <a href="index.html">SDLT</a>
+</nav>
+
+<body>
+  <script src="../scripts/sdlt-tabs.js"></script>
+
+  <h2>Worked examples</h2>
+
+  <p>
+    This page collects practical SDLT examples showing how the rules apply to
+    common transactions. Select an example below.
+  </p>
+
+  <div class="example-tabs">
+    <button class="example-tab-button active" onclick="openExample(event, 'example-a')">
+      Example A
+    </button>
+
+    <button class="example-tab-button" onclick="openExample(event, 'example-b')">
+      Example B
+    </button>
+
+    <button class="example-tab-button" onclick="openExample(event, 'example-c')">
+      Example C
+    </button>
+  </div>
+
+  <div id="example-a" class="example-tab-content active">
+    <h3>Example A: first home bought jointly by a couple</h3>
+
+    <p>
+      Peter is young and has been living away from his parents in rented accommodation
+      for several years since he started working. In 2026, he has saved enough money to buy a
+      new-build house near the town centre for <strong>&pound;350,000</strong> and expected to 
+      complete in April. He will also pay <strong>&pound;1,500</strong> legal fees and has 
+      budgeted<strong>&pound;50,000</strong> for furniture. The house will be jointly owned by
+      Peter and Ann (who is an Itilian living in Rome), and they will live there as their home after marriage.
+    </p>
+
+    <p>
+      The SDLT calculation is based on the <strong>chargeable consideration</strong> for
+      the land transaction. Peter&rsquo;s own legal fees are not normally included because
+      they are paid for legal services. The furniture budget is also not included if the
+      furniture is bought separately or consists of free-standing furniture rather than
+      fixtures forming part of the property.
+    </p>
+
+    <p>
+      Therefore, the SDLT calculation is based on the house price of
+      <strong>&pound;350,000</strong>. <i>(For current rules, first-time buyer relief is only 
+      available where the purchase price is no more than £500,000. If the price is more than 
+      &pound;500,000, HMRC says the buyer cannot claim the relief and must pay SDLT at the standard 
+      residential rates on the total purchase price.)</i>
+    </p>
+
+    <p>
+      <strong>Assumption:</strong> Because the house is jointly owned, both Peter and Ann must be first-time buyers
+      and must intend to occupy the property as their only or main residence. If Ann has
+      previously owned a dwelling anywhere in the world, first-time buyer relief is not
+      available.
+    </p>
+
+    <div class="simple-table-wrap">
+      <table class="sdlt-simple-table">
+        <thead>
+          <tr>
+            <th>Band</th>
+            <th>Rate</th>
+            <th>SDLT</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>First &pound;300,000</td>
+            <td>0%</td>
+            <td>&pound;0</td>
+          </tr>
+
+          <tr>
+            <td>Remaining &pound;50,000</td>
+            <td>5%</td>
+            <td>&pound;2,500</td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><strong>Total SDLT</strong></td>
+            <td><strong>&pound;2,500</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>If Ann is not a first-time buyer</h4>
+
+    <p>
+      If Ann has previously acquired a major interest in a dwelling, first-time buyer
+      relief is not available for the whole purchase. The standard residential rates
+      would apply instead.
+    </p>
+
+    <div class="simple-table-wrap">
+      <table class="sdlt-simple-table">
+        <thead>
+          <tr>
+            <th>Band</th>
+            <th>Rate</th>
+            <th>SDLT</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>First &pound;125,000</td>
+            <td>0%</td>
+            <td>&pound;0</td>
+          </tr>
+
+          <tr>
+            <td>Next &pound;125,000</td>
+            <td>2%</td>
+            <td>&pound;2,500</td>
+          </tr>
+
+          <tr>
+            <td>Remaining &pound;100,000</td>
+            <td>5%</td>
+            <td>&pound;5,000</td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><strong>Total SDLT</strong></td>
+            <td><strong>&pound;7,500</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>If Ann is non-UK resident before marriage</h4>
+
+    <p>
+      Ann is Italian and lives in Rome before the marriage. Italian nationality does not
+      itself decide the SDLT result. The question is whether Ann is UK resident for SDLT
+      purposes at the effective date of the purchase.
+    </p>
+
+    <p>
+      If Peter and Ann complete the purchase before they are married, Ann is tested separately.
+      If Ann has not spent enough days in the UK, the 2% non-resident surcharge may apply to
+      the whole purchase price.
+    </p>
+    
+    <div class="simple-table-wrap">
+      <table class="sdlt-simple-table">
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Calculation</th>
+            <th>SDLT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First-time buyer relief</td>
+            <td>&pound;300,000 at 0%, plus &pound;50,000 at 5%</td>
+            <td>&pound;2,500</td>
+          </tr>
+          <tr>
+            <td>2% non-resident surcharge</td>
+            <td>&pound;350,000 at 2%</td>
+            <td>&pound;7,000</td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>Total SDLT payable on completion</strong></td>
+            <td><strong>&pound;9,500</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note">
+      Note: If Ann later moves to the UK and satisfies the SDLT 183-day residence test
+      within the permitted period, Peter and Ann may be able to claim a refund of the
+      2% non-resident surcharge.
+    </p>
+
+    <h4>If they complete after marriage</h4>
+
+    <p>
+      If Peter and Ann are already married or civil partners at completion, Peter is UK
+      resident for SDLT purposes, and they are not separated, the spouse or civil partner
+      rule may prevent the 2% non-resident surcharge from applying.
+    </p>
+
+    <p class="note">
+      Memory point: Marriage after completion does not automatically remove the surcharge.
+      If the surcharge was paid, the practical follow-up is to check whether Ann later
+      satisfies the SDLT 183-day test and then claim repayment.
+    </p>
+  </div>
+
+  <div id="example-b" class="example-tab-content">
+  <h3>Example B: moving from Hong Kong and selling the old home later</h3>
+
+    <p>
+      Two sisters have lived in Hong Kong since birth and jointly own a residential flat
+      there as their only home. They bought a new-build house in England in November 2023
+      for <strong>&pound;370,000</strong>. They moved to the UK in February 2024 and have
+      lived in the UK house since then. In July 2026, they sold the Hong Kong flat for
+      HK$5 million and made a 20% profit.
+    </p>
+
+    <p>
+      The UK house purchase in November 2023 was an SDLT transaction. The later sale of
+      the Hong Kong flat is not an SDLT transaction, but it may allow them to claim a refund
+      of the higher-rates element paid on the UK purchase.
+    </p>
+
+    <h4>SDLT position at completion in November 2023</h4>
+
+    <p>
+      The sisters were not first-time buyers because they already owned a residential flat
+      in Hong Kong. Because they still owned the Hong Kong flat when they bought the UK
+      house, <strong>the higher rates for additional dwellings applied initially</strong>.
+    </p>
+
+    <div class="simple-table-wrap">
+      <table class="sdlt-simple-table">
+        <thead>
+          <tr>
+            <th>Band</th>
+            <th>Rate</th>
+            <th>SDLT</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>First &pound;250,000</td>
+            <td>3%</td>
+            <td>&pound;7,500</td>
+          </tr>
+
+          <tr>
+            <td>Remaining &pound;120,000</td>
+            <td>8%</td>
+            <td>&pound;9,600</td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><strong>Higher-rates SDLT</strong></td>
+            <td><strong>&pound;17,100</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>Possible 2% non-resident surcharge</h4>
+
+    <p>
+      Because both sisters were living in Hong Kong at completion, the 2% non-resident
+      surcharge may also have applied. The surcharge applies on top of the residential
+      SDLT rates.
+    </p>
+
+    <div class="simple-table-wrap">
+      <table class="sdlt-simple-table">
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Calculation</th>
+            <th>SDLT</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Higher-rates SDLT</td>
+            <td>As calculated above</td>
+            <td>&pound;17,100</td>
+          </tr>
+
+          <tr>
+            <td>2% non-resident surcharge</td>
+            <td>&pound;370,000 &times; 2%</td>
+            <td>&pound;7,400</td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><strong>Total SDLT paid at completion</strong></td>
+            <td><strong>&pound;24,500</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note">
+      Note: Visa status or passport type does not decide SDLT residence. The SDLT
+      non-resident surcharge uses a physical day-count test.
+    </p>
+
+    <h4>Follow-up after moving to the UK</h4>
+
+    <p>
+      If each sister spent at least <strong>183 days in the UK</strong> in a qualifying
+      continuous 365-day period around the completion date, they may have been able to claim
+      a repayment of the 2% non-resident surcharge. The claim must be made within
+      <strong>2 years</strong> of the effective date of the purchase.
+    </p>
+
+    <p class="note">
+      Possible non-resident surcharge refund: &pound;370,000 &times; 2% =
+      <strong>&pound;7,400</strong>.
+    </p>
+
+    <h4>Follow-up after selling the Hong Kong flat in July 2026</h4>
+
+    <p>
+      If the Hong Kong flat was their previous only or main residence, and the UK house
+      became their new only or main residence, they may claim a refund of the higher-rates
+      element because the old home was sold within 3 years of buying the new home.
+    </p>
+
+    <p>
+      The refund claim should normally be made within <strong>12 months</strong> of the
+      sale of the Hong Kong flat, because that is likely to be later than 12 months after
+      the SDLT filing date for the UK house.
+    </p>
+
+    <div class="simple-table-wrap">
+      <table class="sdlt-simple-table">
+        <thead>
+          <tr>
+            <th>Refund</th>
+            <th>Calculation</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Higher-rates refund</td>
+            <td>&pound;370,000 &times; 3%</td>
+            <td>&pound;11,100</td>
+          </tr>
+
+          <tr>
+            <td>Possible non-resident surcharge refund</td>
+            <td>&pound;370,000 &times; 2%</td>
+            <td>&pound;7,400</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h4>Final SDLT cost if both refunds are claimed in time</h4>
+
+    <div class="simple-table-wrap">
+      <table class="sdlt-simple-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Initial SDLT paid</td>
+            <td>&pound;24,500</td>
+          </tr>
+
+          <tr>
+            <td>Less higher-rates refund</td>
+            <td>(&pound;11,100)</td>
+          </tr>
+
+          <tr>
+            <td>Less non-resident surcharge refund</td>
+            <td>(&pound;7,400)</td>
+          </tr>
+
+          <tr>
+            <td><strong>Final SDLT cost</strong></td>
+            <td><strong>&pound;6,000</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note">
+      Memory point: The Hong Kong sale does not create SDLT, but it can trigger an SDLT
+      refund claim because it was the sale of the previous main residence.
+    </p>
+
+    <p class="note">
+      Separate tax point: the Hong Kong sale may need to be considered for UK Capital Gains
+      Tax if the sisters were UK resident when they sold it.
+    </p>
+  </div>
+
+  <p class="page-nav">
+    <a href="index-SDLT.html">Back to SDLT index</a>
+  </p>
+</body>
