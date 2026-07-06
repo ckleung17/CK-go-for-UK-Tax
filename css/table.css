@@ -1,0 +1,288 @@
+/* =========================================================
+   TABLE.CSS
+   Tables for CK Go for UK Tax
+   Includes:
+   1. Responsive scroll table wrapper
+   2. Main SDLT wide table
+   3. Sticky header rows
+   4. Frozen first and second columns
+   5. Simple tables
+   6. Relief tables
+   7. Mobile adjustments
+   ========================================================= */
+
+
+/* =========================================================
+   1. Responsive table container
+   ========================================================= */
+
+.table-wrap {
+  width: 100%;
+  max-width: 100%;
+  max-height: 70vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+
+/* =========================================================
+   2. Main SDLT wide table
+   ========================================================= */
+
+.sdlt-table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.sdlt-table th,
+.sdlt-table td {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: center;
+  vertical-align: middle;
+  background: #fff;
+  line-height: 1.35;
+}
+
+.sdlt-table th:first-child,
+.sdlt-table td:first-child {
+  border-left: 1px solid #ddd;
+}
+
+.sdlt-table thead tr:first-child th {
+  border-top: 1px solid #ddd;
+}
+
+.sdlt-table th {
+  background: #f2f2f2;
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   3. Sticky header rows
+   ========================================================= */
+
+/* First header row */
+.header-row-1 th {
+  position: sticky;
+  top: 0;
+  background: #f2f2f2;
+  z-index: 30;
+}
+
+/* Second header row */
+.header-row-2 th {
+  position: sticky;
+  top: 38px;
+  background: #f2f2f2;
+  z-index: 25;
+}
+
+/* Merged date heading */
+.dates-heading {
+  position: sticky;
+  top: 0;
+  background: #f2f2f2 !important;
+  z-index: 30;
+}
+
+
+/* =========================================================
+   4. Frozen first and second columns
+   ========================================================= */
+
+/* First frozen column */
+.sticky-col-1 {
+  position: sticky;
+  left: 0;
+  min-width: 160px;
+  width: 160px;
+  max-width: 160px;
+  background: #f2f2f2 !important;
+  z-index: 80;
+  border-right: 1px solid #ddd;
+}
+
+/* Second frozen column */
+.sticky-col-2 {
+  position: sticky;
+  left: 160px;
+  min-width: 170px;
+  width: 170px;
+  max-width: 170px;
+  background: #f2f2f2 !important;
+  z-index: 80;
+  border-right: 1px solid #ddd;
+}
+
+/* Body cells in sticky columns */
+tbody .sticky-col-1,
+tbody .sticky-col-2 {
+  background: #f7f7f7 !important;
+}
+
+/* Frozen header cells must stay above body cells */
+thead .sticky-col-1,
+thead .sticky-col-2 {
+  z-index: 100;
+  background: #f2f2f2 !important;
+}
+
+
+/* =========================================================
+   5. Mobile scroll note
+   ========================================================= */
+
+.mobile-scroll-note {
+  display: none;
+}
+
+
+/* =========================================================
+   6. Simple table wrapper
+   ========================================================= */
+
+.simple-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+
+/* =========================================================
+   7. Simple SDLT tables
+   ========================================================= */
+
+.sdlt-simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+.sdlt-simple-table th,
+.sdlt-simple-table td {
+  border: 1px solid #999;
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.35;
+}
+
+.sdlt-simple-table thead th {
+  background: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sdlt-simple-table tbody td:last-child {
+  text-align: left;
+  font-weight: bold;
+  white-space: normal;
+}
+
+
+/* =========================================================
+   8. Example lists
+   ========================================================= */
+
+.example-list {
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+
+/* =========================================================
+   9. Relief tables
+   ========================================================= */
+
+.relief-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.relief-table th:nth-child(1),
+.relief-table td:nth-child(1) {
+  width: 25%;
+}
+
+.relief-table th:nth-child(2),
+.relief-table td:nth-child(2) {
+  width: 35%;
+}
+
+.relief-table th:nth-child(3),
+.relief-table td:nth-child(3) {
+  width: 40%;
+}
+
+
+/* =========================================================
+   10. Smartphone version
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .mobile-scroll-note {
+    display: block;
+  }
+
+  .table-wrap {
+    max-height: 65vh;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  .sdlt-table {
+    min-width: 980px;
+    font-size: 0.62rem;
+  }
+
+  .sdlt-table th,
+  .sdlt-table td {
+    padding: 4px 5px;
+    line-height: 1.2;
+  }
+
+  .sticky-col-1 {
+    left: 0;
+    min-width: 95px;
+    width: 95px;
+    max-width: 95px;
+  }
+
+  .sticky-col-2 {
+    left: 95px;
+    min-width: 85px;
+    width: 85px;
+    max-width: 85px;
+  }
+
+  .header-row-2 th {
+    top: 32px;
+  }
+
+  .dates-heading {
+    font-size: 0.65rem;
+  }
+
+  .sdlt-simple-table {
+    font-size: 0.8rem;
+  }
+
+  .sdlt-simple-table th,
+  .sdlt-simple-table td {
+    padding: 6px 7px;
+    line-height: 1.25;
+  }
+}

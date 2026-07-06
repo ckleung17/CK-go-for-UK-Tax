@@ -1,0 +1,107 @@
+.law-ref {
+  font-size: 1em;
+  margin-left: 4px;
+  color: #0056b3;
+  white-space: nowrap;
+}
+
+.normal-heading-text {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+.back-link {
+  margin-top: 25px;
+  text-align: right;
+}
+
+.back-link a {
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Notes */
+.note {
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: normal;
+  color: red;
+  margin-top: 0;
+}
+
+/* Mobile scroll note */
+.mobile-scroll-note {
+  display: none;
+}
+
+/* Tooltip components */
+.tooltip {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted #555;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 300px;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 8px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%;
+  left: 0;
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.3;
+  transition: opacity 0.25s ease;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Calculator icon beside title */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.calculator-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  background: #fff;
+  text-decoration: none;
+  color: #003366;
+}
+
+.calculator-icon img {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
+.calculator-icon:hover {
+  background: #eef3f8;
+  transform: scale(1.05);
+}
+
+
