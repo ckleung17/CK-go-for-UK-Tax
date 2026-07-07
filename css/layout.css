@@ -1,8 +1,26 @@
+/* ==============================  
+   1. General Page Layout 
+   2. Headings & Titles
+   3. Text alignments and Styles 
+   =============================== */
+
+/* 1. General Page Layout  */
+
 header {
   background: #003366;
   color: white;
   padding: 25px;
   border-radius: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f8f9fa;
 }
 
 section {
@@ -18,3 +36,68 @@ footer {
   font-size: 0.9em;
   color: #666;
 }
+
+/* 2. Headings & Titles */
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom:0;
+}
+
+a {
+  color: #003366;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.normal-heading-text {
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+.back-link {
+  margin-top: 25px;
+  text-align: right;
+}
+
+.back-link a {
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* 3. Text alignments and Styles */   
+
+.text-align-center {
+  text-align: center;
+  margin:12px 0; 
+  font-size:10.5pt;
+}
+
+/* Foot Notes */
+.note {
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: normal;
+  color: red;
+  margin-top: 0;
+}
+
+.law-ref {
+  font-size: 1em;
+  margin-left: 4px;
+  color: #0056b3;
+  white-space: nowrap;
+}
+

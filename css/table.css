@@ -3,12 +3,9 @@
    Tables for CK Go for UK Tax
    Includes:
    1. Responsive scroll table wrapper
-   2. Main SDLT wide table
-   3. Sticky header rows
-   4. Frozen first and second columns
-   5. Simple tables
-   6. Relief tables
-   7. Mobile adjustments
+   2. Sticky header rows
+   3. Frozen first and second columns
+   4. Mobile adjustments
    ========================================================= */
 
 
@@ -23,54 +20,41 @@
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   touch-action: pan-x pan-y;
-  margin-top: 1rem;
+  margin: 1rem 0;
   border: 1px solid #ddd;
-  border-radius: 6px;
   background: #fff;
 }
 
-
-/* =========================================================
-   2. Main SDLT wide table
-   ========================================================= */
-
-.sdlt-table {
-  width: max-content;
-  min-width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  background: #fff;
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
   font-size: 0.9rem;
+  background: #fff;
 }
 
-.sdlt-table th,
-.sdlt-table td {
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+.simple-table th,
+.simple-table td {
+  border: 1px solid #999;
   padding: 8px 10px;
-  text-align: center;
-  vertical-align: middle;
-  background: #fff;
+  text-align: left;
+  vertical-align: top;
   line-height: 1.35;
 }
 
-.sdlt-table th:first-child,
-.sdlt-table td:first-child {
-  border-left: 1px solid #ddd;
-}
-
-.sdlt-table thead tr:first-child th {
-  border-top: 1px solid #ddd;
-}
-
-.sdlt-table th {
+.simple-table thead th {
   background: #f2f2f2;
   font-weight: bold;
+  text-align: center;
 }
 
+.simple-table tbody td:last-child {
+  text-align: left;
+  font-weight: bold;
+  white-space: normal;
+}
 
 /* =========================================================
-   3. Sticky header rows
+   2. Sticky header rows
    ========================================================= */
 
 /* First header row */
@@ -99,7 +83,7 @@
 
 
 /* =========================================================
-   4. Frozen first and second columns
+   3. Frozen first and second columns
    ========================================================= */
 
 /* First frozen column */
@@ -141,95 +125,7 @@ thead .sticky-col-2 {
 
 
 /* =========================================================
-   5. Mobile scroll note
-   ========================================================= */
-
-.mobile-scroll-note {
-  display: none;
-}
-
-
-/* =========================================================
-   6. Simple table wrapper
-   ========================================================= */
-
-.simple-table-wrap {
-  width: 100%;
-  overflow-x: auto;
-  margin: 1rem 0;
-}
-
-
-/* =========================================================
-   7. Simple SDLT tables
-   ========================================================= */
-
-.sdlt-simple-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.9rem;
-  background: #fff;
-}
-
-.sdlt-simple-table th,
-.sdlt-simple-table td {
-  border: 1px solid #999;
-  padding: 8px 10px;
-  text-align: left;
-  vertical-align: top;
-  line-height: 1.35;
-}
-
-.sdlt-simple-table thead th {
-  background: #f2f2f2;
-  font-weight: bold;
-  text-align: center;
-}
-
-.sdlt-simple-table tbody td:last-child {
-  text-align: left;
-  font-weight: bold;
-  white-space: normal;
-}
-
-
-/* =========================================================
-   8. Example lists
-   ========================================================= */
-
-.example-list {
-  margin-left: 1.5rem;
-  padding-left: 1.5rem;
-}
-
-
-/* =========================================================
-   9. Relief tables
-   ========================================================= */
-
-.relief-table {
-  width: 100%;
-  table-layout: fixed;
-}
-
-.relief-table th:nth-child(1),
-.relief-table td:nth-child(1) {
-  width: 25%;
-}
-
-.relief-table th:nth-child(2),
-.relief-table td:nth-child(2) {
-  width: 35%;
-}
-
-.relief-table th:nth-child(3),
-.relief-table td:nth-child(3) {
-  width: 40%;
-}
-
-
-/* =========================================================
-   10. Smartphone version
+   4. Smartphone version
    ========================================================= */
 
 @media (max-width: 600px) {

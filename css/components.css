@@ -1,45 +1,10 @@
-.law-ref {
-  font-size: 1em;
-  margin-left: 4px;
-  color: #0056b3;
-  white-space: nowrap;
-}
 
-.normal-heading-text {
-  font-weight: normal;
-  font-size: 0.9em;
-}
+/* =========================================
+   = 1. Tooltip                            = 
+   = 2. Calculator                         =
+   =========================================*/
 
-.back-link {
-  margin-top: 25px;
-  text-align: right;
-}
-
-.back-link a {
-  color: #003366;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.back-link a:hover {
-  text-decoration: underline;
-}
-
-/* Notes */
-.note {
-  font-size: 0.9rem;
-  font-style: italic;
-  font-weight: normal;
-  color: red;
-  margin-top: 0;
-}
-
-/* Mobile scroll note */
-.mobile-scroll-note {
-  display: none;
-}
-
-/* Tooltip components */
+/* 1. Tooltip components */
 .tooltip {
   position: relative;
   cursor: help;
@@ -71,7 +36,7 @@
   opacity: 1;
 }
 
-/* Calculator icon beside title */
+/* 2. Calculator icon beside title */
 .section-title {
   display: flex;
   align-items: center;
