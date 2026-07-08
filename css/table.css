@@ -9,19 +9,30 @@
    ========================================================= */
 
 
-/* =========================================================
+/* ===================================================================================================
    1. Responsive table container
-   ========================================================= */
+   This CSS snippet is designed to create a responsive, scrollable container wrapper around a table. 
+   Its main purpose is to prevent large tables from breaking your website's layout on smaller screens 
+   (like mobile phones) by containing the table and allowing users to scroll through it.
+   ==================================================================================================== */
 
 .table-wrap {
+  /*Forces the container to take up the full width of its parent element, but strictly prevents it from ever growing wider than the screen or parent container.*/
   width: 100%;
   max-width: 100%;
+  /*Limits the height of the container to 70% of the viewport height (the visible screen area). If the table has hundreds of rows, it won't stretch the page endlessly; it will cap it here.*/
   max-height: 70vh;
-  overflow: auto;
+  /*This is the magic line. If the table inside is wider or taller than the limits set above, the browser will automatically add horizontal or vertical scrollbars. If the table fits perfectly, no scrollbars appear.*/
+  overflow: auto;  
+  /*A legacy but still useful property for older iOS devices (Safari/Chrome on iPhones/iPads). It ensures that scrolling inside this container feels smooth and "momentum-based" (it keeps gliding a bit after you lift your finger) rather than rigid.*/
   -webkit-overflow-scrolling: touch;
+  /*Tells the browser how to handle touchscreen gestures. pan-x pan-y explicitly permits the user to swipe left/right (X-axis) and up/down (Y-axis) to scroll within this specific container.*/
   touch-action: pan-x pan-y;
+  /*Adds a bit of breathing room outside the table—specifically 1rem (usually about 16px) of space above and below it, and 0 space on the left and right.*/
   margin: 1rem 0;
+  /*Puts a thin, light gray frame around the entire container so users can clearly see the boundaries of the scrollable area.*/
   border: 1px solid #ddd;
+  /*Sets the background color to solid white.*/
   background: #fff;
 }
 
@@ -53,80 +64,147 @@
   white-space: normal;
 }
 
-/* =========================================================
+/* ================================================================================================================
    2. Sticky header rows
-   ========================================================= */
+   This CSS code is used to create a multi-tier sticky header for a complex data table. 
+   When a user scrolls down a long table, these rules keep the header rows locked at the 
+   top of the screen so the user doesn't lose track of what columns they are looking at.
+
+   By utilizing different top coordinates and z-index layering, it creates a seamless, stacked overlay effect.
+   ================================================================================================================= */
 
 /* First header row */
 .header-row-1 th {
+  /*Locks this row to the absolute top (0 pixels from the upper edge) of its scrollable container as the user scrolls down.*/
   position: sticky;
   top: 0;
+  /*Gives the cells a solid light-gray background. Crucial for sticky elements: without a background color,
+   the table's scrolling data rows would show through underneath the header text, making it unreadable. */
   background: #f2f2f2;
+  /*Sets the stack order. A high z-index ensures this top row floats above the regular scrolling table rows and above the 
+    second header row.*/
   z-index: 30;
 }
 
 /* Second header row */
 .header-row-2 th {
+  /*This is the trick for a stacked header. Instead of sticking to 0, it sticks to 38px. This assumes that the first 
+    header row is exactly 38 pixels tall. When scrolling, row 2 will tuck perfectly underneath row 1 instead of overlapping
+    and hiding it. */
   position: sticky;
   top: 38px;
   background: #f2f2f2;
+  /*Sets the stack layer slightly lower than the first row (25 vs 30). This prevents any visual glitches where elements 
+    from the second row might accidentally render over the first row.*/
   z-index: 25;
 }
 
 /* Merged date heading */
 .dates-heading {
+  /*Sticks this specific cell right at the very top alongside the rest of the first header row. This is typically used 
+    for a colspan header cell that spans across multiple sub-columns (like grouping days under a "Month" heading).*/
   position: sticky;
   top: 0;
+  /*The !important flag is a hammer that overrides any other conflicting background colors applied to this cell elsewhere 
+    in the stylesheet, guaranteeing it stays solid gray.*/
   background: #f2f2f2 !important;
+  /*Keeps it on the exact same layer as the rest of the first header row so they move together as a single visual unit.*/
   z-index: 30;
 }
+/* =========================================Visualizing the Stack===============================================================
+   When scrolling, the elements layer themselves like a deck of cards from top to bottom:
+   1. Layer 30 (Top): .header-row-1 & .dates-heading (Sitting at top: 0)
+   2. Layer 25 (Middle): .header-row-2 (Sitting right below at top: 38px)
+   3. Layer Default (Bottom): Regular table data rows (<td>) that slide up and vanish beneath the sticky headers.
+==================================================================================================================================*/
 
-
-/* =========================================================
+/* ===============================================================================================================================
    3. Frozen first and second columns
-   ========================================================= */
+
+      This CSS code handles horizontal freezing (sticky columns). It is typically used for tables with a lot of columns 
+      (like a massive spreadsheet) where you want to keep the first couple of columns (e.g., "Employee Name" or "ID") 
+      locked on the left side while the user scrolls horizontally to read the rest of the data.
+
+      Just like your previous stacked vertical headers, this uses precise positioning (left) and layering (z-index) to keep 
+      everything aligned perfectly.
+
+   =================================================================================================================================== */
 
 /* First frozen column */
 .sticky-col-1 {
+  /*Locks the column to the absolute left edge (0 pixels) of the container. As you scroll right, this column stays glued in place.*/
   position: sticky;
   left: 0;
+  /* This is a bulletproof way to force a fixed width. By setting the minimum, standard, and maximum width all to 160px, 
+    the browser is forced to render this column exactly 160 pixels wide, preventing the content from squeezing or stretching it. */
   min-width: 160px;
   width: 160px;
   max-width: 160px;
   background: #f2f2f2 !important;
+  /*Elevates this column so the regular table data slides underneath it when scrolling horizontally. Notice this z-index (80) 
+    is much higher than your previous vertical headers (25–30)—this prevents scrolling text from clipping over it.*/
   z-index: 80;
+  /*Adds a slightly thicker gray border on the right side, creating a clear visual separator between the frozen "frozen zone" 
+    and the scrollable data.*/
   border-right: 2px solid #ddd;
 }
 
 /* Second frozen column */
 .sticky-col-2 {
+  /*Stacks this column right next to the first one. Because the first column is exactly 160px wide, setting left: 
+    160px ensures this second column sticks perfectly flush against the first one without overlapping it.*/
   position: sticky;
   left: 160px;
+  /*Locks this second column to an exact width of 170px.*/
   min-width: 170px;
   width: 170px;
   max-width: 170px;
   background: #f2f2f2 !important;
+  /*Keeps it on the same layer level as the first sticky column so they scroll together smoothly.*/
   z-index: 80;
   border-right: 2px solid #ddd;
 }
 
+/*===================================Body Cells vs. Header Cells (The Overlap Fix)======================================
+  When you freeze both rows (vertically) and columns (horizontally), the top-left corner cells where they intersect can 
+  become a messy battleground for which element shows up on top. The last two rules fix this:
+
 /* Body cells in sticky columns */
+/* Changes the background color of the frozen cells in the body (tbody) of the table to a slightly different off-white (#f7f7f7). 
+  This visually separates data rows from header rows.*/
 tbody .sticky-col-1,
 tbody .sticky-col-2 {
   background: #f7f7f7 !important;
 }
 
 /* Frozen header cells must stay above body cells */
+/* This handles the top-left corner headers. It pumps their layer level up to z-index: 100.*/
 thead .sticky-col-1,
 thead .sticky-col-2 {
+  /*Why the z-index: 100 matters: When you scroll both vertically and horizontally at the same time, the regular frozen 
+  body cells (z-index: 80) move upward. If  the header cells didn't have a higher z-index (100), the body data would float 
+  over the top-left headers, breaking the illusion.*/
   z-index: 100;
   background: #f2f2f2 !important;
 }
 
+/*=============================================Summary of the Grid Layout=========================================
+  Column 1: Stays at left: 0, width is 160px.
+  Column 2: Stays at left: 160px, width is 170px.
+  The Intersecting Corner (Top Left): Stays at z-index: 100 so it never gets covered up by scrolling rows or columns.
+======================================================================================================================*/
 
-/* =========================================================
+/* =======================================================================================================================
    4. Smartphone version
-   ========================================================= */
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> let the smartphone to trigger this media query.
+
+    When the screen width is 600 pixels or narrower (@media (max-width: 600px)), this code activates to shrink fonts, 
+    reduce spacing, and readjust those sticky headers and columns you looked at earlier so the table remains completely 
+    usable on a mobile device.
+
+    The names of the resizing codes embraced in the @media (max-width: 600px) {......} should be the same as the normal layout codes
+   ======================================================================================================================== */
 
 @media (max-width: 600px) {
   .mobile-scroll-note {
@@ -139,15 +217,23 @@ thead .sticky-col-2 {
     overflow-y: auto;
   }
 
-  .sdlt-table {
+  .simple-table {
     min-width: 980px;
     font-size: 0.62rem;
   }
 
-  .sdlt-table th,
-  .sdlt-table td {
+  .simple-table th,
+  .simple-table td {
     padding: 4px 5px;
     line-height: 1.2;
+  }
+
+  .header-row-2 th {
+    top: 32px;
+  }
+
+   .dates-heading {
+    font-size: 0.65rem;
   }
 
   .sticky-col-1 {
@@ -163,22 +249,5 @@ thead .sticky-col-2 {
     width: 85px;
     max-width: 85px;
   }
-
-  .header-row-2 th {
-    top: 32px;
-  }
-
-  .dates-heading {
-    font-size: 0.65rem;
-  }
-
-  .sdlt-simple-table {
-    font-size: 0.8rem;
-  }
-
-  .sdlt-simple-table th,
-  .sdlt-simple-table td {
-    padding: 6px 7px;
-    line-height: 1.25;
-  }
+ 
 }
