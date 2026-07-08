@@ -207,6 +207,7 @@ thead .sticky-col-2 {
    ======================================================================================================================== */
 
 @media (max-width: 600px) {
+  
   .mobile-scroll-note {
     display: block;
   }
@@ -218,7 +219,7 @@ thead .sticky-col-2 {
   }
 
   .simple-table {
-    min-width: 980px;
+    min-width: 100%;
     font-size: 0.62rem;
   }
 
@@ -249,5 +250,4 @@ thead .sticky-col-2 {
     width: 85px;
     max-width: 85px;
   }
- 
-}
+ }
