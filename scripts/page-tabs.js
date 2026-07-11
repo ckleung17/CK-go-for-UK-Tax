@@ -10,6 +10,7 @@ function openExample(event, tabId) {
     button.classList.remove("active");
   });
 
+  // Show the specific clicked tab content and mark the button as active
   document.getElementById(tabId).classList.add("active");
   event.currentTarget.classList.add("active");
 }

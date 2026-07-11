@@ -38,7 +38,7 @@
 
 .simple-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: collapse !important;
   font-size: 0.9rem;
   background: #fff;
 }
@@ -56,6 +56,7 @@
   background: #f2f2f2;
   font-weight: bold;
   text-align: center;
+  white-space: nowrap;
 }
 
 .simple-table tbody td:last-child {
@@ -83,7 +84,7 @@
   background: #f2f2f2;
   /*Sets the stack order. A high z-index ensures this top row floats above the regular scrolling table rows and above the 
     second header row.*/
-  z-index: 30;
+  /*z-index: 30;*/
 }
 
 /* Second header row */
@@ -92,7 +93,7 @@
     header row is exactly 38 pixels tall. When scrolling, row 2 will tuck perfectly underneath row 1 instead of overlapping
     and hiding it. */
   position: sticky;
-  top: 38px;
+  top: 40px; /*38*/
   background: #f2f2f2;
   /*Sets the stack layer slightly lower than the first row (25 vs 30). This prevents any visual glitches where elements 
     from the second row might accidentally render over the first row.*/
@@ -118,7 +119,12 @@
    3. Layer Default (Bottom): Regular table data rows (<td>) that slide up and vanish beneath the sticky headers.
 ==================================================================================================================================*/
 
-/* ===============================================================================================================================
+.mobile-scroll-note {
+    display: none;
+  }
+
+
+  /* ===============================================================================================================================
    3. Frozen first and second columns
 
       This CSS code handles horizontal freezing (sticky columns). It is typically used for tables with a lot of columns 
@@ -230,7 +236,7 @@ thead .sticky-col-2 {
   }
 
   .header-row-2 th {
-    top: 32px;
+    top: 42px; /*38*/
   }
 
    .dates-heading {

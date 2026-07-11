@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trusts & Inheritance Tax - UK Tax Studies CPD</title>
+  <!-- Path points back to the root style.css based on your folder structure -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- Link directly to your scripts folder to activate tab switching functionality -->
+  <script src="../scripts/page-tabs.js"></script>
+
+  <header>
+    <h1>The Impact on Non-UK Resident Trusts & Residence-Based Inheritance Tax (IHT)</h1>
+    <p>Topic 10: Analyzing the sweeping structural changes to excluded property status and trust protections.</p>
+  </header>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="fig-index.html">FIG Index</a>
+  </nav>
+
+  <main>
+    <!-- Section 1: Core Policy Overview -->
+    <section id="iht-core-reform">
+      <h2>The Shift to a Residence-Based IHT System</h2>
+      <p>
+        The historical landscape of UK Inheritance Tax (IHT) relied heavily on an individual's common-law domicile status. Under the updated framework, domicile is replaced by a strict, statutory residence test. Individuals become subject to worldwide IHT once they meet long-term UK residency thresholds, fundamentally altering how offshore assets and trust structures are protected.
+      </p>
+    </section>
+
+    <!-- Section 2: Tabbed Case Studies / Examples -->
+    <section id="iht-examples">
+      <h2>Interactive Case Studies</h2>
+      <p>Select a tab below to explore specific technical examples of how the new rules apply to varied client profiles:</p>
+
+      <!-- Tab Buttons using tab.css classes -->
+      <div class="page-tabs">
+        
+        <button class="page-tab-button active" onclick="openExample(event, 'example1')">
+          Example 1: The 10-Year Tail
+        </button>
+
+        <button class="page-tab-button" onclick="openExample(event, 'example2')">
+          Example 2: Gift with Reservation
+        </button>
+
+        <button class="page-tab-button" onclick="openExample(event, 'example3')">
+          Example 3: Settlor-Interested Trust
+        </button>
+
+      </div>
+
+      <!-- Tab Content 1 -->
+      <div id="example1" class="page-tab-content active">
+        <h3>The 10-Year Long-Term Resident Tail</h3>
+        <p><strong>Scenario:</strong> An individual moves to the UK, resides there for 11 years, and then leaves the UK permanently to settle abroad.</p>
+        <p><strong>Tax Treatment:</strong> Because they passed the long-term residency threshold (residing in the UK for at least 10 out of 20 tax years), they remain within the scope of UK worldwide IHT for a 10-year "tail" period after leaving the country. If they pass away within 10 years of departure, their global estate faces UK IHT charges.</p>
+      </div>
+
+      <!-- Tab Content 2 -->
+      <div id="example2" class="page-tab-content">
+        <h3>Gift with Reservation of Benefit (GWR)</h3>
+        <p><strong>Scenario:</strong> A foreign national living in London transfers an offshore investment portfolio into a personal bare trust but continues to receive the monthly dividend income stream directly to their personal account.</p>
+        <p><strong>Tax Treatment:</strong> Because the individual retains a direct benefit from the gifted asset, the Gift with Reservation rules apply. The entire value of the offshore portfolio remains inside their taxable estate for UK IHT purposes, regardless of its physical location outside the UK.</p>
+      </div>
+
+      <!-- Tab Content 3 -->
+      <div id="example3" class="page-tab-content">
+        <h3>Dismantling of Non-UK Resident Trust Protections</h3>
+          <p><strong>Scenario:</strong> A non-domiciled individual settled an excluded property trust holding overseas assets prior to April 2025. The settlor is a beneficiary and is now a long-term UK resident.</p>
+          <p><strong>Tax Treatment:</strong> The historic grandfathered protections for settled excluded property are broken. Because the settlor is a long-term resident and retains an interest, the trust assets lose their protection and fall squarely within the scope of the UK IHT relevant property regime (subject to ten-year anniversary and exit charges).</p>
+        </div>
+    </section>
+
+    <div class="page-nav">
+      <div></div>
+      <div class="back-link">
+        <a href="capital-gains-rebasing.html">← Back to Topic 9</a> | 
+        <a href="fig-index.html">Back to FIG Index</a> | 
+        <a href="worked-examples.html">Next Topic: Worked Examples →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <p>UK Tax Studies Project - Continuous Professional Development (CPD)</p>
+  </footer>
+
+  
+</body>
+</html>
