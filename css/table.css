@@ -31,7 +31,7 @@
   /*Adds a bit of breathing room outside the table—specifically 1rem (usually about 16px) of space above and below it, and 0 space on the left and right.*/
   margin: 1rem 0;
   /*Puts a thin, light gray frame around the entire container so users can clearly see the boundaries of the scrollable area.*/
-  border: 1px solid #ddd;
+  border: none;
   /*Sets the background color to solid white.*/
   background: #fff;
 }

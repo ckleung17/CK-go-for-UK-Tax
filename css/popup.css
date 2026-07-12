@@ -29,7 +29,7 @@
   border-radius: 10px;
   border: 1px solid #ccc;
   resize: both;
-  overflow: auto;
+  overflow: hidden; /* Changed from auto to hidden */
   transition: all 0.2s ease;
   pointer-events: auto; /* Restores clicks inside the window when minimized */
 }
@@ -101,4 +101,42 @@
   width: 100%;
   height: calc(100% - 45px);
   border: none;
+}
+
+/* Mobile Optimization for Screens Under 768px */
+@media screen and (max-width: 768px) {
+  /* Prevent the default center alignment from clipping bounds */
+  .popup-overlay:not(.minimized-overlay) {
+    align-items: flex-end; /* Slide up from the bottom on mobile */
+  }
+
+  .popup-window:not(.minimized):not(.maximized) {
+    width: 100% !important;
+    height: 85% !important; /* Leaves the top 15% open to see the overlay */
+    min-width: 100%;
+    border-radius: 15px 15px 0 0; /* Rounded top corners like native mobile sheets */
+    bottom: 0;
+  }
+  
+  /* Disable the desktop resize grip on mobile devices */
+  .popup-window {
+    resize: none !important;
+  }
+
+  /* Make header elements slightly larger for easier finger-tapping */
+  .popup-header {
+    padding: 12px 15px;
+    height: 50px;
+  }
+
+  .popup-controls button {
+    padding: 6px 10px;
+    font-size: 16px;
+    height: 30px;
+    min-width: 32px;
+  }
+
+  #popup-frame {
+    height: calc(100% - 50px);
+  }
 }

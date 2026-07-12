@@ -94,6 +94,13 @@ a:hover {
   margin-top: 0;
 }
 
+.cpd-trap {
+  font-style: italic;
+  font-weight: normal;
+  color:red;
+  margin-top: 0;
+}
+
 .law-ref {
   font-size: 1em;
   margin-left: 4px;
