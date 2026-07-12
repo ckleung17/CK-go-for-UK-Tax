@@ -11,6 +11,15 @@
   align-items: center;
 }
 
+/* Changes overlay behavior so you can still click the main page while minimized */
+.popup-overlay.minimized-overlay {
+  background: transparent;
+  pointer-events: none; 
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
 .popup-window {
   background: white;
   width: 75%;
@@ -21,6 +30,30 @@
   border: 1px solid #ccc;
   resize: both;
   overflow: auto;
+  transition: all 0.2s ease;
+  pointer-events: auto; /* Restores clicks inside the window when minimized */
+}
+
+/* Maximized State Styles */
+.popup-window.maximized {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 0;
+  resize: none;
+}
+
+/* Minimized State Styles */
+.popup-window.minimized {
+  width: 300px !important;
+  height: 45px !important;
+  min-width: 300px;
+  min-height: 45px;
+  border-radius: 6px 6px 0 0;
+  resize: none;
+  overflow: hidden;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
 }
 
 .popup-header {
@@ -31,17 +64,37 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 45px;
+  box-sizing: border-box;
 }
 
-#popup-close {
+.popup-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.popup-controls button {
   background: white;
   color: #003366;
   border: none;
-  font-size: 22px;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  padding: 2px 8px;
+  padding: 4px 8px;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 24px;
+}
+
+#popup-close {
+  font-size: 18px;
+}
+
+.popup-controls button:hover {
+  background: #e6f0fa;
 }
 
 #popup-frame {

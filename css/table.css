@@ -37,7 +37,9 @@
 }
 
 .simple-table {
-  width: 100%;
+  width: max-content; /*changed from 100%*/
+  display: table; /*Froces block-level behavior for margin:auto */
+  margin: 1rem auto; /*Centers the table horizontally on the page */
   border-collapse: collapse !important;
   font-size: 0.9rem;
   background: #fff;
@@ -50,6 +52,11 @@
   text-align: left;
   vertical-align: top;
   line-height: 1.35;
+  max-width: 250px;  /* 1. Sets a boundary for when text MUST wrap */
+  overflow-wrap: break-word; /* Safely snaps Long words/URLs down to a new line */
+  /* Adding these here ensures both headers and cells wrap consistently */
+  max-width: 220px; 
+  overflow-wrap: break-word;
 }
 
 .simple-table thead th {
@@ -57,11 +64,15 @@
   font-weight: bold;
   text-align: center;
   white-space: nowrap;
+   /* 💡 CHANGES START HERE */
+  white-space: normal;          /* Changed from 'nowrap' to allow line breaks */
+  max-width: 200px;             /* Establishes the boundary for long text */
+  overflow-wrap: break-word;    /* Safely wraps words or strings */
 }
 
 .simple-table tbody td:last-child {
   text-align: left;
-  font-weight: bold;
+  font-weight: normal;
   white-space: normal;
 }
 
@@ -225,7 +236,7 @@ thead .sticky-col-2 {
   }
 
   .simple-table {
-    min-width: 100%;
+    min-width: auto; /*changed from 100%*/
     font-size: 0.62rem;
   }
 
