@@ -20,6 +20,7 @@ nav a:hover {
 .page-nav {
   display: flex;
   justify-content: space-between;
+  font-size: 0.8rem;
   margin-top: 2rem;
 }
 
