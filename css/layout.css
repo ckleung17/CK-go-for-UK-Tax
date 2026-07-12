@@ -108,3 +108,135 @@ a:hover {
   white-space: nowrap;
 }
 
+/* --- 4. Unified Popup Window Framework --- */
+
+/* Safe Reset for Popup Documents to eliminate double scrollbars */
+html:has(.popup-scroll-container), 
+body:has(.popup-scroll-container) {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  background-color: #ffffff !important;
+  overflow: hidden !important;
+}
+
+/* Internal Scroll Canvas Container */
+.popup-scroll-container {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto;
+  padding: 24px 32px;
+}
+
+/* Government-Blue Header variant for popups */
+.popup-scroll-container header {
+  background: transparent !important;
+  border-bottom: 3px solid #005ea5 !important;
+  border-radius: 0 !important;
+  padding: 0 0 12px 0 !important;
+  margin-bottom: 24px !important;
+}
+
+.popup-scroll-container h1 {
+  color: #005ea5 !important;
+  font-size: 1.85rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.popup-scroll-container header p {
+  margin: 0 !important;
+  color: #555555 !important;
+  font-size: 0.95rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* Layout Typography Hierarchy within Popups */
+.popup-scroll-container h2 {
+  color: #111111 !important;
+  font-size: 1.35rem !important;
+  border-bottom: 1px solid #dddddd !important;
+  padding-bottom: 6px !important;
+  margin: 28px 0 14px 0 !important;
+}
+
+.popup-scroll-container h3 {
+  color: #003366 !important;
+  font-size: 1.15rem !important;
+  margin: 22px 0 8px 0 !important;
+}
+
+.popup-scroll-container h4 {
+  color: #222222 !important;
+  font-size: 1rem !important;
+  margin: 0 0 8px 0 !important;
+}
+
+.popup-scroll-container p {
+  margin: 0 0 14px 0 !important;
+}
+
+.popup-scroll-container .intro {
+  font-size: 1.05rem !important;
+  font-weight: bold !important;
+  color: #222222 !important;
+}
+
+/* Lists and Structural Subcomponents */
+.popup-scroll-container ul, 
+.popup-scroll-container ol {
+  margin: 0 0 16px 0 !important;
+  padding-left: 24px !important;
+}
+
+.popup-scroll-container li {
+  margin-bottom: 8px !important;
+}
+
+.popup-scroll-container hr {
+  border: 0 !important;
+  border-top: 1px solid #dddddd !important;
+  margin: 24px 0 !important;
+}
+
+/* Context Callout Boxes */
+.popup-scroll-container .status-banner {
+  background-color: #d4351c !important;
+  color: #ffffff !important;
+  padding: 16px !important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
+  margin-bottom: 24px !important;
+}
+
+.popup-scroll-container .example-box {
+  background-color: #f4f7f9 !important;
+  border-left: 4px solid #005ea5 !important;
+  padding: 18px !important;
+  margin: 20px 0 !important;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.popup-scroll-container .formula-box {
+  background-color: #222222 !important;
+  color: #ffffff !important;
+  padding: 14px !important;
+  margin: 16px 0 !important;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
+  font-size: 1.05rem !important;
+  border-radius: 4px !important;
+  text-align: center !important;
+  letter-spacing: 0.5px !important;
+}
+
+.popup-scroll-container .note {
+  font-style: italic !important;
+  color: #555555 !important;
+  font-size: 0.95rem !important;
+  margin-top: 20px !important;
+}
+
+.popup-scroll-container .highlight { color: #d9381e !important; font-weight: bold !important; }
+.popup-scroll-container .success { color: #2e7d32 !important; font-weight: bold !important; }

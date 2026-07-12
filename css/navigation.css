@@ -22,3 +22,7 @@ nav a:hover {
   justify-content: space-between;
   margin-top: 2rem;
 }
+
+.back-link {
+  white-space: nowrap; /* Prevents the text links from breaking into two lines */
+}
