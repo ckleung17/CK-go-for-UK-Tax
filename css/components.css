@@ -69,4 +69,124 @@
   transform: scale(1.05);
 }
 
+/* 3. OWR eligibility timeline */
+.owr-timeline {
+  margin: 1rem 0 1.25rem;
+}
+
+.owr-timeline-legend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 0.85rem 0 0;
+  font-size: 0.9rem;
+}
+
+.owr-timeline-key {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.owr-timeline-swatch {
+  flex: 0 0 auto;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.1rem;
+  border: 1px solid #7a7a7a;
+  border-radius: 3px;
+}
+
+.owr-timeline-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.9rem;
+}
+
+.owr-timeline-swatch.former,
+.owr-timeline-cell.former {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.owr-timeline-swatch.current,
+.owr-timeline-cell.current {
+  background: #d9eaf7;
+  color: #073763;
+}
+
+.owr-timeline-swatch.conditional,
+.owr-timeline-cell.conditional {
+  background: repeating-linear-gradient(
+    135deg,
+    #d9eaf7,
+    #d9eaf7 8px,
+    #b8d7ee 8px,
+    #b8d7ee 16px
+  );
+  color: #073763;
+}
+
+.owr-timeline-swatch.unavailable,
+.owr-timeline-cell.unavailable {
+  background: #e9ecef;
+  color: #495057;
+}
+
+.owr-timeline-scroll {
+  overflow-x: auto;
+  padding-bottom: 0.35rem;
+}
+
+.owr-timeline-grid {
+  display: grid;
+  grid-template-columns: minmax(165px, 1.35fr) repeat(6, minmax(100px, 1fr));
+  min-width: 825px;
+  border-top: 1px solid #9aa4ad;
+  border-left: 1px solid #9aa4ad;
+}
+
+.owr-timeline-cell {
+  min-height: 58px;
+  padding: 0.55rem 0.45rem;
+  border-right: 1px solid #9aa4ad;
+  border-bottom: 1px solid #9aa4ad;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.25;
+}
+
+.owr-timeline-cell.heading {
+  min-height: auto;
+  background: #003b67;
+  color: #fff;
+  font-weight: 700;
+}
+
+.owr-timeline-cell.heading.post-2025 {
+  background: #1f6f50;
+}
+
+.owr-timeline-cell.row-heading {
+  align-items: flex-start;
+  background: #f3f6f8;
+  color: #1f2933;
+  font-weight: 700;
+  text-align: left;
+}
+
+.owr-timeline-cell.empty {
+  background: #fff;
+  color: #7a7a7a;
+}
+
+.owr-timeline-cell strong {
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
 
