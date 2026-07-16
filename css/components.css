@@ -31,9 +31,16 @@
   transition: opacity 0.25s ease;
 }
 
-.tooltip:hover .tooltip-text {
+.tooltip:hover .tooltip-text,
+.tooltip:focus .tooltip-text,
+.tooltip:focus-within .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+
+.tooltip:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
 }
 
 /* 2. Calculator icon beside title */
