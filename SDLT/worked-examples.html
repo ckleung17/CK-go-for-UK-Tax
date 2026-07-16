@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SDLT - CK Go for UK Tax</title>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css?v=20260716">
 
 </head>
 
@@ -15,13 +15,13 @@
   </header>
 
   <nav>
-      <a href="../index.html">Home</a>
-      <a href="sdlt-index.html">SDLT</a>
+      <a href="../index.html?v=20260716">Home</a>
+      <a href="sdlt-index.html?v=20260716">SDLT</a>
   </nav>
 
   <main>
     <section>
-      <script src="../scripts/page-tabs.js"></script>
+      <script src="../scripts/page-tabs.js?v=20260716"></script>
 
       <h2>Worked examples</h2>
 
@@ -48,6 +48,7 @@
         <button class="page-tab-button" onclick="openExample(event, 'example-b')">
           Example B
         </button>
+
 
         <button class="page-tab-button" onclick="openExample(event, 'example-c')">
           Example C
@@ -654,31 +655,45 @@
               </tr>
               <tr>
                 <th scope=row>Income Tax cost from loss of personal allowance</th>
-                <td>(c)</td>
+                <td></td>
                 <td>&pound;4,022.40</td>
                 <td>&pound;0</td>
               </tr>
               <tr>
                 <th scope=row>Combined additional Income Tax and CGT</th>
-                <td></td>
+                <td>(c)</td>
                 <td>&pound;4,022.40</td>
                 <td>&pound;1,008.56</td>
               </tr>
               <tr>
                 <th scope=row>Joint SDLT plus additional Income Tax and CGT</th>
-                <td>(d) = (a) + (b) + (c)</td>
+                <td>(d) = (a) + (c)</td>
                 <td><strong>&pound;17,422.40</strong></td>
                 <td><strong>&pound;14,408.56</strong></td>
+              </tr>
+              <tr>
+                <th scope=row>Net benefit from the SDLT refund after additional Income Tax and CGT</th>
+                <td>&pound;11,100 &minus; (c)</td>
+                <td><strong>&pound;7,077.60</strong></td>
+                <td><strong>&pound;10,091.44</strong></td>
               </tr>
             </tbody>
           </table>
         </div>
 
+        <h4>Suggested outcome</h4>
+
         <p>
-          Suggested outcome: on these illustrative assumptions, Private Residence Relief is
-          better by <strong>&pound;3,013.84 jointly</strong>. A FIG claim removes the foreign gain,
-          but the cost of losing both sisters&rsquo; personal allowances and annual exempt amounts
-          is greater than the CGT saved. Recalculate using exact dates, sterling exchange rates,
+          The &pound;11,100 higher-rates SDLT repayment is the cash refund under both routes.
+          The net-benefit row deducts the illustrative additional Income Tax and CGT from that
+          refund; it is not a separate amount repayable by HMRC.
+        </p>
+
+        <p>
+          On these illustrative assumptions, Private Residence Relief is better by
+          <strong>&pound;3,013.84 jointly</strong>. A FIG claim removes the foreign gain, but the
+          cost of losing both sisters&rsquo; personal allowances and annual exempt amounts is
+          greater than the CGT saved. Recalculate using exact dates, sterling exchange rates,
           allowable expenditure, other income, gains and losses before making either claim.
         </p>
 
@@ -1592,20 +1607,21 @@
         fixtures or partnership incorporation require review against the executed documents.
       </p>
     </aside>
+
   </section>
 
   <div class="page-nav">
     <div></div>
     <div class="back-link">
-      <a href="filing-compliance.html">← Previous Topic</a> | 
-      <a href="sdlt-index.html">Back to SDLT Index</a> | 
+      <a href="filing-compliance.html?v=20260716">← Previous Topic</a> |
+      <a href="sdlt-index.html?v=20260716">Back to SDLT Index</a> |
     </div>
-  </div> 
+  </div>
 
 </main>
-  
+
   <div id="global-footer"></div>
-  <script src="../scripts/layout.js"></script>
-  
+  <script src="../scripts/layout.js?v=20260716"></script>
+
 </body>
 </html>
