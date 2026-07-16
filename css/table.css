@@ -76,6 +76,13 @@
   white-space: normal;
 }
 
+.simple-table .table-section-heading th {
+  border-top: 4px double #555;
+  background: #e8e8e8;
+  font-weight: bold;
+  text-align: left;
+}
+
 /* ================================================================================================================
    2. Sticky header rows
    This CSS code is used to create a multi-tier sticky header for a complex data table. 
