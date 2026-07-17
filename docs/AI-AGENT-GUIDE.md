@@ -64,6 +64,10 @@ Changes affecting liability, filing obligations, time limits, residence, trusts,
 - Prefer existing files under `css/` and `scripts/`; avoid inline CSS, fragile global selectors, and unexplained magic values.
 - Keep CSS and JavaScript documentation concise and current: start each file with its purpose and important HTML or file dependencies.
 - When a CSS or JavaScript file contains multiple functional groups, include a numbered contents list in the file header and matching numbered section headings. Explain intent, accessibility requirements, coupled values, and non-obvious constraints rather than restating individual lines.
+- Keep HTML comments concise and current. The `<!doctype html>` declaration must remain first; place any page-purpose and structure comment immediately after it.
+- When an HTML file contains multiple functional groups, include a numbered contents list in its opening comment and matching numbered section comments such as `<!-- 1. Overview -->`. Single-purpose pages and fragments do not need artificial numbering.
+- Use HTML comments to document non-obvious DOM contracts, script or stylesheet hooks, accessibility relationships, popup targets, and structural constraints. Do not comment every element or merely repeat visible headings.
+- Treat HTML comments as public content. Never include personal data, credentials, unpublished review notes, personalised advice, obsolete code, or unsupported tax conclusions, and update comments whenever the documented structure changes.
 - JavaScript enhancements should fail safely. Add no frameworks, tracking, remote scripts, packages, or build tooling without approval.
 - Use British English, define abbreviations, and use exact dates such as “6 April 2025”.
 - Preserve UTF-8. Treat mojibake such as `â€”` as a defect, but fix it only within agreed scope.
