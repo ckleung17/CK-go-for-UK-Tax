@@ -17,6 +17,152 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.study-menu-intro {
+  margin-bottom: 0;
+}
+
+.study-area-list {
+  display: grid;
+  gap: 0;
+  margin-top: 1rem;
+}
+
+.study-area-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  min-height: 2.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.study-area-item:last-child {
+  border-bottom: 0;
+}
+
+.study-area-name,
+.study-area-link {
+  box-sizing: border-box;
+  min-width: 18rem;
+  padding: 0.4rem 0;
+  font-weight: bold;
+}
+
+.study-area-link {
+  color: #003366;
+  text-decoration: none;
+}
+
+.study-area-link:hover {
+  text-decoration: underline;
+}
+
+.study-area-planned {
+  color: #4b5563;
+}
+
+.study-status {
+  color: #5f6b76;
+  font-size: 0.85em;
+  font-weight: normal;
+}
+
+.study-area-dropdown {
+  position: relative;
+}
+
+.study-area-dropdown summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.25rem 0.65rem;
+  color: #003366;
+  background: #ffffff;
+  border: 1px solid #8a9bad;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+}
+
+.study-area-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.study-area-dropdown summary::after {
+  content: " \25BE";
+  margin-left: 0.4rem;
+}
+
+.study-area-dropdown[open] summary::after {
+  content: " \25B4";
+}
+
+.study-area-dropdown summary:hover {
+  background: #f1f5f9;
+}
+
+.study-area-dropdown summary:focus-visible,
+.study-area-link:focus-visible,
+.study-area-options a:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
+}
+
+.study-area-options {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  display: grid;
+  gap: 0.2rem;
+  min-width: 22rem;
+  padding: 0.5rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 15%);
+}
+
+.study-area-options a,
+.study-area-options > span {
+  display: block;
+  padding: 0.45rem 0.6rem;
+}
+
+.study-area-options a {
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.study-area-options a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .study-area-item {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .study-area-name,
+  .study-area-link {
+    min-width: 0;
+  }
+
+  .study-area-options {
+    position: static;
+    box-sizing: border-box;
+    min-width: 0;
+    width: 100%;
+    margin-top: 0.4rem;
+    box-shadow: none;
+  }
+}
+
 .page-nav {
   display: flex;
   justify-content: space-between;
