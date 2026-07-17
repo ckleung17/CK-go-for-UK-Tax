@@ -7,6 +7,7 @@ This is the shared reference standard, review checklist, and working protocol fo
 - Purpose: personal UK tax study notes and CPD records, published as an educational static site.
 - Stack: HTML, shared CSS, and small browser-side JavaScript; no build system is currently present.
 - Scope: an extensible UK tax knowledge site. The current roadmap in `index.html` includes personal tax, property tax, corporation tax, VAT, Inheritance Tax (IHT), Stamp Duty Land Tax (SDLT), and the Foreign Income and Gains (FIG) regime. More areas may be added whenever the user considers them necessary.
+- Follow [`docs/TAX-TOPIC-PATHS.md`](TAX-TOPIC-PATHS.md) as the authoritative abbreviation and folder map when adding, moving or linking study-area HTML files.
 - Treat `index.html` as the current high-level content map, not as a closed or exhaustive taxonomy. Do not reject, remove, or force new subject areas into an existing category merely because their pages or navigation entries do not yet exist.
 - Apply tax-specific jurisdiction rules to every area. For example, SDLT applies to land transactions in England and Northern Ireland; Scotland and Wales have different transaction taxes. Never assume that a UK-wide label means the underlying rule is uniform across all four nations.
 - When adding an area, preserve the site's shared architecture, add clear navigation/indexing, define abbreviations, identify its jurisdiction and tax-year coverage, and extend the authoritative-reference list where specialist sources are needed.
