@@ -1,3 +1,9 @@
+/*
+  GLOSSARY-POPUP-VIEW.JS
+  Converts a hash-targeted Trust glossary entry into an iframe-friendly view.
+  Contract: the hash begins with #glossary- and identifies a .glossary-entry element.
+*/
+
 document.addEventListener("DOMContentLoaded", function () {
   if (window.self === window.top || !window.location.hash.startsWith("#glossary-")) {
     return;

@@ -1,3 +1,13 @@
+/*
+  NAVIGATION.CSS
+  Navigation bars, the homepage study-area selector, and page-sequence links.
+
+  1. Standard page navigation
+  2. Homepage study-area selector
+  3. Previous, next, and back links
+*/
+
+/* 1. Standard page navigation */
 nav {
   margin: 20px 0;
   background: white;
@@ -17,6 +27,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* 2. Homepage study-area selector */
 .study-menu-intro {
   margin-bottom: 0;
 }
@@ -163,6 +174,7 @@ nav a:hover {
   }
 }
 
+/* 3. Previous, next, and back links */
 .page-nav {
   display: flex;
   justify-content: space-between;
@@ -171,5 +183,6 @@ nav a:hover {
 }
 
 .back-link {
-  white-space: nowrap; /* Prevents the text links from breaking into two lines */
+  /* Keep navigation labels on one line. */
+  white-space: nowrap;
 }

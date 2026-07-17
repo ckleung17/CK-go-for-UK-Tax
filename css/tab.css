@@ -1,3 +1,13 @@
+/*
+  TAB.CSS
+  Tabbed page content and supporting callout boxes.
+
+  1. Tab controls and panels
+  2. Responsive tab controls
+  3. Supporting page callout boxes
+*/
+
+/* 1. Tab controls and panels */
 .page-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +45,7 @@
   display: block;
 }
 
+/* 2. Responsive tab controls */
 @media (max-width: 600px) {
   .page-tabs {
     gap: 0.25rem;
@@ -46,6 +57,7 @@
   }
 }
 
+/* 3. Supporting page callout boxes */
  .page-box {
     background: #f8f9fa;
     border-left: 4px solid #003366;

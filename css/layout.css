@@ -1,10 +1,14 @@
-/* ==============================  
-   1. General Page Layout 
-   2. Headings & Titles
-   3. Text alignments and Styles 
-   =============================== */
+/*
+  LAYOUT.CSS
+  Site-wide page shell, typography, utilities, and embedded popup documents.
 
-/* 1. General Page Layout  */
+  1. Page shell
+  2. Headings and links
+  3. Text and reference utilities
+  4. Embedded popup document layout
+*/
+
+/* 1. Page shell */
 
 header {
   background: #003366;
@@ -37,7 +41,7 @@ footer {
   color: #666;
 }
 
-/* 2. Headings & Titles */
+/* 2. Headings and links */
 
 h1 {
   margin-top: 0;
@@ -79,7 +83,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 3. Text alignments and Styles */   
+/* 3. Text and reference utilities */
 
 .text-align-center {
   text-align: center;
@@ -87,7 +91,7 @@ a:hover {
   font-size:10.5pt;
 }
 
-/* Foot Notes */
+/* Notes, CPD traps, and statutory references. */
 .note {
   font-size: 0.9rem;
   font-style: italic;
@@ -110,7 +114,7 @@ a:hover {
   white-space: nowrap;
 }
 
-/* --- 4. Unified Popup Window Framework --- */
+/* 4. Embedded popup document layout */
 
 /* Safe Reset for Popup Documents to eliminate double scrollbars */
 html:has(.popup-scroll-container), 

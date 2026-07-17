@@ -1,10 +1,16 @@
+/*
+  COMPONENTS.CSS
+  Reusable content components shared by tax-topic pages.
 
-/* =========================================
-   = 1. Tooltip                            = 
-   = 2. Calculator                         =
-   =========================================*/
+  1. Tooltip behaviour
+  2. Calculator links
+  3. OWR eligibility timeline
+  4. Trust relationship diagram
+  5. Trust glossary and popup view
+  6. Trust analysis workflows
+*/
 
-/* 1. Tooltip components */
+/* 1. Tooltip behaviour */
 .tooltip {
   position: relative;
   cursor: help;
@@ -43,7 +49,7 @@
   outline-offset: 2px;
 }
 
-/* 2. Calculator icon beside title */
+/* 2. Calculator links */
 .section-title {
   display: flex;
   align-items: center;
@@ -196,7 +202,7 @@
   margin-bottom: 0.15rem;
 }
 
-/* Trust relationship diagram */
+/* 4. Trust relationship diagram */
 .trust-formation-diagram {
   margin: 1.5rem 0 0;
   padding: 1.25rem;
@@ -282,7 +288,7 @@
   }
 }
 
-/* Trust glossary and contextual term links */
+/* 5. Trust glossary and popup view */
 .glossary-link {
   text-decoration: underline;
   text-decoration-style: dotted;
@@ -355,7 +361,7 @@ body.glossary-popup-view .glossary-entry:target {
   margin: 0;
 }
 
-/* Trust analysis workflow */
+/* 6. Trust analysis workflows */
 .analysis-workflow {
   margin: 1.25rem 0 1.5rem;
   padding: 1.25rem;
@@ -371,7 +377,7 @@ body.glossary-popup-view .glossary-entry:target {
   font-size: 1.1rem;
 }
 
-/* Core four-phase diagram */
+/* Four-phase workflow variant. */
 .analysis-workflow-track {
   display: grid;
   grid-template-columns: minmax(145px, 1fr) auto minmax(145px, 1fr) auto minmax(145px, 1fr) auto minmax(145px, 1fr);
@@ -427,7 +433,7 @@ body.glossary-popup-view .glossary-entry:target {
   line-height: 1;
 }
 
-/* Grouped Stages 1-8 flow */
+/* Eight-stage grouped workflow variant. */
 .stage-group-flow {
   display: grid;
   grid-template-columns: minmax(125px, 1fr) auto minmax(120px, 1fr) auto minmax(135px, 1fr) auto minmax(120px, 1fr) auto minmax(130px, 1fr);

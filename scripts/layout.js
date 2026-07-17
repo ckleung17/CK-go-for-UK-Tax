@@ -1,3 +1,9 @@
+/*
+  LAYOUT.JS
+  Loads the shared footer relative to this script, so nested pages use the correct path.
+  Contract: the page provides #global-footer; the script version query is copied to footer.html.
+*/
+
 const layoutScriptUrl = document.currentScript?.src;
 const footerUrl = layoutScriptUrl
   ? new URL('../footer.html', layoutScriptUrl)

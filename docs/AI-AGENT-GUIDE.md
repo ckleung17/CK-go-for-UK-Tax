@@ -62,6 +62,8 @@ Changes affecting liability, filing obligations, time limits, residence, trusts,
 - Use descriptive links. Add `rel="noopener"` to links with `target="_blank"`.
 - Check narrow and wide viewports and 200% zoom.
 - Prefer existing files under `css/` and `scripts/`; avoid inline CSS, fragile global selectors, and unexplained magic values.
+- Keep CSS and JavaScript documentation concise and current: start each file with its purpose and important HTML or file dependencies.
+- When a CSS or JavaScript file contains multiple functional groups, include a numbered contents list in the file header and matching numbered section headings. Explain intent, accessibility requirements, coupled values, and non-obvious constraints rather than restating individual lines.
 - JavaScript enhancements should fail safely. Add no frameworks, tracking, remote scripts, packages, or build tooling without approval.
 - Use British English, define abbreviations, and use exact dates such as “6 April 2025”.
 - Preserve UTF-8. Treat mojibake such as `â€”` as a defect, but fix it only within agreed scope.

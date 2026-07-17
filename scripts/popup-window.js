@@ -1,4 +1,16 @@
+/*
+  POPUP-WINDOW.JS
+  Builds and controls the reusable iframe popup used by .popup-link elements.
+  Contract: each link supplies href or data-page; data-title is optional.
+
+  1. Popup shell
+  2. Link activation and opening state
+  3. Window state controls
+  4. Closing interactions and cleanup
+*/
+
 document.addEventListener("DOMContentLoaded", function () {
+  /* 1. Popup shell */
   const popupLinks = document.querySelectorAll(".popup-link");
 
   if (popupLinks.length === 0) {
@@ -30,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const popupMinimize = document.getElementById("popup-minimize");
   const popupMaximize = document.getElementById("popup-maximize");
 
+  /* 2. Link activation and opening state */
   popupLinks.forEach(function (link) {
     link.addEventListener("click", function (event) {
       event.preventDefault();
@@ -40,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       popupTitle.textContent = title;
       popupFrame.src = page;
       
-      // Reset window state when opening
+      /* Opening always restores the normal window state. */
       popupWindow.classList.remove("minimized", "maximized");
       overlay.classList.remove("minimized-overlay");
       
@@ -48,24 +61,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Maximize Toggle
+  /* 3. Window state controls */
   popupMaximize.addEventListener("click", function () {
     popupWindow.classList.remove("minimized");
     overlay.classList.remove("minimized-overlay");
     popupWindow.classList.toggle("maximized");
   });
 
-  // Minimize Toggle
   popupMinimize.addEventListener("click", function () {
     popupWindow.classList.remove("maximized");
     popupWindow.classList.toggle("minimized");
     overlay.classList.toggle("minimized-overlay");
   });
 
+  /* 4. Closing interactions and cleanup */
   popupClose.addEventListener("click", closePopup);
 
   overlay.addEventListener("click", function (event) {
-    // Prevent closing if the window is minimized and user clicks the bottom tray
+    /* A minimized popup remains open when its pass-through overlay is clicked. */
     if (event.target === overlay && !popupWindow.classList.contains("minimized")) {
       closePopup();
     }

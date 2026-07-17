@@ -1,3 +1,15 @@
+/*
+  TABLE.CSS
+  Scrollable tables with sticky headers, frozen columns, and mobile sizing.
+
+  1. Scroll container
+  2. Base table presentation
+  3. Sticky headers and scroll cue
+  4. Frozen columns
+  5. Mobile adjustments
+*/
+
+/* 1. Scroll container */
 .table-wrap {
   width: 100%;
   max-width: 100%;
@@ -10,6 +22,7 @@
   background: #fff;
 }
 
+/* 2. Base table presentation */
 .simple-table {
   width: max-content;
   display: table;
@@ -55,6 +68,8 @@
   text-align: left;
 }
 
+/* 3. Sticky headers and scroll cue
+   The second row offset must track the rendered height of the first header row. */
 .header-row-1 th {
   position: sticky;
   top: 0;
@@ -79,6 +94,8 @@
     display: none;
   }
 
+/* 4. Frozen columns
+   The second column offset must equal the first column width; header cells use the highest stacking layer. */
 .sticky-col-1 {
   position: sticky;
   left: 0;
@@ -112,6 +129,8 @@ thead .sticky-col-2 {
   background: #f2f2f2 !important;
 }
 
+/* 5. Mobile adjustments
+   Mobile offsets preserve the same header-height and first-column-width relationships. */
 @media (max-width: 600px) {
   .mobile-scroll-note {
     display: block;
