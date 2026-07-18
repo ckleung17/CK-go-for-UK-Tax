@@ -1,0 +1,121 @@
+.tax-calculator {
+  margin: 1rem 0;
+}
+
+.tax-calculator fieldset {
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid #9aaab5;
+  border-radius: 6px;
+}
+
+.tax-calculator legend {
+  padding: 0 0.4rem;
+  font-weight: 700;
+}
+
+.tax-calculator-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(11rem, 1fr));
+  gap: 1rem;
+}
+
+.tax-calculator label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+}
+
+.tax-calculator input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.55rem;
+  border: 1px solid #5f6f78;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.tax-calculator input:focus-visible,
+.tax-calculator button:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
+
+.tax-calculator button {
+  margin-top: 1rem;
+  padding: 0.55rem 0.9rem;
+  border: 2px solid #073763;
+  border-radius: 4px;
+  background: #fff;
+  color: #073763;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tax-calculator button:hover {
+  background: #eaf2f8;
+}
+
+.income-tax-computation-table {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 0.7rem;
+  line-height: 1.35;
+}
+
+.income-tax-computation-table caption {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.income-tax-computation-table .calculation-column {
+  width: 33%;
+}
+
+.income-tax-computation-table .tax-rate-column {
+  width: 7%;
+}
+
+.income-tax-computation-table .amount-column {
+  width: 15%;
+}
+
+.income-tax-computation-table th:nth-child(2),
+.income-tax-computation-table td:nth-child(2) {
+  text-align: center;
+}
+
+.income-tax-computation-table .calculation-amount {
+  text-align: right;
+}
+
+.income-tax-computation-table .calculation-empty {
+  text-align: center;
+}
+
+.income-tax-computation-table th,
+.income-tax-computation-table td {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.calculation-summary {
+  padding: 0.75rem;
+  border-left: 4px solid #0b5f8a;
+  background: #eef6fa;
+  font-weight: 700;
+}
+
+.calculation-subtotal th,
+.calculation-subtotal td {
+  border-top: 2px solid #4d5b63;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .tax-calculator-inputs {
+    grid-template-columns: 1fr;
+  }
+}
