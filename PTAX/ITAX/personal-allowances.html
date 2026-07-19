@@ -1,14 +1,22 @@
 <!doctype html>
-<!-- Purpose: 2026/27 Income Tax allowances and deductions. -->
+<!--
+  Purpose: Explain principal 2026/27 Income Tax allowances and deductions.
+  Structure:
+  1. Document metadata and shared assets
+  2. Page heading and topic navigation
+  3. Allowances and deductions
+  4. Topic navigation and shared scripts
+-->
 <html lang="en">
+  <!-- 1. Document metadata and shared assets -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Allowances and deductions</title>
-    <link rel="stylesheet" href="../../style.css?v=20260718">
-    <link rel="stylesheet" href="../../css/income-tax-calculator.css?v=20260719">
+    <link rel="stylesheet" href="../../style.css?v=20260719">
   </head>
   <body>
+    <!-- 2. Page heading and topic navigation -->
     <header>
       <h1>Income Tax</h1>
       <p>Allowances and deductions - 2026/27</p>
@@ -22,6 +30,7 @@
       <a href="../PENTAX/pentax-index.html">Pensions Tax</a>
     </nav>
     <main>
+      <!-- 3. Allowances and deductions -->
       <section>
         <p>After income has been classified and recognised for the tax year, the relevant deductions, allowances and tax reductions must be applied in the correct order. They do not all reduce the Income Tax calculation in the same way.</p>
         <ul>
@@ -65,29 +74,6 @@
         </ul>
         <p>After the starting-rate band, the Personal Savings Allowance charges up to &pound;1,000 of savings income at 0% for a basic-rate taxpayer, &pound;500 for a higher-rate taxpayer and nil for an additional-rate taxpayer.</p>
         <p><strong>Rate-band position:</strong> Savings income is taxed after non-savings income and therefore uses the basic, higher and additional-rate bands remaining after the non-savings income. For 2026/27, savings income is charged at 20%, 40% or 45% according to the band in which it falls.</p>
-        <h3 hidden>Reusable Income Tax computation</h3>
-        <p hidden>Enter the individual&rsquo;s income for 2026/27. The calculation updates automatically and applies the Personal Allowance to non-savings income first, then to savings income and finally to dividend income.</p>
-        <form id="income-tax-calculator" class="tax-calculator" hidden>
-          <fieldset>
-            <legend>Income for 2026/27</legend>
-            <div class="tax-calculator-inputs">
-              <label for="calculator-non-savings">
-                Non-savings income (&pound;)
-                <input id="calculator-non-savings" name="non-savings-income" type="number" min="0" step="0.01" value="15000" inputmode="decimal">
-              </label>
-              <label for="calculator-savings">
-                Savings income (&pound;)
-                <input id="calculator-savings" name="savings-income" type="number" min="0" step="0.01" value="4000" inputmode="decimal">
-              </label>
-              <label for="calculator-dividend">
-                Dividend income (&pound;)
-                <input id="calculator-dividend" name="dividend-income" type="number" min="0" step="0.01" value="1500" inputmode="decimal">
-              </label>
-            </div>
-            <button type="reset">Reset example</button>
-          </fieldset>
-        </form>
-        <p id="income-tax-calculation-summary" class="calculation-summary" aria-live="polite" hidden></p>
         <h2>Dividend allowance and rates</h2>
         <p>For 2026/27:</p>
         <ul>
@@ -98,37 +84,29 @@
           <li><strong>Dividend additional rate:</strong> 39.35%.</li>
         </ul>
 
-        <h2>Ordering and exemptions</h2>
-        <p>Savings and dividend income generally form the highest slices of income, with dividend income above savings income. Amounts within the Personal Savings Allowance or dividend allowance still use rate-band capacity because the allowances operate as 0% rate bands. Qualifying Individual Savings Account income is exempt.</p>
+        <h2>Which income is taxed first?</h2>
+        <p>When a person has more than one type of income, the calculation normally puts non-savings income first, savings income second and dividend income last. This order decides which income uses the lower available tax bands first: savings income uses the band capacity left after non-savings income, and dividends use what remains after both. Each type of income is still charged at its own applicable rates.</p>
+        <p>Read the order below from top to bottom. Each type of income uses the tax-band capacity left by the types above it:</p>
+        <ol class="income-calculation-order" aria-label="Order in which income uses tax bands">
+          <li>
+            <strong>Non-savings income</strong>
+            <span>Calculated first and uses the lowest available tax bands.</span>
+          </li>
+          <li>
+            <strong>Savings income</strong>
+            <span>Calculated second and uses the tax-band capacity left after non-savings income.</span>
+          </li>
+          <li>
+            <strong>Dividend income</strong>
+            <span>Calculated last and uses the tax-band capacity left after non-savings and savings income.</span>
+          </li>
+        </ol>
+        <p>Each type of income is still charged at its own applicable rates.</p>
+        <p>Income covered by the Personal Savings Allowance or dividend allowance still counts when working out which tax band applies to the person&rsquo;s other income, even though no tax is charged on that amount. Interest and dividends received inside an Individual Savings Account (ISA) are tax-free, so they are left out of this calculation.</p>
         <p class="note">Scottish and Welsh rates do not apply to savings or dividend income. The UK savings and dividend rules apply after the individual&rsquo;s income has been classified and ordered.</p>
 
-        <p><strong>Illustrative example:</strong> Sam is an England, Wales or Northern Ireland taxpayer with non-savings income of &pound;15,000, taxable savings interest of &pound;4,000 and dividend income of &pound;1,500 in 2026/27. Assume Sam is entitled to the standard &pound;12,570 Personal Allowance and has no other income, deductions or reliefs.</p>
-        <div class="table-wrap" role="region" aria-label="Income Tax computation example" tabindex="0">
-          <table class="simple-table income-tax-computation-table">
-            <caption>Income Tax computation for 2026/27</caption>
-            <colgroup>
-              <col class="calculation-column">
-              <col class="tax-rate-column">
-              <col span="4" class="amount-column">
-            </colgroup>
-            <thead>
-              <tr>
-                <th scope="col">Calculation</th>
-                <th scope="col">Tax rate</th>
-                <th scope="col">Non-savings<br>&pound;</th>
-                <th scope="col">Savings<br>&pound;</th>
-                <th scope="col">Dividend<br>&pound;</th>
-                <th scope="col">Tax charged<br>&pound;</th>
-              </tr>
-            </thead>
-            <tbody id="income-tax-calculation-body">
-            </tbody>
-          </table>
-        </div>
-        <noscript hidden>
-          <p class="note">JavaScript must be enabled to use this dynamic computation template.</p>
-        </noscript>
-        <p class="note" hidden>This template covers a straightforward England, Wales or Northern Ireland computation for 2026/27. It assumes adjusted net income equals the three income amounts entered and does not model Gift Aid, pension band extensions, transferred allowances, reliefs, tax deducted at source or Scottish non-savings rates. The Personal Allowance is a deduction; the starting rate for savings, Personal Savings Allowance and Dividend Allowance are 0% rate bands, so the income remains taxable and uses rate-band capacity.</p>
+        <h2>From allowances to the full computation</h2>
+        <p>This topic identifies what the principal allowances and 0% rate bands do. The next topic, <a href="core-computation.html">Tax computation</a>, brings them together in the statutory seven-step framework, traces the cumulative rate-band position and provides a more detailed worked example and interactive computation.</p>
 
         <aside class="note">
           <h2>Sources</h2>
@@ -146,6 +124,7 @@
           <p>Sources checked 18 July 2026. Legislation determines the law. HMRC guidance states HMRC&rsquo;s interpretation and practice and is not legislation.</p>
         </aside>
       </section>
+      <!-- 4. Topic navigation and shared scripts -->
       <div class="page-nav">
         <div></div>
         <div class="back-link"><a href="income-recognition.html">&larr; Previous Topic</a> | <a href="itax-index.html">Back to Income Tax Index</a> | <a href="core-computation.html">Next Topic &rarr;</a></div>
@@ -153,8 +132,6 @@
     </main>
     <div id="global-footer">
     </div>
-    <script src="../../scripts/income-tax-calculator.js?v=20260718">
-    </script>
     <script src="../../scripts/layout.js">
     </script>
   </body>

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-07-19",
+  "normalization": "Visible HTML text, whitespace collapsed, SHA-256",
+  "sources": [
+    {
+      "ids": "scottish-rates",
+      "title": "Scottish Income Tax: rates and bands",
+      "url": "https://www.gov.scot/publications/scottish-income-tax-rates-and-bands/",
+      "sha256": "7c05fdd11c6a53649eb96a4b15949980045abf9444b3820e0fcf4161190f70f4"
+    },
+    {
+      "ids": "hmrc-savings",
+      "title": "Tax on savings interest",
+      "url": "https://www.gov.uk/apply-tax-free-interest-on-savings",
+      "sha256": "ea184847378da325c5cc30c753da68d39909af3ff60a09e43b49682862aa0e1a"
+    },
+    {
+      "ids": "hmt-autumn-budget-2024-rates",
+      "title": "Autumn Budget 2024 rates and allowances",
+      "url": "https://www.gov.uk/government/publications/autumn-budget-2024-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances",
+      "sha256": "8062e481fee32b675112d8c131aa44151b55a84cee7f2c4f037172abcd4ee3d9"
+    },
+    {
+      "ids": "hmt-budget-2025-rates, budget-2025-annex",
+      "title": "Budget 2025 rates and allowances",
+      "url": "https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances",
+      "sha256": "e7a5be058825af9fa4be0580bc96651a5b03f5e9cb0478a7b15b65e600794ac6"
+    },
+    {
+      "ids": "hmrc-rates",
+      "title": "Income Tax rates and allowances for current and previous tax years",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past",
+      "sha256": "7d860db8f23506d23e89309d0d9411d7c6bec203d399eff6e16edba259f2cb3a"
+    },
+    {
+      "ids": "pension-rates",
+      "title": "Pension schemes rates",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates",
+      "sha256": "72fe9d9c5e9424d3a46c795afd6f0707c815d9d3b76d549898883e241c94bd97"
+    },
+    {
+      "ids": "trf-helpsheet",
+      "title": "HS264: Temporary Repatriation Facility",
+      "url": "https://www.gov.uk/government/publications/remittance-basis-hs264-self-assessment-helpsheet/hs264-remittance-of-pre-6-april-2025-foreign-income-and-gains-and-the-temporary-repatriation-facility-trf",
+      "sha256": "0bfed17fd3b95388bee6e7299c7fa84911e7200d0f4f797d89b95ef74b2d1647"
+    },
+    {
+      "ids": "hmt-spring-budget-2024-rates",
+      "title": "Spring Budget 2024 rates and allowances",
+      "url": "https://www.gov.uk/government/publications/spring-budget-2024-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances",
+      "sha256": "7d548a40532594e03c1f9d6e2f3b55c5c3390e703ed99e88d23c7c0feee3f89b"
+    },
+    {
+      "ids": "hmrc-adjusted-net-income",
+      "title": "Personal Allowances: adjusted net income",
+      "url": "https://www.gov.uk/guidance/adjusted-net-income",
+      "sha256": "e85530f018a029d2d43f4e8c5927c3c67dc0471a24e44e17c5abf9dd6dba8576"
+    },
+    {
+      "ids": "cgt-rates",
+      "title": "Capital Gains Tax rates and allowances",
+      "url": "https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances",
+      "sha256": "7458cfda6c3f0cb927265300e778cc8503f90dda49e12338db1c4934aea44ddc"
+    },
+    {
+      "ids": "employer-rates",
+      "title": "Rates and thresholds for employers 2026 to 2027",
+      "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
+      "sha256": "9665747559ff67148b8f3b7802113d642f988a605225f5629285e885b70753c2"
+    },
+    {
+      "ids": "sdlt-higher",
+      "title": "Higher rates of SDLT",
+      "url": "https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property",
+      "sha256": "56e5163842485a6d4d500a5fee14c9b8248975ca5b883edebd06df1b72829bac"
+    },
+    {
+      "ids": "trust-manual-rates",
+      "title": "TSEM3041: trust tax rates",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem3041",
+      "sha256": "7cda86c531aa55beedec3dfb28b301fe56906ee00fcc3aaccf1095a8df3dbd27"
+    },
+    {
+      "ids": "nic-overview",
+      "title": "National Insurance: how much you pay",
+      "url": "https://www.gov.uk/national-insurance/how-much-you-pay",
+      "sha256": "301f1dbea8ab41aa308cef7a7a4e2b4c29634eb51a518aa79b2e69e89a6a56be"
+    },
+    {
+      "ids": "sdlt-non-residential",
+      "title": "SDLT non-residential and mixed rates",
+      "url": "https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates",
+      "sha256": "ad60304a54abc14821e5459b53a7cfe5665f7ed7fe6779dca9a000c036a8299c"
+    },
+    {
+      "ids": "sdlt-residential",
+      "title": "SDLT residential property rates",
+      "url": "https://www.gov.uk/stamp-duty-land-tax/residential-property-rates",
+      "sha256": "ea0a5191bbdb5f4ce6a4101ed7aefecdcb2b191347e715ac61e7cb1d1be44e68"
+    },
+    {
+      "ids": "hmrc-dividends",
+      "title": "Tax on dividends",
+      "url": "https://www.gov.uk/tax-on-dividends",
+      "sha256": "284b0c7fe0e64286e5c23c31ddba8d3e647e64cd5f396c7532be536a94a8c49f"
+    },
+    {
+      "ids": "pension-annual-allowance",
+      "title": "Tax on private pension contributions: annual allowance",
+      "url": "https://www.gov.uk/tax-on-your-private-pension/annual-allowance",
+      "sha256": "9ecb3343a97c0cda6c12c825486d5e5f0b9fc61d3138168702d78a785ecf8126"
+    },
+    {
+      "ids": "trust-income-tax",
+      "title": "Trusts and Income Tax",
+      "url": "https://www.gov.uk/trusts-taxes/trusts-and-income-tax",
+      "sha256": "be78399845946a4ce2c047f4272db77d31c1820e7e1bb9872ecc70175fcdfc81"
+    },
+    {
+      "ids": "ita-2007",
+      "title": "Income Tax Act 2007, Part 2",
+      "url": "https://www.legislation.gov.uk/ukpga/2007/3/part/2",
+      "sha256": "30dbe459a9af6d8aaf64c65ddcd0c42a2604008b718d53e6771fa2cfc8845ac3"
+    }
+  ]
+}

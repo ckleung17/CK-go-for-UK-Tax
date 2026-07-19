@@ -1,0 +1,168 @@
+<!doctype html>
+<!--
+  Purpose: Render current and historical rates for all published tax topics.
+  Structure:
+  1. Document metadata and shared assets
+  2. Page heading and topic navigation
+  3. Tax-year and jurisdiction controls
+  4. Dynamic rate and allowance tables
+  5. Scope, sources and topic navigation
+-->
+<html lang="en">
+  <!-- 1. Document metadata and shared assets -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>UK tax rates and allowances</title>
+    <link rel="stylesheet" href="../../style.css?v=20260719c">
+    <link rel="stylesheet" href="tax-rates.css?v=20260719c">
+  </head>
+  <body>
+    <!-- 2. Page heading and topic navigation -->
+    <header>
+      <h1 class="tax-rate-page-title">
+        <svg class="tax-table-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3" y="4" width="18" height="16" rx="1.5"></rect>
+          <path d="M3 8h18M14.8 11.5l-5.6 6"></path>
+          <circle cx="9" cy="12.5" r="1.2"></circle>
+          <circle cx="15" cy="16.5" r="1.2"></circle>
+        </svg>
+        <span>UK tax rates and allowances</span>
+      </h1>
+      <p>Global current and historical reference</p>
+    </header>
+    <nav class="topic-nav" aria-label="Personal Tax topics">
+      <a href="../../index.html">Home</a>
+      <a href="../../PTAX/ITAX/itax-index.html">Income Tax</a>
+      <a href="../../PTAX/CGT/cgt-index.html">Capital Gains Tax</a>
+      <a href="../../PTAX/PAYE/paye-index.html">PAYE</a>
+      <a href="../../PTAX/NIC/nic-index.html">National Insurance</a>
+      <a href="../../PTAX/PENTAX/pentax-index.html">Pensions Tax</a>
+    </nav>
+
+    <main>
+      <!-- 3. Tax-year and jurisdiction controls -->
+      <section aria-labelledby="rate-reference-heading">
+        <h2 id="rate-reference-heading">Choose a tax and reference period</h2>
+        <p>Select a tax type first, then its available period. The figures are educational reference material, not a complete tax calculation.</p>
+        <form class="tax-rate-controls" id="tax-rate-controls">
+          <label for="tax-rate-type">
+            Tax type
+            <select id="tax-rate-type" name="tax-type"></select>
+          </label>
+          <label for="tax-rate-year">
+            Tax year or effective period
+            <select id="tax-rate-year" name="tax-year"></select>
+          </label>
+          <label for="tax-rate-jurisdiction" id="tax-rate-jurisdiction-control">
+            Jurisdiction
+            <select id="tax-rate-jurisdiction" name="jurisdiction">
+              <option value="rUK">England, Wales and Northern Ireland</option>
+              <option value="scotland">Scotland</option>
+            </select>
+          </label>
+        </form>
+        <p class="tax-rate-status" id="tax-rate-status" role="status" aria-live="polite">Loading tax-rate data&hellip;</p>
+      </section>
+
+      <!-- 4. Dynamic rate and allowance tables -->
+      <section id="income-tax-panel" aria-labelledby="selected-tax-year-heading">
+        <h2 id="selected-tax-year-heading">Income Tax reference</h2>
+        <p id="tax-rate-period"></p>
+        <p id="tax-rate-scope"></p>
+
+        <h3>Key allowances and 0% amounts</h3>
+        <p>The last column explains whether an amount is reduced as income rises. Different rules use different measures of income, so check the wording for each row.</p>
+        <div class="table-wrap tax-rate-table-wrap" role="region" aria-label="Key Income Tax allowances" tabindex="0">
+          <table class="simple-table tax-rate-reference-table tax-rate-allowance-table">
+            <thead>
+              <tr>
+                <th scope="col">Allowance or limit</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Important point</th>
+              </tr>
+            </thead>
+            <tbody id="tax-rate-allowances-body"></tbody>
+          </table>
+        </div>
+
+        <h3 id="non-savings-heading">Non-savings income rates</h3>
+        <p id="non-savings-note"></p>
+        <div class="table-wrap tax-rate-table-wrap" role="region" aria-labelledby="non-savings-heading" tabindex="0">
+          <table class="simple-table tax-rate-reference-table tax-rate-band-table">
+            <thead>
+              <tr>
+                <th scope="col">Band</th>
+                <th scope="col">Taxable income after allowances</th>
+                <th scope="col">Rate</th>
+              </tr>
+            </thead>
+            <tbody id="tax-rate-non-savings-body"></tbody>
+          </table>
+        </div>
+
+        <h3 id="savings-heading">Savings income rates</h3>
+        <p>The starting rate for savings and Personal Savings Allowance can charge part of savings income at 0%. Their availability depends on the person&rsquo;s other income and tax band.</p>
+        <div class="table-wrap tax-rate-table-wrap" role="region" aria-labelledby="savings-heading" tabindex="0">
+          <table class="simple-table tax-rate-reference-table tax-rate-band-table">
+            <thead>
+              <tr>
+                <th scope="col">Band</th>
+                <th scope="col">Taxable income position</th>
+                <th scope="col">Rate</th>
+              </tr>
+            </thead>
+            <tbody id="tax-rate-savings-body"></tbody>
+          </table>
+        </div>
+
+        <h3 id="dividend-heading">Dividend income rates</h3>
+        <p>The dividend allowance charges a limited amount of dividend income at 0%. Dividend income still uses the tax-band capacity in which it falls.</p>
+        <div class="table-wrap tax-rate-table-wrap" role="region" aria-labelledby="dividend-heading" tabindex="0">
+          <table class="simple-table tax-rate-reference-table tax-rate-band-table">
+            <thead>
+              <tr>
+                <th scope="col">Dividend rate</th>
+                <th scope="col">Taxable income position</th>
+                <th scope="col">Rate</th>
+              </tr>
+            </thead>
+            <tbody id="tax-rate-dividend-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="topic-tax-panel" aria-labelledby="topic-tax-heading" hidden>
+        <h2 id="topic-tax-heading">Tax reference</h2>
+        <p id="topic-tax-period"></p>
+        <p id="topic-tax-scope"></p>
+        <div id="topic-tax-sections"></div>
+        <h3>Sources</h3>
+        <ul id="topic-tax-sources"></ul>
+        <p id="topic-tax-reviewed"></p>
+        <p><a id="topic-tax-link" href="../../index.html">Open this study topic</a></p>
+      </section>
+
+      <!-- 5. Scope, sources and topic navigation -->
+      <section id="income-tax-sources-panel" aria-labelledby="reference-scope-heading">
+        <h2 id="reference-scope-heading">Scope and sources</h2>
+        <p id="tax-rate-dataset-scope"></p>
+        <p>Historical records are retained when a new tax year is added. Proposed figures must be clearly labelled and must not replace enacted figures.</p>
+        <ul id="tax-rate-sources"></ul>
+        <p id="tax-rate-reviewed"></p>
+        <noscript>
+          <p class="note">JavaScript must be enabled to load the dynamic tax-rate reference.</p>
+        </noscript>
+      </section>
+
+      <div class="page-nav">
+        <div></div>
+        <div class="back-link"><a href="../../index.html">&larr; Back to site index</a></div>
+      </div>
+    </main>
+
+    <div id="global-footer"></div>
+    <script src="tax-rates.js?v=20260719c"></script>
+    <script src="../../scripts/layout.js"></script>
+  </body>
+</html>

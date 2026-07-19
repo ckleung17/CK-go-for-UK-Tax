@@ -1,16 +1,28 @@
 <!doctype html>
-<!-- Purpose: Explain the complete statutory shape of a 2026/27 individual Income Tax computation. -->
+<!--
+  Purpose: Explain and demonstrate a detailed 2026/27 individual Income Tax computation.
+  Structure:
+  1. Document metadata and shared assets
+  2. Page heading and topic navigation
+  3. Statutory computation framework
+  4. Detailed illustrative computation
+  5. Scope limits, control points and sources
+  6. Topic navigation and shared scripts
+-->
 <html lang="en">
+  <!-- 1. Document metadata and shared assets -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Income Tax computation</title>
+    <title>Tax computation</title>
     <link rel="stylesheet" href="../../style.css?v=20260718">
+    <link rel="stylesheet" href="../../css/income-tax-calculator.css?v=20260719">
   </head>
   <body>
+    <!-- 2. Page heading and topic navigation -->
     <header>
       <h1>Income Tax</h1>
-      <p>Statutory framework and computation - 2026/27</p>
+      <p>Tax computation - 2026/27</p>
     </header>
     <nav class="topic-nav" aria-label="Personal Tax topics">
       <a href="../../index.html">Home</a>
@@ -22,33 +34,173 @@
     </nav>
     <main>
       <section>
-        <h2>ITA 2007 section 23 structure</h2>
+        <!-- 3. Statutory computation framework -->
+        <h2>The statutory computation</h2>
+        <p>An individual&rsquo;s Income Tax liability is not found by applying one rate to total receipts. The computation classifies income, applies deductions and allowances at their statutory stages, orders the resulting taxable slices, calculates tax at the rates applicable to each slice and then makes any later adjustments.</p>
+        <p><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/23" target="_blank" rel="noopener">Income Tax Act 2007 (ITA 2007), section 23</a> provides seven steps:</p>
         <ol>
-          <li>Identify total income under each source.</li>
-          <li>Apply reliefs deductible at Step 2 to find net income.</li>
-          <li>Deduct allowances at Step 3, allocated under section 25 to produce the greatest reduction, subject to the rules.</li>
-          <li>Calculate tax at the applicable non-savings, savings, dividend and devolved rates.</li>
-          <li>Add amounts charged at special rates where required.</li>
-          <li>Deduct tax reductions in the statutory order.</li>
-          <li>Add any further statutory amounts and deduct tax treated as paid or tax credits to reach liability.</li>
+          <li><strong>Step 1 - total income:</strong> identify the income charged to Income Tax for the tax year and total the amounts from each source.</li>
+          <li><strong>Step 2 - net income:</strong> deduct only the reliefs permitted at Step 2. The result, after the statutory limits and ordering rules, is net income.</li>
+          <li><strong>Step 3 - allowances:</strong> deduct the allowances permitted at Step 3 to arrive at the amounts on which tax is charged. Under <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/25" target="_blank" rel="noopener">ITA 2007, section 25</a>, deductions must generally be allocated so as to produce the greatest reduction in liability.</li>
+          <li><strong>Step 4 - calculate tax:</strong> apply the relevant rates to the taxable non-savings, savings and dividend slices.</li>
+          <li><strong>Step 5 - special-rate amounts:</strong> add tax on amounts for which legislation requires a separate calculation.</li>
+          <li><strong>Step 6 - tax reductions:</strong> deduct tax reductions in the statutory order and subject to their own limits.</li>
+          <li><strong>Step 7 - final adjustments:</strong> add or deduct the further amounts required by legislation to reach the Income Tax liability.</li>
         </ol>
-        <p>Under <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/16" target="_blank" rel="noopener">ITA 2007 s.16</a>, savings and dividends generally form the highest slices, with dividends above savings. Particular provisions can override normal ordering.</p>
-        <h2>Main rates</h2>
-        <p>For England, Wales and Northern Ireland, the 2026/27 taxable slices are: first &pound;37,700 at 20%; &pound;37,701 to &pound;125,140 at 40%; and excess at 45%. Scottish non-savings, non-dividend income uses separate rates.</p>
-        <h2>Control points</h2>
+
+        <h2>Terms that must not be confused</h2>
+        <dl>
+          <dt><strong>Total income</strong></dt>
+          <dd>The Step 1 total of income charged for the year, before Step 2 reliefs and Step 3 allowances.</dd>
+          <dt><strong>Net income</strong></dt>
+          <dd>Total income after the deductions authorised at Step 2.</dd>
+          <dt><strong>Adjusted net income</strong></dt>
+          <dd>A separate measure used for particular limits and tapers. It is not automatically the same as net income or taxable income.</dd>
+          <dt><strong>Taxable income</strong></dt>
+          <dd>The income remaining after the relevant deductions and allowances, split into the categories and slices to which rates are applied.</dd>
+          <dt><strong>Income Tax liability</strong></dt>
+          <dd>The result after completing all applicable steps, not merely the tax calculated at Step 4.</dd>
+        </dl>
+
+        <h2>Ordering the taxable slices</h2>
+        <p>For the ordinary stacking calculation, non-savings income is considered first, savings income above it and dividend income above savings income. This reflects <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/16" target="_blank" rel="noopener">ITA 2007, section 16</a>, subject to provisions that can modify the normal ordering.</p>
+        <p>For an England, Wales or Northern Ireland taxpayer in 2026/27, the basic-rate limit is &pound;37,700 and the higher-rate limit is &pound;125,140. Non-savings and savings income are generally charged at 20%, 40% and 45% across those bands. Dividend income uses the same remaining band capacity but is charged at 10.75%, 35.75% and 39.35%.</p>
+        <p>A 0% rate band does not remove income from taxable income. The slice remains in the stack and uses rate-band capacity even though its tax rate is nil.</p>
+
+        <!-- 4. Detailed illustrative computation -->
+        <h2>Detailed illustrative computation</h2>
+        <p><strong>Illustrative facts:</strong> Sam is an England, Wales or Northern Ireland taxpayer for 2026/27. Sam has non-savings income of &pound;15,000, taxable savings interest of &pound;38,000 and dividend income of &pound;10,000. Sam is entitled to the standard &pound;12,570 Personal Allowance, the applicable savings 0% rate bands and the &pound;500 dividend allowance. Assume adjusted net income is &pound;63,000 and there are no other deductions, allowances, reliefs, tax reductions, special-rate amounts, tax deducted at source or other Step 7 adjustments.</p>
+
+        <h3>Total income</h3>
+        <p>&pound;15,000 + &pound;38,000 + &pound;10,000 = <strong>&pound;63,000 total income</strong>.</p>
+
+        <h3>Net income</h3>
+        <p>There are no Step 2 deductions in this example, so net income remains <strong>&pound;63,000</strong>.</p>
+
+        <h3>Personal Allowance and taxable income</h3>
+        <p>The &pound;12,570 Personal Allowance is allocated against non-savings income:</p>
         <ul>
-          <li>Do not confuse total income, net income, adjusted net income and taxable income.</li>
-          <li>0% savings and dividend bands consume rate-band capacity.</li>
-          <li>Gift Aid and relief-at-source pensions can extend rate limits.</li>
-          <li>Tax deducted at source and tax treated as paid are not deductions from income.</li>
-          <li>Tax reducers cannot normally create a repayment beyond their statutory effect.</li>
+          <li>Taxable non-savings income: &pound;15,000 &minus; &pound;12,570 = <strong>&pound;2,430</strong>.</li>
+          <li>Taxable savings income: <strong>&pound;38,000</strong>.</li>
+          <li>Taxable dividend income: <strong>&pound;10,000</strong>.</li>
+          <li>Total taxable income: &pound;2,430 + &pound;38,000 + &pound;10,000 = <strong>&pound;50,430</strong>.</li>
         </ul>
+
+        <h3>Tax on non-savings income</h3>
+        <p>The &pound;2,430 non-savings slice falls within the basic-rate band:</p>
+        <p>&pound;2,430 &times; 20% = <strong>&pound;486 Income Tax</strong>.</p>
+
+        <h3>Tax on savings income</h3>
+        <ol>
+          <li>The maximum &pound;5,000 starting-rate band for savings is reduced by taxable non-savings income of &pound;2,430: &pound;5,000 &minus; &pound;2,430 = <strong>&pound;2,570</strong> available at 0%.</li>
+          <li>Sam is a higher-rate taxpayer, so the Personal Savings Allowance provides a further <strong>&pound;500 savings slice at 0%</strong>.</li>
+          <li>Savings remaining after the two 0% slices: &pound;38,000 &minus; &pound;2,570 &minus; &pound;500 = <strong>&pound;34,930</strong>.</li>
+          <li>The stack has reached &pound;5,500: &pound;2,430 non-savings + &pound;2,570 starting-rate savings + &pound;500 Personal Savings Allowance.</li>
+          <li>Basic-rate capacity remaining: &pound;37,700 &minus; &pound;5,500 = <strong>&pound;32,200</strong>. Tax: &pound;32,200 &times; 20% = <strong>&pound;6,440</strong>.</li>
+          <li>The remaining &pound;2,730 savings income is charged at 40%: &pound;2,730 &times; 40% = <strong>&pound;1,092</strong>.</li>
+        </ol>
+        <p>Total tax on savings income: &pound;6,440 + &pound;1,092 = <strong>&pound;7,532</strong>.</p>
+
+        <h3>Tax on dividend income</h3>
+        <ol>
+          <li>After non-savings and savings income, the stack has reached &pound;40,430.</li>
+          <li>The first <strong>&pound;500</strong> of dividends is within the dividend allowance and is charged at 0%, but it moves the stack to &pound;40,930.</li>
+          <li>The remaining dividends are &pound;10,000 &minus; &pound;500 = <strong>&pound;9,500</strong>.</li>
+          <li>That slice is in the higher-rate band and is charged at the 2026/27 dividend upper rate: &pound;9,500 &times; 35.75% = <strong>&pound;3,396.25</strong>.</li>
+        </ol>
+
+        <h3>Total Income Tax</h3>
+        <p>&pound;486 + &pound;7,532 + &pound;3,396.25 = <strong>&pound;11,414.25 total Income Tax</strong>.</p>
+
+        <h3>Interactive computation</h3>
+        <p>Change the three income figures to explore the same limited computation. The template applies the standard Personal Allowance to non-savings income first, then savings and dividends. It models the starting rate for savings, Personal Savings Allowance and dividend allowance, but not the later-module items listed below.</p>
+        <form id="income-tax-calculator" class="tax-calculator">
+          <fieldset>
+            <legend>Income for 2026/27</legend>
+            <div class="tax-calculator-inputs">
+              <label for="calculator-non-savings">
+                Non-savings income (&pound;)
+                <input id="calculator-non-savings" name="non-savings-income" type="number" min="0" step="0.01" value="15000" inputmode="decimal">
+              </label>
+              <label for="calculator-savings">
+                Savings income (&pound;)
+                <input id="calculator-savings" name="savings-income" type="number" min="0" step="0.01" value="38000" inputmode="decimal">
+              </label>
+              <label for="calculator-dividend">
+                Dividend income (&pound;)
+                <input id="calculator-dividend" name="dividend-income" type="number" min="0" step="0.01" value="10000" inputmode="decimal">
+              </label>
+            </div>
+            <button type="reset">Reset example</button>
+          </fieldset>
+        </form>
+        <p id="income-tax-calculation-summary" class="calculation-summary" aria-live="polite"></p>
+        <div class="table-wrap" role="region" aria-label="Detailed Income Tax computation example" tabindex="0">
+          <table class="simple-table income-tax-computation-table">
+            <caption>Income Tax computation for 2026/27</caption>
+            <colgroup>
+              <col class="calculation-column">
+              <col class="tax-rate-column">
+              <col span="4" class="amount-column">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Calculation</th>
+                <th scope="col">Tax rate</th>
+                <th scope="col">Non-savings<br>&pound;</th>
+                <th scope="col">Savings<br>&pound;</th>
+                <th scope="col">Dividend<br>&pound;</th>
+                <th scope="col">Tax charged<br>&pound;</th>
+              </tr>
+            </thead>
+            <tbody id="income-tax-calculation-body">
+            </tbody>
+          </table>
+        </div>
+        <noscript>
+          <p class="note">JavaScript must be enabled to use the interactive computation. The detailed manual computation above remains available without JavaScript.</p>
+        </noscript>
+
+        <!-- 5. Scope limits, control points and sources -->
+        <h2>Scope limits and later topics</h2>
+        <p>This example deliberately excludes matters taught in later modules. Do not use it as a universal template where the facts include:</p>
+        <ul>
+          <li>split-year treatment;</li>
+          <li>Gift Aid, relief-at-source pension contributions or rate-band extensions;</li>
+          <li>life-policy gains or top-slicing relief;</li>
+          <li>joint-income or settlements issues;</li>
+          <li>losses or investment reliefs;</li>
+          <li>trust or deceased-estate income;</li>
+          <li>adjusted-net-income interactions beyond the stated assumption; or</li>
+          <li>Scottish non-savings rates or other devolved-rate questions.</li>
+        </ul>
+
+        <h2>Computation control points</h2>
+        <ul>
+          <li>Classify each source before applying allowances or rates.</li>
+          <li>Reconcile total income, net income and taxable income at each stage.</li>
+          <li>Track the cumulative band position, including income charged at 0%.</li>
+          <li>Apply the rate for the income category, not merely the name of the band.</li>
+          <li>Keep Step 4 tax separate from later tax reductions, tax deducted and other final adjustments.</li>
+          <li>Recalculate examples independently and state rounding assumptions.</li>
+        </ul>
+
         <aside class="note">
           <h2>Sources</h2>
-          <p>
-            <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/23" target="_blank" rel="noopener">ITA 2007 s.23</a>; <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/25" target="_blank" rel="noopener">ITA 2007 s.25</a>; <a href="https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past" target="_blank" rel="noopener">HMRC 2026/27 rates</a>. Checked 18 July 2026.</p>
+          <ul>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/23" target="_blank" rel="noopener">Income Tax Act 2007, section 23: the calculation of Income Tax liability</a></li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/25" target="_blank" rel="noopener">Income Tax Act 2007, section 25: reliefs and allowances deductible at Steps 2 and 3</a></li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/16" target="_blank" rel="noopener">Income Tax Act 2007, section 16: savings and dividend income as the highest part</a></li>
+            <li><a href="https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past" target="_blank" rel="noopener">HMRC: Income Tax rates and allowances for 2026/27</a></li>
+            <li><a href="https://www.gov.uk/apply-tax-free-interest-on-savings" target="_blank" rel="noopener">HMRC: tax on savings interest</a></li>
+            <li><a href="https://www.gov.uk/tax-on-dividends" target="_blank" rel="noopener">HMRC: tax on dividends</a></li>
+            <li><a href="https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income" target="_blank" rel="noopener">HMRC: 2026/27 dividend-rate changes</a></li>
+          </ul>
+          <p>Sources checked 19 July 2026. Legislation is law; HMRC pages are guidance and evidence of HMRC&rsquo;s interpretation and published rates. The example is fictional, assumes exact annual figures and rounds tax to the nearest penny.</p>
         </aside>
       </section>
+
+      <!-- 6. Topic navigation and shared scripts -->
       <div class="page-nav">
         <div></div>
         <div class="back-link"><a href="personal-allowances.html">&larr; Previous Topic</a> | <a href="itax-index.html">Back to Income Tax Index</a> | <a href="split-year-treatment.html">Next Topic &rarr;</a></div>
@@ -56,6 +208,8 @@
     </main>
     <div id="global-footer">
     </div>
+    <script src="../../scripts/income-tax-calculator.js?v=20260718">
+    </script>
     <script src="../../scripts/layout.js">
     </script>
   </body>

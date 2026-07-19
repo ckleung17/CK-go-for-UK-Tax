@@ -110,6 +110,15 @@
   text-align: center;
 }
 
+/* Override the shared last-column text alignment for calculator output cells. */
+.income-tax-computation-table tbody td.calculation-amount:last-child {
+  text-align: right;
+}
+
+.income-tax-computation-table tbody td.calculation-empty:last-child {
+  text-align: center;
+}
+
 .income-tax-computation-table th,
 .income-tax-computation-table td {
   /* Allow long calculation descriptions to wrap without widening the table. */
@@ -125,8 +134,8 @@
   font-weight: 700;
 }
 
-.calculation-subtotal th,
-.calculation-subtotal td {
+.income-tax-computation-table tbody tr.calculation-subtotal > th,
+.income-tax-computation-table tbody tr.calculation-subtotal > td {
   border-top: 2px solid #4d5b63;
   font-weight: 700;
 }
@@ -138,8 +147,29 @@
   }
 
   .income-tax-computation-table {
-    /* Keep all six fixed-layout columns readable within narrow viewports. */
-    font-size: 0.55rem;
+    /* Preserve readable columns and let the focusable table wrapper scroll. */
+    width: 40rem;
+    min-width: 40rem;
+    font-size: 0.62rem;
     line-height: 1.2;
+  }
+
+  .income-tax-computation-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #f2f2f2;
+  }
+
+  .income-tax-computation-table tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+  }
+
+  .income-tax-computation-table thead th:first-child {
+    left: 0;
+    z-index: 3;
   }
 }

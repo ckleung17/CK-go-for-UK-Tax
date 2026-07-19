@@ -1,0 +1,143 @@
+/*
+ * Styles the dynamic Income Tax rate controls and reference tables.
+ * Depends on reference/tax-rates/index.html, tax-rates.js and the
+ * shared .table-wrap and .simple-table rules in css/table.css.
+ *
+ * Contents:
+ * 1. Reference controls and status
+ * 2. Reference tables
+ * 3. Mobile scrolling and sticky headings
+ */
+
+/* 1. Reference controls and status */
+.tax-rate-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tax-rate-controls label {
+  display: grid;
+  gap: 0.35rem;
+  min-width: min(100%, 17rem);
+  font-weight: 700;
+}
+
+.tax-rate-controls select {
+  padding: 0.55rem;
+  border: 1px solid #5f6f78;
+  border-radius: 4px;
+  background: #fff;
+  color: #222;
+  font: inherit;
+}
+
+.tax-rate-controls select:focus-visible,
+.tax-rate-table-wrap:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
+
+.tax-rate-status {
+  min-height: 1.5em;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.tax-rate-status[data-state="error"] {
+  color: #b10e1e;
+}
+
+/* 2. Reference tables */
+.tax-rate-table-wrap {
+  margin-top: 0.75rem;
+}
+
+.tax-rate-reference-table {
+  width: 100%;
+  min-width: 38rem;
+  margin: 0;
+}
+
+.tax-rate-band-table th:first-child {
+  width: 36%;
+}
+
+.tax-rate-reference-table td:nth-child(2),
+.tax-rate-band-table tbody td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tax-rate-allowance-table {
+  table-layout: fixed;
+}
+
+.tax-rate-allowance-table th:first-child {
+  width: 24%;
+}
+
+.tax-rate-allowance-table th:nth-child(2) {
+  width: 18%;
+}
+
+.tax-rate-allowance-table tbody td:last-child {
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.tax-rate-topic-table {
+  table-layout: fixed;
+}
+
+.tax-rate-topic-table th:first-child {
+  width: 34%;
+}
+
+.tax-rate-topic-table tbody td:nth-child(2) {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tax-rate-topic-table tbody td:last-child {
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+/* 3. Mobile scrolling and sticky headings */
+@media (max-width: 720px) {
+  .tax-rate-reference-table {
+    width: 38rem;
+    font-size: 0.68rem;
+    line-height: 1.2;
+  }
+
+  .tax-rate-allowance-table {
+    width: 48rem;
+  }
+
+  .tax-rate-topic-table {
+    width: 46rem;
+  }
+
+  .tax-rate-reference-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #f2f2f2;
+  }
+
+  .tax-rate-reference-table tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+  }
+
+  .tax-rate-reference-table thead th:first-child {
+    left: 0;
+    z-index: 3;
+  }
+}

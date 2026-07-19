@@ -5,8 +5,9 @@
   Structure:
   1. Document metadata and shared assets
   2. Page heading and site sharing
-  3. Study-area selection
-  4. Shared footer and page scripts
+  3. Global reference
+  4. Study-area selection
+  5. Shared footer and page scripts
 -->
 <html lang="en">
 <!-- 1. Document metadata and shared assets -->
@@ -17,7 +18,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>CK Go for UK Tax</title>
-  <link rel="stylesheet" href="style.css?v=20260717">
+  <link rel="stylesheet" href="style.css?v=20260719c">
 
 </head>
 
@@ -42,7 +43,23 @@
     <p>I use this website to organise my learning notes and CPD records.</p>
   </header>
 
-  <!-- 3. Study-area selection -->
+  <!-- 3. Global reference -->
+  <section aria-labelledby="global-reference-heading">
+    <h2 id="global-reference-heading">Global reference</h2>
+    <p>
+      <a class="tax-table-reference-link" href="reference/tax-rates/index.html">
+        <svg class="tax-table-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3" y="4" width="18" height="16" rx="1.5"></rect>
+          <path d="M3 8h18M14.8 11.5l-5.6 6"></path>
+          <circle cx="9" cy="12.5" r="1.2"></circle>
+          <circle cx="15" cy="16.5" r="1.2"></circle>
+        </svg>
+        <span>UK tax rates and allowances — current and historical</span>
+      </a>
+    </p>
+  </section>
+
+  <!-- 4. Study-area selection -->
   <section class="study-menu" aria-labelledby="study-areas-heading">
     <h2 id="study-areas-heading">Study Areas</h2>
     <p class="study-menu-intro">Choose an available study area or open a subtopic selector. Subjects without a page are marked as planned.</p>
@@ -141,7 +158,7 @@
     </div>
   </section>
 
-  <!-- 4. Shared footer and page scripts -->
+  <!-- 5. Shared footer and page scripts -->
   <div id="global-footer"></div>
   <script src="scripts/layout.js?v=20260716"></script>
   <script src="scripts/study-menu.js?v=20260717"></script>

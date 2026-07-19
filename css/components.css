@@ -10,6 +10,8 @@
   6. Trust glossary and popup view
   7. Trust analysis workflows
   8. Homepage share control
+  9. Income-calculation order
+  10. Global tax-table reference
 */
 
 /* 1. Tooltip behaviour */
@@ -587,4 +589,95 @@ body.glossary-popup-view .glossary-entry:target {
   font-size: 0.9rem;
 }
 
+/* 9. Income-calculation order */
+.income-calculation-order {
+  max-width: 42rem;
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: income-order;
+}
 
+.income-calculation-order li {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 0.8rem 1rem 0.8rem 3.6rem;
+  border: 2px solid #0b5f8a;
+  border-radius: 7px;
+  background: #eef6fa;
+  counter-increment: income-order;
+}
+
+.income-calculation-order li:nth-child(2) {
+  margin-left: 2rem;
+}
+
+.income-calculation-order li:nth-child(3) {
+  margin-left: 4rem;
+  margin-bottom: 0;
+}
+
+.income-calculation-order li::before {
+  content: counter(income-order);
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background: #0b5f8a;
+  color: #fff;
+  font-weight: 700;
+  transform: translateY(-50%);
+}
+
+.income-calculation-order li:not(:last-child)::after {
+  content: "↓";
+  position: absolute;
+  bottom: -1.8rem;
+  left: 1.25rem;
+  color: #0b5f8a;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.income-calculation-order strong,
+.income-calculation-order span {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .income-calculation-order li:nth-child(2) {
+    margin-left: 1rem;
+  }
+
+  .income-calculation-order li:nth-child(3) {
+    margin-left: 2rem;
+  }
+}
+
+
+/* 10. Global tax-table reference */
+.tax-table-reference-link,
+.tax-rate-page-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.tax-table-reference-link {
+  font-weight: 700;
+}
+
+.tax-table-icon {
+  flex: 0 0 auto;
+  width: 1.45em;
+  height: 1.45em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

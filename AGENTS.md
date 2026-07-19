@@ -36,6 +36,7 @@ This is a static website of personal UK tax learning notes and CPD material. App
 - Keep the static HTML/CSS/JavaScript architecture unless the task explicitly authorises a change.
 - Reuse shared CSS and scripts. Avoid inline styles, duplication, unnecessary dependencies, and unrelated cleanup.
 - Target semantic HTML and WCAG 2.2 AA: keyboard operation, visible focus, contrast, meaningful links, and responsive layouts.
+- For very large tables, especially on mobile, modestly reduce the font size, preserve readable column widths in a keyboard-accessible horizontal scroll region, and keep the header row and leading identifying column sticky.
 - Preserve UTF-8; do not introduce or silently mass-fix encoding or line-ending changes.
 - Keep relative links correct. External links using `target="_blank"` must include `rel="noopener"`.
 - Never expose secrets, personal data, credentials, or client facts; use fictional or anonymised examples.

@@ -1,0 +1,45 @@
+name: Check tax-rate sources
+
+on:
+  schedule:
+    - cron: "37 6 * * 2"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: tax-rate-source-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Compare official sources with baseline
+        id: source-check
+        continue-on-error: true
+        run: python scripts/check-tax-rate-sources.py > tax-rate-monitor-report.md
+
+      - name: Open or update review issue
+        if: steps.source-check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_TITLE: Tax-rate sources require review
+        run: |
+          issue_number="$(gh issue list --state open --search "$ISSUE_TITLE in:title" --json number,title --jq '.[] | select(.title == env.ISSUE_TITLE) | .number' | head -n 1)"
+          if [ -n "$issue_number" ]; then
+            gh issue comment "$issue_number" --body-file tax-rate-monitor-report.md
+          else
+            gh issue create --title "$ISSUE_TITLE" --body-file tax-rate-monitor-report.md
+          fi
+
+      - name: Fail after reporting
+        if: steps.source-check.outcome == 'failure'
+        run: exit 1

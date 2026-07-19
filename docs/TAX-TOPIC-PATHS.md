@@ -68,6 +68,16 @@ The existing entry filenames are retained to avoid unnecessary filename churn. N
 - Links between pages in the same leaf folder should use filenames only.
 - Prefer relative links that work when the site is hosted below a domain subpath; avoid new site-root paths beginning with `/`.
 
+## Global references
+
+- Shared cross-topic reference pages belong under reference/, outside any
+  single study-area folder.
+- The global UK tax-rate reference is reference/tax-rates/index.html; its
+  page-specific datasets, script, stylesheet and maintenance notes are kept
+  beside it.
+- Topic pages should link to the global reference instead of creating a second
+  copy of the same rate register.
+
 ## Migration history
 
 - `SDLT/` moved to `STTAX/SDLT/`.

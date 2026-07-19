@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "lastReviewed": "2026-07-19",
+  "taxTypes": [
+    {
+      "id": "capital-gains-tax",
+      "label": "Capital Gains Tax (CGT)",
+      "topicPath": "../../PTAX/CGT/cgt-index.html",
+      "scope": "UK Capital Gains Tax. The individual rates depend on how taxable gains sit above taxable income in the Income Tax bands.",
+      "periods": [
+        {
+          "id": "2026-27",
+          "label": "2026/27",
+          "status": "Current, enacted",
+          "effective": "6 April 2026 to 5 April 2027",
+          "sections": [
+            {
+              "heading": "Main rates and annual exempt amounts",
+              "columns": ["Taxpayer or gain", "Amount or rate", "Important point"],
+              "rows": [
+                ["Individuals — gains within unused basic-rate band", "18%", "The balance above that band is normally charged at 24%."],
+                ["Individuals — gains above basic-rate band", "24%", "Taxable income is considered before taxable gains."],
+                ["Trustees and personal representatives", "24%", "Subject to the rules for the particular trust or estate."],
+                ["Business Asset Disposal Relief or Investors’ Relief", "18%", "Eligibility and lifetime limits apply."],
+                ["Annual exempt amount — individuals and personal representatives", "£3,000", "Deducted from gains, subject to eligibility."],
+                ["Annual exempt amount — most trustees", "£1,500", "Special sharing rules can apply to related trusts."]
+              ]
+            }
+          ],
+          "sourceIds": ["cgt-rates", "budget-2025-annex"]
+        },
+        {
+          "id": "2025-26",
+          "label": "2025/26",
+          "status": "Historical, enacted",
+          "effective": "6 April 2025 to 5 April 2026",
+          "sections": [
+            {
+              "heading": "Main rates and annual exempt amounts",
+              "columns": ["Taxpayer or gain", "Amount or rate", "Important point"],
+              "rows": [
+                ["Individuals — gains within unused basic-rate band", "18%", "The balance above that band is normally charged at 24%."],
+                ["Individuals — gains above basic-rate band", "24%", "Taxable income is considered before taxable gains."],
+                ["Trustees and personal representatives", "24%", "Carried-interest gains had separate rules."],
+                ["Business Asset Disposal Relief or Investors’ Relief", "14%", "Eligibility and lifetime limits apply."],
+                ["Annual exempt amount — individuals and personal representatives", "£3,000", "Subject to eligibility."],
+                ["Annual exempt amount — most trustees", "£1,500", "Special sharing rules can apply."]
+              ]
+            }
+          ],
+          "sourceIds": ["cgt-rates", "budget-2025-annex"]
+        }
+      ]
+    },
+    {
+      "id": "national-insurance",
+      "label": "National Insurance and PAYE",
+      "topicPath": "../../PTAX/NIC/nic-index.html",
+      "scope": "UK National Insurance contributions. PAYE is the collection system for employment Income Tax and Class 1 contributions; it is not a separate tax rate.",
+      "periods": [
+        {
+          "id": "2026-27",
+          "label": "2026/27",
+          "status": "Current, enacted",
+          "effective": "6 April 2026 to 5 April 2027",
+          "sections": [
+            {
+              "heading": "Employee and employer Class 1",
+              "columns": ["Contribution", "Annual earnings band", "Rate"],
+              "rows": [
+                ["Employee, category A", "£12,570 to £50,270", "8%"],
+                ["Employee, category A", "Above £50,270", "2%"],
+                ["Employer, standard category", "Above £5,000", "15%"]
+              ]
+            },
+            {
+              "heading": "Self-employed contributions",
+              "columns": ["Contribution", "Profit or basis", "Rate"],
+              "rows": [
+                ["Class 4", "£12,570 to £50,270", "6%"],
+                ["Class 4", "Above £50,270", "2%"],
+                ["Voluntary Class 2", "Weekly amount", "£3.65"]
+              ]
+            }
+          ],
+          "sourceIds": ["nic-overview", "employer-rates"]
+        }
+      ]
+    },
+    {
+      "id": "pensions-tax",
+      "label": "Pensions tax limits",
+      "topicPath": "../../PTAX/PENTAX/pentax-index.html",
+      "scope": "UK registered-pension tax limits. These are allowances and limits, not rates charged directly to every contribution or withdrawal.",
+      "periods": [
+        {
+          "id": "2026-27",
+          "label": "2026/27",
+          "status": "Current, enacted",
+          "effective": "6 April 2026 to 5 April 2027",
+          "sections": [
+            {
+              "heading": "Main pension allowances and limits",
+              "columns": ["Allowance or limit", "Amount", "Important point"],
+              "rows": [
+                ["Annual allowance", "£60,000", "Unused allowance may be carried forward subject to conditions."],
+                ["Money purchase annual allowance", "£10,000", "Can apply after flexible access to money-purchase benefits."],
+                ["Tapered annual allowance — threshold income", "£200,000", "The taper applies only if the adjusted-income test is also met."],
+                ["Tapered annual allowance — adjusted income", "£260,000", "Allowance reduces by £1 for each £2 above this amount."],
+                ["Minimum tapered annual allowance", "£10,000", "The taper cannot reduce the allowance below this amount."],
+                ["Lump sum allowance", "£268,275", "Individual protections and transitional rules can change the result."],
+                ["Lump sum and death benefit allowance", "£1,073,100", "Individual protections and exclusions may apply."]
+              ]
+            }
+          ],
+          "sourceIds": ["pension-rates", "pension-annual-allowance"]
+        }
+      ]
+    },
+    {
+      "id": "stamp-duty-land-tax",
+      "label": "Stamp Duty Land Tax (SDLT)",
+      "topicPath": "../../STTAX/SDLT/sdlt-index.html",
+      "scope": "England and Northern Ireland only. Scotland uses Land and Buildings Transaction Tax and Wales uses Land Transaction Tax.",
+      "periods": [
+        {
+          "id": "from-2025-04-01",
+          "label": "From 1 April 2025",
+          "status": "Current, enacted",
+          "effective": "Transactions with an effective date on or after 1 April 2025",
+          "sections": [
+            {
+              "heading": "Standard residential rates",
+              "columns": ["Slice of consideration", "Rate", "Important point"],
+              "rows": [
+                ["Up to £125,000", "0%", "Higher rates or the non-resident surcharge may apply."],
+                ["£125,001 to £250,000", "2%", "Applied only to this slice."],
+                ["£250,001 to £925,000", "5%", "Applied only to this slice."],
+                ["£925,001 to £1,500,000", "10%", "Applied only to this slice."],
+                ["Above £1,500,000", "12%", "Applied only to this slice."]
+              ]
+            },
+            {
+              "heading": "Higher rates for additional dwellings",
+              "columns": ["Slice of consideration", "Rate", "Important point"],
+              "rows": [
+                ["Up to £125,000", "5%", "Detailed ownership, replacement-home and refund rules apply."],
+                ["£125,001 to £250,000", "7%", "Applied only to this slice."],
+                ["£250,001 to £925,000", "10%", "Applied only to this slice."],
+                ["£925,001 to £1,500,000", "15%", "Applied only to this slice."],
+                ["Above £1,500,000", "17%", "Applied only to this slice."]
+              ]
+            },
+            {
+              "heading": "Non-residential or mixed property",
+              "columns": ["Slice of consideration", "Rate", "Important point"],
+              "rows": [
+                ["Up to £150,000", "0%", "Lease rent uses separate net-present-value rates."],
+                ["£150,001 to £250,000", "2%", "Applied only to this slice."],
+                ["Above £250,000", "5%", "Applied only to this slice."]
+              ]
+            }
+          ],
+          "sourceIds": ["sdlt-residential", "sdlt-higher", "sdlt-non-residential"]
+        }
+      ]
+    },
+    {
+      "id": "foreign-income-gains",
+      "label": "Foreign Income and Gains (FIG)",
+      "topicPath": "../../INTAX/FIG/fig-index.html",
+      "scope": "Selected special rates within the post-6 April 2025 Foreign Income and Gains regime. Ordinary taxable FIG uses the relevant Income Tax or Capital Gains Tax rates.",
+      "periods": [
+        {
+          "id": "2026-27",
+          "label": "2026/27",
+          "status": "Current, enacted",
+          "effective": "6 April 2026 to 5 April 2027",
+          "sections": [
+            {
+              "heading": "Temporary Repatriation Facility",
+              "columns": ["Designated amount", "Rate", "Important point"],
+              "rows": [
+                ["Qualifying pre-6 April 2025 foreign income and gains", "12%", "A valid designation and all statutory conditions are required."]
+              ]
+            }
+          ],
+          "sourceIds": ["trf-helpsheet", "budget-2025-annex"]
+        },
+        {
+          "id": "2025-26",
+          "label": "2025/26",
+          "status": "Historical, enacted",
+          "effective": "6 April 2025 to 5 April 2026",
+          "sections": [
+            {
+              "heading": "Temporary Repatriation Facility",
+              "columns": ["Designated amount", "Rate", "Important point"],
+              "rows": [
+                ["Qualifying pre-6 April 2025 foreign income and gains", "12%", "A valid designation and all statutory conditions are required."]
+              ]
+            }
+          ],
+          "sourceIds": ["trf-helpsheet", "budget-2025-annex"]
+        }
+      ]
+    },
+    {
+      "id": "trust-tax",
+      "label": "Trust tax",
+      "topicPath": "../../TRUST/Trust-index.html",
+      "scope": "UK trustee Income Tax and selected trust limits. The settlor, beneficiary, residence and trust type can change who is taxable.",
+      "periods": [
+        {
+          "id": "2026-27",
+          "label": "2026/27",
+          "status": "Current, enacted",
+          "effective": "6 April 2026 to 5 April 2027",
+          "sections": [
+            {
+              "heading": "Trustee Income Tax",
+              "columns": ["Trust or income type", "Rate or amount", "Important point"],
+              "rows": [
+                ["Accumulation or discretionary trust — dividends", "39.35%", "Trustees do not receive the dividend allowance."],
+                ["Accumulation or discretionary trust — other income", "45%", "Subject to the trust tax-free amount rule."],
+                ["Interest in possession trust — dividends", "10.75%", "Beneficiary and tax-credit rules also need consideration."],
+                ["Interest in possession trust — other income", "20%", "Mandated income may instead be taxed directly on the beneficiary."],
+                ["Tax-free amount for most trusts", "£500", "If income exceeds the limit, tax is normally due on the full amount; the limit can be divided between trusts."]
+              ]
+            }
+          ],
+          "sourceIds": ["trust-income-tax", "trust-manual-rates"]
+        },
+        {
+          "id": "2025-26",
+          "label": "2025/26",
+          "status": "Historical, enacted",
+          "effective": "6 April 2025 to 5 April 2026",
+          "sections": [
+            {
+              "heading": "Trustee Income Tax",
+              "columns": ["Trust or income type", "Rate or amount", "Important point"],
+              "rows": [
+                ["Accumulation or discretionary trust — dividends", "39.35%", "Trustees do not receive the dividend allowance."],
+                ["Accumulation or discretionary trust — other income", "45%", "Subject to the trust tax-free amount rule."],
+                ["Interest in possession trust — dividends", "8.75%", "Beneficiary and tax-credit rules also need consideration."],
+                ["Interest in possession trust — other income", "20%", "Mandated income may instead be taxed directly on the beneficiary."],
+                ["Tax-free amount for most trusts", "£500", "The limit can be divided between trusts."]
+              ]
+            }
+          ],
+          "sourceIds": ["trust-income-tax", "trust-manual-rates"]
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "cgt-rates": {"title": "Capital Gains Tax rates and allowances", "url": "https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "budget-2025-annex": {"title": "Budget 2025: rates and allowances", "url": "https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances", "authority": "HM Treasury", "status": "Official publication"},
+    "nic-overview": {"title": "National Insurance: how much you pay", "url": "https://www.gov.uk/national-insurance/how-much-you-pay", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "employer-rates": {"title": "Rates and thresholds for employers 2026 to 2027", "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "pension-rates": {"title": "Pension schemes rates", "url": "https://www.gov.uk/government/publications/rates-and-allowances-pension-schemes/pension-schemes-rates", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "pension-annual-allowance": {"title": "Tax on private pension contributions: annual allowance", "url": "https://www.gov.uk/tax-on-your-private-pension/annual-allowance", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "sdlt-residential": {"title": "SDLT residential property rates", "url": "https://www.gov.uk/stamp-duty-land-tax/residential-property-rates", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "sdlt-higher": {"title": "Higher rates of SDLT", "url": "https://www.gov.uk/guidance/stamp-duty-land-tax-buying-an-additional-residential-property", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "sdlt-non-residential": {"title": "SDLT non-residential and mixed rates", "url": "https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "trf-helpsheet": {"title": "HS264: Temporary Repatriation Facility", "url": "https://www.gov.uk/government/publications/remittance-basis-hs264-self-assessment-helpsheet/hs264-remittance-of-pre-6-april-2025-foreign-income-and-gains-and-the-temporary-repatriation-facility-trf", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "trust-income-tax": {"title": "Trusts and Income Tax", "url": "https://www.gov.uk/trusts-taxes/trusts-and-income-tax", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "trust-manual-rates": {"title": "TSEM3041: trust tax rates", "url": "https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem3041", "authority": "HM Revenue & Customs manual", "status": "HMRC interpretation"}
+  }
+}

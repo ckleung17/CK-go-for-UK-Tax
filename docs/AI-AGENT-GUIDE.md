@@ -59,6 +59,8 @@ Changes affecting liability, filing obligations, time limits, residence, trusts,
 - Use doctype, `lang`, UTF-8 charset, viewport metadata, a unique title, one logical page heading, and semantic landmarks.
 - Use native buttons for actions and links for navigation; all functionality must work by keyboard.
 - Provide correct image alternatives, table headers/scope, visible focus, non-colour cues, and WCAG 2.2 AA contrast.
+- Treat very large or wide tables as scrollable data regions, especially at mobile widths: modestly reduce the font size, retain readable minimum column widths, and provide horizontal scrolling rather than squeezing content into illegible columns.
+- Keep the header row and leading identifying column sticky within large-table scroll regions. Give sticky cells opaque backgrounds and deliberate stacking order so the top-left intersection remains visible above both the row and column while scrolling.
 - Use descriptive links. Add `rel="noopener"` to links with `target="_blank"`.
 - Check narrow and wide viewports and 200% zoom.
 - Prefer existing files under `css/` and `scripts/`; avoid inline CSS, fragile global selectors, and unexplained magic values.
