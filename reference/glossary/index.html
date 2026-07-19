@@ -1,0 +1,88 @@
+<!doctype html>
+<!--
+  Purpose: Shared glossary of UK tax terms, abbreviations and search aliases.
+  Structure:
+  1. Document metadata and shared assets
+  2. Page heading and navigation
+  3. Usage convention and glossary controls
+  4. Dynamic glossary table
+  5. Shared footer and scripts
+-->
+<html lang="en">
+  <!-- 1. Document metadata and shared assets -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Glossary of tax terms and abbreviations</title>
+    <link rel="stylesheet" href="../../style.css?v=20260719d">
+    <link rel="stylesheet" href="glossary.css?v=20260719">
+  </head>
+  <body>
+    <!-- 2. Page heading and navigation -->
+    <header>
+      <h1 class="glossary-page-title">
+        <svg class="glossary-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="2.5" y="4" width="19" height="16" rx="2"></rect>
+          <text x="12" y="14.4">ABC</text>
+        </svg>
+        <span>Glossary of tax terms and abbreviations</span>
+      </h1>
+      <p>Shared definitions and search aliases</p>
+    </header>
+    <nav aria-label="Reference navigation">
+      <a href="../../index.html">Home</a>
+      <a href="../tax-rates/index.html">UK tax rates and allowances</a>
+    </nav>
+
+    <main>
+      <!-- 3. Usage convention and glossary controls -->
+      <section aria-labelledby="glossary-use-heading">
+        <h2 id="glossary-use-heading">How abbreviations are used</h2>
+        <p>On first use in a study topic, write the full term followed immediately by its abbreviation in brackets. The abbreviation may then be used within that topic where its meaning remains clear.</p>
+        <p>Example: <strong>National Insurance contributions (NICs)</strong>, followed by <strong>NICs</strong> later in the same topic.</p>
+        <p>Technical words without abbreviations, such as <strong>slice</strong>, are also included so they can be used consistently and with their intended tax meaning.</p>
+        <div class="global-glossary-controls">
+          <label for="global-glossary-search">
+            Search the glossary
+            <span class="global-glossary-search-field">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="10.5" cy="10.5" r="6.5"></circle>
+                <path d="m15.5 15.5 5 5"></path>
+              </svg>
+              <input id="global-glossary-search" type="search" autocomplete="off" placeholder="For example, NIC, slice or beneficial interest" aria-describedby="global-glossary-status">
+            </span>
+          </label>
+          <label for="global-glossary-topic">
+            Tax topic
+            <select id="global-glossary-topic"></select>
+          </label>
+        </div>
+        <p id="global-glossary-status" class="global-glossary-status" role="status" aria-live="polite">Loading glossary&hellip;</p>
+      </section>
+
+      <!-- 4. Dynamic glossary table -->
+      <section aria-labelledby="global-glossary-heading">
+        <h2 id="global-glossary-heading">Terms and abbreviations</h2>
+        <div class="table-wrap global-glossary-wrap" role="region" aria-labelledby="global-glossary-heading" tabindex="0">
+          <table class="simple-table global-glossary-table">
+            <thead>
+              <tr>
+                <th scope="col">Full term</th>
+                <th scope="col">Abbreviation</th>
+                <th scope="col">Plain-English meaning</th>
+                <th scope="col">Tax topic</th>
+              </tr>
+            </thead>
+            <tbody id="global-glossary-body"></tbody>
+          </table>
+        </div>
+        <p class="note">This glossary supports navigation and consistent terminology. It does not replace the detailed conditions, effective dates or authorities in the relevant study topic.</p>
+      </section>
+    </main>
+
+    <!-- 5. Shared footer and scripts -->
+    <div id="global-footer"></div>
+    <script src="glossary.js?v=20260719c"></script>
+    <script src="../../scripts/layout.js?v=20260719"></script>
+  </body>
+</html>

@@ -16,6 +16,18 @@
       "sha256": "ea184847378da325c5cc30c753da68d39909af3ff60a09e43b49682862aa0e1a"
     },
     {
+      "ids": "iht-business-relief",
+      "title": "Business Relief for Inheritance Tax: what qualifies",
+      "url": "https://www.gov.uk/business-relief-inheritance-tax/what-qualifies-for-business-relief",
+      "sha256": "2cddd14de73b5a93272de0e1b5ced777975e92c2b7858169ec1e807e12d389f0"
+    },
+    {
+      "ids": "hmrc-hicbc",
+      "title": "High Income Child Benefit Charge calculator and thresholds",
+      "url": "https://www.gov.uk/child-benefit-tax-calculator",
+      "sha256": "1d1fcd0252a2d8fd4a8cc88677209739fc8245bb98dd667a85656ba33bba7a49"
+    },
+    {
       "ids": "hmt-autumn-budget-2024-rates",
       "title": "Autumn Budget 2024 rates and allowances",
       "url": "https://www.gov.uk/government/publications/autumn-budget-2024-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances",
@@ -28,10 +40,58 @@
       "sha256": "e7a5be058825af9fa4be0580bc96651a5b03f5e9cb0478a7b15b65e600794ac6"
     },
     {
+      "ids": "ct-indexation-2017",
+      "title": "Corporation Tax on chargeable gains: Indexation Allowance 2017",
+      "url": "https://www.gov.uk/government/publications/corporation-tax-on-chargeable-gains-indexation-allowance-2017",
+      "sha256": "3990a4713d51c5e0818d0fa3eafa8cd2d5ffc01f0db09dd399b6653a1a40c4c2"
+    },
+    {
+      "ids": "employer-bulletin-2025",
+      "title": "Employer Bulletin: April 2025",
+      "url": "https://www.gov.uk/government/publications/employer-bulletin-april-2025/april-2025-issue-of-the-employer-bulletin",
+      "sha256": "bd7a7cb7c0373945c730de766385cfb6b2c4b3bec894c4a5d8f3ff6cd109da59"
+    },
+    {
+      "ids": "hmrc-eis-2026",
+      "title": "HS341 Enterprise Investment Scheme: Income Tax relief (2026)",
+      "url": "https://www.gov.uk/government/publications/enterprise-investment-scheme-income-tax-relief-hs341-self-assessment-helpsheet/hs341-enterprise-investment-scheme-income-tax-relief-2026",
+      "sha256": "8ff4b9a6201801105f421a603223cbf0534d42869d8d1d5869e4523224a0a98e"
+    },
+    {
+      "ids": "vehicle-benefit-2026",
+      "title": "Van benefit and car and van fuel benefit charges for 2026 to 2027",
+      "url": "https://www.gov.uk/government/publications/increase-to-van-benefit-charge-and-fuel-benefit-charges-for-cars-and-vans",
+      "sha256": "6d8afc4667f6c94c405b8a10b267a4e45148098c16bc8b5df925175ce5186bd6"
+    },
+    {
+      "ids": "beneficial-loan-rates",
+      "title": "Beneficial loan arrangements: HMRC official rates",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-beneficial-loan-arrangements-hmrc-official-rates/beneficial-loan-arrangements-hmrc-official-rates",
+      "sha256": "ce1e82332f7446d47f578cc10d85df2ad7679e566cccc091acc1bb6ecb5f85ee"
+    },
+    {
+      "ids": "corporation-tax-rates",
+      "title": "Corporation Tax rates and allowances",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax",
+      "sha256": "57322bc48814e0f9290e30b4302c209603bb5eac829b7b24abd107d9267fb0f3"
+    },
+    {
+      "ids": "hmrc-payment-interest",
+      "title": "HMRC interest rates for late and early payments",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates",
+      "sha256": "ccee1642eacfc86e30eca4c41abd938faa43b5a3bd6f9b1ee93a9dac3c842c95"
+    },
+    {
       "ids": "hmrc-rates",
       "title": "Income Tax rates and allowances for current and previous tax years",
       "url": "https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past",
       "sha256": "7d860db8f23506d23e89309d0d9411d7c6bec203d399eff6e16edba259f2cb3a"
+    },
+    {
+      "ids": "iht-rates-thresholds",
+      "title": "Inheritance Tax thresholds and interest rates",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-inheritance-tax-thresholds-and-interest-rates",
+      "sha256": "e3a4e38f7fa17b731093584811569adbc9dc9f8f180a7d2fc662eddf98a90973"
     },
     {
       "ids": "pension-rates",
@@ -40,10 +100,34 @@
       "sha256": "72fe9d9c5e9424d3a46c795afd6f0707c815d9d3b76d549898883e241c94bd97"
     },
     {
+      "ids": "hmrc-child-benefit-rates",
+      "title": "Child Benefit rates and allowances",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-tax-credits-child-benefit-and-guardians-allowance/tax-credits-child-benefit-and-guardians-allowance",
+      "sha256": "cc326159263b08761e778475c7305aed4b2bfac9bf374e9be0c687a8062ddadb"
+    },
+    {
+      "ids": "employment-mileage",
+      "title": "Travel: mileage and fuel rates and allowances",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-travel-mileage-and-fuel-allowances/travel-mileage-and-fuel-rates-and-allowances",
+      "sha256": "3d8424070d2bb884267af5665365421944390adeec6d2b41bbc717b11b867212"
+    },
+    {
+      "ids": "cgt-aea-reduction",
+      "title": "Reducing the annual exempt amount for Capital Gains Tax",
+      "url": "https://www.gov.uk/government/publications/reducing-the-annual-exempt-amount-for-capital-gains-tax",
+      "sha256": "5f378e44aea668224139ca867cbdeb00d45a7b9711179abb9b4769cb887d3889"
+    },
+    {
       "ids": "trf-helpsheet",
       "title": "HS264: Temporary Repatriation Facility",
       "url": "https://www.gov.uk/government/publications/remittance-basis-hs264-self-assessment-helpsheet/hs264-remittance-of-pre-6-april-2025-foreign-income-and-gains-and-the-temporary-repatriation-facility-trf",
       "sha256": "0bfed17fd3b95388bee6e7299c7fa84911e7200d0f4f797d89b95ef74b2d1647"
+    },
+    {
+      "ids": "spring-budget-2023-annex",
+      "title": "Spring Budget 2023: rates and allowances",
+      "url": "https://www.gov.uk/government/publications/spring-budget-2023-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances",
+      "sha256": "38342b0bbaaf8cae20c084eade4e3e1873cf812a719f2d0af987b314ac645fd3"
     },
     {
       "ids": "hmt-spring-budget-2024-rates",
@@ -58,16 +142,58 @@
       "sha256": "e85530f018a029d2d43f4e8c5927c3c67dc0471a24e44e17c5abf9dd6dba8576"
     },
     {
+      "ids": "iht-apr-bpr",
+      "title": "Agricultural Relief for Inheritance Tax",
+      "url": "https://www.gov.uk/guidance/agricultural-relief-on-inheritance-tax",
+      "sha256": "65b983ad6789eeb790b8beb3675871bb03725f38c519fa42289a16073be43d92"
+    },
+    {
       "ids": "cgt-rates",
       "title": "Capital Gains Tax rates and allowances",
       "url": "https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances",
       "sha256": "7458cfda6c3f0cb927265300e778cc8503f90dda49e12338db1c4934aea44ddc"
     },
     {
-      "ids": "employer-rates",
+      "ids": "iht-rnrb",
+      "title": "Check if an estate qualifies for the residence nil-rate band",
+      "url": "https://www.gov.uk/guidance/check-if-you-can-get-an-additional-inheritance-tax-threshold",
+      "sha256": "c872157d454fa350b65075538eeceb8639fc8ff348dc8f1bf7f78db8970ad7f6"
+    },
+    {
+      "ids": "company-car-percentages",
+      "title": "Company-car benefit appropriate percentages",
+      "url": "https://www.gov.uk/guidance/company-car-benefit-the-appropriate-percentage-480-appendix-2",
+      "sha256": "5a267cc11125202b1fb20212899046989f7571f69bac9c3958ee8b0cc744f74f"
+    },
+    {
+      "ids": "historical-rd-relief",
+      "title": "Research and Development tax relief for small and medium-sized enterprises",
+      "url": "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises",
+      "sha256": "b8bb4a440a33548470dd2fe3b560ebd84a8132f7c4b95753f7bbf145974e5006"
+    },
+    {
+      "ids": "employer-childcare",
+      "title": "Employer-supported childcare",
+      "url": "https://www.gov.uk/guidance/employer-supported-childcare-480-appendix-11",
+      "sha256": "0cfc1f1d03e1ccb429c47f59457a95c2d3af1d6a62b9906572a92cb27f3177c9"
+    },
+    {
+      "ids": "employer-rates-2026, employer-rates",
       "title": "Rates and thresholds for employers 2026 to 2027",
       "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027",
       "sha256": "9665747559ff67148b8f3b7802113d642f988a605225f5629285e885b70753c2"
+    },
+    {
+      "ids": "rd-merged-eris",
+      "title": "R&D tax relief: merged scheme and enhanced R&D intensive support",
+      "url": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support",
+      "sha256": "bb7a0b183a513ccdaa327d16d8650d6e5b646f9632aef55f6da2cb785da3a773"
+    },
+    {
+      "ids": "student-loan-guidance",
+      "title": "Student and postgraduate loan repayment guidance for employers",
+      "url": "https://www.gov.uk/guidance/special-rules-for-student-loans",
+      "sha256": "d1633cbffe85ddecb9a2ab4fe4cc7ffd10ccea6311b9c7ceeabde5142f1c6cd0"
     },
     {
       "ids": "sdlt-higher",
@@ -76,10 +202,52 @@
       "sha256": "56e5163842485a6d4d500a5fee14c9b8248975ca5b883edebd06df1b72829bac"
     },
     {
+      "ids": "hmrc-venture-capital-reliefs",
+      "title": "Tax relief for investors using venture capital schemes",
+      "url": "https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors",
+      "sha256": "e433a7a9a254dac5d2c14e1c65e6f35cc4abd53eeacd1006be10c49ae08e4f04"
+    },
+    {
+      "ids": "hmrc-qualifying-care",
+      "title": "BIM52765: calculation of Qualifying Care Relief",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim52765",
+      "sha256": "67d084eb40c39dbb2d53b9e8b0b169d0bc7f4fb695f000429cade0757b9674ba"
+    },
+    {
+      "ids": "iht-quick-succession",
+      "title": "IHTM22041: Quick Succession Relief",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm22041",
+      "sha256": "2a453e37e51fc12257f3b75e0b2deba7ba716e1a39e6c7505a37aeb796a1eb31"
+    },
+    {
+      "ids": "iht-main-rates",
+      "title": "IHTM30171: Inheritance Tax rates",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm30171",
+      "sha256": "30b535e8d11fd8e3c478cfe7231d9389952175b9b98e2f895a440abd7e7cd897"
+    },
+    {
       "ids": "trust-manual-rates",
       "title": "TSEM3041: trust tax rates",
       "url": "https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem3041",
       "sha256": "7cda86c531aa55beedec3dfb28b301fe56906ee00fcc3aaccf1095a8df3dbd27"
+    },
+    {
+      "ids": "hmrc-seis-relief",
+      "title": "VCM31130: SEIS Income Tax relief",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/venture-capital-schemes-manual/vcm31130",
+      "sha256": "2abc81b9ccbda7a23bdb83b04cf02800b00468431e733a6d48a78bdd9b95b876"
+    },
+    {
+      "ids": "hmrc-vct-relief",
+      "title": "VCM51030: VCT Income Tax relief",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/venture-capital-schemes-manual/vcm51030",
+      "sha256": "272b4ca29ca86340f4353592adc94785f23b7526b6533439dfeb787300f7f8f7"
+    },
+    {
+      "ids": "iht-taper-relief, iht-gift-exemptions",
+      "title": "How Inheritance Tax works: thresholds, rules and allowances",
+      "url": "https://www.gov.uk/inheritance-tax/gifts",
+      "sha256": "b8901a32c51247fc8cacea71f1671ed0503c66fb70aaaf32b56508a5c3e1040a"
     },
     {
       "ids": "nic-overview",
@@ -116,6 +284,12 @@
       "title": "Trusts and Income Tax",
       "url": "https://www.gov.uk/trusts-taxes/trusts-and-income-tax",
       "sha256": "be78399845946a4ce2c047f4272db77d31c1820e7e1bb9872ecc70175fcdfc81"
+    },
+    {
+      "ids": "cgt-short-leases",
+      "title": "Taxation of Chargeable Gains Act 1992, Schedule 8",
+      "url": "https://www.legislation.gov.uk/ukpga/1992/12/schedule/8",
+      "sha256": "e81108c38426b46dcc0048ac687aa2088b7927efc6f92e980ee8985bf0fc4c80"
     },
     {
       "ids": "ita-2007",

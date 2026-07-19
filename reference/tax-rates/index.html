@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>UK tax rates and allowances</title>
     <link rel="stylesheet" href="../../style.css?v=20260719c">
-    <link rel="stylesheet" href="tax-rates.css?v=20260719c">
+    <link rel="stylesheet" href="tax-rates.css?v=20260719i">
   </head>
   <body>
     <!-- 2. Page heading and topic navigation -->
@@ -44,8 +44,27 @@
       <!-- 3. Tax-year and jurisdiction controls -->
       <section aria-labelledby="rate-reference-heading">
         <h2 id="rate-reference-heading">Choose a tax and reference period</h2>
-        <p>Select a tax type first, then its available period. The figures are educational reference material, not a complete tax calculation.</p>
+        <p>Search by keyword or select a tax type, then choose its available period. The figures are educational reference material, not a complete tax calculation.</p>
         <form class="tax-rate-controls" id="tax-rate-controls">
+          <label class="tax-rate-search-label" for="tax-rate-search">
+            Search topics or types of tax
+            <span class="tax-rate-search-field">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="10.5" cy="10.5" r="6.5"></circle>
+                <path d="m15.5 15.5 5 5"></path>
+              </svg>
+              <input
+                id="tax-rate-search"
+                name="tax-search"
+                type="search"
+                placeholder="For example, mileage or dividends"
+                autocomplete="off"
+                aria-controls="tax-rate-type"
+                aria-describedby="tax-rate-search-status"
+              >
+            </span>
+          </label>
+          <p class="tax-rate-search-status" id="tax-rate-search-status" role="status" aria-live="polite"></p>
           <label for="tax-rate-type">
             Tax type
             <select id="tax-rate-type" name="tax-type"></select>
@@ -130,6 +149,38 @@
             <tbody id="tax-rate-dividend-body"></tbody>
           </table>
         </div>
+
+        <h3 id="investment-reliefs-heading">Investment tax reliefs</h3>
+        <p>These are maximum Income Tax relief rates and investment limits. Relief cannot exceed the person&rsquo;s Income Tax liability, and detailed investor, company, share, use-of-money and holding-period conditions apply.</p>
+        <div class="table-wrap tax-rate-table-wrap" role="region" aria-labelledby="investment-reliefs-heading" tabindex="0">
+          <table class="simple-table tax-rate-reference-table tax-rate-investment-table">
+            <thead>
+              <tr>
+                <th scope="col">Relief</th>
+                <th scope="col">Income Tax relief</th>
+                <th scope="col">Maximum qualifying investment</th>
+                <th scope="col">Availability</th>
+              </tr>
+            </thead>
+            <tbody id="tax-rate-investment-reliefs-body"></tbody>
+          </table>
+        </div>
+
+        <h3 id="income-related-reference-heading">Care relief and Child Benefit</h3>
+        <p>Qualifying Care Relief is an Income Tax relief. Child Benefit is a social-security payment, but the High Income Child Benefit Charge is collected through Income Tax.</p>
+        <div class="table-wrap tax-rate-table-wrap" role="region" aria-labelledby="income-related-reference-heading" tabindex="0">
+          <table class="simple-table tax-rate-reference-table tax-rate-income-related-table">
+            <thead>
+              <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Item</th>
+                <th scope="col">Amount or range</th>
+                <th scope="col">Important point</th>
+              </tr>
+            </thead>
+            <tbody id="tax-rate-income-related-body"></tbody>
+          </table>
+        </div>
       </section>
 
       <section id="topic-tax-panel" aria-labelledby="topic-tax-heading" hidden>
@@ -162,7 +213,7 @@
     </main>
 
     <div id="global-footer"></div>
-    <script src="tax-rates.js?v=20260719c"></script>
-    <script src="../../scripts/layout.js"></script>
+    <script src="tax-rates.js?v=20260719o"></script>
+    <script src="../../scripts/layout.js?v=20260719"></script>
   </body>
 </html>

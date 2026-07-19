@@ -1,0 +1,3294 @@
+{
+  "schemaVersion": 1,
+  "lastReviewed": "2026-07-19",
+  "taxTypes": {
+    "income-tax": {
+      "label": "Income Tax",
+      "href": "../../PTAX/ITAX/itax-index.html"
+    },
+    "employment-paye": {
+      "label": "Employment and PAYE",
+      "href": "../../PTAX/PAYE/paye-index.html"
+    },
+    "capital-gains-tax": {
+      "label": "Capital Gains Tax",
+      "href": "../../PTAX/CGT/cgt-index.html"
+    },
+    "national-insurance": {
+      "label": "National Insurance",
+      "href": "../../PTAX/NIC/nic-index.html"
+    },
+    "pensions-tax": {
+      "label": "Pensions tax",
+      "href": "../../PTAX/PENTAX/pentax-index.html"
+    },
+    "stamp-duty-land-tax": {
+      "label": "Stamp Duty Land Tax",
+      "href": "../../STTAX/SDLT/sdlt-index.html"
+    },
+    "foreign-income-gains": {
+      "label": "Foreign Income and Gains",
+      "href": "../../INTAX/FIG/fig-index.html"
+    },
+    "trust-tax": {
+      "label": "Trust tax",
+      "href": "../../TRUST/Trust-index.html"
+    },
+    "corporation-tax": {
+      "label": "Corporation Tax",
+      "href": "../../index.html"
+    },
+    "inheritance-tax": {
+      "label": "Inheritance Tax",
+      "href": "../../index.html"
+    },
+    "tax-administration": {
+      "label": "Tax administration",
+      "href": "../../index.html"
+    }
+  },
+  "entries": [
+    {
+      "id": "glossary-absolute-entitlement",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Absolute entitlement",
+      "aliases": [],
+      "meaning": "In Bare trusts and nominees: The beneficiary’s rights are fixed; the trustee has no dispositive discretion over who benefits. In Creating and ending interests: When the beneficiary obtains exclusive control for CGT purposes, trustees are deemed to dispose of and reacquire the asset at market value as bare trustees.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Bare trusts and nominees",
+          "href": "../../TRUST/06-bare-trusts-and-nominees.html?v=20260716"
+        },
+        {
+          "label": "Creating and ending interests",
+          "href": "../../TRUST/22-creating-and-ending-interests.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-account-of-profits",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Account of profits",
+      "aliases": [],
+      "meaning": "An unauthorised fiduciary profit may be recoverable even where the trust cannot show conventional loss.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Breach of trust and remedies",
+          "href": "../../TRUST/14-breach-and-remedies.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-accumulated-income",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Accumulated income",
+      "aliases": [],
+      "meaning": "Undistributed income held for more than five years can be treated as relevant property at an anniversary under specific rules.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Relevant-property regime",
+          "href": "../../TRUST/27-relevant-property-regime.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-accumulation",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Accumulation",
+      "aliases": [],
+      "meaning": "Income retained under a power may later become capital for trust-law purposes; accounts must preserve its origin and tax history.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Discretionary and accumulation trusts",
+          "href": "../../TRUST/08-discretionary-and-accumulation-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-accumulation-or-discretionary-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Accumulation or discretionary trust",
+      "aliases": [],
+      "meaning": "Trustees are charged under the special trust-rate framework; later income distributions use the tax-pool rules.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Who is taxable",
+          "href": "../../TRUST/16-who-is-taxable.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "ANI",
+      "term": "Adjusted net income",
+      "aliases": [
+        "adjusted income"
+      ],
+      "meaning": "A statutory measure of income used for several Income Tax allowances and charges; it is not simply cash received or taxable income.",
+      "taxTypeIds": [
+        "income-tax"
+      ],
+      "id": "glossary-abbreviation-ani",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-administration-period",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Administration period",
+      "aliases": [],
+      "meaning": "Personal representatives collect assets, settle liabilities and establish the residue before trust property is fully ascertained.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Will and family trusts",
+          "href": "../../TRUST/09-will-and-family-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-age-18-to-25-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Age 18-to-25 trust",
+      "aliases": [],
+      "meaning": "A qualifying will or intestacy trust can postpone absolute entitlement beyond 18 but applies a modified charge when property leaves before 25.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Special trusts and reliefs",
+          "href": "../../TRUST/29-special-trusts-and-reliefs.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "APR",
+      "term": "Agricultural Property Relief",
+      "aliases": [
+        "Agricultural Relief"
+      ],
+      "meaning": "An Inheritance Tax relief for qualifying agricultural property, subject to detailed conditions and limits.",
+      "taxTypeIds": [
+        "inheritance-tax"
+      ],
+      "id": "glossary-abbreviation-apr",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-annual-exempt-amount",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Annual exempt amount",
+      "aliases": [],
+      "meaning": "For 2026/27 the ordinary trust annual exempt amount is £1,500, potentially divided among qualifying related settlements; vulnerable-beneficiary trusts can have a different amount.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trustee chargeability",
+          "href": "../../TRUST/21-trustee-chargeability.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "AEA",
+      "term": "Annual exempt amount",
+      "aliases": [
+        "CGT annual exemption"
+      ],
+      "meaning": "The amount of eligible net gains that may be covered before Capital Gains Tax is charged for the relevant tax year.",
+      "taxTypeIds": [
+        "capital-gains-tax"
+      ],
+      "id": "glossary-abbreviation-aea",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-annual-file",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Annual file",
+      "aliases": [],
+      "meaning": "Accounts, tax returns, valuations, investment reviews, distributions, minutes and compliance calendars document each period.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Governance and evidence",
+          "href": "../../TRUST/36-governance-and-evidence.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-appointor",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Appointor",
+      "aliases": [],
+      "meaning": "The deed may name a person with power to appoint replacements; otherwise statutory powers may pass to continuing trustees or other persons.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Appointment and retirement of trustees",
+          "href": "../../TRUST/11-appointment-and-retirement.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "AMAP",
+      "term": "Approved mileage allowance payments",
+      "aliases": [
+        "approved mileage",
+        "mileage allowance"
+      ],
+      "meaning": "The statutory mileage amounts used when an employee uses their own vehicle for business travel.",
+      "taxTypeIds": [
+        "employment-paye"
+      ],
+      "id": "glossary-abbreviation-amap",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-asset-reliefs",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Asset reliefs",
+      "aliases": [],
+      "meaning": "Agricultural property relief, business relief and charity exemption depend on current conditions, ownership periods, asset use and post-6 April 2026 limits.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Special trusts and reliefs",
+          "href": "../../TRUST/29-special-trusts-and-reliefs.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-available-nil-rate-band",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Available nil-rate band",
+      "aliases": [],
+      "meaning": "Chargeable transfers in the preceding seven years reduce the band available to the current transfer.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Transfers into trust",
+          "href": "../../TRUST/26-transfers-into-trust.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-bare-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Bare trust",
+      "aliases": [],
+      "meaning": "The beneficiary is normally taxable on income arising from the underlying assets, whether or not cash is withdrawn.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Who is taxable",
+          "href": "../../TRUST/16-who-is-taxable.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-beneficial-interest",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Beneficial interest",
+      "aliases": [],
+      "meaning": "A beneficiary may have a fixed entitlement, an interest in income or capital, or only a right to proper administration of a discretion.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Nature of a trust",
+          "href": "../../TRUST/01-nature-of-a-trust.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-beneficial-owners",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Beneficial owners",
+      "aliases": [],
+      "meaning": "TRS records settlors, trustees, named or class beneficiaries and persons exercising control, with additional tax data for taxable trusts.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust Registration Service",
+          "href": "../../TRUST/32-trust-registration-service.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-beneficiary",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Beneficiary",
+      "aliases": [],
+      "meaning": "A person, class of people or permitted body entitled to benefit, or eligible to be considered for benefit, under the trust terms. The interest may relate to income, capital or both and may be fixed or discretionary.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Nature of a trust",
+          "href": "../../TRUST/01-nature-of-a-trust.html?v=20260717"
+        }
+      ]
+    },
+    {
+      "id": "glossary-beneficiary-matching",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Beneficiary matching",
+      "aliases": [],
+      "meaning": "Section 87 can match trust gains with capital payments to beneficiaries; unmatched gains and payments may carry forward.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Non-resident trust gains",
+          "href": "../../TRUST/25-non-resident-trust-gains.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-beneficiary-termination",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Beneficiary termination",
+      "aliases": [],
+      "meaning": "Under the Saunders v Vautier principle, all beneficiaries must generally be adult, capable, ascertained and together absolutely entitled.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Variation and termination",
+          "href": "../../TRUST/15-variation-and-termination.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-bereaved-minor-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Bereaved-minor trust",
+      "aliases": [],
+      "meaning": "Generally derives from a deceased parent’s will, intestacy or specified compensation arrangement and requires absolute entitlement by 18.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Special trusts and reliefs",
+          "href": "../../TRUST/29-special-trusts-and-reliefs.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "BADR",
+      "term": "Business Asset Disposal Relief",
+      "aliases": [
+        "business disposal relief",
+        "entrepreneurs relief",
+        "Entrepreneurs’ Relief"
+      ],
+      "meaning": "A reduced Capital Gains Tax rate for qualifying business disposals, subject to eligibility and a lifetime limit.",
+      "taxTypeIds": [
+        "capital-gains-tax"
+      ],
+      "id": "glossary-abbreviation-badr",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "abbreviation": "BPR",
+      "term": "Business Property Relief",
+      "aliases": [
+        "Business Relief"
+      ],
+      "meaning": "An Inheritance Tax relief for qualifying business property, subject to detailed conditions and limits.",
+      "taxTypeIds": [
+        "inheritance-tax"
+      ],
+      "id": "glossary-abbreviation-bpr",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-business-reliefs",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Business reliefs",
+      "aliases": [],
+      "meaning": "Business Asset Disposal Relief and gift relief require specific beneficiary and business connections; trust ownership alone is insufficient.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Private residence and business reliefs",
+          "href": "../../TRUST/24-private-residence-and-business-reliefs.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-capacity-and-authority",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Capacity and authority",
+      "aliases": [],
+      "meaning": "Check the settlor’s capacity, corporate authority, ownership of the asset and any restrictions on disposition.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Creation and validity",
+          "href": "../../TRUST/02-creation-and-validity.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-capital-gains-tax",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Capital Gains Tax",
+      "aliases": [],
+      "meaning": "TCGA rules generally look through trustees where the beneficiary is absolutely entitled, subject to specific asset and statutory rules.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Bare trusts and nominees",
+          "href": "../../TRUST/06-bare-trusts-and-nominees.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "CGT",
+      "term": "Capital Gains Tax",
+      "aliases": [
+        "capital gains"
+      ],
+      "meaning": "Tax charged on qualifying gains arising when a person disposes of an asset.",
+      "taxTypeIds": [
+        "capital-gains-tax"
+      ],
+      "id": "glossary-abbreviation-cgt",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-capital-payment",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Capital payment",
+      "aliases": [],
+      "meaning": "Not automatically Income Tax-free: non-resident trust matching, settlor rules or anti-avoidance provisions may apply.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Beneficiary receipts",
+          "href": "../../TRUST/19-beneficiary-receipts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-capital-transactions",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Capital transactions",
+      "aliases": [],
+      "meaning": "Sales, incorporations, appointments and reorganisations can trigger CGT, SDLT and valuation rules even without external cash.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust-owned businesses and property",
+          "href": "../../TRUST/38-trust-owned-businesses-and-property.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-cessation",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Cessation",
+      "aliases": [],
+      "meaning": "Giving up a reserved benefit can be treated as a potentially exempt transfer at cessation, creating a new seven-year period.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Settlor benefits and reservations",
+          "href": "../../TRUST/30-settlor-benefits-and-reservations.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-charitable-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Charitable trust",
+      "aliases": [],
+      "meaning": "Must satisfy charity-law requirements and tax conditions; charity registration and HMRC recognition are separate processes.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Commercial and specialist trusts",
+          "href": "../../TRUST/10-commercial-and-specialist-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-co-ownership-or-security-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Co-ownership or security trust",
+      "aliases": [],
+      "meaning": "May hold title for owners, lenders or investors with rights principally defined by property or commercial documents.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Commercial and specialist trusts",
+          "href": "../../TRUST/10-commercial-and-specialist-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-constitution",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Constitution",
+      "aliases": [],
+      "meaning": "A promise to transfer property is not the same as a completed transfer. Identify how title to each asset passes and whether anything remains to be done.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Creation and validity",
+          "href": "../../TRUST/02-creation-and-validity.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-constructive-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Constructive trust",
+      "aliases": [],
+      "meaning": "Imposed by law in circumstances where the legal owner cannot in good conscience assert the whole beneficial interest. Domestic-property claims are highly fact-sensitive.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Types of trust and how they arise",
+          "href": "../../TRUST/03-trusts-arising-by-law.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "CT",
+      "term": "Corporation Tax",
+      "aliases": [
+        "company tax"
+      ],
+      "meaning": "Tax charged on the taxable profits of companies and certain organisations.",
+      "taxTypeIds": [
+        "corporation-tax"
+      ],
+      "id": "glossary-abbreviation-ct",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-court-variation",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Court variation",
+      "aliases": [],
+      "meaning": "The Variation of Trusts Act 1958 permits court approval on behalf of specified persons where the statutory benefit test is met.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Variation and termination",
+          "href": "../../TRUST/15-variation-and-termination.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-data-governance",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Data governance",
+      "aliases": [],
+      "meaning": "Trustees handle sensitive personal and financial data and need controlled access, retention, lawful processing and secure disposal.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Governance and evidence",
+          "href": "../../TRUST/36-governance-and-evidence.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-de-minimis-amount",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "De minimis amount",
+      "aliases": [],
+      "meaning": "HMRC guidance describes a normally £500 trust-income amount, divided across certain multiple settlements; if income exceeds the applicable amount, the exemption is lost rather than applied as an allowance.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust income",
+          "href": "../../TRUST/17-trust-income.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-deadline",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Deadline",
+      "aliases": [],
+      "meaning": "For relevant post-6 April 2014 trust events, reporting and payment are generally due by the end of the sixth month after the event.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "IHT reporting",
+          "href": "../../TRUST/34-iht-reporting.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-deadlines",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Deadlines",
+      "aliases": [],
+      "meaning": "Paper returns are generally due 31 October and electronic returns 31 January following the tax year; trust online filing normally requires commercial software.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust Self Assessment",
+          "href": "../../TRUST/33-trust-self-assessment.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-death",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Death",
+      "aliases": [],
+      "meaning": "Identify assets in the free estate, jointly owned property, qualifying trust interests, death benefits and property already held by trustees.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Death, divorce and incapacity",
+          "href": "../../TRUST/39-death-divorce-and-incapacity.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-death-within-seven-years",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Death within seven years",
+      "aliases": [],
+      "meaning": "The transfer is recalculated at death rates, with credit for lifetime tax and possible taper relief on tax, not on the transferred value.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Transfers into trust",
+          "href": "../../TRUST/26-transfers-into-trust.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-deceased-settlor",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Deceased settlor",
+      "aliases": [],
+      "meaning": "If death occurred from 6 April 2025, status generally follows long-term residence immediately before death; pre-6 April 2025 deaths retain a domicile-based test for settled property.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Foreign property from 6 April 2025",
+          "href": "../../TRUST/31-foreign-property-from-6-april-2025.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-deferred-amount",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Deferred amount",
+      "aliases": [],
+      "meaning": "The held-over gain normally reduces the recipient’s acquisition cost; it is not erased.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Hold-over relief",
+          "href": "../../TRUST/23-hold-over-relief.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-delegation",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Delegation",
+      "aliases": [],
+      "meaning": "Permitted functions, written policy, agent selection and continuing review must be distinguished from an abdication of responsibility.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trustee duties and powers",
+          "href": "../../TRUST/12-trustee-duties-and-powers.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-delivery-threshold",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Delivery threshold",
+      "aliases": [],
+      "meaning": "Some events need not be delivered where statutory or administrative conditions are met, but records must support the conclusion.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "IHT reporting",
+          "href": "../../TRUST/34-iht-reporting.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-direct-trustee-charge",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Direct trustee charge",
+      "aliases": [],
+      "meaning": "Non-resident trustees can be within UK CGT for direct or indirect disposals of UK land and other statutory cases.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Non-resident trust gains",
+          "href": "../../TRUST/25-non-resident-trust-gains.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-disabled-person-s-interest",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Disabled person’s interest",
+      "aliases": [],
+      "meaning": "Specified trusts can deem the disabled person beneficially entitled for IHT.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "IHT and interests in possession",
+          "href": "../../TRUST/28-iht-interests-in-possession.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-disabled-person-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Disabled-person trust",
+      "aliases": [],
+      "meaning": "Special treatment depends on the statutory definition of disabled person and strict limits on benefit for others.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Special trusts and reliefs",
+          "href": "../../TRUST/29-special-trusts-and-reliefs.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-disclosure-and-gaar",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Disclosure and GAAR",
+      "aliases": [],
+      "meaning": "DOTAS, DAC6 where applicable, CRS/FATCA and GAAR processes are distinct; disclosure does not determine whether tax is due.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Anti-avoidance and disclosure",
+          "href": "../../TRUST/40-anti-avoidance-and-disclosure.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-discretionary-class",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Discretionary class",
+      "aliases": [],
+      "meaning": "An object has a right to proper administration and genuine consideration, but no fixed share before an appointment.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Discretionary and accumulation trusts",
+          "href": "../../TRUST/08-discretionary-and-accumulation-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-discretionary-eligibility",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Discretionary eligibility",
+      "aliases": [],
+      "meaning": "A settlor included in a discretionary class can create a reservation even if trustees never make an actual payment.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Settlor benefits and reservations",
+          "href": "../../TRUST/30-settlor-benefits-and-reservations.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-discretionary-income-payment",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Discretionary income payment",
+      "aliases": [],
+      "meaning": "For a UK-resident non-settlor-interested trust, the payment carries a trust-rate credit and is grossed for the beneficiary’s return.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Beneficiary receipts",
+          "href": "../../TRUST/19-beneficiary-receipts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-discretionary-object",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Discretionary object",
+      "aliases": [],
+      "meaning": "Has a right to due administration and consideration, but no fixed entitlement to a payment until trustees exercise their discretion.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Beneficial interests",
+          "href": "../../TRUST/04-beneficial-interests.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-discretionary-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Discretionary trust",
+      "aliases": [],
+      "meaning": "Qualifying expenses can affect the amount charged at special rates and require grossing at the corresponding ordinary rate.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust management expenses",
+          "href": "../../TRUST/20-trust-management-expenses.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-divorce-or-dissolution",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Divorce or dissolution",
+      "aliases": [],
+      "meaning": "Trust interests can be resources, property or targets of court orders; tax consequences depend on the actual order and implementation date.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Death, divorce and incapacity",
+          "href": "../../TRUST/39-death-divorce-and-incapacity.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-document-control",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Document control",
+      "aliases": [],
+      "meaning": "Maintain executed deeds, wills, appointments, tax returns, contracts, advice and beneficiary communications securely.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Decision-making and records",
+          "href": "../../TRUST/13-decision-making-and-records.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-document-map",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Document map",
+      "aliases": [],
+      "meaning": "List every deed, will, appointment, loan, account, valuation and tax return, with execution and effective dates.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Case analysis and worked examples",
+          "href": "../../TRUST/41-case-analysis-and-worked-examples.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-duty-of-care",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Duty of care",
+      "aliases": [],
+      "meaning": "Trustee Act 2000 applies a statutory standard to specified functions, adjusted for a trustee’s knowledge, experience and professional status.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trustee duties and powers",
+          "href": "../../TRUST/12-trustee-duties-and-powers.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-employee-benefit-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Employee benefit trust",
+      "aliases": [],
+      "meaning": "Usually holds assets for employees or former employees; employment-income, Part 7A, corporation-tax and IHT rules may overlap.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Commercial and specialist trusts",
+          "href": "../../TRUST/10-commercial-and-specialist-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "ERIS",
+      "term": "Enhanced R&D intensive support",
+      "aliases": [
+        "R&D intensive support"
+      ],
+      "meaning": "Corporation Tax support for qualifying loss-making research-and-development-intensive small or medium-sized enterprises.",
+      "taxTypeIds": [
+        "corporation-tax"
+      ],
+      "id": "glossary-abbreviation-eris",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "abbreviation": "EIS",
+      "term": "Enterprise Investment Scheme",
+      "aliases": [
+        "enterprise investment"
+      ],
+      "meaning": "A venture-capital scheme offering specified tax reliefs where the investor, company and investment meet the conditions.",
+      "taxTypeIds": [
+        "income-tax",
+        "capital-gains-tax"
+      ],
+      "id": "glossary-abbreviation-eis",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-entitlement-to-occupy",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Entitlement to occupy",
+      "aliases": [],
+      "meaning": "The beneficiary must occupy under the settlement terms or a proper exercise of a dispositive power, not merely under trustees’ managerial tolerance.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Private residence and business reliefs",
+          "href": "../../TRUST/24-private-residence-and-business-reliefs.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-event-form",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Event form",
+      "aliases": [],
+      "meaning": "IHT100a–IHT100g identify the event category; the main account supplies parties, values, history and calculation information.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "IHT reporting",
+          "href": "../../TRUST/34-iht-reporting.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-exclusions",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Exclusions",
+      "aliases": [],
+      "meaning": "A Schedule 3A exclusion can remove a non-taxable express trust from registration, but a later UK tax liability may still require registration.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust Registration Service",
+          "href": "../../TRUST/32-trust-registration-service.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-express-powers",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Express powers",
+      "aliases": [],
+      "meaning": "Trustees or another power holder may appoint, advance, release or vary within the limits and purposes of the instrument.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Variation and termination",
+          "href": "../../TRUST/15-variation-and-termination.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-express-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Express trust",
+      "aliases": [],
+      "meaning": "Created intentionally by a settlor. Its terms normally identify the property, trustees and beneficial framework.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Types of trust and how they arise",
+          "href": "../../TRUST/03-trusts-arising-by-law.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-fiduciary-loyalty",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Fiduciary loyalty",
+      "aliases": [],
+      "meaning": "Trustees must not misuse powers, profit without authority or allow personal interests to displace the trust’s purposes.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trustee duties and powers",
+          "href": "../../TRUST/12-trustee-duties-and-powers.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-fiduciary-responsibility",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Fiduciary responsibility",
+      "aliases": [],
+      "meaning": "Trustees must act for proper purposes, address conflicts and must not treat trust property as their own.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Nature of a trust",
+          "href": "../../TRUST/01-nature-of-a-trust.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-fig-interaction",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "FIG interaction",
+      "aliases": [],
+      "meaning": "A qualifying new resident may claim relief for eligible attributed or matched foreign gains, with consequences for allowances and pool records.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Non-resident trust gains",
+          "href": "../../TRUST/25-non-resident-trust-gains.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-fixed-interest",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Fixed interest",
+      "aliases": [],
+      "meaning": "The beneficiary and quantum are determined by the instrument, even if enjoyment is postponed.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Beneficial interests",
+          "href": "../../TRUST/04-beneficial-interests.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "FIG",
+      "term": "Foreign Income and Gains",
+      "aliases": [
+        "foreign income",
+        "foreign gains",
+        "four-year FIG regime"
+      ],
+      "meaning": "Foreign income and gains, including the post-6 April 2025 regime for qualifying new UK residents.",
+      "taxTypeIds": [
+        "foreign-income-gains"
+      ],
+      "id": "glossary-abbreviation-fig",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-formalities",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Formalities",
+      "aliases": [],
+      "meaning": "A will, a declaration concerning land and particular asset transfers can require writing, signature, witnessing or registration.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Creation and validity",
+          "href": "../../TRUST/02-creation-and-validity.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-forum",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Forum",
+      "aliases": [],
+      "meaning": "A governing-law clause does not always determine which court may hear a dispute or where enforcement is practical.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Governing law and jurisdiction",
+          "href": "../../TRUST/05-governing-law-and-jurisdiction.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-fund-ledger",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Fund ledger",
+      "aliases": [],
+      "meaning": "Separate original property, additions by settlor, income, gains, accumulated income, loans, benefits and appointments.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Case analysis and worked examples",
+          "href": "../../TRUST/41-case-analysis-and-worked-examples.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-gain-matching",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Gain matching",
+      "aliases": [],
+      "meaning": "Sections 86 and 87 TCGA require chronological gains and capital-payment records, including onward gifts and unmatched pools.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Non-UK resident and offshore trusts",
+          "href": "../../TRUST/37-non-uk-resident-and-offshore-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-governing-law",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Governing law",
+      "aliases": [],
+      "meaning": "Usually identified from the instrument and relevant choice-of-law rules; it governs matters such as validity, construction and administration.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Governing law and jurisdiction",
+          "href": "../../TRUST/05-governing-law-and-jurisdiction.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "HICBC",
+      "term": "High Income Child Benefit Charge",
+      "aliases": [
+        "Child Benefit charge"
+      ],
+      "meaning": "An Income Tax charge linked to adjusted net income where a person or their partner receives Child Benefit.",
+      "taxTypeIds": [
+        "income-tax"
+      ],
+      "id": "glossary-abbreviation-hicbc",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "abbreviation": "HMRC",
+      "term": "HM Revenue & Customs",
+      "aliases": [
+        "Revenue",
+        "tax authority"
+      ],
+      "meaning": "The UK government department responsible for administering and collecting most taxes.",
+      "taxTypeIds": [
+        "tax-administration"
+      ],
+      "id": "glossary-abbreviation-hmrc",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-hold-over-interaction",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Hold-over interaction",
+      "aliases": [],
+      "meaning": "Section 226A can restrict Private Residence Relief after certain earlier section 260 hold-over claims.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Private residence and business reliefs",
+          "href": "../../TRUST/24-private-residence-and-business-reliefs.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-iht-classification",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "IHT classification",
+      "aliases": [],
+      "meaning": "An interest created after 21 March 2006 is not automatically estate-linked; check whether it is an immediate post-death, disabled person’s or transitional serial interest.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Interest-in-possession trusts",
+          "href": "../../TRUST/07-interest-in-possession-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-iht-reliefs",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "IHT reliefs",
+      "aliases": [],
+      "meaning": "Business and agricultural relief depend on current statutory conditions, ownership periods, activity and post-6 April 2026 limits.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust-owned businesses and property",
+          "href": "../../TRUST/38-trust-owned-businesses-and-property.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-iip-beneficiary",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "IIP beneficiary",
+      "aliases": [],
+      "meaning": "Allowable management expenses can reduce the income treated as belonging to the income beneficiary, with ordering rules across income types.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust management expenses",
+          "href": "../../TRUST/20-trust-management-expenses.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-iip-income",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "IIP income",
+      "aliases": [],
+      "meaning": "The beneficiary is generally taxed on their trust-income entitlement with credit for tax paid by trustees, subject to expenses and mandates.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Beneficiary receipts",
+          "href": "../../TRUST/19-beneficiary-receipts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-immediate-post-death-interest",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Immediate post-death interest",
+      "aliases": [],
+      "meaning": "In Will and family trusts: A qualifying post-2006 interest in possession must satisfy statutory conditions; the label in the will is not conclusive. In IHT and interests in possession: A post-2006 interest arising under a will or intestacy can qualify if the statutory conditions are met.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Will and family trusts",
+          "href": "../../TRUST/09-will-and-family-trusts.html?v=20260716"
+        },
+        {
+          "label": "IHT and interests in possession",
+          "href": "../../TRUST/28-iht-interests-in-possession.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-incapacity",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Incapacity",
+      "aliases": [],
+      "meaning": "An attorney or deputy acts for an individual but does not automatically acquire trustee powers; separate offices and conflicts must be respected.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Death, divorce and incapacity",
+          "href": "../../TRUST/39-death-divorce-and-incapacity.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-income-administration",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Income administration",
+      "aliases": [],
+      "meaning": "Trustees receive income, deduct properly chargeable expenses and account for the balance, unless income is validly mandated directly.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Interest-in-possession trusts",
+          "href": "../../TRUST/07-interest-in-possession-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-income-and-expenses",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Income and expenses",
+      "aliases": [],
+      "meaning": "Trading profits, dividends, rents and finance costs have separate source rules and may belong to different trust funds or beneficiaries.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust-owned businesses and property",
+          "href": "../../TRUST/38-trust-owned-businesses-and-property.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-income-attribution",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Income attribution",
+      "aliases": [],
+      "meaning": "Settlor-interested rules and transfer-of-assets-abroad provisions can charge UK residents on foreign trust income, subject to statutory conditions and defences.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Non-UK resident and offshore trusts",
+          "href": "../../TRUST/37-non-uk-resident-and-offshore-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-income-or-capital",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Income or capital",
+      "aliases": [],
+      "meaning": "The deed and trust law determine which fund bears an expense; tax rules do not automatically follow the accounting label.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust management expenses",
+          "href": "../../TRUST/20-trust-management-expenses.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-income-tax",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Income Tax",
+      "aliases": [],
+      "meaning": "HMRC’s general guidance treats the beneficiary as responsible for tax on bare-trust income.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Bare trusts and nominees",
+          "href": "../../TRUST/06-bare-trusts-and-nominees.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "ISA",
+      "term": "Individual Savings Account",
+      "aliases": [
+        "Individual Savings Accounts"
+      ],
+      "meaning": "A tax-advantaged savings or investment account whose qualifying income and gains are generally exempt.",
+      "taxTypeIds": [
+        "income-tax",
+        "capital-gains-tax"
+      ],
+      "id": "glossary-abbreviation-isa",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "abbreviation": "IHT",
+      "term": "Inheritance Tax",
+      "aliases": [
+        "inheritance",
+        "estate tax"
+      ],
+      "meaning": "Tax that can apply to estates, lifetime transfers and certain trust events after exemptions and reliefs.",
+      "taxTypeIds": [
+        "inheritance-tax",
+        "trust-tax"
+      ],
+      "id": "glossary-abbreviation-iht",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-interest-in-possession",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Interest in possession",
+      "aliases": [],
+      "meaning": "In Beneficial interests: Broadly, an immediate right to current income or present enjoyment, subject to proper trust expenses. Tax statutes use additional qualifying categories. In Who is taxable: Trustees commonly account at basic or dividend ordinary rates and the income beneficiary is charged on their entitlement, with credit for trustee tax.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Beneficial interests",
+          "href": "../../TRUST/04-beneficial-interests.html?v=20260716"
+        },
+        {
+          "label": "Who is taxable",
+          "href": "../../TRUST/16-who-is-taxable.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-investment",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Investment",
+      "aliases": [],
+      "meaning": "Trustees generally consider suitability and diversification and obtain proper advice unless reasonably unnecessary, subject to the deed and statutory regime.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trustee duties and powers",
+          "href": "../../TRUST/12-trustee-duties-and-powers.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-later-transfer",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Later transfer",
+      "aliases": [],
+      "meaning": "Physical conveyance after the section 71 occasion is generally disregarded; the beneficiary takes the market-value base cost created then.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Creating and ending interests",
+          "href": "../../TRUST/22-creating-and-ending-interests.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-legal-title",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Legal title",
+      "aliases": [],
+      "meaning": "The trustees deal with third parties, safeguard the assets and exercise the powers attached to ownership, subject to the trust.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Nature of a trust",
+          "href": "../../TRUST/01-nature-of-a-trust.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-letter-of-wishes",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Letter of wishes",
+      "aliases": [],
+      "meaning": "May guide trustees but is normally non-binding; trustees must exercise their own judgment under the deed.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Discretionary and accumulation trusts",
+          "href": "../../TRUST/08-discretionary-and-accumulation-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-life-tenant",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Life tenant",
+      "aliases": [],
+      "meaning": "Often entitled to net income or occupation during life, without an absolute right to the underlying capital.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Interest-in-possession trusts",
+          "href": "../../TRUST/07-interest-in-possession-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-lifetime-rate-and-grossing",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Lifetime rate and grossing",
+      "aliases": [],
+      "meaning": "Tax on value within the charge is normally at the lifetime rate; if the settlor bears tax, grossing can increase the transfer of value.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Transfers into trust",
+          "href": "../../TRUST/26-transfers-into-trust.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-living-settlor",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Living settlor",
+      "aliases": [],
+      "meaning": "Foreign trust property is generally excluded only while the settlor is not long-term UK resident.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Foreign property from 6 April 2025",
+          "href": "../../TRUST/31-foreign-property-from-6-april-2025.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-long-term-uk-resident",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Long-term UK resident",
+      "aliases": [],
+      "meaning": "Broadly, residence in at least 10 of the preceding 20 tax years brings worldwide property into scope, with a residence tail after departure that varies with history.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Foreign property from 6 April 2025",
+          "href": "../../TRUST/31-foreign-property-from-6-april-2025.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-managed-investment-entity",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Managed Investment Entity",
+      "aliases": [],
+      "meaning": "A trust whose financial assets are professionally managed can fall within the Investment Entity definition, subject to income and activity tests.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "International reporting",
+          "href": "../../TRUST/35-international-reporting.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-minimum-composition",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Minimum composition",
+      "aliases": [],
+      "meaning": "Retirement without replacement commonly requires at least two individual trustees or a trust corporation to remain, subject to the asset and governing rules.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Appointment and retirement of trustees",
+          "href": "../../TRUST/11-appointment-and-retirement.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-minor-children",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Minor children",
+      "aliases": [],
+      "meaning": "Section 629 can attribute income to a parent-settlor where it belongs to or is paid or applied for an unmarried minor child; the £100 threshold must be tested per parent and child.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Settlements legislation",
+          "href": "../../TRUST/18-settlements-legislation.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-minutes-and-resolutions",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Minutes and resolutions",
+      "aliases": [],
+      "meaning": "Record participants, quorum, declared conflicts, documents reviewed, decision and authority without unnecessary sensitive narrative.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Decision-making and records",
+          "href": "../../TRUST/13-decision-making-and-records.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "NIC / NICs",
+      "term": "National Insurance contribution / contributions",
+      "aliases": [
+        "NIC",
+        "NICs",
+        "NI",
+        "National Insurance"
+      ],
+      "meaning": "Contributions associated with earnings, employment or self-employment under the National Insurance system.",
+      "taxTypeIds": [
+        "national-insurance"
+      ],
+      "id": "glossary-abbreviation-nic-nics",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-nominee-function",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Nominee function",
+      "aliases": [],
+      "meaning": "The registered holder acts on instructions and deals with third parties, but beneficial ownership remains with the principal or beneficiary.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Bare trusts and nominees",
+          "href": "../../TRUST/06-bare-trusts-and-nominees.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-notice-to-file",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Notice to file",
+      "aliases": [],
+      "meaning": "A return is required when HMRC issues a notice; trustees also need to notify chargeability and register when the trust becomes liable.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust Self Assessment",
+          "href": "../../TRUST/33-trust-self-assessment.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-ongoing-maintenance",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Ongoing maintenance",
+      "aliases": [],
+      "meaning": "Changes, missing mandatory data, closure and annual declaration obligations have distinct deadlines and penalty exposure.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust Registration Service",
+          "href": "../../TRUST/32-trust-registration-service.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-only-or-main-residence",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Only or main residence",
+      "aliases": [],
+      "meaning": "The dwelling must genuinely be the beneficiary’s residence and the qualifying periods and restrictions must be computed.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Private residence and business reliefs",
+          "href": "../../TRUST/24-private-residence-and-business-reliefs.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-ownership-structure",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Ownership structure",
+      "aliases": [],
+      "meaning": "Distinguish a business operated by trustees from shares, partnership interests or land merely held as investments.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust-owned businesses and property",
+          "href": "../../TRUST/38-trust-owned-businesses-and-property.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-part-7a-employment-income",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Part 7A employment income",
+      "aliases": [],
+      "meaning": "Third-party arrangements involving employee benefit trusts can create employment charges when relevant steps occur.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Anti-avoidance and disclosure",
+          "href": "../../TRUST/40-anti-avoidance-and-disclosure.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-passive-nfe",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Passive NFE",
+      "aliases": [],
+      "meaning": "If not a Financial Institution, a passive entity may need to disclose controlling persons to the institution maintaining its financial account.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "International reporting",
+          "href": "../../TRUST/35-international-reporting.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "PAYE",
+      "term": "Pay As You Earn",
+      "aliases": [
+        "payroll tax",
+        "payroll deductions"
+      ],
+      "meaning": "The system through which employers deduct Income Tax and certain other amounts from employment payments.",
+      "taxTypeIds": [
+        "employment-paye",
+        "national-insurance"
+      ],
+      "id": "glossary-abbreviation-paye",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-payment-and-claims",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Payment and claims",
+      "aliases": [],
+      "meaning": "Balancing tax is generally due 31 January, with payments on account where applicable; claims and elections have their own time limits.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust Self Assessment",
+          "href": "../../TRUST/33-trust-self-assessment.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-pension-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Pension trust",
+      "aliases": [],
+      "meaning": "Registered pension schemes have their own statutory tax framework and should not be analysed as an ordinary discretionary family trust.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Commercial and specialist trusts",
+          "href": "../../TRUST/10-commercial-and-specialist-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-people-and-powers",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "People and powers",
+      "aliases": [],
+      "meaning": "Track each settlor, trustee, beneficiary, protector and adviser, including residence, capacity, conflicts and authority.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Case analysis and worked examples",
+          "href": "../../TRUST/41-case-analysis-and-worked-examples.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-permanent-file",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Permanent file",
+      "aliases": [],
+      "meaning": "Executed instruments, variations, appointments, identity records, asset title, powers and key advice form the enduring record.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Governance and evidence",
+          "href": "../../TRUST/36-governance-and-evidence.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "PSA",
+      "term": "Personal Savings Allowance",
+      "aliases": [
+        "savings allowance"
+      ],
+      "meaning": "A 0% Income Tax amount for savings income whose level depends on the person’s tax band.",
+      "taxTypeIds": [
+        "income-tax"
+      ],
+      "id": "glossary-abbreviation-psa",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-poat-interaction",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "POAT interaction",
+      "aliases": [],
+      "meaning": "The pre-owned-assets Income Tax charge has exclusions and double-charge provisions that require comparison with GWR treatment.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Settlor benefits and reservations",
+          "href": "../../TRUST/30-settlor-benefits-and-reservations.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-pre-22-march-2006-interest",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Pre-22 March 2006 interest",
+      "aliases": [],
+      "meaning": "Generally remains within section 49 estate-linked treatment, subject to transitional changes and later events.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "IHT and interests in possession",
+          "href": "../../TRUST/28-iht-interests-in-possession.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-principal-charge",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Principal charge",
+      "aliases": [],
+      "meaning": "At a ten-year anniversary, trustees value relevant property and calculate an effective rate using the settlement history, nil-rate band, related settlements and chargeable additions.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Relevant-property regime",
+          "href": "../../TRUST/27-relevant-property-regime.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "PRR",
+      "term": "Private Residence Relief",
+      "aliases": [
+        "main residence relief",
+        "principal private residence relief"
+      ],
+      "meaning": "Capital Gains Tax relief that may cover all or part of a gain on a qualifying only or main residence.",
+      "taxTypeIds": [
+        "capital-gains-tax"
+      ],
+      "id": "glossary-abbreviation-prr",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-proportionate-charge",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Proportionate charge",
+      "aliases": [],
+      "meaning": "An exit rate uses the appropriate effective rate and complete quarters since commencement or the previous anniversary, subject to exceptions.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Relevant-property regime",
+          "href": "../../TRUST/27-relevant-property-regime.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "QCR",
+      "term": "Qualifying Care Relief",
+      "aliases": [
+        "care relief",
+        "foster care relief"
+      ],
+      "meaning": "Income Tax relief for qualifying shared-lives, foster-care and certain other care receipts.",
+      "taxTypeIds": [
+        "income-tax"
+      ],
+      "id": "glossary-abbreviation-qcr",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-qualifying-iip",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Qualifying IIP",
+      "aliases": [],
+      "meaning": "Foreign property is excluded only if the relevant settlor test and the qualifying life tenant’s long-term-residence condition are satisfied.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Foreign property from 6 April 2025",
+          "href": "../../TRUST/31-foreign-property-from-6-april-2025.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "QSR",
+      "term": "Quick Succession Relief",
+      "aliases": [
+        "successive charges relief"
+      ],
+      "meaning": "Inheritance Tax relief that can reduce a later charge where the same property was subject to an earlier qualifying transfer within five years.",
+      "taxTypeIds": [
+        "inheritance-tax"
+      ],
+      "id": "glossary-abbreviation-qsr",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-rate",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Rate",
+      "aliases": [],
+      "meaning": "Trust gains are generally charged at 24% in 2026/27, subject to specific reliefs and regimes.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trustee chargeability",
+          "href": "../../TRUST/21-trustee-chargeability.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-recognition",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Recognition",
+      "aliases": [],
+      "meaning": "The UK gives effect to the Hague Trusts Convention through the Recognition of Trusts Act 1987, subject to its scope and safeguards.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Governing law and jurisdiction",
+          "href": "../../TRUST/05-governing-law-and-jurisdiction.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-reconciliation",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Reconciliation",
+      "aliases": [],
+      "meaning": "TRS, tax returns, accounts, bank and custody statements and beneficiary certificates should describe the same events consistently.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Governance and evidence",
+          "href": "../../TRUST/36-governance-and-evidence.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-registration-category",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Registration category",
+      "aliases": [],
+      "meaning": "First determine whether the trust registers as taxable, as a registrable non-taxable express trust, or because of a UK land or business relationship.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust Registration Service",
+          "href": "../../TRUST/32-trust-registration-service.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-relevant-property",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Relevant property",
+      "aliases": [],
+      "meaning": "Broadly, settled property not within excluded property, a qualifying interest in possession or a statutory special-trust category.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Relevant-property regime",
+          "href": "../../TRUST/27-relevant-property-regime.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-relief-and-protection",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Relief and protection",
+      "aliases": [],
+      "meaning": "Consent, release, limitation, exclusion clauses, court relief and trustee insurance require careful fact and legal analysis.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Breach of trust and remedies",
+          "href": "../../TRUST/14-breach-and-remedies.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-remainder-or-reversion",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Remainder or reversion",
+      "aliases": [],
+      "meaning": "A future interest expected to take effect after an earlier interest ends. It may be vested or conditional.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Beneficial interests",
+          "href": "../../TRUST/04-beneficial-interests.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-remainderman",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Remainderman",
+      "aliases": [],
+      "meaning": "Holds the succeeding capital interest, subject to the prior interest and any powers in the instrument.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Interest-in-possession trusts",
+          "href": "../../TRUST/07-interest-in-possession-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-repayment-position",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Repayment position",
+      "aliases": [],
+      "meaning": "A beneficiary’s personal rate may permit repayment of some credit in ordinary cases, but ring-fenced credits in settlor-interested or non-resident cases can behave differently.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Beneficiary receipts",
+          "href": "../../TRUST/19-beneficiary-receipts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-reportable-interests",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Reportable interests",
+      "aliases": [],
+      "meaning": "Settlors, beneficiaries, trustees or other persons can be account holders or controlling persons depending on classification and regime.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "International reporting",
+          "href": "../../TRUST/35-international-reporting.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "R&D",
+      "term": "Research and Development",
+      "aliases": [
+        "research and development",
+        "research development"
+      ],
+      "meaning": "Activities assessed under specific tax rules when determining whether expenditure qualifies for Corporation Tax support.",
+      "taxTypeIds": [
+        "corporation-tax"
+      ],
+      "id": "glossary-abbreviation-r-d",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "abbreviation": "RDEC",
+      "term": "Research and Development Expenditure Credit",
+      "aliases": [
+        "R&D expenditure credit",
+        "merged RDEC"
+      ],
+      "meaning": "A taxable Corporation Tax expenditure credit for qualifying research and development costs.",
+      "taxTypeIds": [
+        "corporation-tax"
+      ],
+      "id": "glossary-abbreviation-rdec",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-reservation-of-benefit",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Reservation of benefit",
+      "aliases": [],
+      "meaning": "The donor must be excluded, or virtually excluded, from benefit and enjoyment during the relevant period.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Settlor benefits and reservations",
+          "href": "../../TRUST/30-settlor-benefits-and-reservations.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "RNRB",
+      "term": "Residence nil-rate band",
+      "aliases": [
+        "residence allowance",
+        "additional IHT threshold"
+      ],
+      "meaning": "An additional Inheritance Tax threshold that may apply when a qualifying residence is closely inherited by direct descendants.",
+      "taxTypeIds": [
+        "inheritance-tax"
+      ],
+      "id": "glossary-abbreviation-rnrb",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-residence-based-iht",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Residence-based IHT",
+      "aliases": [],
+      "meaning": "Foreign settled property status follows long-term residence tests from 6 April 2025, with deceased-settlor and qualifying-interest exceptions.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Non-UK resident and offshore trusts",
+          "href": "../../TRUST/37-non-uk-resident-and-offshore-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-restoration-and-compensation",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Restoration and compensation",
+      "aliases": [],
+      "meaning": "The court may require restoration of the fund or equitable compensation, with the measure depending on the duty and causal analysis.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Breach of trust and remedies",
+          "href": "../../TRUST/14-breach-and-remedies.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-restrictions",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Restrictions",
+      "aliases": [],
+      "meaning": "Settlor-interested trusts, non-residence, excluded property, relief interactions and non-business use can restrict or deny relief.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Hold-over relief",
+          "href": "../../TRUST/23-hold-over-relief.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-resulting-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Resulting trust",
+      "aliases": [],
+      "meaning": "May return or attribute beneficial ownership to a contributor or settlor when an intended disposition fails or the evidence supports retained beneficial ownership.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Types of trust and how they arise",
+          "href": "../../TRUST/03-trusts-arising-by-law.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "RPI",
+      "term": "Retail Prices Index",
+      "aliases": [
+        "retail price index",
+        "indexation"
+      ],
+      "meaning": "An inflation index with historical relevance to Corporation Tax Indexation Allowance.",
+      "taxTypeIds": [
+        "corporation-tax"
+      ],
+      "id": "glossary-abbreviation-rpi",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-retained-interest",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Retained interest",
+      "aliases": [],
+      "meaning": "Section 624 can attribute income where settlement property or income may benefit the settlor or their spouse or civil partner, subject to exceptions.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Settlements legislation",
+          "href": "../../TRUST/18-settlements-legislation.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-section-165",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Section 165",
+      "aliases": [],
+      "meaning": "Targets gifts of qualifying business assets and contains its own asset, company and restriction tests.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Hold-over relief",
+          "href": "../../TRUST/23-hold-over-relief.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-section-260",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Section 260",
+      "aliases": [],
+      "meaning": "Can apply where the disposal is a chargeable transfer for IHT purposes, even if no IHT is ultimately payable because of the nil-rate band or specified reliefs.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Hold-over relief",
+          "href": "../../TRUST/23-hold-over-relief.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "SEIS",
+      "term": "Seed Enterprise Investment Scheme",
+      "aliases": [
+        "seed investment relief"
+      ],
+      "meaning": "A venture-capital scheme offering specified tax reliefs for qualifying investments in eligible early-stage companies.",
+      "taxTypeIds": [
+        "income-tax",
+        "capital-gains-tax"
+      ],
+      "id": "glossary-abbreviation-seis",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-settlement-and-settlor",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Settlement and settlor",
+      "aliases": [],
+      "meaning": "The statutory concepts extend beyond formal trusts and can include bounteous arrangements. Identify the real provider of property or value.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Settlements legislation",
+          "href": "../../TRUST/18-settlements-legislation.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-settlor",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Settlor",
+      "aliases": [],
+      "meaning": "The person who intentionally creates an express trust and provides, or declares that they hold, its initial property. The settlor usually determines the trust terms and may also be a trustee or beneficiary, subject to the terms and applicable tax rules.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Nature of a trust",
+          "href": "../../TRUST/01-nature-of-a-trust.html?v=20260717"
+        }
+      ]
+    },
+    {
+      "id": "glossary-settlor-attribution",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Settlor attribution",
+      "aliases": [],
+      "meaning": "Section 86 can attribute gains of qualifying non-resident settlements to a UK-resident, domiciled or post-2025 in-scope settlor, subject to the detailed conditions.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Non-resident trust gains",
+          "href": "../../TRUST/25-non-resident-trust-gains.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-settlor-interested-settlement",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Settlor-interested settlement",
+      "aliases": [],
+      "meaning": "Income may be treated as the settlor’s under ITTOIA 2005, with trustee tax credited through the statutory mechanism.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Who is taxable",
+          "href": "../../TRUST/16-who-is-taxable.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-single-continuing-body",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Single continuing body",
+      "aliases": [],
+      "meaning": "TCGA 1992 generally treats trustees collectively, preserving acquisition history through trustee changes.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trustee chargeability",
+          "href": "../../TRUST/21-trustee-chargeability.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-slice",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Slice",
+      "aliases": [
+        "tax slice",
+        "slice of income",
+        "slice of gains"
+      ],
+      "meaning": "A portion of income or gains considered separately because it falls within a particular tax band, rate or 0% amount. It is explanatory calculation language, not a separate allowance or tax.",
+      "taxTypeIds": [
+        "income-tax",
+        "capital-gains-tax",
+        "trust-tax"
+      ],
+      "references": []
+    },
+    {
+      "abbreviation": "SME",
+      "term": "Small or medium-sized enterprise",
+      "aliases": [
+        "small and medium enterprise",
+        "small company"
+      ],
+      "meaning": "A business-size classification whose precise definition depends on the tax rule being applied.",
+      "taxTypeIds": [
+        "corporation-tax"
+      ],
+      "id": "glossary-abbreviation-sme",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-source-computation",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Source computation",
+      "aliases": [],
+      "meaning": "Compute each source under its own rules before combining trust income; capital receipts and sale proceeds are not income merely because cash is received.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust income",
+          "href": "../../TRUST/17-trust-income.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-source-expenses",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Source expenses",
+      "aliases": [],
+      "meaning": "Expenses wholly and exclusively incurred for a rental business or trade are considered in that source computation, not again as trust-management expenses.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust management expenses",
+          "href": "../../TRUST/20-trust-management-expenses.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-special-trust-rates",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Special trust rates",
+      "aliases": [],
+      "meaning": "Accumulation or discretionary income is generally charged at the special rates; interest-in-possession income uses different trustee rates.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust income",
+          "href": "../../TRUST/17-trust-income.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-specific-charging-rules",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Specific charging rules",
+      "aliases": [],
+      "meaning": "Settlements legislation and trust-gain matching often define the primary tax charge; they should be applied before assuming a general anti-avoidance rule.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Anti-avoidance and disclosure",
+          "href": "../../TRUST/40-anti-avoidance-and-disclosure.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-spouse-gifts",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Spouse gifts",
+      "aliases": [],
+      "meaning": "The outright-gift exception has conditions and does not protect a gift wholly or substantially of a right to income.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Settlements legislation",
+          "href": "../../TRUST/18-settlements-legislation.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "SDLT",
+      "term": "Stamp Duty Land Tax",
+      "aliases": [
+        "stamp duty",
+        "land transaction tax England Northern Ireland"
+      ],
+      "meaning": "A transaction tax applying to qualifying acquisitions of land in England and Northern Ireland.",
+      "taxTypeIds": [
+        "stamp-duty-land-tax"
+      ],
+      "id": "glossary-abbreviation-sdlt",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-statutory-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Statutory trust",
+      "aliases": [],
+      "meaning": "Arises because legislation imposes a trust, for example in particular succession, land or co-ownership contexts. The governing statute defines its incidents.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Types of trust and how they arise",
+          "href": "../../TRUST/03-trusts-arising-by-law.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-supplementary-pages",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Supplementary pages",
+      "aliases": [],
+      "meaning": "SA901–SA906 cover trading, partnership, UK property, foreign income, capital gains and non-residence as applicable.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust Self Assessment",
+          "href": "../../TRUST/33-trust-self-assessment.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-tax-events",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Tax events",
+      "aliases": [],
+      "meaning": "Appointments and changes can trigger CGT disposals, IHT exit or transfer-of-value analysis, Income Tax effects and TRS updates.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Variation and termination",
+          "href": "../../TRUST/15-variation-and-termination.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-tax-framework",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Tax framework",
+      "aliases": [],
+      "meaning": "Trustees may face special Income Tax rates and a tax-pool mechanism, while relevant-property IHT charges commonly require separate review.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Discretionary and accumulation trusts",
+          "href": "../../TRUST/08-discretionary-and-accumulation-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-tax-matrix",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Tax matrix",
+      "aliases": [],
+      "meaning": "For each event test Income Tax, CGT, IHT, SDLT, VAT, TRS, AEOI and reporting without allowing one answer to dictate another.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Case analysis and worked examples",
+          "href": "../../TRUST/41-case-analysis-and-worked-examples.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-tax-pool",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Tax pool",
+      "aliases": [],
+      "meaning": "Tracks specified trustee Income Tax available to support credits on discretionary income payments; it is a memorandum, not a bank account.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trust income",
+          "href": "../../TRUST/17-trust-income.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-tax-residence",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Tax residence",
+      "aliases": [],
+      "meaning": "In Governing law and jurisdiction: Trustee residence and statutory tax rules are not determined solely by the deed’s governing law or the location of a bank account. In Appointment and retirement of trustees: Changing trustees can alter the trust’s residence or create migration consequences, so tax review must precede execution.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Governing law and jurisdiction",
+          "href": "../../TRUST/05-governing-law-and-jurisdiction.html?v=20260716"
+        },
+        {
+          "label": "Appointment and retirement of trustees",
+          "href": "../../TRUST/11-appointment-and-retirement.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "TRF",
+      "term": "Temporary Repatriation Facility",
+      "aliases": [
+        "repatriation facility"
+      ],
+      "meaning": "A time-limited facility for designating certain pre-6 April 2025 foreign income and gains at a special rate.",
+      "taxTypeIds": [
+        "foreign-income-gains"
+      ],
+      "id": "glossary-abbreviation-trf",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-termination-on-death",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Termination on death",
+      "aliases": [],
+      "meaning": "Special no-gain/no-loss rules can apply when certain interests in possession end on death; classify the interest before applying them.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Creating and ending interests",
+          "href": "../../TRUST/22-creating-and-ending-interests.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-three-certainties",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Three certainties",
+      "aliases": [],
+      "meaning": "The words must show a binding trust intention; the trust property must be identifiable; and the beneficiaries or permitted purpose must satisfy the applicable certainty test.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Creation and validity",
+          "href": "../../TRUST/02-creation-and-validity.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-tracing-and-proprietary-claims",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Tracing and proprietary claims",
+      "aliases": [],
+      "meaning": "Beneficiaries may seek substituted property or value, subject to evidential rules and third-party defences.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Breach of trust and remedies",
+          "href": "../../TRUST/14-breach-and-remedies.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-transfer-into-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Transfer into trust",
+      "aliases": [],
+      "meaning": "A gift normally uses market value between connected or non-arm’s-length parties, subject to any valid hold-over relief.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Creating and ending interests",
+          "href": "../../TRUST/22-creating-and-ending-interests.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-transfer-of-assets-abroad",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Transfer of assets abroad",
+      "aliases": [],
+      "meaning": "Can charge UK-resident individuals connected with transfers producing income abroad, subject to detailed benefit, motive and EU-related provisions.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Anti-avoidance and disclosure",
+          "href": "../../TRUST/40-anti-avoidance-and-disclosure.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-transfer-of-value",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Transfer of value",
+      "aliases": [],
+      "meaning": "IHT starts with the reduction in the settlor’s estate, not automatically the asset’s stand-alone value.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Transfers into trust",
+          "href": "../../TRUST/26-transfers-into-trust.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-transitional-serial-interest",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Transitional serial interest",
+      "aliases": [],
+      "meaning": "A narrow statutory category for successor interests following qualifying pre-existing interests.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "IHT and interests in possession",
+          "href": "../../TRUST/28-iht-interests-in-possession.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-trust-accounts",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Trust accounts",
+      "aliases": [],
+      "meaning": "Reconcile legal ownership and cash movements while preserving income, capital, tax-pool and individual-fund distinctions.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Decision-making and records",
+          "href": "../../TRUST/13-decision-making-and-records.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-trust-property",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Trust property",
+      "aliases": [],
+      "meaning": "The assets must be identifiable. New property, substituted assets and accumulated income may become part of the trust fund.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Nature of a trust",
+          "href": "../../TRUST/01-nature-of-a-trust.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-trustee",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Trustee",
+      "aliases": [],
+      "meaning": "A person or eligible legal body that holds or controls trust property and must administer it in accordance with the trust terms and applicable law. Trustees owe fiduciary duties and must not treat trust property as their own.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Nature of a trust",
+          "href": "../../TRUST/01-nature-of-a-trust.html?v=20260717"
+        }
+      ]
+    },
+    {
+      "id": "glossary-trustee-residence",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Trustee residence",
+      "aliases": [],
+      "meaning": "In Trustee chargeability: Apply the statutory trustee-residence rules for the tax year; governing law and asset location do not decide residence. In Non-UK resident and offshore trusts: Income Tax and CGT residence depends on trustee composition and, in some cases, the settlor’s status when the trust was created or funded.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Trustee chargeability",
+          "href": "../../TRUST/21-trustee-chargeability.html?v=20260716"
+        },
+        {
+          "label": "Non-UK resident and offshore trusts",
+          "href": "../../TRUST/37-non-uk-resident-and-offshore-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-trustee-documented-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Trustee-documented trust",
+      "aliases": [],
+      "meaning": "Where conditions are met, a reporting Financial Institution trustee undertakes reporting, but the trust has its own mandatory registration considerations.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "International reporting",
+          "href": "../../TRUST/35-international-reporting.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-valuation",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Valuation",
+      "aliases": [],
+      "meaning": "Use the event-date open-market value, liabilities and relief evidence, including related-property and shareholding effects.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "IHT reporting",
+          "href": "../../TRUST/34-iht-reporting.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-valuations",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Valuations",
+      "aliases": [],
+      "meaning": "Use an appropriate valuation date, basis and qualified evidence where tax, fairness or dispositive decisions depend on value.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Decision-making and records",
+          "href": "../../TRUST/13-decision-making-and-records.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-variation-after-death",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Variation after death",
+      "aliases": [],
+      "meaning": "Deeds of variation and section 144 appointments can obtain specified retrospective IHT or CGT treatment only if statutory conditions and time limits are met.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Death, divorce and incapacity",
+          "href": "../../TRUST/39-death-divorce-and-incapacity.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "abbreviation": "VCT",
+      "term": "Venture Capital Trust",
+      "aliases": [
+        "venture capital relief"
+      ],
+      "meaning": "A listed investment vehicle whose qualifying investors may receive specified tax reliefs.",
+      "taxTypeIds": [
+        "income-tax",
+        "capital-gains-tax"
+      ],
+      "id": "glossary-abbreviation-vct",
+      "kind": "abbreviation",
+      "references": []
+    },
+    {
+      "id": "glossary-vesting",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Vesting",
+      "aliases": [],
+      "meaning": "A deed alone may not update title to land, shares, accounts or foreign assets; separate registrations and transfers can be required.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Appointment and retirement of trustees",
+          "href": "../../TRUST/11-appointment-and-retirement.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-will-trust",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Will trust",
+      "aliases": [],
+      "meaning": "The will defines the trustees, powers and interests, but tax provisions may treat events from death or from later administration dates differently.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Will and family trusts",
+          "href": "../../TRUST/09-will-and-family-trusts.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-younger-beneficiaries",
+      "kind": "technical-term",
+      "abbreviation": "",
+      "term": "Younger beneficiaries",
+      "aliases": [],
+      "meaning": "Bereaved-minor and age 18-to-25 regimes have detailed statutory conditions and different IHT consequences.",
+      "taxTypeIds": [
+        "trust-tax"
+      ],
+      "references": [
+        {
+          "label": "Will and family trusts",
+          "href": "../../TRUST/09-will-and-family-trusts.html?v=20260716"
+        }
+      ]
+    }
+  ],
+  "migration": {
+    "trustSource": "TRUST/glossary.html",
+    "trustEntriesImported": 162,
+    "importedOn": "2026-07-19"
+  }
+}

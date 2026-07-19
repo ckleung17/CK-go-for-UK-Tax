@@ -12,6 +12,8 @@
   8. Homepage share control
   9. Income-calculation order
   10. Global tax-table reference
+  11. Header reference launchers
+  12. Global glossary reference
 */
 
 /* 1. Tooltip behaviour */
@@ -680,4 +682,88 @@ body.glossary-popup-view .glossary-entry:target {
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+/* 11. Header reference launchers */
+.header-reference-links-host {
+  position: relative;
+  padding-bottom: 3.75rem;
+}
+
+.header-reference-links {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.55rem;
+}
+
+.tax-table-header-link,
+.glossary-header-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.65rem;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.tax-table-header-link:hover,
+.glossary-header-link:hover {
+  background: #fff;
+  color: #003366;
+}
+
+.tax-table-header-link:focus-visible,
+.glossary-header-link:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
+}
+
+.tax-table-header-link .tax-table-icon,
+.glossary-header-link .glossary-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+@media (max-width: 480px) {
+  .header-reference-links {
+    left: 1rem;
+  }
+}
+
+/* 12. Global glossary reference */
+.glossary-reference-link,
+.glossary-page-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.glossary-reference-link {
+  font-weight: 700;
+}
+
+.glossary-icon {
+  flex: 0 0 auto;
+  width: 1.6em;
+  height: 1.6em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+}
+
+.glossary-icon text {
+  fill: currentColor;
+  stroke: none;
+  font-family: Arial, sans-serif;
+  font-size: 6px;
+  font-weight: 700;
+  text-anchor: middle;
 }

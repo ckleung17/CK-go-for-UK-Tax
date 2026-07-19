@@ -1,0 +1,177 @@
+/*
+ * Styles the shared tax glossary controls and wide reference table.
+ * Depends on reference/glossary/index.html and shared table styles.
+ *
+ * Contents:
+ * 1. Glossary search
+ * 2. Glossary table
+ * 3. Mobile scrolling and sticky headings
+ */
+
+/* 1. Glossary search */
+.global-glossary-controls {
+  display: grid;
+  gap: 0.85rem;
+  max-width: 36rem;
+  margin-top: 1rem;
+}
+
+.global-glossary-controls label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+}
+
+.global-glossary-search-field {
+  position: relative;
+  display: block;
+}
+
+.global-glossary-search-field svg {
+  position: absolute;
+  top: 50%;
+  left: 0.65rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: #334;
+  stroke-width: 2;
+  stroke-linecap: round;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.global-glossary-search-field input,
+.global-glossary-controls select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.55rem;
+  border: 1px solid #5f6f78;
+  border-radius: 4px;
+  color: #222;
+  font: inherit;
+}
+
+.global-glossary-search-field input {
+  padding-left: 2.35rem;
+}
+
+.global-glossary-search-field input:focus-visible,
+.global-glossary-controls select:focus-visible,
+.global-glossary-wrap:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
+
+.global-glossary-status {
+  min-height: 1.4em;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+/* 2. Glossary table */
+.global-glossary-table {
+  width: 100%;
+  min-width: 56rem;
+  margin: 0;
+  table-layout: fixed;
+}
+
+.global-glossary-table th:first-child {
+  width: 22%;
+}
+
+.global-glossary-table th:nth-child(2) {
+  width: 12%;
+}
+
+.global-glossary-table th:nth-child(3) {
+  width: 43%;
+}
+
+.global-glossary-table tbody th,
+.global-glossary-table tbody td {
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+/* 3. Mobile scrolling and sticky headings */
+@media (max-width: 720px) {
+  .global-glossary-table {
+    font-size: 0.72rem;
+    line-height: 1.25;
+  }
+
+  .global-glossary-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #f2f2f2;
+  }
+
+  .global-glossary-table tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+  }
+
+  .global-glossary-table thead th:first-child {
+    left: 0;
+    z-index: 3;
+  }
+}
+
+body.global-glossary-popup-view {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body.global-glossary-popup-view > header,
+body.global-glossary-popup-view > nav,
+body.global-glossary-popup-view main > section:first-child,
+body.global-glossary-popup-view #global-glossary-heading,
+body.global-glossary-popup-view .note,
+body.global-glossary-popup-view #global-footer,
+body.global-glossary-popup-view .tax-table-header-link,
+body.global-glossary-popup-view .global-glossary-table thead,
+body.global-glossary-popup-view .global-glossary-table tr:not(:target) {
+  display: none;
+}
+
+body.global-glossary-popup-view main,
+body.global-glossary-popup-view main > section,
+body.global-glossary-popup-view .global-glossary-wrap {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body.global-glossary-popup-view .global-glossary-table,
+body.global-glossary-popup-view .global-glossary-table tbody,
+body.global-glossary-popup-view .global-glossary-table tr:target,
+body.global-glossary-popup-view .global-glossary-table tr:target > * {
+  display: block;
+  width: auto;
+  min-width: 0;
+}
+
+body.global-glossary-popup-view .global-glossary-table tr:target {
+  padding: 1rem;
+  border: 0;
+}
+
+body.global-glossary-popup-view .global-glossary-table tr:target > * {
+  position: static;
+  padding: 0.35rem 0;
+  border: 0;
+  background: #fff;
+}
+
+body.global-glossary-popup-view .global-glossary-table tr:target > *::before {
+  content: attr(data-label) ": ";
+  font-weight: 700;
+}

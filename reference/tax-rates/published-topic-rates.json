@@ -3,6 +3,167 @@
   "lastReviewed": "2026-07-19",
   "taxTypes": [
     {
+      "id": "employment-paye",
+      "label": "Employment and PAYE",
+      "topicPath": "../../PTAX/PAYE/paye-index.html",
+      "scope": "UK employment Income Tax rates, statutory mileage amounts and benefits in kind under ITEPA 2003. PAYE is the collection system; separate National Insurance treatment can also apply.",
+      "periods": [
+        {
+          "id": "2026-27",
+          "label": "2026/27",
+          "status": "Current, enacted",
+          "effective": "6 April 2026 to 5 April 2027",
+          "sections": [
+            {
+              "heading": "Approved mileage allowance payments",
+              "columns": ["Vehicle or payment", "Business mileage", "Approved amount"],
+              "rows": [
+                ["Employee’s own car or van", "First 10,000 miles", "55p per mile"],
+                ["Employee’s own car or van", "After 10,000 miles", "25p per mile"],
+                ["Employee’s own motorcycle", "All business miles", "24p per mile"],
+                ["Employee’s own bicycle", "All business miles", "20p per mile"],
+                ["Qualifying fellow-employee passenger in a car or van", "Each qualifying passenger mile", "5p per mile"]
+              ]
+            },
+            {
+              "heading": "Company-car benefit percentages",
+              "columns": ["CO₂ emissions", "Electric range where relevant", "Appropriate percentage"],
+              "rows": [
+                ["0g/km", "Not applicable", "4%"],
+                ["1–50g/km", "130 miles or more", "4%"],
+                ["1–50g/km", "70–129 miles", "7%"],
+                ["1–50g/km", "40–69 miles", "10%"],
+                ["1–50g/km", "30–39 miles", "14%"],
+                ["1–50g/km", "Less than 30 miles", "16%"],
+                ["51–54g/km", "Not applicable", "17%"],
+                ["55–59g/km", "Not applicable", "18%"],
+                ["60–64g/km", "Not applicable", "19%"],
+                ["65–69g/km", "Not applicable", "20%"],
+                ["70–79g/km", "Not applicable", "21%"],
+                ["80–84g/km", "Not applicable", "22%"],
+                ["85–89g/km", "Not applicable", "23%"],
+                ["90–94g/km", "Not applicable", "24%"],
+                ["95–99g/km", "Not applicable", "25%"],
+                ["100–104g/km", "Not applicable", "26%"],
+                ["105–109g/km", "Not applicable", "27%"],
+                ["110–114g/km", "Not applicable", "28%"],
+                ["115–119g/km", "Not applicable", "29%"],
+                ["120–124g/km", "Not applicable", "30%"],
+                ["125–129g/km", "Not applicable", "31%"],
+                ["130–134g/km", "Not applicable", "32%"],
+                ["135–139g/km", "Not applicable", "33%"],
+                ["140–144g/km", "Not applicable", "34%"],
+                ["145–149g/km", "Not applicable", "35%"],
+                ["150–154g/km", "Not applicable", "36%"],
+                ["155g/km or more", "Not applicable", "37%"]
+              ]
+            },
+            {
+              "heading": "Vehicle benefits and official interest",
+              "columns": ["Allowance or charge", "2026/27 amount", "Important point"],
+              "rows": [
+                ["Van benefit — van emits CO₂", "£4,170", "No charge may arise where an exemption or restricted private-use rule applies."],
+                ["Van benefit — zero-emission van", "Nil", "Subject to the statutory conditions."],
+                ["Car-fuel benefit multiplier", "£29,200", "Multiply by the company car’s appropriate percentage; private fuel rules apply."],
+                ["Van-fuel benefit", "£798", "Applies where taxable private fuel is provided."],
+                ["Official rate of interest", "3.75% from 6 April 2026", "Used for certain employment-related loans and accommodation; reviewed quarterly and may change during the tax year."]
+              ]
+            },
+            {
+              "heading": "Student and postgraduate loan deductions",
+              "columns": ["Loan plan", "Annual earnings threshold", "Deduction above threshold"],
+              "rows": [
+                ["Plan 1", "£26,900", "9%"],
+                ["Plan 2", "£29,385", "9%"],
+                ["Plan 4", "£33,795", "9%"],
+                ["Plan 5", "£25,000", "9%"],
+                ["Postgraduate loan", "£21,000", "6%"]
+              ]
+            },
+            {
+              "heading": "Statutory payments",
+              "columns": ["Payment", "2026/27 rate", "Important point"],
+              "rows": [
+                ["Statutory Sick Pay", "£123.25 weekly or 80% of average weekly earnings, whichever is lower", "Eligibility and qualifying-day rules apply."],
+                ["Statutory Maternity Pay — first 6 weeks", "90% of average weekly earnings", "Eligibility and average-earnings rules apply."],
+                ["Statutory Maternity Pay — remaining weeks", "£194.32 or 90% of average weekly earnings, whichever is lower", "Payable for up to the statutory period if eligible."],
+                ["Paternity, Shared Parental, Parental Bereavement and Neonatal Care Pay", "£194.32 or 90% of average weekly earnings, whichever is lower", "Separate eligibility and duration rules apply."]
+              ]
+            },
+            {
+              "heading": "Legacy employer-supported childcare",
+              "columns": ["Employee’s tax position", "Maximum weekly exempt amount", "Availability"],
+              "rows": [
+                ["Basic-rate taxpayer", "£55", "Closed to new applicants from 4 October 2018; qualifying existing members may continue."],
+                ["Higher-rate taxpayer who joined on or after 6 April 2011", "£28", "Employer’s basic earnings assessment and continuing eligibility rules apply."],
+                ["Additional-rate taxpayer who joined on or after 6 April 2011", "£25", "Employer’s basic earnings assessment and continuing eligibility rules apply."]
+              ]
+            }
+          ],
+          "sourceIds": ["employment-mileage", "employer-rates-2026", "company-car-percentages", "vehicle-benefit-2026", "beneficial-loan-rates", "student-loan-guidance", "employer-childcare"]
+        },
+        {
+          "id": "2025-26",
+          "label": "2025/26",
+          "status": "Historical, enacted",
+          "effective": "6 April 2025 to 5 April 2026",
+          "sections": [
+            {
+              "heading": "Approved mileage allowance payments",
+              "columns": ["Vehicle or payment", "Business mileage", "Approved amount"],
+              "rows": [
+                ["Employee’s own car or van", "First 10,000 miles", "45p per mile"],
+                ["Employee’s own car or van", "After 10,000 miles", "25p per mile"],
+                ["Employee’s own motorcycle", "All business miles", "24p per mile"],
+                ["Employee’s own bicycle", "All business miles", "20p per mile"],
+                ["Qualifying fellow-employee passenger in a car or van", "Each qualifying passenger mile", "5p per mile"]
+              ]
+            },
+            {
+              "heading": "Selected vehicle benefits and official interest",
+              "columns": ["Allowance or charge", "2025/26 amount", "Important point"],
+              "rows": [
+                ["Zero-emission company-car percentage", "3%", "Other percentages depend on CO₂ emissions and, for certain cars, electric range."],
+                ["Van benefit — van emits CO₂", "£4,020", "Exemptions and restricted private-use rules may apply."],
+                ["Van benefit — zero-emission van", "Nil", "Subject to the statutory conditions."],
+                ["Car-fuel benefit multiplier", "£28,200", "Multiply by the company car’s appropriate percentage."],
+                ["Van-fuel benefit", "£769", "Applies where taxable private fuel is provided."],
+                ["Official rate of interest", "3.75%", "Used for certain employment-related loans and accommodation."]
+              ]
+            },
+            {
+              "heading": "Student and postgraduate loan deductions",
+              "columns": ["Loan plan", "Annual earnings threshold", "Deduction above threshold"],
+              "rows": [
+                ["Plan 1", "£26,065", "9%"],
+                ["Plan 2", "£28,470", "9%"],
+                ["Plan 4", "£32,745", "9%"],
+                ["Postgraduate loan", "£21,000", "6%"]
+              ]
+            },
+            {
+              "heading": "Selected statutory payments",
+              "columns": ["Payment", "2025/26 rate", "Important point"],
+              "rows": [
+                ["Statutory Sick Pay", "£118.75 weekly", "Eligibility and qualifying-day rules applied."],
+                ["Main statutory family-pay standard rate", "£187.18 or 90% of average weekly earnings, whichever was lower", "Separate first-six-week and eligibility rules applied where relevant."]
+              ]
+            },
+            {
+              "heading": "Legacy employer-supported childcare",
+              "columns": ["Employee’s tax position", "Maximum weekly exempt amount", "Availability"],
+              "rows": [
+                ["Basic-rate taxpayer", "£55", "Closed to new applicants from 4 October 2018; qualifying existing members could continue."],
+                ["Higher-rate taxpayer who joined on or after 6 April 2011", "£28", "Employer’s basic earnings assessment applied."],
+                ["Additional-rate taxpayer who joined on or after 6 April 2011", "£25", "Employer’s basic earnings assessment applied."]
+              ]
+            }
+          ],
+          "sourceIds": ["employment-mileage", "company-car-percentages", "vehicle-benefit-2026", "beneficial-loan-rates", "employer-bulletin-2025", "employer-childcare"]
+        }
+      ]
+    },
+    {
       "id": "capital-gains-tax",
       "label": "Capital Gains Tax (CGT)",
       "topicPath": "../../PTAX/CGT/cgt-index.html",
@@ -25,9 +186,75 @@
                 ["Annual exempt amount — individuals and personal representatives", "£3,000", "Deducted from gains, subject to eligibility."],
                 ["Annual exempt amount — most trustees", "£1,500", "Special sharing rules can apply to related trusts."]
               ]
+            },
+            {
+              "heading": "Short-lease percentage table",
+              "columns": ["Unexpired term in complete years", "Statutory percentage", "Use"],
+              "rows": [
+                ["50 or more", "100.000", "Short-lease computational factor"],
+                ["49", "99.657", "Short-lease computational factor"],
+                ["48", "99.289", "Short-lease computational factor"],
+                ["47", "98.902", "Short-lease computational factor"],
+                ["46", "98.490", "Short-lease computational factor"],
+                ["45", "98.059", "Short-lease computational factor"],
+                ["44", "97.595", "Short-lease computational factor"],
+                ["43", "97.107", "Short-lease computational factor"],
+                ["42", "96.593", "Short-lease computational factor"],
+                ["41", "96.041", "Short-lease computational factor"],
+                ["40", "95.457", "Short-lease computational factor"],
+                ["39", "94.842", "Short-lease computational factor"],
+                ["38", "94.189", "Short-lease computational factor"],
+                ["37", "93.497", "Short-lease computational factor"],
+                ["36", "92.761", "Short-lease computational factor"],
+                ["35", "91.981", "Short-lease computational factor"],
+                ["34", "91.156", "Short-lease computational factor"],
+                ["33", "90.280", "Short-lease computational factor"],
+                ["32", "89.354", "Short-lease computational factor"],
+                ["31", "88.371", "Short-lease computational factor"],
+                ["30", "87.330", "Short-lease computational factor"],
+                ["29", "86.226", "Short-lease computational factor"],
+                ["28", "85.053", "Short-lease computational factor"],
+                ["27", "83.816", "Short-lease computational factor"],
+                ["26", "82.496", "Short-lease computational factor"],
+                ["25", "81.100", "Short-lease computational factor"],
+                ["24", "79.622", "Short-lease computational factor"],
+                ["23", "78.055", "Short-lease computational factor"],
+                ["22", "76.399", "Short-lease computational factor"],
+                ["21", "74.635", "Short-lease computational factor"],
+                ["20", "72.770", "Short-lease computational factor"],
+                ["19", "70.791", "Short-lease computational factor"],
+                ["18", "68.697", "Short-lease computational factor"],
+                ["17", "66.470", "Short-lease computational factor"],
+                ["16", "64.116", "Short-lease computational factor"],
+                ["15", "61.617", "Short-lease computational factor"],
+                ["14", "58.971", "Short-lease computational factor"],
+                ["13", "56.167", "Short-lease computational factor"],
+                ["12", "53.191", "Short-lease computational factor"],
+                ["11", "50.038", "Short-lease computational factor"],
+                ["10", "46.695", "Short-lease computational factor"],
+                ["9", "43.154", "Short-lease computational factor"],
+                ["8", "39.399", "Short-lease computational factor"],
+                ["7", "35.414", "Short-lease computational factor"],
+                ["6", "31.195", "Short-lease computational factor"],
+                ["5", "26.722", "Short-lease computational factor"],
+                ["4", "21.983", "Short-lease computational factor"],
+                ["3", "16.959", "Short-lease computational factor"],
+                ["2", "11.629", "Short-lease computational factor"],
+                ["1", "5.983", "Short-lease computational factor"],
+                ["0", "0.000", "Short-lease computational factor"]
+              ]
+            },
+            {
+              "heading": "How to use the short-lease table",
+              "columns": ["Point", "Treatment", "Important limitation"],
+              "rows": [
+                ["Scope", "A non-renewable lease of 50 years or less is generally treated as a wasting asset.", "The calculation depends on the transaction and the relevant lease rules."],
+                ["Part years", "Use the complete-year percentage plus one twelfth of the difference to the next percentage for each additional month.", "Count 14 days or more as one month."],
+                ["Nature of table", "The percentages are calculation factors, not rates of Capital Gains Tax.", "Review TCGA 1992 and HMRC’s lease guidance before applying them."]
+              ]
             }
           ],
-          "sourceIds": ["cgt-rates", "budget-2025-annex"]
+          "sourceIds": ["cgt-rates", "budget-2025-annex", "cgt-short-leases"]
         },
         {
           "id": "2025-26",
@@ -49,14 +276,36 @@
             }
           ],
           "sourceIds": ["cgt-rates", "budget-2025-annex"]
+        },
+        {
+          "id": "2022-23",
+          "label": "2022/23",
+          "status": "Historical, enacted",
+          "effective": "6 April 2022 to 5 April 2023",
+          "sections": [
+            {
+              "heading": "Historical rates, exemptions and lifetime limits",
+              "columns": ["Taxpayer, gain or limit", "2022/23 amount or rate", "Important point"],
+              "rows": [
+                ["Individuals — gains within unused basic-rate band", "10%", "Residential-property gains were normally charged at 18%."],
+                ["Individuals — gains above the basic-rate band", "20%", "Residential-property gains were normally charged at 28%."],
+                ["Trustees and personal representatives", "20%", "Residential-property gains were normally charged at 28%."],
+                ["Business Asset Disposal Relief", "10%", "The lifetime limit on qualifying gains was £1 million."],
+                ["Investors’ Relief", "10%", "The lifetime limit on qualifying gains was £10 million; this is not the current limit."],
+                ["Annual exempt amount — individuals and personal representatives", "£12,300", "Historical amount for 2022/23."],
+                ["Annual exempt amount — most trustees", "£6,150", "Special sharing rules could apply to related trusts."]
+              ]
+            }
+          ],
+          "sourceIds": ["spring-budget-2023-annex", "cgt-aea-reduction"]
         }
       ]
     },
     {
       "id": "national-insurance",
-      "label": "National Insurance and PAYE",
+      "label": "National Insurance",
       "topicPath": "../../PTAX/NIC/nic-index.html",
-      "scope": "UK National Insurance contributions. PAYE is the collection system for employment Income Tax and Class 1 contributions; it is not a separate tax rate.",
+      "scope": "UK National Insurance contributions. Employment Income Tax, mileage allowances and benefits in kind are shown separately under Employment and PAYE.",
       "periods": [
         {
           "id": "2026-27",
@@ -252,10 +501,230 @@
           "sourceIds": ["trust-income-tax", "trust-manual-rates"]
         }
       ]
+    },
+    {
+      "id": "corporation-tax",
+      "label": "Corporation Tax (CT)",
+      "topicPath": "../../index.html",
+      "scope": "UK Corporation Tax rates and selected relief rates. Corporation Tax uses financial years beginning 1 April; a company accounting period can span two financial years. The detailed Corporation Tax study topic is planned under BTAX/CTAX/.",
+      "periods": [
+        {
+          "id": "fy-2026",
+          "label": "Financial year 2026",
+          "status": "Current, enacted",
+          "effective": "1 April 2026 to 31 March 2027",
+          "sections": [
+            {
+              "heading": "Corporation Tax rates and marginal relief",
+              "columns": ["Rate or limit", "Amount", "Important point"],
+              "rows": [
+                ["Main rate", "25%", "Generally applies where augmented profits exceed the upper limit."],
+                ["Small profits rate", "19%", "Generally applies where augmented profits do not exceed the lower limit; some companies, including close investment-holding companies, cannot use it."],
+                ["Marginal Relief lower limit", "£50,000", "The limits are reduced for short accounting periods and divided by the number of associated companies."],
+                ["Marginal Relief upper limit", "£250,000", "Marginal Relief may apply between the adjusted lower and upper limits."],
+                ["Marginal Relief standard fraction", "3/200", "The effective marginal rate is 26.5% in the standard £50,000 to £250,000 range before adjusting the limits."],
+                ["Patent Box rate", "10%", "Applies to qualifying Patent Box profits where the statutory conditions and election requirements are met."]
+              ]
+            },
+            {
+              "heading": "Research and Development relief",
+              "columns": ["Scheme", "Rate or amount", "Important point"],
+              "rows": [
+                ["Merged R&D expenditure credit", "20% of qualifying expenditure", "For accounting periods beginning on or after 1 April 2024. The taxable above-the-line credit is subject to qualifying-cost, claim, notification and PAYE-cap rules."],
+                ["Enhanced R&D intensive support", "86% additional deduction; payable credit normally 14.5% of the surrenderable loss", "For qualifying loss-making R&D-intensive small or medium-sized enterprises. Detailed intensity, loss, expenditure, claim and PAYE-cap conditions apply."]
+              ]
+            },
+            {
+              "heading": "Chargeable gains indexation reference",
+              "columns": ["Reference", "Current treatment", "Important point"],
+              "rows": [
+                ["Corporation Tax Indexation Allowance", "Frozen at the Retail Prices Index for December 2017", "For a qualifying asset acquired before 1 January 2018, indexation may reflect inflation only up to December 2017. Use HMRC’s official indexation-factor tables rather than the raw Retail Prices Index table."]
+              ]
+            }
+          ],
+          "sourceIds": ["corporation-tax-rates", "budget-2025-annex", "rd-merged-eris", "ct-indexation-2017"]
+        },
+        {
+          "id": "fy-2022",
+          "label": "Financial year 2022",
+          "status": "Historical, enacted",
+          "effective": "1 April 2022 to 31 March 2023",
+          "sections": [
+            {
+              "heading": "Corporation Tax and selected historical reliefs",
+              "columns": ["Rate or relief", "Historical amount", "Important point"],
+              "rows": [
+                ["Main Corporation Tax rate", "19%", "Applied to non-ring-fence profits in financial year 2022."],
+                ["Patent Box rate", "10%", "Subject to the Patent Box conditions and election requirements."],
+                ["SME R&D enhanced deduction", "230% total deduction", "Historical scheme. The exact treatment depends on when the accounting period began and when expenditure was incurred."],
+                ["Research and Development Expenditure Credit", "13%", "Historical above-the-line credit. Later rates and the post-1 April 2024 schemes are different."]
+              ]
+            }
+          ],
+          "sourceIds": ["corporation-tax-rates", "historical-rd-relief"]
+        }
+      ]
+    },
+    {
+      "id": "inheritance-tax",
+      "label": "Inheritance Tax (IHT)",
+      "topicPath": "../../index.html",
+      "scope": "UK Inheritance Tax rates, thresholds and selected reliefs. Liability can depend on residence history, the type and timing of a transfer, exemptions, ownership, valuation and detailed relief conditions. The detailed IHT study topic is planned under IHT/.",
+      "periods": [
+        {
+          "id": "2026-27",
+          "label": "2026/27",
+          "status": "Current, enacted",
+          "effective": "6 April 2026 to 5 April 2027",
+          "sections": [
+            {
+              "heading": "Main rates and thresholds",
+              "columns": ["Rate or threshold", "Amount", "Important point"],
+              "rows": [
+                ["Death rate", "40%", "Normally applies to the chargeable estate above the available nil-rate bands after exemptions and reliefs."],
+                ["Reduced death rate", "36%", "May apply where at least 10% of the relevant net estate component is left to charity; detailed component rules apply."],
+                ["Lifetime rate", "20%", "The lifetime rate for immediately chargeable transfers; further tax can arise if the transferor dies within seven years."],
+                ["Nil-rate band", "£325,000", "Unused percentage may be transferable from a deceased spouse or civil partner, subject to a claim and conditions."],
+                ["Residence nil-rate band", "Up to £175,000", "For a qualifying residence closely inherited by direct descendants; limited by the qualifying residential interest and other conditions."],
+                ["Residence nil-rate band taper", "£1 reduction for every £2 above £2 million", "The taper uses the value of the estate before exemptions and reliefs; the residence nil-rate band can be reduced to nil."]
+              ]
+            },
+            {
+              "heading": "Agricultural and Business Relief from 6 April 2026",
+              "columns": ["Relief or limit", "Amount", "Important point"],
+              "rows": [
+                ["Combined 100% relief allowance", "£2.5 million", "Shared across qualifying agricultural and business property. Any unused allowance may be transferable from a deceased spouse or civil partner, potentially increasing it to £5 million."],
+                ["Qualifying value above the allowance", "50% relief", "The allowance is apportioned across qualifying property; detailed ownership, activity, holding-period, trust and anti-avoidance rules apply."],
+                ["Shares admitted to trading but not listed", "50% relief", "Includes qualifying shares traded on markets such as AIM; no part receives the 100% allowance under this category."]
+              ]
+            },
+            {
+              "heading": "Lifetime gift exemptions",
+              "columns": ["Exemption", "Amount", "Important point"],
+              "rows": [
+                ["Annual exemption", "£3,000 each tax year", "Unused exemption may be carried forward for one tax year only; the current year’s exemption is used first."],
+                ["Small gifts", "Up to £250 per recipient each tax year", "May be used for any number of recipients, but not for someone who receives another exemption from the same donor in that tax year."],
+                ["Wedding or civil-partnership gift — child", "Up to £5,000", "Must be made in consideration of the marriage or civil partnership; statutory conditions apply."],
+                ["Wedding or civil-partnership gift — grandchild or great-grandchild", "Up to £2,500", "The relationship is between the donor and the person marrying or entering the civil partnership."],
+                ["Wedding or civil-partnership gift — any other person", "Up to £1,000", "May be combined with the annual exemption, but not the small-gift exemption for the same recipient."],
+                ["Normal expenditure out of income", "No fixed monetary limit", "Must form part of normal expenditure, be made from income and leave enough income to maintain the donor’s usual standard of living."]
+              ]
+            },
+            {
+              "heading": "Relief linked to timing",
+              "columns": ["Relief", "Time between events", "Reduction"],
+              "rows": [
+                ["Taper relief on tax attributable to a lifetime gift", "Death within 3 years", "Nil"],
+                ["Taper relief on tax attributable to a lifetime gift", "3 to 4 years", "20%"],
+                ["Taper relief on tax attributable to a lifetime gift", "4 to 5 years", "40%"],
+                ["Taper relief on tax attributable to a lifetime gift", "5 to 6 years", "60%"],
+                ["Taper relief on tax attributable to a lifetime gift", "6 to 7 years", "80%"],
+                ["Quick Succession Relief", "Earlier transfer within 1 year", "100%"],
+                ["Quick Succession Relief", "More than 1 but not more than 2 years", "80%"],
+                ["Quick Succession Relief", "More than 2 but not more than 3 years", "60%"],
+                ["Quick Succession Relief", "More than 3 but not more than 4 years", "40%"],
+                ["Quick Succession Relief", "More than 4 but not more than 5 years", "20%"]
+              ]
+            }
+          ],
+          "sourceIds": ["iht-rates-thresholds", "iht-main-rates", "iht-rnrb", "iht-apr-bpr", "iht-business-relief", "iht-taper-relief", "iht-quick-succession", "iht-gift-exemptions"]
+        },
+        {
+          "id": "2022-23",
+          "label": "2022/23",
+          "status": "Historical, enacted",
+          "effective": "6 April 2022 to 5 April 2023",
+          "sections": [
+            {
+              "heading": "Main historical rates and thresholds",
+              "columns": ["Rate or threshold", "Historical amount", "Important point"],
+              "rows": [
+                ["Death rate", "40%", "Applied to the chargeable estate above the available nil-rate bands after exemptions and reliefs."],
+                ["Reduced death rate", "36%", "Could apply where the charitable-giving conditions were met."],
+                ["Lifetime rate", "20%", "Applied to immediately chargeable lifetime transfers, subject to the detailed rules."],
+                ["Nil-rate band", "£325,000", "Transferable nil-rate-band rules could apply."],
+                ["Residence nil-rate band", "Up to £175,000", "Qualifying-home, direct-descendant and taper rules applied."],
+                ["Residence nil-rate band taper threshold", "£2 million", "The band reduced by £1 for every £2 above the threshold."]
+              ]
+            },
+            {
+              "heading": "Historical relief note",
+              "columns": ["Relief", "2022/23 treatment", "Important point"],
+              "rows": [
+                ["Agricultural and Business Relief", "Existing qualifying property could receive 100% or 50% relief", "The £2.5 million combined cap did not apply in 2022/23; it applies from 6 April 2026."]
+              ]
+            },
+            {
+              "heading": "Historical lifetime gift exemptions",
+              "columns": ["Exemption", "2022/23 amount", "Important point"],
+              "rows": [
+                ["Annual exemption", "£3,000", "Unused exemption could be carried forward for one tax year only."],
+                ["Small gifts", "Up to £250 per recipient", "The same-recipient restriction applied."],
+                ["Wedding gift — child", "Up to £5,000", "The marriage-gift conditions applied."],
+                ["Wedding gift — grandchild or great-grandchild", "Up to £2,500", "The marriage-gift conditions applied."],
+                ["Wedding gift — any other person", "Up to £1,000", "The marriage-gift conditions applied."],
+                ["Normal expenditure out of income", "No fixed monetary limit", "The normality, income and standard-of-living conditions applied."]
+              ]
+            }
+          ],
+          "sourceIds": ["iht-rates-thresholds", "iht-main-rates", "iht-rnrb", "iht-apr-bpr", "iht-business-relief", "iht-gift-exemptions"]
+        }
+      ]
+    },
+    {
+      "id": "tax-administration",
+      "label": "Tax administration",
+      "topicPath": "../../index.html",
+      "scope": "HMRC interest applying across several taxes and duties. These rates can change during a tax year and are not the same as the official interest rate used for employment-related beneficial loans.",
+      "periods": [
+        {
+          "id": "current-from-2026-01-09",
+          "label": "From 9 January 2026",
+          "status": "Current",
+          "effective": "From 9 January 2026 until HMRC announces a later change",
+          "sections": [
+            {
+              "heading": "Main HMRC late-payment and repayment interest",
+              "columns": ["Effective from", "Late-payment interest", "Repayment interest"],
+              "rows": [
+                ["9 January 2026", "7.75%", "2.75%"],
+                ["27 August 2025", "8.00%", "3.00%"],
+                ["28 May 2025", "8.25%", "3.25%"],
+                ["6 April 2025", "8.50%", "3.50%"]
+              ]
+            }
+          ],
+          "sourceIds": ["hmrc-payment-interest"]
+        }
+      ]
     }
   ],
   "sources": {
+    "employment-mileage": {"title": "Travel: mileage and fuel rates and allowances", "url": "https://www.gov.uk/government/publications/rates-and-allowances-travel-mileage-and-fuel-allowances/travel-mileage-and-fuel-rates-and-allowances", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "employer-rates-2026": {"title": "Rates and thresholds for employers 2026 to 2027", "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "company-car-percentages": {"title": "Company-car benefit appropriate percentages", "url": "https://www.gov.uk/guidance/company-car-benefit-the-appropriate-percentage-480-appendix-2", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "vehicle-benefit-2026": {"title": "Van benefit and car and van fuel benefit charges for 2026 to 2027", "url": "https://www.gov.uk/government/publications/increase-to-van-benefit-charge-and-fuel-benefit-charges-for-cars-and-vans", "authority": "HM Revenue & Customs", "status": "Official publication"},
+    "beneficial-loan-rates": {"title": "Beneficial loan arrangements: HMRC official rates", "url": "https://www.gov.uk/government/publications/rates-and-allowances-beneficial-loan-arrangements-hmrc-official-rates/beneficial-loan-arrangements-hmrc-official-rates", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "student-loan-guidance": {"title": "Student and postgraduate loan repayment guidance for employers", "url": "https://www.gov.uk/guidance/special-rules-for-student-loans", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "employer-bulletin-2025": {"title": "Employer Bulletin: April 2025", "url": "https://www.gov.uk/government/publications/employer-bulletin-april-2025/april-2025-issue-of-the-employer-bulletin", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "employer-childcare": {"title": "Employer-supported childcare", "url": "https://www.gov.uk/guidance/employer-supported-childcare-480-appendix-11", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "hmrc-payment-interest": {"title": "HMRC interest rates for late and early payments", "url": "https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "corporation-tax-rates": {"title": "Corporation Tax rates and allowances", "url": "https://www.gov.uk/government/publications/rates-and-allowances-corporation-tax/rates-and-allowances-corporation-tax", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "rd-merged-eris": {"title": "R&D tax relief: merged scheme and enhanced R&D intensive support", "url": "https://www.gov.uk/guidance/research-and-development-rd-tax-relief-the-merged-scheme-and-enhanced-rd-intensive-support", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "historical-rd-relief": {"title": "Research and Development tax relief for small and medium-sized enterprises", "url": "https://www.gov.uk/guidance/corporation-tax-research-and-development-tax-relief-for-small-and-medium-sized-enterprises", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "iht-rates-thresholds": {"title": "Inheritance Tax thresholds and interest rates", "url": "https://www.gov.uk/government/publications/rates-and-allowances-inheritance-tax-thresholds-and-interest-rates", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "iht-main-rates": {"title": "IHTM30171: Inheritance Tax rates", "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm30171", "authority": "HM Revenue & Customs manual", "status": "HMRC interpretation"},
+    "iht-rnrb": {"title": "Check if an estate qualifies for the residence nil-rate band", "url": "https://www.gov.uk/guidance/check-if-you-can-get-an-additional-inheritance-tax-threshold", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "iht-apr-bpr": {"title": "Agricultural Relief for Inheritance Tax", "url": "https://www.gov.uk/guidance/agricultural-relief-on-inheritance-tax", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "iht-business-relief": {"title": "Business Relief for Inheritance Tax: what qualifies", "url": "https://www.gov.uk/business-relief-inheritance-tax/what-qualifies-for-business-relief", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "iht-taper-relief": {"title": "How Inheritance Tax works: thresholds, rules and allowances", "url": "https://www.gov.uk/inheritance-tax/gifts", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "iht-quick-succession": {"title": "IHTM22041: Quick Succession Relief", "url": "https://www.gov.uk/hmrc-internal-manuals/inheritance-tax-manual/ihtm22041", "authority": "HM Revenue & Customs manual", "status": "HMRC interpretation"},
+    "iht-gift-exemptions": {"title": "How Inheritance Tax works: rules on giving gifts", "url": "https://www.gov.uk/inheritance-tax/gifts", "authority": "HM Revenue & Customs", "status": "Official guidance"},
     "cgt-rates": {"title": "Capital Gains Tax rates and allowances", "url": "https://www.gov.uk/guidance/capital-gains-tax-rates-and-allowances", "authority": "HM Revenue & Customs", "status": "Official guidance"},
+    "spring-budget-2023-annex": {"title": "Spring Budget 2023: rates and allowances", "url": "https://www.gov.uk/government/publications/spring-budget-2023-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances", "authority": "HM Treasury", "status": "Official historical publication"},
+    "cgt-aea-reduction": {"title": "Reducing the annual exempt amount for Capital Gains Tax", "url": "https://www.gov.uk/government/publications/reducing-the-annual-exempt-amount-for-capital-gains-tax", "authority": "HM Revenue & Customs", "status": "Official policy paper"},
+    "cgt-short-leases": {"title": "Taxation of Chargeable Gains Act 1992, Schedule 8", "url": "https://www.legislation.gov.uk/ukpga/1992/12/schedule/8", "authority": "UK legislation", "status": "Enacted legislation"},
+    "ct-indexation-2017": {"title": "Corporation Tax on chargeable gains: Indexation Allowance 2017", "url": "https://www.gov.uk/government/publications/corporation-tax-on-chargeable-gains-indexation-allowance-2017", "authority": "HM Revenue & Customs", "status": "Official guidance"},
     "budget-2025-annex": {"title": "Budget 2025: rates and allowances", "url": "https://www.gov.uk/government/publications/budget-2025-overview-of-tax-legislation-and-rates-ootlar/annex-a-rates-and-allowances", "authority": "HM Treasury", "status": "Official publication"},
     "nic-overview": {"title": "National Insurance: how much you pay", "url": "https://www.gov.uk/national-insurance/how-much-you-pay", "authority": "HM Revenue & Customs", "status": "Official guidance"},
     "employer-rates": {"title": "Rates and thresholds for employers 2026 to 2027", "url": "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027", "authority": "HM Revenue & Customs", "status": "Official guidance"},

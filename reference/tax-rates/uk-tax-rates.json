@@ -3,6 +3,66 @@
   "dataset": "UK individual Income Tax rates and allowances",
   "currentTaxYear": "2026-27",
   "lastReviewed": "2026-07-19",
+  "investmentReliefsByTaxYear": {
+    "2026-27": [
+      {"name": "Enterprise Investment Scheme (EIS)", "rate": "30%", "limit": "£1 million; up to £2 million if the amount above £1 million is invested in knowledge-intensive companies", "availability": "Available; investor, company, share and holding-period conditions apply."},
+      {"name": "Venture Capital Trust (VCT)", "rate": "20%", "limit": "£200,000", "availability": "Available for qualifying new VCT shares; normally must be held for at least 5 years."},
+      {"name": "Seed Enterprise Investment Scheme (SEIS)", "rate": "50%", "limit": "£200,000", "availability": "Available; investor, company, share and holding-period conditions apply."},
+      {"name": "Social Investment Tax Relief (SITR)", "rate": "Closed", "limit": "No new qualifying investment", "availability": "Only investments made on or before 5 April 2023 could qualify; historical claim deadlines may remain relevant."}
+    ],
+    "2025-26": [
+      {"name": "Enterprise Investment Scheme (EIS)", "rate": "30%", "limit": "£1 million; up to £2 million if the amount above £1 million is invested in knowledge-intensive companies", "availability": "Available; detailed conditions apply."},
+      {"name": "Venture Capital Trust (VCT)", "rate": "30%", "limit": "£200,000", "availability": "Available for qualifying new VCT shares; detailed conditions apply."},
+      {"name": "Seed Enterprise Investment Scheme (SEIS)", "rate": "50%", "limit": "£200,000", "availability": "Available; detailed conditions apply."},
+      {"name": "Social Investment Tax Relief (SITR)", "rate": "Closed", "limit": "No new qualifying investment", "availability": "Only investments made on or before 5 April 2023 could qualify."}
+    ],
+    "2024-25": [
+      {"name": "Enterprise Investment Scheme (EIS)", "rate": "30%", "limit": "£1 million; up to £2 million if the amount above £1 million is invested in knowledge-intensive companies", "availability": "Available; detailed conditions apply."},
+      {"name": "Venture Capital Trust (VCT)", "rate": "30%", "limit": "£200,000", "availability": "Available for qualifying new VCT shares; detailed conditions apply."},
+      {"name": "Seed Enterprise Investment Scheme (SEIS)", "rate": "50%", "limit": "£200,000", "availability": "Available; detailed conditions apply."},
+      {"name": "Social Investment Tax Relief (SITR)", "rate": "Closed", "limit": "No new qualifying investment", "availability": "Only investments made on or before 5 April 2023 could qualify."}
+    ],
+    "2023-24": [
+      {"name": "Enterprise Investment Scheme (EIS)", "rate": "30%", "limit": "£1 million; up to £2 million if the amount above £1 million is invested in knowledge-intensive companies", "availability": "Available; detailed conditions apply."},
+      {"name": "Venture Capital Trust (VCT)", "rate": "30%", "limit": "£200,000", "availability": "Available for qualifying new VCT shares; detailed conditions apply."},
+      {"name": "Seed Enterprise Investment Scheme (SEIS)", "rate": "50%", "limit": "£200,000", "availability": "Limit increased for shares issued from 6 April 2023; detailed conditions apply."},
+      {"name": "Social Investment Tax Relief (SITR)", "rate": "Closed", "limit": "No new qualifying investment", "availability": "Only investments made on or before 5 April 2023 could qualify."}
+    ]
+  },
+  "incomeRelatedReferencesByTaxYear": {
+    "2026-27": [
+      {"category": "Qualifying Care Relief", "item": "Annual household fixed amount", "amount": "£20,440", "point": "Shared between qualifying carers in the same household and apportioned for part-years."},
+      {"category": "Qualifying Care Relief", "item": "Weekly amount — child under 11", "amount": "£435", "point": "Added for each qualifying week of care."},
+      {"category": "Qualifying Care Relief", "item": "Weekly amount — child aged 11 or over, or adult", "amount": "£515", "point": "Added for each qualifying week of care."},
+      {"category": "Child Benefit", "item": "Eldest or only child", "amount": "£27.05 weekly", "point": "Child Benefit is a social-security payment; the High Income Child Benefit Charge may apply."},
+      {"category": "Child Benefit", "item": "Each additional child", "amount": "£17.90 weekly", "point": "Eligibility conditions apply."},
+      {"category": "High Income Child Benefit Charge", "item": "Adjusted net income range", "amount": "Above £60,000 to £80,000", "point": "The charge withdraws 1% of Child Benefit for each £200 above £60,000; it equals all Child Benefit at £80,000 or more."}
+    ],
+    "2025-26": [
+      {"category": "Qualifying Care Relief", "item": "Annual household fixed amount", "amount": "£19,690", "point": "Shared between qualifying carers in the same household and apportioned for part-years."},
+      {"category": "Qualifying Care Relief", "item": "Weekly amount — child under 11", "amount": "£415", "point": "Added for each qualifying week of care."},
+      {"category": "Qualifying Care Relief", "item": "Weekly amount — child aged 11 or over, or adult", "amount": "£495", "point": "Added for each qualifying week of care."},
+      {"category": "Child Benefit", "item": "Eldest or only child", "amount": "£26.05 weekly", "point": "The High Income Child Benefit Charge may apply."},
+      {"category": "Child Benefit", "item": "Each additional child", "amount": "£17.25 weekly", "point": "Eligibility conditions apply."},
+      {"category": "High Income Child Benefit Charge", "item": "Adjusted net income range", "amount": "Above £60,000 to £80,000", "point": "The charge withdrew 1% of Child Benefit for each £200 above £60,000."}
+    ],
+    "2024-25": [
+      {"category": "Qualifying Care Relief", "item": "Annual household fixed amount", "amount": "£19,360", "point": "Shared between qualifying carers in the same household and apportioned for part-years."},
+      {"category": "Qualifying Care Relief", "item": "Weekly amount — child under 11", "amount": "£405", "point": "Added for each qualifying week of care."},
+      {"category": "Qualifying Care Relief", "item": "Weekly amount — child aged 11 or over, or adult", "amount": "£485", "point": "Added for each qualifying week of care."},
+      {"category": "Child Benefit", "item": "Eldest or only child", "amount": "£25.60 weekly", "point": "The High Income Child Benefit Charge may apply."},
+      {"category": "Child Benefit", "item": "Each additional child", "amount": "£16.95 weekly", "point": "Eligibility conditions apply."},
+      {"category": "High Income Child Benefit Charge", "item": "Adjusted net income range", "amount": "Above £60,000 to £80,000", "point": "The charge withdrew 1% of Child Benefit for each £200 above £60,000."}
+    ],
+    "2023-24": [
+      {"category": "Qualifying Care Relief", "item": "Annual household fixed amount", "amount": "£18,140", "point": "Shared between qualifying carers in the same household and apportioned for part-years."},
+      {"category": "Qualifying Care Relief", "item": "Weekly amount — child under 11", "amount": "£375", "point": "Added for each qualifying week of care."},
+      {"category": "Qualifying Care Relief", "item": "Weekly amount — child aged 11 or over, or adult", "amount": "£450", "point": "Added for each qualifying week of care."},
+      {"category": "Child Benefit", "item": "Eldest or only child", "amount": "£24.00 weekly", "point": "The High Income Child Benefit Charge may apply."},
+      {"category": "Child Benefit", "item": "Each additional child", "amount": "£15.90 weekly", "point": "Eligibility conditions apply."},
+      {"category": "High Income Child Benefit Charge", "item": "Adjusted net income range", "amount": "Above £50,000 to £60,000", "point": "The charge withdrew 1% of Child Benefit for each £100 above £50,000."}
+    ]
+  },
   "scopeNote": "England, Wales and Northern Ireland rates apply to non-savings income for taxpayers in those jurisdictions. Scottish rates apply to non-savings, non-dividend income of Scottish taxpayers. Savings and dividend rates are UK-wide.",
   "sources": {
     "hmrc-rates": {
@@ -27,6 +87,48 @@
       "title": "Personal Allowances: adjusted net income",
       "url": "https://www.gov.uk/guidance/adjusted-net-income",
       "authority": "HM Revenue & Customs guidance",
+      "status": "Official guidance"
+    },
+    "hmrc-venture-capital-reliefs": {
+      "title": "Tax relief for investors using venture capital schemes",
+      "url": "https://www.gov.uk/guidance/venture-capital-schemes-tax-relief-for-investors",
+      "authority": "HM Revenue & Customs guidance",
+      "status": "Official guidance"
+    },
+    "hmrc-eis-2026": {
+      "title": "HS341 Enterprise Investment Scheme: Income Tax relief (2026)",
+      "url": "https://www.gov.uk/government/publications/enterprise-investment-scheme-income-tax-relief-hs341-self-assessment-helpsheet/hs341-enterprise-investment-scheme-income-tax-relief-2026",
+      "authority": "HM Revenue & Customs guidance",
+      "status": "Official guidance"
+    },
+    "hmrc-seis-relief": {
+      "title": "VCM31130: SEIS Income Tax relief",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/venture-capital-schemes-manual/vcm31130",
+      "authority": "HM Revenue & Customs manual",
+      "status": "HMRC interpretation"
+    },
+    "hmrc-vct-relief": {
+      "title": "VCM51030: VCT Income Tax relief",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/venture-capital-schemes-manual/vcm51030",
+      "authority": "HM Revenue & Customs manual",
+      "status": "HMRC interpretation"
+    },
+    "hmrc-qualifying-care": {
+      "title": "BIM52765: calculation of Qualifying Care Relief",
+      "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim52765",
+      "authority": "HM Revenue & Customs manual",
+      "status": "HMRC interpretation"
+    },
+    "hmrc-child-benefit-rates": {
+      "title": "Child Benefit rates and allowances",
+      "url": "https://www.gov.uk/government/publications/rates-and-allowances-tax-credits-child-benefit-and-guardians-allowance/tax-credits-child-benefit-and-guardians-allowance",
+      "authority": "HM Revenue & Customs guidance",
+      "status": "Official guidance"
+    },
+    "hmrc-hicbc": {
+      "title": "High Income Child Benefit Charge calculator and thresholds",
+      "url": "https://www.gov.uk/child-benefit-tax-calculator",
+      "authority": "HM Revenue & Customs service",
       "status": "Official guidance"
     },
     "hmt-budget-2025-rates": {
@@ -69,7 +171,7 @@
       "displayStatus": "Current",
       "legislativeStatus": "Enacted",
       "verifiedOn": "2026-07-19",
-      "sourceIds": ["ita-2007", "hmrc-rates", "hmrc-adjusted-net-income", "hmrc-savings", "hmrc-dividends", "hmt-budget-2025-rates", "scottish-rates"],
+      "sourceIds": ["ita-2007", "hmrc-rates", "hmrc-adjusted-net-income", "hmrc-savings", "hmrc-dividends", "hmrc-venture-capital-reliefs", "hmrc-eis-2026", "hmrc-seis-relief", "hmrc-vct-relief", "hmrc-qualifying-care", "hmrc-child-benefit-rates", "hmrc-hicbc", "hmt-budget-2025-rates", "scottish-rates"],
       "allowances": {
         "personalAllowance": 12570,
         "personalAllowanceTaperThreshold": 100000,
@@ -126,7 +228,7 @@
       "displayStatus": "Historical",
       "legislativeStatus": "Enacted",
       "verifiedOn": "2026-07-19",
-      "sourceIds": ["ita-2007", "hmrc-rates", "hmrc-adjusted-net-income", "hmrc-savings", "hmrc-dividends", "hmt-budget-2025-rates", "hmt-autumn-budget-2024-rates", "scottish-rates"],
+      "sourceIds": ["ita-2007", "hmrc-rates", "hmrc-adjusted-net-income", "hmrc-savings", "hmrc-dividends", "hmrc-venture-capital-reliefs", "hmrc-seis-relief", "hmrc-vct-relief", "hmrc-qualifying-care", "hmrc-child-benefit-rates", "hmrc-hicbc", "hmt-budget-2025-rates", "hmt-autumn-budget-2024-rates", "scottish-rates"],
       "allowances": {
         "personalAllowance": 12570,
         "personalAllowanceTaperThreshold": 100000,
@@ -183,7 +285,7 @@
       "displayStatus": "Historical",
       "legislativeStatus": "Enacted",
       "verifiedOn": "2026-07-19",
-      "sourceIds": ["ita-2007", "hmrc-rates", "hmrc-adjusted-net-income", "hmrc-savings", "hmrc-dividends", "hmt-autumn-budget-2024-rates", "hmt-spring-budget-2024-rates", "scottish-rates"],
+      "sourceIds": ["ita-2007", "hmrc-rates", "hmrc-adjusted-net-income", "hmrc-savings", "hmrc-dividends", "hmrc-venture-capital-reliefs", "hmrc-seis-relief", "hmrc-vct-relief", "hmrc-qualifying-care", "hmrc-child-benefit-rates", "hmrc-hicbc", "hmt-autumn-budget-2024-rates", "hmt-spring-budget-2024-rates", "scottish-rates"],
       "allowances": {
         "personalAllowance": 12570,
         "personalAllowanceTaperThreshold": 100000,
@@ -240,7 +342,7 @@
       "displayStatus": "Historical",
       "legislativeStatus": "Enacted",
       "verifiedOn": "2026-07-19",
-      "sourceIds": ["ita-2007", "hmrc-rates", "hmrc-adjusted-net-income", "hmrc-savings", "hmrc-dividends", "hmt-spring-budget-2024-rates", "scottish-rates"],
+      "sourceIds": ["ita-2007", "hmrc-rates", "hmrc-adjusted-net-income", "hmrc-savings", "hmrc-dividends", "hmrc-venture-capital-reliefs", "hmrc-seis-relief", "hmrc-vct-relief", "hmrc-qualifying-care", "hmrc-child-benefit-rates", "hmrc-hicbc", "hmt-spring-budget-2024-rates", "scottish-rates"],
       "allowances": {
         "personalAllowance": 12570,
         "personalAllowanceTaperThreshold": 100000,

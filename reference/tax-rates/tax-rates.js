@@ -16,6 +16,8 @@
   /* 1. DOM setup */
   const elements = {
     controls: document.getElementById("tax-rate-controls"),
+    search: document.getElementById("tax-rate-search"),
+    searchStatus: document.getElementById("tax-rate-search-status"),
     type: document.getElementById("tax-rate-type"),
     year: document.getElementById("tax-rate-year"),
     jurisdiction: document.getElementById("tax-rate-jurisdiction"),
@@ -31,6 +33,8 @@
     nonSavingsBody: document.getElementById("tax-rate-non-savings-body"),
     savingsBody: document.getElementById("tax-rate-savings-body"),
     dividendBody: document.getElementById("tax-rate-dividend-body"),
+    investmentReliefsBody: document.getElementById("tax-rate-investment-reliefs-body"),
+    incomeRelatedBody: document.getElementById("tax-rate-income-related-body"),
     sources: document.getElementById("tax-rate-sources"),
     incomePanel: document.getElementById("income-tax-panel"),
     incomeSourcesPanel: document.getElementById("income-tax-sources-panel"),
@@ -50,6 +54,8 @@
 
   let dataset;
   let topicDataset;
+  let glossaryDataset;
+  let taxTypeSearchRecords = [];
 
   /* 2. Data validation and formatting */
   const moneyFormatter = new Intl.NumberFormat("en-GB", {
@@ -156,6 +162,14 @@
     if (!ids.has(candidate.currentTaxYear)) {
       throw new Error("The current tax year is missing from the dataset.");
     }
+    candidate.taxYears.forEach((taxYear) => {
+      if (!Array.isArray(candidate.investmentReliefsByTaxYear[taxYear.id])) {
+        throw new Error(taxYear.id + " has no investment-relief reference.");
+      }
+      if (!Array.isArray(candidate.incomeRelatedReferencesByTaxYear[taxYear.id])) {
+        throw new Error(taxYear.id + " has no care-relief and Child Benefit reference.");
+      }
+    });
   };
 
   /* 3. Table and source rendering */
@@ -340,6 +354,62 @@
     }
   };
 
+  const populateTaxTypeOptions = (records, preferredTaxType) => {
+    elements.type.replaceChildren();
+    records.forEach((record) => {
+      const option = document.createElement("option");
+      option.value = record.id;
+      option.textContent = record.label;
+      elements.type.appendChild(option);
+    });
+
+    if (records.some((record) => record.id === preferredTaxType)) {
+      elements.type.value = preferredTaxType;
+    }
+  };
+
+  const matchesSearchTerm = (searchText, term) => {
+    if (term.length > 3) {
+      return searchText.includes(term);
+    }
+    const escapedTerm = term.replace(/[.*+?^$()|[\]{}\\]/g, "\\$&");
+    return new RegExp("(^|[^a-z0-9])" + escapedTerm + "(?=$|[^a-z0-9])", "u")
+      .test(searchText);
+  };
+
+  const filterTaxTypes = () => {
+    const terms = elements.search.value
+      .trim()
+      .toLocaleLowerCase("en-GB")
+      .split(/\s+/)
+      .filter(Boolean);
+    const previousTaxType = elements.type.value;
+    const matches = taxTypeSearchRecords.filter((record) =>
+      terms.every((term) => matchesSearchTerm(record.searchText, term))
+    );
+
+    populateTaxTypeOptions(matches, previousTaxType);
+    elements.type.disabled = matches.length === 0;
+    elements.year.disabled = matches.length === 0;
+    elements.jurisdiction.disabled = matches.length === 0;
+
+    if (matches.length === 0) {
+      elements.searchStatus.textContent = "No tax topics match “"
+        + elements.search.value.trim() + "”.";
+      elements.incomePanel.hidden = true;
+      elements.incomeSourcesPanel.hidden = true;
+      elements.topicPanel.hidden = true;
+      return matches;
+    }
+
+    elements.searchStatus.textContent = terms.length
+      ? matches.length + (matches.length === 1 ? " tax topic matches." : " tax topics match.")
+      : "";
+    configurePeriodOptions();
+    renderSelected();
+    return matches;
+  };
+
   const configurePeriodOptions = () => {
     const isIncomeTax = elements.type.value === "income-tax";
     const periods = isIncomeTax
@@ -394,6 +464,24 @@
       startingRateRow.concat(rateRows(taxYear.rates.savings))
     );
     renderSimpleRows(elements.dividendBody, rateRows(taxYear.rates.dividends));
+    renderSimpleRows(
+      elements.investmentReliefsBody,
+      dataset.investmentReliefsByTaxYear[taxYear.id].map((relief) => [
+        relief.name,
+        relief.rate,
+        relief.limit,
+        relief.availability
+      ])
+    );
+    renderSimpleRows(
+      elements.incomeRelatedBody,
+      dataset.incomeRelatedReferencesByTaxYear[taxYear.id].map((record) => [
+        record.category,
+        record.item,
+        record.amount,
+        record.point
+      ])
+    );
     renderSources(taxYear);
 
     elements.reviewed.textContent = "Record verified "
@@ -407,17 +495,24 @@
   const initialise = async () => {
     try {
       const responses = await Promise.all([
-        fetch("uk-tax-rates.json?v=20260719c"),
-        fetch("published-topic-rates.json?v=20260719c")
+        fetch("uk-tax-rates.json?v=20260719h"),
+        fetch("published-topic-rates.json?v=20260719h"),
+        fetch("../glossary/glossary.json?v=20260719a")
       ]);
       if (responses.some((response) => !response.ok)) {
         throw new Error("The tax-rate data could not be loaded.");
       }
 
-      const [candidate, topicCandidate] = await Promise.all(
+      const [candidate, topicCandidate, glossaryCandidate] = await Promise.all(
         responses.map((response) => response.json())
       );
       validateDataset(candidate);
+      if (
+        glossaryCandidate.schemaVersion !== 1
+        || !Array.isArray(glossaryCandidate.entries)
+      ) {
+        throw new Error("The glossary dataset uses an unsupported schema.");
+      }
       if (
         topicCandidate.schemaVersion !== 1
         || !Array.isArray(topicCandidate.taxTypes)
@@ -438,17 +533,43 @@
       });
       dataset = candidate;
       topicDataset = topicCandidate;
+      glossaryDataset = glossaryCandidate;
 
-      const incomeOption = document.createElement("option");
-      incomeOption.value = "income-tax";
-      incomeOption.textContent = "Income Tax";
-      elements.type.appendChild(incomeOption);
-      topicCandidate.taxTypes.forEach((taxType) => {
-        const option = document.createElement("option");
-        option.value = taxType.id;
-        option.textContent = taxType.label;
-        elements.type.appendChild(option);
-      });
+      const glossaryAliasesFor = (taxTypeId) => glossaryDataset.entries
+        .filter((entry) => entry.taxTypeIds.includes(taxTypeId))
+        .flatMap((entry) => [entry.abbreviation, entry.term, ...entry.aliases])
+        .join(" ");
+
+      const requestedTaxType = new URLSearchParams(window.location.search).get("tax");
+      taxTypeSearchRecords = [
+        {
+          id: "income-tax",
+          label: "Income Tax",
+          searchText: ([
+            "Income Tax",
+            glossaryAliasesFor("income-tax"),
+            JSON.stringify(candidate.taxYears),
+            JSON.stringify(candidate.investmentReliefsByTaxYear),
+            JSON.stringify(candidate.incomeRelatedReferencesByTaxYear)
+          ].join(" "))
+            .toLocaleLowerCase("en-GB")
+        },
+        ...topicCandidate.taxTypes.map((taxType) => ({
+          id: taxType.id,
+          label: taxType.label,
+          searchText: ([
+            taxType.label,
+            glossaryAliasesFor(taxType.id),
+            JSON.stringify(taxType.periods.map((period) => ({
+              label: period.label,
+              effective: period.effective,
+              sections: period.sections
+            })))
+          ].join(" "))
+            .toLocaleLowerCase("en-GB")
+        }))
+      ];
+      populateTaxTypeOptions(taxTypeSearchRecords, requestedTaxType);
 
       elements.datasetScope.textContent = candidate.scopeNote;
       configurePeriodOptions();
@@ -461,6 +582,32 @@
         } catch (error) {
           elements.status.dataset.state = "error";
           elements.status.textContent = error.message;
+        }
+      });
+      elements.controls.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const matches = filterTaxTypes();
+        if (matches.length === 0) {
+          return;
+        }
+
+        const selectedLabel = elements.type.options[elements.type.selectedIndex].textContent;
+        elements.searchStatus.textContent = "Showing " + selectedLabel + ". "
+          + matches.length
+          + (matches.length === 1
+            ? " tax topic matches."
+            : " tax topics match; use Tax type to choose another.");
+
+        const resultHeading = elements.type.value === "income-tax"
+          ? elements.heading
+          : elements.topicHeading;
+        resultHeading.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+      elements.search.addEventListener("input", filterTaxTypes);
+      elements.search.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && elements.search.value) {
+          elements.search.value = "";
+          filterTaxTypes();
         }
       });
       elements.year.addEventListener("change", renderSelected);
