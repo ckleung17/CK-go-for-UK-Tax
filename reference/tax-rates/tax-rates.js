@@ -173,13 +173,26 @@
   };
 
   /* 3. Table and source rendering */
-  const appendCell = (row, tagName, text, scope) => {
+  const appendCell = (row, tagName, text, scope, className) => {
     const cell = document.createElement(tagName);
     cell.textContent = text;
     if (scope) {
       cell.scope = scope;
     }
+    if (className) {
+      cell.className = className;
+    }
     row.appendChild(cell);
+  };
+
+  const isPureAmount = (value) => {
+    const text = String(value).trim().toLowerCase();
+    if (!text || text.length > 80 || !/\d/.test(text)) {
+      return false;
+    }
+    return text
+      .replace(/£?\d[\d,.]*(?:%|p|k|m)?/g, "")
+      .replace(/[\s()\[\]{}/:+×=@.,–—-]/g, "") === "";
   };
 
   const renderSimpleRows = (tableBody, rows) => {
@@ -188,7 +201,13 @@
       const row = document.createElement("tr");
       appendCell(row, "th", rowData[0], "row");
       rowData.slice(1).forEach((value) => {
-        appendCell(row, "td", value);
+        appendCell(
+          row,
+          "td",
+          value,
+          null,
+          isPureAmount(value) ? "tax-rate-amount-cell" : ""
+        );
       });
       tableBody.appendChild(row);
     });

@@ -61,6 +61,7 @@ Changes affecting liability, filing obligations, time limits, residence, trusts,
 - Provide correct image alternatives, table headers/scope, visible focus, non-colour cues, and WCAG 2.2 AA contrast.
 - Treat very large or wide tables as scrollable data regions, especially at mobile widths: modestly reduce the font size, retain readable minimum column widths, and provide horizontal scrolling rather than squeezing content into illegible columns.
 - Keep the header row and leading identifying column sticky within large-table scroll regions. Give sticky cells opaque backgrounds and deliberate stacking order so the top-left intersection remains visible above both the row and column while scrolling.
+- In every table, left-align and wrap headings, descriptive text, and mixed text such as “Up to £37,700”. Right-align only pure monetary amounts, rates, percentages and other numeric values; mark ambiguous pure numeric cells with class="amount-cell" or data-cell-type="amount" so the shared table rules do not have to infer their meaning.
 - Use descriptive links. Add `rel="noopener"` to links with `target="_blank"`.
 - Check narrow and wide viewports and 200% zoom.
 - Prefer existing files under `css/` and `scripts/`; avoid inline CSS, fragile global selectors, and unexplained magic values.

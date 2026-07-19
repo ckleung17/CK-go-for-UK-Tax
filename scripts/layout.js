@@ -1,12 +1,13 @@
 /*
   LAYOUT.JS
-  Adds the shared reference launchers and footer using paths resolved relative
-  to this script. Pages provide a header and #global-footer.
+  Adds shared reference launchers, table alignment, and the footer using paths
+  resolved relative to this script. Pages provide a header and #global-footer.
 
   Contents:
   1. Shared asset paths and tax-topic mapping
   2. Header reference launchers
-  3. Shared footer
+  3. Global table-cell alignment
+  4. Shared footer
 */
 
 (() => {
@@ -134,7 +135,43 @@
 
   addHeaderReferenceLaunchers();
 
-  /* 3. Shared footer */
+  /* 3. Global table-cell alignment
+     Explicit semantic hooks take priority. Automatic detection is deliberately
+     strict: a cell containing any explanatory word remains left aligned. */
+  const isPureAmount = (value) => {
+    const text = value.trim().toLowerCase();
+    if (!text || text.length > 80 || !/\d/.test(text)) {
+      return false;
+    }
+
+    const remainder = text
+      .replace(/£?\d[\d,.]*(?:%|p|k|m)?/g, "")
+      .replace(/[\s()\[\]{}/:+×=@.,–—-]/g, "");
+    return remainder === "";
+  };
+
+  const applyGlobalTableAlignment = () => {
+    document.querySelectorAll("table").forEach((table) => {
+      const bodyRows = Array.from(table.tBodies).flatMap((body) => Array.from(body.rows));
+      bodyRows.forEach((row) => {
+        Array.from(row.cells).forEach((cell) => {
+          if (
+            cell.tagName === "TD"
+            && (
+              cell.matches(".amount-cell, .numeric-cell, [data-cell-type='amount']")
+              || isPureAmount(cell.textContent)
+            )
+          ) {
+            cell.classList.add("amount-cell");
+          }
+        });
+      });
+    });
+  };
+
+  applyGlobalTableAlignment();
+
+  /* 4. Shared footer */
   const footerHost = document.getElementById("global-footer");
   if (footerHost) {
     fetch(footerUrl)

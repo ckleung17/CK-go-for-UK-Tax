@@ -97,12 +97,6 @@
   width: 36%;
 }
 
-.tax-rate-reference-table td:nth-child(2),
-.tax-rate-band-table tbody td:last-child {
-  text-align: right;
-  white-space: nowrap;
-}
-
 .tax-rate-allowance-table {
   table-layout: fixed;
 }
@@ -147,11 +141,6 @@
   overflow-wrap: anywhere;
 }
 
-.tax-rate-investment-table tbody td:nth-child(2) {
-  text-align: right;
-  white-space: nowrap;
-}
-
 .tax-rate-income-related-table {
   min-width: 50rem;
   table-layout: fixed;
@@ -175,11 +164,6 @@
   overflow-wrap: anywhere;
 }
 
-.tax-rate-income-related-table tbody td:nth-child(3) {
-  text-align: right;
-  white-space: nowrap;
-}
-
 .tax-rate-income-related-table tbody td:nth-child(2) {
   text-align: left;
   white-space: normal;
@@ -189,9 +173,10 @@
   width: 34%;
 }
 
-.tax-rate-topic-table tbody td:nth-child(2) {
+.tax-rate-topic-table tbody td.tax-rate-amount-cell {
   text-align: right;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .tax-rate-topic-table tbody td:last-child {

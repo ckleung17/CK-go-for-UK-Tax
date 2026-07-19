@@ -97,9 +97,8 @@
   width: 15%;
 }
 
-.income-tax-computation-table th:nth-child(2),
 .income-tax-computation-table td:nth-child(2) {
-  text-align: center;
+  text-align: right;
 }
 
 .income-tax-computation-table .calculation-amount {
