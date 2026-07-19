@@ -1,3 +1,16 @@
+/*
+ * Styles the interactive income tax calculator form and its computation output.
+ * Depends on the calculator class names rendered in PTAX/ITAX/personal-allowances.html
+ * and managed by scripts/income-tax-calculator.js.
+ *
+ * Contents:
+ * 1. Calculator form
+ * 2. Computation table
+ * 3. Calculation results
+ * 4. Responsive layout
+ */
+
+/* 1. Calculator form */
 .tax-calculator {
   margin: 1rem 0;
 }
@@ -37,6 +50,7 @@
 
 .tax-calculator input:focus-visible,
 .tax-calculator button:focus-visible {
+  /* Keep keyboard focus visible against both the form and button backgrounds. */
   outline: 3px solid #ffbf47;
   outline-offset: 2px;
 }
@@ -57,6 +71,7 @@
   background: #eaf2f8;
 }
 
+/* 2. Computation table */
 .income-tax-computation-table {
   width: 100%;
   table-layout: fixed;
@@ -97,10 +112,12 @@
 
 .income-tax-computation-table th,
 .income-tax-computation-table td {
+  /* Allow long calculation descriptions to wrap without widening the table. */
   overflow-wrap: anywhere;
   word-break: normal;
 }
 
+/* 3. Calculation results */
 .calculation-summary {
   padding: 0.75rem;
   border-left: 4px solid #0b5f8a;
@@ -114,6 +131,7 @@
   font-weight: 700;
 }
 
+/* 4. Responsive layout */
 @media (max-width: 720px) {
   .tax-calculator-inputs {
     grid-template-columns: 1fr;
