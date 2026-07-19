@@ -7,7 +7,7 @@ This file is the authoritative folder and abbreviation map for study-area HTML f
 - Use uppercase folder codes containing three to seven letters.
 - Place every substantive HTML page under the most specific applicable leaf folder.
 - Keep HTML filenames descriptive and in lower-case kebab-case; the short codes organise folders, not page titles.
-- Keep course-specific popups and worked examples with their course unless they become shared resources.
+- Keep study note-specific popups and worked examples with their study note unless they become shared resources.
 - Do not link to reserved folders until a landing page exists. On the homepage, mark them as `planned` instead.
 - When a path changes, update the homepage, index pages, previous/next navigation, popups, scripts, documentation and every cross-topic reference in the same change.
 - Validate all local `href` and `src` targets after path changes.
@@ -16,11 +16,11 @@ This file is the authoritative folder and abbreviation map for study-area HTML f
 
 | Main area | Path | Subtopic | Leaf path | Status |
 |---|---|---|---|---|
-| Personal Tax | `PTAX/` | Income Tax | `PTAX/ITAX/` | Reserved |
-| Personal Tax | `PTAX/` | Capital Gains Tax | `PTAX/CGT/` | Reserved |
-| Personal Tax | `PTAX/` | Employment and PAYE | `PTAX/PAYE/` | Reserved |
-| Personal Tax | `PTAX/` | National Insurance | `PTAX/NIC/` | Reserved |
-| Personal Tax | `PTAX/` | Pensions Tax | `PTAX/PENTAX/` | Reserved |
+| Personal Tax | `PTAX/` | Income Tax | `PTAX/ITAX/` | Published |
+| Personal Tax | `PTAX/` | Capital Gains Tax | `PTAX/CGT/` | Published |
+| Personal Tax | `PTAX/` | Employment and PAYE | `PTAX/PAYE/` | Published |
+| Personal Tax | `PTAX/` | National Insurance | `PTAX/NIC/` | Published |
+| Personal Tax | `PTAX/` | Pensions Tax | `PTAX/PENTAX/` | Published |
 | Property and Land Tax | `PLTAX/` | Property Income | `PLTAX/PROPINC/` | Reserved |
 | Property and Land Tax | `PLTAX/` | Property Capital Gains | `PLTAX/PROPCGT/` | Reserved |
 | Property and Land Tax | `PLTAX/` | Annual Tax on Enveloped Dwellings | `PLTAX/ATED/` | Reserved |
@@ -38,7 +38,7 @@ This file is the authoritative folder and abbreviation map for study-area HTML f
 | Stamp and Transaction Taxes | `STTAX/` | Stamp Duty on Stocks and Shares | `STTAX/SDSS/` | Reserved |
 | Stamp and Transaction Taxes | `STTAX/` | Stamp Duty Reserve Tax | `STTAX/SDRT/` | Reserved |
 | International Tax | `INTAX/` | Foreign Income and Gains | `INTAX/FIG/` | Published |
-| International Tax | `INTAX/` | Double Taxation Agreements | `INTAX/DTA/` | Reserved for a general treaty course; FIG-specific treaty material remains in `INTAX/FIG/` |
+| International Tax | `INTAX/` | Double Taxation Agreements | `INTAX/DTA/` | Reserved for a general treaty study note; FIG-specific treaty material remains in `INTAX/FIG/` |
 | International Tax | `INTAX/` | Residence and International Mobility | `INTAX/RESMOB/` | Reserved |
 | Trusts | `TRUST/` | — | `TRUST/` | Published |
 | Tax Administration and Compliance | `TAXADM/` | Returns, Claims and Elections | `TAXADM/RCE/` | Reserved |
@@ -47,11 +47,18 @@ This file is the authoritative folder and abbreviation map for study-area HTML f
 
 ## Published entry pages
 
+
+- Income Tax: `PTAX/ITAX/itax-index.html`
+- Capital Gains Tax: `PTAX/CGT/cgt-index.html`
+- Employment and PAYE: `PTAX/PAYE/paye-index.html`
+- National Insurance: `PTAX/NIC/nic-index.html`
+- Pensions Tax: `PTAX/PENTAX/pentax-index.html`
+
 - SDLT: `STTAX/SDLT/sdlt-index.html`
 - FIG: `INTAX/FIG/fig-index.html`
 - Trusts: `TRUST/Trust-index.html`
 
-The existing entry filenames are retained to avoid unnecessary filename churn. New course entry pages should use the lower-case form `<code>-index.html`.
+The existing entry filenames are retained to avoid unnecessary filename churn. New study note entry pages should use the lower-case form `<code>-index.html`.
 
 ## Relative-link depth
 

@@ -6,8 +6,9 @@
   2. Calculator links
   3. OWR eligibility timeline
   4. Trust relationship diagram
-  5. Trust glossary and popup view
-  6. Trust analysis workflows
+  5. Statutory Residence Test decision diagram
+  6. Trust glossary and popup view
+  7. Trust analysis workflows
 */
 
 /* 1. Tooltip behaviour */
@@ -288,7 +289,31 @@
   }
 }
 
-/* 5. Trust glossary and popup view */
+/* 5. Statutory Residence Test SVG */
+.srt-svg-diagram {
+  max-width: 720px;
+  margin: 1.25rem auto;
+  padding: 1rem;
+  border: 1px solid #b8c7d1;
+  border-radius: 8px;
+  background: #f3f6f8;
+}
+
+.srt-svg-diagram figcaption {
+  margin-bottom: 0.8rem;
+  color: #073763;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.srt-svg-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+}
+/* 6. Trust glossary and popup view */
 .glossary-link {
   text-decoration: underline;
   text-decoration-style: dotted;
@@ -361,7 +386,7 @@ body.glossary-popup-view .glossary-entry:target {
   margin: 0;
 }
 
-/* 6. Trust analysis workflows */
+/* 7. Trust analysis workflows */
 .analysis-workflow {
   margin: 1.25rem 0 1.5rem;
   padding: 1.25rem;

@@ -27,6 +27,25 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Topic navigation wraps long study note menus while preserving a clear keyboard order. */
+.topic-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1rem;
+}
+
+.topic-nav a {
+  margin-right: 0;
+}
+
+.topic-nav a[aria-current="page"] {
+  color: #111827;
+  text-decoration: underline;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.2em;
+}
+
 /* 2. Homepage study-area selector */
 .study-menu-intro {
   margin-bottom: 0;
