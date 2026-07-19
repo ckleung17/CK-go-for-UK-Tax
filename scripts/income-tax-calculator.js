@@ -1,14 +1,35 @@
+/*
+ * Calculates and renders the illustrative income tax computation in
+ * PTAX/ITAX/personal-allowances.html. Depends on that page's calculator form,
+ * results table body and summary IDs, plus css/income-tax-calculator.css.
+ *
+ * Contents:
+ * 1. DOM setup
+ * 2. Tax rules
+ * 3. Input and formatting helpers
+ * 4. Allowance and rate-band allocation
+ * 5. Results-table rendering
+ * 6. Calculation and event orchestration
+ */
+
 (() => {
+  /* 1. DOM setup */
   "use strict";
 
   const calculator = document.getElementById("income-tax-calculator");
   const tableBody = document.getElementById("income-tax-calculation-body");
   const summary = document.getElementById("income-tax-calculation-summary");
 
+  /* Fail safely when the script is loaded without the complete calculator. */
   if (!calculator || !tableBody || !summary) {
     return;
   }
 
+  /* 2. Tax rules */
+  /*
+   * These coupled thresholds and rates must remain aligned with the tax year and
+   * assumptions stated on the host page.
+   */
   const rules = {
     personalAllowance: 12570,
     personalAllowanceTaperThreshold: 100000,
@@ -24,6 +45,7 @@
     }
   };
 
+  /* 3. Input and formatting helpers */
   const inputs = {
     nonSavings: document.getElementById("calculator-non-savings"),
     savings: document.getElementById("calculator-savings"),
@@ -44,6 +66,7 @@
     maximumFractionDigits: 2
   })}%`;
 
+  /* 4. Allowance and rate-band allocation */
   const calculatePersonalAllowance = (adjustedNetIncome) => {
     if (adjustedNetIncome <= rules.personalAllowanceTaperThreshold) {
       return rules.personalAllowance;
@@ -71,6 +94,7 @@
   };
 
   const allocateAcrossRateBands = (amount, startingPosition, rates) => {
+    /* Position carries earlier income and nil-rate slices through the shared bands. */
     const limits = [rules.basicRateLimit, rules.additionalRateThreshold, Infinity];
     const slices = [];
     let amountRemaining = amount;
@@ -97,6 +121,7 @@
     };
   };
 
+  /* 5. Results-table rendering */
   const addRow = ({
     label,
     rate = "&mdash;",
@@ -131,6 +156,7 @@
     tableBody.appendChild(row);
   };
 
+  /* 6. Calculation and event orchestration */
   const calculate = () => {
     const gross = {
       nonSavings: readAmount(inputs.nonSavings),
