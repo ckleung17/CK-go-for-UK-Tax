@@ -136,4 +136,10 @@
   .tax-calculator-inputs {
     grid-template-columns: 1fr;
   }
+
+  .income-tax-computation-table {
+    /* Keep all six fixed-layout columns readable within narrow viewports. */
+    font-size: 0.55rem;
+    line-height: 1.2;
+  }
 }
