@@ -9,6 +9,7 @@
   5. Statutory Residence Test decision diagram
   6. Trust glossary and popup view
   7. Trust analysis workflows
+  8. Homepage share control
 */
 
 /* 1. Tooltip behaviour */
@@ -541,6 +542,49 @@ body.glossary-popup-view .glossary-entry:target {
     justify-self: center;
     transform: rotate(90deg);
   }
+}
+
+/* 8. Homepage share control */
+.site-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.site-share-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.site-share-button:hover {
+  background: #fff;
+  color: #003366;
+}
+
+.site-share-button:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
+}
+
+.site-share-button svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: currentColor;
+}
+
+.site-share-status {
+  min-height: 1.5em;
+  font-size: 0.9rem;
 }
 
 

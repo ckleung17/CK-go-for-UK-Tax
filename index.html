@@ -4,7 +4,7 @@
   Purpose: CK Go for UK Tax
   Structure:
   1. Document metadata and shared assets
-  2. Page heading
+  2. Page heading and site sharing
   3. Study-area selection
   4. Shared footer and page scripts
 -->
@@ -22,9 +22,23 @@
 </head>
 
 <body>
-  <!-- 2. Page heading -->
+  <!-- 2. Page heading and site sharing -->
   <header>
-    <h1>CK Go for UK Tax</h1>
+    <div class="site-heading">
+      <h1>CK Go for UK Tax</h1>
+      <button
+        class="site-share-button"
+        id="site-share-button"
+        type="button"
+        aria-label="Share this site"
+        title="Share this site"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M18 16a3 3 0 0 0-2.39 1.2l-6.7-3.35a3.2 3.2 0 0 0 0-1.7l6.7-3.35A3 3 0 1 0 15 7a3.2 3.2 0 0 0 .09.72l-6.7 3.35a3 3 0 1 0 0 3.86l6.7 3.35A3.2 3.2 0 0 0 15 19a3 3 0 1 0 3-3Z"/>
+        </svg>
+      </button>
+      <span class="site-share-status" id="site-share-status" role="status" aria-live="polite"></span>
+    </div>
     <p>I use this website to organise my learning notes and CPD records.</p>
   </header>
 
@@ -131,6 +145,7 @@
   <div id="global-footer"></div>
   <script src="scripts/layout.js?v=20260716"></script>
   <script src="scripts/study-menu.js?v=20260717"></script>
+  <script src="scripts/share-site.js?v=20260719"></script>
 
 
 </body>
