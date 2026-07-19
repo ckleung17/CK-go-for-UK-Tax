@@ -14,6 +14,7 @@
   10. Global tax-table reference
   11. Header reference launchers
   12. Global glossary reference
+  13. Seven-step tax computation flow
 */
 
 /* 1. Tooltip behaviour */
@@ -636,13 +637,13 @@ body.glossary-popup-view .glossary-entry:target {
 }
 
 .income-calculation-order li:not(:last-child)::after {
-  content: "↓";
+  content: "";
   position: absolute;
-  bottom: -1.8rem;
-  left: 1.25rem;
-  color: #0b5f8a;
-  font-size: 1.35rem;
-  font-weight: 700;
+  bottom: -2rem;
+  left: 1.2rem;
+  width: 3rem;
+  height: 2rem;
+  background: left bottom / 100% 100% no-repeat url("../Assets/Icons/angle-arrow-down.svg");
 }
 
 .income-calculation-order strong,
@@ -651,6 +652,10 @@ body.glossary-popup-view .glossary-entry:target {
 }
 
 @media (max-width: 600px) {
+  .income-calculation-order li:not(:last-child)::after {
+    width: 2rem;
+  }
+
   .income-calculation-order li:nth-child(2) {
     margin-left: 1rem;
   }
@@ -682,6 +687,13 @@ body.glossary-popup-view .glossary-entry:target {
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.tax-table-icon-asset {
+  display: inline-block;
+  background: currentColor;
+  -webkit-mask: center / contain no-repeat url("../Assets/Icons/tax-table.svg");
+  mask: center / contain no-repeat url("../Assets/Icons/tax-table.svg");
 }
 
 /* 11. Header reference launchers */
@@ -759,6 +771,13 @@ body.glossary-popup-view .glossary-entry:target {
   stroke-width: 1.6;
 }
 
+.glossary-icon-asset {
+  display: inline-block;
+  background: currentColor;
+  -webkit-mask: center / contain no-repeat url("../Assets/Icons/glossary.svg");
+  mask: center / contain no-repeat url("../Assets/Icons/glossary.svg");
+}
+
 .glossary-icon text {
   fill: currentColor;
   stroke: none;
@@ -766,4 +785,78 @@ body.glossary-popup-view .glossary-entry:target {
   font-size: 6px;
   font-weight: 700;
   text-anchor: middle;
+}
+
+/* 13. Seven-step tax computation flow */
+.tax-computation-flow-wrap {
+  max-width: 100%;
+  margin: 1.25rem 0 1.75rem;
+}
+
+.tax-computation-flow {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0.25rem;
+  list-style: none;
+  counter-reset: tax-computation-step;
+}
+
+.tax-computation-flow li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.2rem minmax(0, 1fr);
+  gap: 0.2rem;
+  align-items: center;
+  min-height: 3.5rem;
+  padding: 0.35rem;
+  border: 2px solid #0b5f8a;
+  border-radius: 7px;
+  background: #eef6fa;
+  min-width: 0;
+  font-size: 0.66rem;
+  line-height: 1.15;
+  font-weight: 700;
+  overflow-wrap: normal;
+  word-break: normal;
+  counter-increment: tax-computation-step;
+}
+
+.tax-computation-flow li::before {
+  content: counter(tax-computation-step);
+  display: grid;
+  place-items: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: #0b5f8a;
+  color: #fff;
+  font-size: 0.65rem;
+}
+
+.tax-computation-flow li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1.23rem;
+  width: 1.2rem;
+  height: 1.1rem;
+  background: center / contain no-repeat url("../Assets/Icons/flow-arrow.svg");
+  transform: translateY(-50%);
+}
+
+.tax-computation-details {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .tax-computation-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .tax-computation-flow li:not(:last-child)::after {
+    display: none;
+  }
 }

@@ -138,7 +138,7 @@ body.global-glossary-popup-view .note,
 body.global-glossary-popup-view #global-footer,
 body.global-glossary-popup-view .tax-table-header-link,
 body.global-glossary-popup-view .global-glossary-table thead,
-body.global-glossary-popup-view .global-glossary-table tr:not(:target) {
+body.global-glossary-popup-view .global-glossary-table tr:not(.glossary-popup-target) {
   display: none;
 }
 
@@ -152,26 +152,48 @@ body.global-glossary-popup-view .global-glossary-wrap {
 
 body.global-glossary-popup-view .global-glossary-table,
 body.global-glossary-popup-view .global-glossary-table tbody,
-body.global-glossary-popup-view .global-glossary-table tr:target,
-body.global-glossary-popup-view .global-glossary-table tr:target > * {
+body.global-glossary-popup-view .global-glossary-table tr.glossary-popup-target,
+body.global-glossary-popup-view .global-glossary-table tr.glossary-popup-target > * {
   display: block;
   width: auto;
   min-width: 0;
 }
 
-body.global-glossary-popup-view .global-glossary-table tr:target {
+body.global-glossary-popup-view .global-glossary-table tr.glossary-popup-target {
+  box-sizing: border-box;
+  width: min(100%, 56rem);
+  margin: 0 auto;
   padding: 1rem;
   border: 0;
 }
 
-body.global-glossary-popup-view .global-glossary-table tr:target > * {
-  position: static;
-  padding: 0.35rem 0;
+body.global-glossary-popup-view .global-glossary-table tr.glossary-popup-target > * {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  padding: 0.45rem 0 0.45rem 8rem;
   border: 0;
   background: #fff;
 }
 
-body.global-glossary-popup-view .global-glossary-table tr:target > *::before {
+body.global-glossary-popup-view .global-glossary-table tr.glossary-popup-target > *::before {
   content: attr(data-label) ": ";
+  position: absolute;
+  left: 0;
+  width: 7.25rem;
   font-weight: 700;
+}
+
+@media (max-width: 520px) {
+  body.global-glossary-popup-view .global-glossary-table tr.glossary-popup-target > * {
+    padding-left: 0;
+  }
+
+  body.global-glossary-popup-view .global-glossary-table tr.glossary-popup-target > *::before {
+    position: static;
+    display: block;
+    width: auto;
+    margin-bottom: 0.15rem;
+  }
 }

@@ -132,6 +132,7 @@
     if (target) {
       if (window.self !== window.top) {
         document.body.classList.add("global-glossary-popup-view");
+        target.classList.add("glossary-popup-target");
       }
       target.focus({ preventScroll: window.self !== window.top });
       if (window.self === window.top) {

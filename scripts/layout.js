@@ -96,12 +96,7 @@
         ? "Open the tax table for this topic"
         : "Open the UK tax table";
       taxLink.innerHTML = [
-        '<svg class="tax-table-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">',
-        '<rect x="3" y="4" width="18" height="16" rx="1.5"></rect>',
-        '<path d="M3 8h18M14.8 11.5l-5.6 6"></path>',
-        '<circle cx="9" cy="12.5" r="1.2"></circle>',
-        '<circle cx="15" cy="16.5" r="1.2"></circle>',
-        "</svg>",
+        '<span class="tax-table-icon tax-table-icon-asset" aria-hidden="true"></span>',
         "<span>Tax %</span>"
       ].join("");
       addPopupBehaviour(taxLink, taxLink.target);
@@ -117,10 +112,7 @@
       glossaryLink.setAttribute("aria-label", "Open the glossary of tax terms");
       glossaryLink.title = "Open the glossary of tax terms";
       glossaryLink.innerHTML = [
-        '<svg class="glossary-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">',
-        '<rect x="2.5" y="4" width="19" height="16" rx="2"></rect>',
-        '<text x="12" y="14.4">ABC</text>',
-        "</svg>",
+        '<span class="glossary-icon glossary-icon-asset" aria-hidden="true"></span>',
         "<span>Glossary</span>"
       ].join("");
       addPopupBehaviour(glossaryLink, glossaryLink.target);
