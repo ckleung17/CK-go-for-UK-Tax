@@ -651,6 +651,40 @@ body.glossary-popup-view .glossary-entry:target {
   display: block;
 }
 
+.income-calculation-order--compact {
+  max-width: 32rem;
+  margin: 0.75rem 0 1.25rem;
+  font-size: 0.82rem;
+}
+
+.income-calculation-order--compact li {
+  margin-bottom: 1.4rem;
+  padding: 0.5rem 0.7rem 0.5rem 2.7rem;
+}
+
+.income-calculation-order--compact li:nth-child(2) {
+  margin-left: 1.5rem;
+}
+
+.income-calculation-order--compact li:nth-child(3) {
+  margin-left: 3rem;
+  margin-bottom: 0;
+}
+
+.income-calculation-order--compact li::before {
+  left: 0.7rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  font-size: 0.72rem;
+}
+
+.income-calculation-order--compact li:not(:last-child)::after {
+  bottom: -1.4rem;
+  left: 0.85rem;
+  width: 2.3rem;
+  height: 1.4rem;
+}
+
 @media (max-width: 600px) {
   .income-calculation-order li:not(:last-child)::after {
     width: 2rem;
@@ -662,6 +696,14 @@ body.glossary-popup-view .glossary-entry:target {
 
   .income-calculation-order li:nth-child(3) {
     margin-left: 2rem;
+  }
+
+  .income-calculation-order--compact li:nth-child(2) {
+    margin-left: 0.75rem;
+  }
+
+  .income-calculation-order--compact li:nth-child(3) {
+    margin-left: 1.5rem;
   }
 }
 

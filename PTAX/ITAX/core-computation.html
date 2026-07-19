@@ -5,7 +5,7 @@
   1. Document metadata and shared assets
   2. Page heading and topic navigation
   3. Statutory computation framework
-  4. Detailed illustrative computation
+  4. Illustrative computations
   5. Scope limits, control points and sources
   6. Topic navigation and shared scripts
 -->
@@ -15,8 +15,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Tax computation</title>
-    <link rel="stylesheet" href="../../style.css?v=20260719k">
-    <link rel="stylesheet" href="../../css/income-tax-calculator.css?v=20260719">
+    <link rel="stylesheet" href="../../style.css?v=20260719l">
+    <link rel="stylesheet" href="../../css/income-tax-calculator.css?v=20260719i">
   </head>
   <body>
     <!-- 2. Page heading and topic navigation -->
@@ -44,119 +44,58 @@
             <li>Net income</li>
             <li>Allowances</li>
             <li>Calculate tax</li>
-            <li>Special-rate amounts</li>
+            <li>Total Step 4 tax</li>
             <li>Tax reductions</li>
-            <li>Final adjustments</li>
+            <li>Additional tax</li>
           </ol>
         </div>
         <ol class="tax-computation-details">
-          <li><strong>Step 1 - total income:</strong> identify the income charged to Income Tax for the tax year and total the amounts from each source.</li>
-          <li><strong>Step 2 - net income:</strong> deduct only the reliefs permitted at Step 2. The result, after the statutory limits and ordering rules, is net income.</li>
-          <li><strong>Step 3 - allowances:</strong> deduct the allowances permitted at Step 3 to arrive at the amounts on which tax is charged. Under <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/25" target="_blank" rel="noopener">ITA 2007, section 25</a>, deductions must generally be allocated so as to produce the greatest reduction in liability.</li>
+          <li><strong>Step 1 - total income:</strong> identify the income charged to Income Tax for the tax year and add the amounts from each source.</li>
+          <li><strong>Step 2 - net income:</strong> deduct only the reliefs that the legislation allows at this step from total income, applying their limits and ordering rules. Do not confuse this with <strong>adjusted net income</strong>, which is a separate figure used to test particular limits and tapers and is not automatically the same as net income or taxable income.</li>
+          <li><strong>Step 3 - allowances and taxable income:</strong> deduct the allowances permitted at this step. The amount left is <strong>taxable income</strong>: the income to which the tax rates will be applied, divided into the relevant income categories and slices. Under <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/25" target="_blank" rel="noopener">ITA 2007, section 25</a>, deductions must generally be allocated so as to produce the greatest reduction in liability.</li>
           <li><strong>Step 4 - calculate tax:</strong> apply the relevant rates to the taxable non-savings, savings and dividend slices.</li>
-          <li><strong>Step 5 - special-rate amounts:</strong> add tax on amounts for which legislation requires a separate calculation.</li>
+          <li><strong>Step 5 - total Step 4 tax:</strong> add together the amounts of tax calculated at Step 4.</li>
           <li><strong>Step 6 - tax reductions:</strong> deduct tax reductions in the statutory order and subject to their own limits.</li>
-          <li><strong>Step 7 - final adjustments:</strong> add or deduct the further amounts required by legislation to reach the Income Tax liability.</li>
+          <li><strong>Step 7 - additional tax and Income Tax liability:</strong> add any additional tax required by a provision listed in ITA 2007, section 30. The result after all seven steps is the <strong>Income Tax liability</strong>.</li>
         </ol>
-
-        <h2>Terms that must not be confused</h2>
-        <dl>
-          <dt><strong>Total income</strong></dt>
-          <dd>The Step 1 total of income charged for the year, before Step 2 reliefs and Step 3 allowances.</dd>
-          <dt><strong>Net income</strong></dt>
-          <dd>Total income after the deductions authorised at Step 2.</dd>
-          <dt><strong>Adjusted net income</strong></dt>
-          <dd>A separate measure used for particular limits and tapers. It is not automatically the same as net income or taxable income.</dd>
-          <dt><strong>Taxable income</strong></dt>
-          <dd>The income remaining after the relevant deductions and allowances, split into the categories and slices to which rates are applied.</dd>
-          <dt><strong>Income Tax liability</strong></dt>
-          <dd>The result after completing all applicable steps, not merely the tax calculated at Step 4.</dd>
-        </dl>
 
         <h2>Ordering the taxable slices</h2>
         <p>For the ordinary stacking calculation, non-savings income is considered first, savings income above it and dividend income above savings income. This reflects <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/16" target="_blank" rel="noopener">ITA 2007, section 16</a>, subject to provisions that can modify the normal ordering.</p>
+        <ol class="income-calculation-order income-calculation-order--compact" aria-label="Order in which income uses tax bands">
+          <li>
+            <strong>Non-savings income</strong>
+            <span>Calculated first and uses the lowest available tax bands.</span>
+          </li>
+          <li>
+            <strong>Savings income</strong>
+            <span>Calculated second and uses the tax-band capacity left after non-savings income.</span>
+          </li>
+          <li>
+            <strong>Dividend income</strong>
+            <span>Calculated last and uses the tax-band capacity left after non-savings and savings income.</span>
+          </li>
+        </ol>
         <p>For an England, Wales or Northern Ireland taxpayer in 2026/27, the basic-rate limit is &pound;37,700 and the higher-rate limit is &pound;125,140. Non-savings and savings income are generally charged at 20%, 40% and 45% across those bands. Dividend income uses the same remaining band capacity but is charged at 10.75%, 35.75% and 39.35%.</p>
         <p>A 0% rate band does not remove income from taxable income. The slice remains in the stack and uses rate-band capacity even though its tax rate is nil.</p>
+      </section>
 
-        <!-- 4. Detailed illustrative computation -->
-        <h2>Detailed illustrative computation</h2>
-        <p><strong>Illustrative facts:</strong> Sam is an England, Wales or Northern Ireland taxpayer for 2026/27. Sam has non-savings income of &pound;15,000, taxable savings interest of &pound;38,000 and dividend income of &pound;10,000. Sam is entitled to the standard &pound;12,570 Personal Allowance, the applicable savings 0% rate bands and the &pound;500 dividend allowance. Assume adjusted net income is &pound;63,000 and there are no other deductions, allowances, reliefs, tax reductions, special-rate amounts, tax deducted at source or other Step 7 adjustments.</p>
-
-        <h3>Total income</h3>
-        <p>&pound;15,000 + &pound;38,000 + &pound;10,000 = <strong>&pound;63,000 total income</strong>.</p>
-
-        <h3>Net income</h3>
-        <p>There are no Step 2 deductions in this example, so net income remains <strong>&pound;63,000</strong>.</p>
-
-        <h3>Personal Allowance and taxable income</h3>
-        <p>The &pound;12,570 Personal Allowance is allocated against non-savings income:</p>
-        <ul>
-          <li>Taxable non-savings income: &pound;15,000 &minus; &pound;12,570 = <strong>&pound;2,430</strong>.</li>
-          <li>Taxable savings income: <strong>&pound;38,000</strong>.</li>
-          <li>Taxable dividend income: <strong>&pound;10,000</strong>.</li>
-          <li>Total taxable income: &pound;2,430 + &pound;38,000 + &pound;10,000 = <strong>&pound;50,430</strong>.</li>
-        </ul>
-
-        <h3>Tax on non-savings income</h3>
-        <p>The &pound;2,430 non-savings slice falls within the basic-rate band:</p>
-        <p>&pound;2,430 &times; 20% = <strong>&pound;486 Income Tax</strong>.</p>
-
-        <h3>Tax on savings income</h3>
-        <ol>
-          <li>The maximum &pound;5,000 starting-rate band for savings is reduced by taxable non-savings income of &pound;2,430: &pound;5,000 &minus; &pound;2,430 = <strong>&pound;2,570</strong> available at 0%.</li>
-          <li>Sam is a higher-rate taxpayer, so the Personal Savings Allowance provides a further <strong>&pound;500 savings slice at 0%</strong>.</li>
-          <li>Savings remaining after the two 0% slices: &pound;38,000 &minus; &pound;2,570 &minus; &pound;500 = <strong>&pound;34,930</strong>.</li>
-          <li>The stack has reached &pound;5,500: &pound;2,430 non-savings + &pound;2,570 starting-rate savings + &pound;500 Personal Savings Allowance.</li>
-          <li>Basic-rate capacity remaining: &pound;37,700 &minus; &pound;5,500 = <strong>&pound;32,200</strong>. Tax: &pound;32,200 &times; 20% = <strong>&pound;6,440</strong>.</li>
-          <li>The remaining &pound;2,730 savings income is charged at 40%: &pound;2,730 &times; 40% = <strong>&pound;1,092</strong>.</li>
-        </ol>
-        <p>Total tax on savings income: &pound;6,440 + &pound;1,092 = <strong>&pound;7,532</strong>.</p>
-
-        <h3>Tax on dividend income</h3>
-        <ol>
-          <li>After non-savings and savings income, the stack has reached &pound;40,430.</li>
-          <li>The first <strong>&pound;500</strong> of dividends is within the dividend allowance and is charged at 0%, but it moves the stack to &pound;40,930.</li>
-          <li>The remaining dividends are &pound;10,000 &minus; &pound;500 = <strong>&pound;9,500</strong>.</li>
-          <li>That slice is in the higher-rate band and is charged at the 2026/27 dividend upper rate: &pound;9,500 &times; 35.75% = <strong>&pound;3,396.25</strong>.</li>
-        </ol>
-
-        <h3>Total Income Tax</h3>
-        <p>&pound;486 + &pound;7,532 + &pound;3,396.25 = <strong>&pound;11,414.25 total Income Tax</strong>.</p>
-
-        <h3>Interactive computation</h3>
-        <p>Change the three income figures to explore the same limited computation. The template applies the standard Personal Allowance to non-savings income first, then savings and dividends. It models the starting rate for savings, Personal Savings Allowance and dividend allowance, but not the later-module items listed below.</p>
-        <form id="income-tax-calculator" class="tax-calculator">
-          <fieldset>
-            <legend>Income for 2026/27</legend>
-            <div class="tax-calculator-inputs">
-              <label for="calculator-non-savings">
-                Non-savings income (&pound;)
-                <input id="calculator-non-savings" name="non-savings-income" type="number" min="0" step="0.01" value="15000" inputmode="decimal">
-              </label>
-              <label for="calculator-savings">
-                Savings income (&pound;)
-                <input id="calculator-savings" name="savings-income" type="number" min="0" step="0.01" value="38000" inputmode="decimal">
-              </label>
-              <label for="calculator-dividend">
-                Dividend income (&pound;)
-                <input id="calculator-dividend" name="dividend-income" type="number" min="0" step="0.01" value="10000" inputmode="decimal">
-              </label>
-            </div>
-            <button type="reset">Reset example</button>
-          </fieldset>
-        </form>
-        <p id="income-tax-calculation-summary" class="calculation-summary" aria-live="polite"></p>
-        <div class="table-wrap" role="region" aria-label="Detailed Income Tax computation example" tabindex="0">
+      <!-- 4. Illustrative computations -->
+      <section>
+        <h2>Illustrative computation &mdash; basic-rate taxpayer</h2>
+        <p><strong>Illustrative example:</strong> Sam is an England, Wales or Northern Ireland taxpayer in 2026/27 with non-savings income of &pound;15,000, savings income of &pound;5,000 and dividend income of &pound;10,000. Sam claims &pound;1,000 current-year trade loss relief against general income under <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/64" target="_blank" rel="noopener">ITA 2007, section 64</a>. The deduction is allocated against non-savings income at Step 2. The dividend calculation illustrates income charged at a different applicable rate within Step 4. Assume Sam receives the full Personal Allowance, is entitled to a &pound;252 Marriage Allowance tax reduction at Step 6 and has a separately calculated &pound;150 pension annual-allowance charge at Step 7. Sam has no other Step 2 deductions, Step 3 allowances, tax reductions or additional tax.</p>
+        <div class="table-wrap" role="region" aria-label="Illustrative Income Tax computation for 2026/27" tabindex="0">
           <table class="simple-table income-tax-computation-table">
             <caption>Income Tax computation for 2026/27</caption>
             <colgroup>
               <col class="calculation-column">
+              <col class="calculation-note-column">
               <col class="tax-rate-column">
               <col span="4" class="amount-column">
             </colgroup>
             <thead>
               <tr>
                 <th scope="col">Calculation</th>
+                <th scope="col">Note</th>
                 <th scope="col">Tax rate</th>
                 <th scope="col">Non-savings<br>&pound;</th>
                 <th scope="col">Savings<br>&pound;</th>
@@ -164,36 +103,517 @@
                 <th scope="col">Tax charged<br>&pound;</th>
               </tr>
             </thead>
-            <tbody id="income-tax-calculation-body">
+            <tbody>
+              <tr>
+                <th scope="row">Non-savings income</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">15,000.00</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr>
+                <th scope="row">Savings income</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">5,000.00</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr class="calculation-rule-after">
+                <th scope="row">Dividend income</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">10,000.00</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr class="calculation-total">
+                <th scope="row">Step 1: Total income</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">15,000.00</td>
+                <td class="calculation-amount">5,000.00</td>
+                <td class="calculation-amount">10,000.00</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr class="calculation-rule-after">
+                <th scope="row">Less: Step 2 trade loss relief</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(1,000.00)</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr class="calculation-total">
+                <th scope="row">Step 2: Net income</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">14,000.00</td>
+                <td class="calculation-amount">5,000.00</td>
+                <td class="calculation-amount">10,000.00</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr>
+                <th scope="row">Less: Personal Allowance used against non-savings income</th>
+                <td class="calculation-note"><a href="#computation-note-1" aria-label="See computation note 1">1</a></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(12,570.00)</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr>
+                <th scope="row">Savings income charged at starting rate</th>
+                <td class="calculation-note"><a href="#computation-note-2" aria-label="See computation note 2">2</a></td>
+                <td class="calculation-amount">0%</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(3,570.00)</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">0.00</td>
+              </tr>
+              <tr>
+                <th scope="row">Savings income within Personal Savings Allowance</th>
+                <td class="calculation-note"><a href="#computation-note-3" aria-label="See computation note 3">3</a></td>
+                <td class="calculation-amount">0%</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(1,000.00)</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">0.00</td>
+              </tr>
+              <tr class="calculation-rule-after">
+                <th scope="row">Dividend income within Dividend Allowance</th>
+                <td class="calculation-note"><a href="#computation-note-4" aria-label="See computation note 4">4</a></td>
+                <td class="calculation-amount">0%</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(500.00)</td>
+                <td class="calculation-amount">0.00</td>
+              </tr>
+              <tr class="calculation-subtotal">
+                <th scope="row">Amounts charged at positive rates</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">1,430.00</td>
+                <td class="calculation-amount">430.00</td>
+                <td class="calculation-amount">9,500.00</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr class="calculation-total">
+                <th scope="row">Non-savings Income Tax subtotal &mdash; base amount &pound;1,430.00</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-amount">20%</td>
+                <td class="calculation-amount">286.00</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">286.00</td>
+              </tr>
+              <tr class="calculation-total">
+                <th scope="row">Savings Income Tax subtotal &mdash; base amount &pound;430.00</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-amount">20%</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">86.00</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">86.00</td>
+              </tr>
+              <tr class="calculation-subtotal">
+                <th scope="row">Dividend Income Tax subtotal &mdash; base amount &pound;9,500.00</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-amount">10.75%</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">1,021.25</td>
+                <td class="calculation-amount">1,021.25</td>
+              </tr>
+              <tr class="calculation-subtotal">
+                <th scope="row">Step 4: Income Tax calculated</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">286.00</td>
+                <td class="calculation-amount">86.00</td>
+                <td class="calculation-amount">1,021.25</td>
+                <td class="calculation-amount">1,393.25</td>
+              </tr>
+              <tr class="calculation-total">
+                <th scope="row">Step 5: Total tax calculated at Step 4</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">286.00</td>
+                <td class="calculation-amount">86.00</td>
+                <td class="calculation-amount">1,021.25</td>
+                <td class="calculation-amount">1,393.25</td>
+              </tr>
+              <tr>
+                <th scope="row">Step 6: Marriage Allowance tax reduction (&pound;1,260.00 &times; 20% = &pound;252.00)</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(252.00)</td>
+              </tr>
+              <tr class="calculation-rule-after">
+                <th scope="row">Step 7: Pension annual-allowance charge</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">150.00</td>
+              </tr>
+              <tr class="calculation-subtotal">
+                <th scope="row">Income Tax liability</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">1,291.25</td>
+              </tr>
             </tbody>
           </table>
         </div>
-        <noscript>
-          <p class="note">JavaScript must be enabled to use the interactive computation. The detailed manual computation above remains available without JavaScript.</p>
-        </noscript>
+        <aside class="calculation-notes" aria-labelledby="calculation-notes-heading">
+          <h3 id="calculation-notes-heading">Notes to the computation</h3>
+          <ol>
+            <li id="computation-note-1"><strong>Unused Personal Allowance:</strong> the Personal Allowance is not restricted to non-savings income. If any remains after covering non-savings income, allocate the unused amount against the person&rsquo;s remaining income in the way that gives the greatest reduction in Income Tax. Depending on the facts, it may therefore cover savings income and then dividend income. Income covered by the Personal Allowance is removed before the taxable slices and 0% rate bands are calculated. In this example, the &pound;14,000 net non-savings income uses all of Sam&rsquo;s &pound;12,570 Personal Allowance, so none is left.</li>
+            <li id="computation-note-2"><strong>Starting rate for savings:</strong> for 2026/27, the maximum band is &pound;5,000 at 0%. Reduce it by &pound;1 for every &pound;1 of non-savings income above the available Personal Allowance. Here, &pound;14,000 &minus; &pound;12,570 = &pound;1,430, so the band available is &pound;5,000 &minus; &pound;1,430 = <strong>&pound;3,570</strong>. It is nil when non-savings income reaches &pound;17,570, assuming the full &pound;12,570 Personal Allowance. Being a higher-rate taxpayer does not by itself remove this band: the calculation depends on non-savings income, although a person whose non-savings income alone reaches the higher-rate band will have no starting-rate band left.</li>
+            <li id="computation-note-3"><strong>Personal Savings Allowance:</strong> this is a separate 0% rate band for savings income. In 2026/27 it is up to &pound;1,000 for a basic-rate taxpayer, &pound;500 for a higher-rate taxpayer and nil for an additional-rate taxpayer. Determine the taxpayer&rsquo;s band using all relevant income, including savings income. The income covered remains taxable income and still uses tax-band capacity. Sam is a basic-rate taxpayer in this example, so &pound;1,000 of the &pound;1,430 savings income remaining after the starting-rate band is charged at 0%, leaving &pound;430 charged at 20%.</li>
+            <li id="computation-note-4"><strong>Dividend Allowance:</strong> for 2026/27, up to &pound;500 of dividend income is charged at 0%. The allowance does not remove that income from taxable income: the &pound;500 still uses tax-band capacity and can affect the rate applied to later dividend income. Sam uses the full &pound;500 allowance, leaving &pound;9,500 charged at the applicable dividend rate.</li>
+          </ol>
+        </aside>
+      </section>
 
-        <!-- 5. Scope limits, control points and sources -->
+      <section>
+        <h2>Illustrative computation &mdash; higher / additional-rate taxpayer</h2>
+        <p><strong>Illustrative example:</strong> Alex is an England, Wales or Northern Ireland taxpayer in 2026/27 with non-savings income of &pound;120,000, savings income of &pound;10,000 and dividend income of &pound;10,000. Alex claims &pound;1,000 current-year trade loss relief against general income under <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/64" target="_blank" rel="noopener">ITA 2007, section 64</a>, allocated against non-savings income at Step 2. Assume adjusted net income is &pound;139,000, so the Personal Allowance is nil. Alex has made an &pound;840 qualifying Enterprise Investment Scheme (EIS) subscription and claims a &pound;252 EIS Income Tax reduction at Step 6. Alex also has a separately calculated &pound;150 pension annual-allowance charge at Step 7 and no other deductions, allowances, tax reductions or additional tax.</p>
+        <div class="table-wrap" role="region" aria-label="Illustrative higher and additional-rate Income Tax computation for 2026/27" tabindex="0">
+          <table class="simple-table income-tax-computation-table">
+            <caption>Income Tax computation for 2026/27</caption>
+            <colgroup>
+              <col class="calculation-column">
+              <col class="calculation-note-column">
+              <col class="tax-rate-column">
+              <col span="4" class="amount-column">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Calculation</th>
+                <th scope="col">Note</th>
+                <th scope="col">Tax rate</th>
+                <th scope="col">Non-savings<br>&pound;</th>
+                <th scope="col">Savings<br>&pound;</th>
+                <th scope="col">Dividend<br>&pound;</th>
+                <th scope="col">Tax charged<br>&pound;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Non-savings income</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">120,000.00</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr>
+                <th scope="row">Savings income</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">10,000.00</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr class="calculation-rule-after">
+                <th scope="row">Dividend income</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">10,000.00</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr class="calculation-total">
+                <th scope="row">Step 1: Total income</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">120,000.00</td>
+                <td class="calculation-amount">10,000.00</td>
+                <td class="calculation-amount">10,000.00</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr class="calculation-rule-after">
+                <th scope="row">Less: Step 2 trade loss relief</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(1,000.00)</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr class="calculation-total">
+                <th scope="row">Step 2: Net income</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">119,000.00</td>
+                <td class="calculation-amount">10,000.00</td>
+                <td class="calculation-amount">10,000.00</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr>
+                <th scope="row">Personal Allowance available</th>
+                <td class="calculation-note"><a href="#higher-rate-note-1" aria-label="See higher and additional-rate computation note 1">1</a></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">0.00</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr>
+                <th scope="row">Savings income charged at starting rate</th>
+                <td class="calculation-note"><a href="#higher-rate-note-2" aria-label="See higher and additional-rate computation note 2">2</a></td>
+                <td class="calculation-amount">0%</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(0.00)</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">0.00</td>
+              </tr>
+              <tr>
+                <th scope="row">Savings income within Personal Savings Allowance</th>
+                <td class="calculation-note"><a href="#higher-rate-note-3" aria-label="See higher and additional-rate computation note 3">3</a></td>
+                <td class="calculation-amount">0%</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(0.00)</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">0.00</td>
+              </tr>
+              <tr class="calculation-rule-after">
+                <th scope="row">Dividend income within Dividend Allowance</th>
+                <td class="calculation-note"><a href="#higher-rate-note-4" aria-label="See higher and additional-rate computation note 4">4</a></td>
+                <td class="calculation-amount">0%</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(500.00)</td>
+                <td class="calculation-amount">0.00</td>
+              </tr>
+              <tr class="calculation-subtotal">
+                <th scope="row">Amounts charged at positive rates</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">119,000.00</td>
+                <td class="calculation-amount">10,000.00</td>
+                <td class="calculation-amount">9,500.00</td>
+                <td class="calculation-empty">&mdash;</td>
+              </tr>
+              <tr class="calculation-total">
+                <th scope="row">Non-savings Income Tax subtotal &mdash; &pound;37,700.00 &times; 20% + &pound;81,300.00 &times; 40%</th>
+                <td class="calculation-note"><a href="#higher-rate-note-5" aria-label="See higher and additional-rate computation note 5">5</a></td>
+                <td class="calculation-amount">20% / 40%</td>
+                <td class="calculation-amount">40,060.00</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">40,060.00</td>
+              </tr>
+              <tr class="calculation-total">
+                <th scope="row">Savings Income Tax subtotal &mdash; &pound;6,140.00 &times; 40% + &pound;3,860.00 &times; 45%</th>
+                <td class="calculation-note"><a href="#higher-rate-note-5" aria-label="See higher and additional-rate computation note 5">5</a></td>
+                <td class="calculation-amount">40% / 45%</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">4,193.00</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">4,193.00</td>
+              </tr>
+              <tr class="calculation-subtotal">
+                <th scope="row">Dividend Income Tax subtotal &mdash; &pound;9,500.00 &times; 39.35%</th>
+                <td class="calculation-note"><a href="#higher-rate-note-5" aria-label="See higher and additional-rate computation note 5">5</a></td>
+                <td class="calculation-amount">39.35%</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">3,738.25</td>
+                <td class="calculation-amount">3,738.25</td>
+              </tr>
+              <tr class="calculation-subtotal">
+                <th scope="row">Step 4: Income Tax calculated</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">40,060.00</td>
+                <td class="calculation-amount">4,193.00</td>
+                <td class="calculation-amount">3,738.25</td>
+                <td class="calculation-amount">47,991.25</td>
+              </tr>
+              <tr class="calculation-total">
+                <th scope="row">Step 5: Total tax calculated at Step 4</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">40,060.00</td>
+                <td class="calculation-amount">4,193.00</td>
+                <td class="calculation-amount">3,738.25</td>
+                <td class="calculation-amount">47,991.25</td>
+              </tr>
+              <tr>
+                <th scope="row">Step 6: EIS Income Tax reduction (&pound;840.00 &times; 30% = &pound;252.00)</th>
+                <td class="calculation-note"><a href="#higher-rate-note-6" aria-label="See higher and additional-rate computation note 6">6</a></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">(252.00)</td>
+              </tr>
+              <tr class="calculation-rule-after">
+                <th scope="row">Step 7: Pension annual-allowance charge</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">150.00</td>
+              </tr>
+              <tr class="calculation-subtotal">
+                <th scope="row">Income Tax liability</th>
+                <td class="calculation-note"></td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-empty">&mdash;</td>
+                <td class="calculation-amount">47,889.25</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="calculation-notes" aria-labelledby="higher-rate-notes-heading">
+          <h3 id="higher-rate-notes-heading">Notes to the computation</h3>
+          <ol>
+            <li id="higher-rate-note-1"><strong>Personal Allowance taper:</strong> Alex&rsquo;s assumed adjusted net income is &pound;139,000. For 2026/27, the &pound;12,570 Personal Allowance is reduced by &pound;1 for every &pound;2 above &pound;100,000 and is nil at &pound;125,140 or more. Alex therefore has no Personal Allowance.</li>
+            <li id="higher-rate-note-2"><strong>Starting rate for savings:</strong> Alex&rsquo;s &pound;119,000 net non-savings income is above the &pound;17,570 limit, so none of the &pound;5,000 starting-rate band is available.</li>
+            <li id="higher-rate-note-3"><strong>Personal Savings Allowance:</strong> an additional-rate taxpayer has no Personal Savings Allowance. A taxpayer whose highest rate is the higher rate would instead have a &pound;500 savings 0% rate band for 2026/27. Alex&rsquo;s savings income takes total taxable income above the additional-rate threshold, so the allowance is nil.</li>
+            <li id="higher-rate-note-4"><strong>Dividend Allowance:</strong> the &pound;500 allowance is available even though Alex is an additional-rate taxpayer. It charges that dividend slice at 0%, but the slice remains taxable income and uses tax-band capacity.</li>
+            <li id="higher-rate-note-5">
+              <strong>Rate-band allocation:</strong> the following tables show how the tax subtotal for each income category is calculated.
+              <div class="table-wrap calculation-note-table-wrap" role="region" aria-label="Non-savings income rate-band calculation" tabindex="0">
+                <table class="simple-table rate-band-calculation-table">
+                  <caption>Non-savings income</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Tax-band slice</th>
+                    <th scope="col">Amount<br>&pound;</th>
+                    <th scope="col">Rate</th>
+                    <th scope="col">Tax<br>&pound;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Basic-rate slice</th>
+                    <td class="amount-cell">37,700.00</td>
+                    <td class="amount-cell">20%</td>
+                    <td class="amount-cell">7,540.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Higher-rate slice</th>
+                    <td class="amount-cell">81,300.00</td>
+                    <td class="amount-cell">40%</td>
+                    <td class="amount-cell">32,520.00</td>
+                  </tr>
+                  <tr class="calculation-total">
+                    <th scope="row">Non-savings subtotal</th>
+                    <td class="amount-cell">119,000.00</td>
+                    <td></td>
+                    <td class="amount-cell">40,060.00</td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+              <div class="table-wrap calculation-note-table-wrap" role="region" aria-label="Savings income rate-band calculation" tabindex="0">
+                <table class="simple-table rate-band-calculation-table">
+                  <caption>Savings income</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Tax-band slice</th>
+                    <th scope="col">Amount<br>&pound;</th>
+                    <th scope="col">Rate</th>
+                    <th scope="col">Tax<br>&pound;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Higher-rate capacity remaining</th>
+                    <td class="amount-cell">6,140.00</td>
+                    <td class="amount-cell">40%</td>
+                    <td class="amount-cell">2,456.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Additional-rate slice</th>
+                    <td class="amount-cell">3,860.00</td>
+                    <td class="amount-cell">45%</td>
+                    <td class="amount-cell">1,737.00</td>
+                  </tr>
+                  <tr class="calculation-total">
+                    <th scope="row">Savings subtotal</th>
+                    <td class="amount-cell">10,000.00</td>
+                    <td></td>
+                    <td class="amount-cell">4,193.00</td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+              <div class="table-wrap calculation-note-table-wrap" role="region" aria-label="Dividend income rate-band calculation" tabindex="0">
+                <table class="simple-table rate-band-calculation-table">
+                  <caption>Dividend income</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Tax-band slice</th>
+                    <th scope="col">Amount<br>&pound;</th>
+                    <th scope="col">Rate</th>
+                    <th scope="col">Tax<br>&pound;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Dividend Allowance slice</th>
+                    <td class="amount-cell">500.00</td>
+                    <td class="amount-cell">0%</td>
+                    <td class="amount-cell">0.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Additional-rate slice</th>
+                    <td class="amount-cell">9,500.00</td>
+                    <td class="amount-cell">39.35%</td>
+                    <td class="amount-cell">3,738.25</td>
+                  </tr>
+                  <tr class="calculation-total">
+                    <th scope="row">Dividend subtotal</th>
+                    <td class="amount-cell">10,000.00</td>
+                    <td></td>
+                    <td class="amount-cell">3,738.25</td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+            </li>
+            <li id="higher-rate-note-6"><strong>EIS Income Tax reduction:</strong> the Enterprise Investment Scheme reduction is normally 30% of the amount subscribed for qualifying shares, subject to the detailed investor, company, investment and liability conditions. This illustration assumes all conditions are met, so &pound;840 &times; 30% gives the &pound;252 Step 6 reduction. Marriage Allowance is not used because Alex is not a basic-rate taxpayer.</li>
+          </ol>
+        </aside>
+      </section>
+
+      <!-- 5. Scope limits, control points and sources -->
+      <section>
         <h2>Scope limits and later topics</h2>
-        <p>This example deliberately excludes matters taught in later modules. Do not use it as a universal template where the facts include:</p>
+        <p>These examples deliberately exclude matters taught in later modules. Do not use them as universal templates where the facts include:</p>
         <ul>
           <li>split-year treatment;</li>
           <li>Gift Aid, relief-at-source pension contributions or rate-band extensions;</li>
           <li>life-policy gains or top-slicing relief;</li>
           <li>joint-income or settlements issues;</li>
-          <li>losses or investment reliefs;</li>
+          <li>loss reliefs other than the stated trade loss, or investment reliefs;</li>
           <li>trust or deceased-estate income;</li>
-          <li>adjusted-net-income interactions beyond the stated assumption; or</li>
+          <li>adjusted-net-income calculations beyond the stated assumptions; or</li>
           <li>Scottish non-savings rates or other devolved-rate questions.</li>
-        </ul>
-
-        <h2>Computation control points</h2>
-        <ul>
-          <li>Classify each source before applying allowances or rates.</li>
-          <li>Reconcile total income, net income and taxable income at each stage.</li>
-          <li>Track the cumulative band position, including income charged at 0%.</li>
-          <li>Apply the rate for the income category, not merely the name of the band.</li>
-          <li>Keep Step 4 tax separate from later tax reductions, tax deducted and other final adjustments.</li>
-          <li>Recalculate examples independently and state rounding assumptions.</li>
         </ul>
 
         <aside class="note">
@@ -201,13 +621,22 @@
           <ul>
             <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/23" target="_blank" rel="noopener">Income Tax Act 2007, section 23: the calculation of Income Tax liability</a></li>
             <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/25" target="_blank" rel="noopener">Income Tax Act 2007, section 25: reliefs and allowances deductible at Steps 2 and 3</a></li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/26" target="_blank" rel="noopener">Income Tax Act 2007, section 26: tax reductions deductible at Step 6</a></li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/30" target="_blank" rel="noopener">Income Tax Act 2007, section 30: additional tax added at Step 7</a></li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/64" target="_blank" rel="noopener">Income Tax Act 2007, section 64: trade loss relief against general income</a></li>
             <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/16" target="_blank" rel="noopener">Income Tax Act 2007, section 16: savings and dividend income as the highest part</a></li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/158" target="_blank" rel="noopener">Income Tax Act 2007, section 158: form and amount of EIS relief</a></li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim85015" target="_blank" rel="noopener">HMRC Business Income Manual BIM85015: trade loss relief against general income</a></li>
+            <li><a href="https://www.gov.uk/marriage-allowance" target="_blank" rel="noopener">HMRC: Marriage Allowance</a></li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual/ptm056300" target="_blank" rel="noopener">HMRC Pensions Tax Manual PTM056300: annual-allowance charge</a></li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/venture-capital-schemes-manual/vcm10530" target="_blank" rel="noopener">HMRC Venture Capital Schemes Manual VCM10530: form and amount of EIS Income Tax relief</a></li>
             <li><a href="https://www.gov.uk/government/publications/rates-and-allowances-income-tax/income-tax-rates-and-allowances-current-and-past" target="_blank" rel="noopener">HMRC: Income Tax rates and allowances for 2026/27</a></li>
             <li><a href="https://www.gov.uk/apply-tax-free-interest-on-savings" target="_blank" rel="noopener">HMRC: tax on savings interest</a></li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual/saim1112" target="_blank" rel="noopener">HMRC Savings and Investment Manual SAIM1112: starting rate for savings</a></li>
             <li><a href="https://www.gov.uk/tax-on-dividends" target="_blank" rel="noopener">HMRC: tax on dividends</a></li>
             <li><a href="https://www.gov.uk/government/publications/income-tax-changes-to-tax-rates-for-property-savings-and-dividend-income" target="_blank" rel="noopener">HMRC: 2026/27 dividend-rate changes</a></li>
           </ul>
-          <p>Sources checked 19 July 2026. Legislation is law; HMRC pages are guidance and evidence of HMRC&rsquo;s interpretation and published rates. The example is fictional, assumes exact annual figures and rounds tax to the nearest penny.</p>
+          <p>Sources checked 19 July 2026. Legislation is law; HMRC pages are guidance and evidence of HMRC&rsquo;s interpretation and published rates. The examples are fictional. Each assumes a valid &pound;1,000 current-year trade loss relief claim and a separately calculated &pound;150 pension annual-allowance charge. The basic-rate example assumes eligibility for the &pound;252 Marriage Allowance tax reduction; the additional-rate example assumes an adjusted net income of &pound;139,000 and full eligibility for a &pound;252 EIS Income Tax reduction. Tax is rounded to the nearest penny.</p>
         </aside>
       </section>
 
@@ -219,8 +648,6 @@
     </main>
     <div id="global-footer">
     </div>
-    <script src="../../scripts/income-tax-calculator.js?v=20260718">
-    </script>
     <script src="../../scripts/layout.js">
     </script>
     <script src="../../scripts/popup-window.js?v=20260716">
