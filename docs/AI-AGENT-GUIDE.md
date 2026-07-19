@@ -73,6 +73,7 @@ Changes affecting liability, filing obligations, time limits, residence, trusts,
 - Treat HTML comments as public content. Never include personal data, credentials, unpublished review notes, personalised advice, obsolete code, or unsupported tax conclusions, and update comments whenever the documented structure changes.
 - JavaScript enhancements should fail safely. Add no frameworks, tracking, remote scripts, packages, or build tooling without approval.
 - Use British English, define abbreviations, and use exact dates such as “6 April 2025”.
+- When introducing an unfamiliar technical term, explain the idea in plain English first, place the linked technical term in brackets immediately afterwards, and add the term to the shared glossary. Use the technical term later where its meaning remains clear; do not repeatedly interrupt established wording with the same definition.
 - Preserve UTF-8. Treat mojibake such as `â€”` as a defect, but fix it only within agreed scope.
 - Avoid mass formatting and line-ending churn.
 
