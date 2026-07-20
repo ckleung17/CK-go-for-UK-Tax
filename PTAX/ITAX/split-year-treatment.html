@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Split-year Treatment - CK Go for UK Tax</title>
-    <link rel="stylesheet" href="../../style.css?v=20260718">
+    <link rel="stylesheet" href="../../style.css?v=20260720zb">
   </head>
   <body>
     <header>
@@ -23,25 +23,420 @@
     <main>
       <section aria-labelledby="split-year-heading">
         <h2 id="split-year-heading">When a tax year may be split</h2>
-        <p>Under the Statutory Residence Test (SRT), an individual is either UK resident or non-UK resident for the whole tax year. If the individual is UK resident and the detailed conditions of a statutory case are met, split-year treatment divides the year into a UK part and an overseas part for specified tax purposes.</p>
-        <p>Split-year treatment is automatic when its conditions are satisfied. It is not an election and does not apply merely because an individual arrives in or leaves the UK. The facts for the whole tax year, and sometimes the preceding or following tax year, must be established first.</p>
+        <p>Under the Statutory Residence Test (SRT), an individual is either UK resident or non-UK resident for the whole tax year. Split-year treatment is a limited relaxation for specified tax purposes: the individual remains UK resident for the tax year, but the year is divided into a <strong>UK part</strong> and an <strong>overseas part</strong>.</p>
+        <p>Broadly, it may apply where the individual undergoes a qualifying change during the year: leaving the UK to work or live overseas, or coming or returning to the UK to work or establish a home. The change must fall within at least one of the eight statutory cases and every condition of that case must be satisfied.</p>
+        <p>Split-year treatment is automatic when those conditions are satisfied. It is not an election, and physical arrival or departure alone is insufficient. Depending on the case, the individual may also have to satisfy previous-year or following-year residence conditions, work tests, home conditions, UK-day or UK-workday limits, or reduced sufficient-ties thresholds.</p>
 
         <h2>The eight statutory cases</h2>
-        <p>Cases 1 to 3 concern departures from the UK:</p>
-        <ol>
-          <li><strong>Starting full-time work overseas.</strong></li>
-          <li><strong>The partner of someone starting full-time work overseas.</strong></li>
-          <li><strong>Ceasing to have a home in the UK.</strong></li>
-        </ol>
-        <p>Cases 4 to 8 concern arrivals in the UK:</p>
-        <ol start="4">
-          <li><strong>Starting to have a home only in the UK.</strong></li>
-          <li><strong>Starting full-time work in the UK.</strong></li>
-          <li><strong>Ceasing full-time work overseas.</strong></li>
-          <li><strong>The partner of someone ceasing full-time work overseas.</strong></li>
-          <li><strong>Starting to have a home in the UK.</strong></li>
-        </ol>
-        <p>Each case has its own conditions, day or work limits and method for identifying the split date. A case heading is therefore only a starting point; the detailed statutory test must be applied.</p>
+        <p>Here, &ldquo;statutory case&rdquo; does not mean a court case. It means one of eight sets of conditions enacted by Parliament. The legislation labels them &ldquo;Case 1&rdquo; to &ldquo;Case 8&rdquo;.</p>
+        <p>Before 6 April 2013, the Taxes Acts did not provide a statutory residence test or generally split a tax year for residence purposes. Strictly, an individual resident for any part of a year was taxed as resident for the whole year, but HMRC allowed split-year treatment by extra-statutory concessions (published HMRC practices that relaxed the strict legal position in specified circumstances), principally ESC A11, with related concessions for accompanying partners and Capital Gains Tax. Finance Act 2013 replaced that concessional approach with the statutory cases for 2013/14 onwards. See <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig30730" target="_blank" rel="noopener">HMRC RFIG30730: the pre-2013/14 position</a>.</p>
+        <p>For 2026/27, the framework is as follows:</p>
+        <ul>
+          <li>The individual must first be determined to be UK resident for the tax year as a whole under the Statutory Residence Test (SRT).</li>
+          <li>One or more of the eight statutory cases must then be satisfied.</li>
+          <li>Split-year treatment applies automatically; it is not an election.</li>
+          <li>The applicable case determines how the tax year is divided into an <strong>overseas part</strong> and a <strong>UK part</strong>, including the split date.</li>
+          <li>For specified tax purposes, the individual is treated as UK resident during the <strong>UK part</strong> and, for most purposes, as non-UK resident during the <strong>overseas part</strong>.</li>
+        </ul>
+        <p>Merely arriving in or leaving the UK does not trigger split-year treatment. The individual must satisfy all the conditions of at least one statutory case. Depending on the case, those conditions may include residence, work or home circumstances in the previous or following tax year.</p>
+        <p>The legislation is <a href="https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/part/3" target="_blank" rel="noopener">Finance Act 2013, Schedule 45, Part 3</a>.</p>
+
+        <figure class="split-year-map" aria-labelledby="split-year-map-heading">
+          <figcaption id="split-year-map-heading"><strong>Finding the applicable case</strong></figcaption>
+          <p class="split-year-map-intro">Use the following steps to find the applicable case:</p>
+          <ol>
+            <li>Confirm that the individual is UK resident for the tax year as a whole.</li>
+            <li>Check their residence status for the previous tax year:
+              <ul>
+                <li>If UK resident, consider Cases 1&ndash;3 (departure cases).</li>
+                <li>If non-UK resident, consider Cases 4&ndash;8 (arrival cases).</li>
+              </ul>
+            </li>
+            <li>Check the detailed conditions of every potentially applicable case.</li>
+            <li>If more than one case is satisfied, apply the relevant priority rules to determine the applicable case and split date.</li>
+          </ol>
+          <div class="split-year-map-start"><strong>UK resident for the whole tax year under the SRT?</strong></div>
+          <div class="split-year-map-branches">
+            <section class="split-year-map-branch" aria-labelledby="departure-route-heading">
+              <h3 class="split-year-map-type" id="departure-route-heading">Departure</h3>
+              <h4>Previous tax year: UK resident</h4>
+              <p class="split-year-map-route">Test every potentially applicable departure case</p>
+              <ul class="split-year-map-cases">
+                <li><strong>Case 1: Full-time work overseas</strong></li>
+                <li><strong>Case 2: Partner working overseas</strong></li>
+                <li><strong>Case 3: Ceasing to have a UK home</strong></li>
+              </ul>
+              <div class="split-year-map-priority"><strong>If more than one is fully satisfied</strong><span>Fixed priority: Case 1 &gt; Case 2 &gt; Case 3</span></div>
+            </section>
+            <section class="split-year-map-branch" aria-labelledby="arrival-route-heading">
+              <h3 class="split-year-map-type" id="arrival-route-heading">Arrival</h3>
+              <h4>Previous tax year: non-UK resident</h4>
+              <p class="split-year-map-route">Test every potentially applicable arrival case</p>
+              <ul class="split-year-map-cases">
+                <li><strong>Case 4: Starting to have a home only in the UK</strong></li>
+                <li><strong>Case 5: Full-time work in the UK</strong></li>
+                <li><strong>Case 6: Ceasing full-time work overseas</strong></li>
+                <li><strong>Case 7: Partner of someone ceasing full-time work overseas</strong></li>
+                <li><strong>Case 8: Starting to have a home in the UK</strong></li>
+              </ul>
+              <div class="split-year-map-priority"><strong>If more than one is fully satisfied</strong><span>Use the earliest split date. Equal-date tie-breaks: Case 6 over Case 5; Case 7 over Case 5. Cases 4, 5 and 8 may apply together if they share the earliest date.</span></div>
+            </section>
+          </div>
+          <div class="split-year-map-outcome"><strong>Only fully satisfied cases enter the priority comparison</strong><span>The resulting case or cases establish one split date, one <strong>overseas part</strong> and one <strong>UK part</strong>.</span></div>
+        </figure>
+
+        <h3>Common concepts used by the cases</h3>
+        <p>These concepts do not apply identically to every case. The relevant case determines which work test, day limit, home condition and adjacent-year condition must be satisfied.</p>
+        <dl>
+          <dt><strong>More than three hours&rsquo; work in a day</strong></dt>
+          <dd>
+            <p>This daily test identifies whether a particular day is a <strong>UK workday</strong> or overseas workday for the relevant work-based rules.</p>
+            <ul>
+              <li><strong>Threshold:</strong>
+                <ul>
+                  <li>It is used in the work-based tests for Cases 1, 5 and 6.</li>
+                  <li>Separate work sessions on the same day are added together. For example, 1 hour in the morning and 2.5 hours in the evening count as 3.5 hours&rsquo; work that day.</li>
+                  <li>Exactly three hours does not exceed the threshold.</li>
+                </ul>
+              </li>
+              <li><strong>Location of work:</strong> Work is normally located where it is physically performed.</li>
+              <li><strong>Effect on Cases 1 and 6:</strong> A day with more than three hours&rsquo; UK work also counts against the permitted UK-workday limit.</li>
+            </ul>
+          </dd>
+
+          <dt><strong>UK day</strong></dt>
+          <dd>
+            <p>This day-count test determines whether a day counts as spent in the UK and must therefore be counted against the applicable <strong>permitted UK-day limit</strong> (HMRC table column Y).</p>
+            <ul>
+              <li><strong>General rule:</strong> A day counts as spent in the UK if the individual is in the UK at the end of the day (midnight). The same day can also count as a <strong>UK workday</strong> against the <strong>permitted UK-workday limit</strong> (HMRC table column X) if the individual performs more than three hours&rsquo; work in the UK.</li>
+              <li><strong>Special rules:</strong> The result may be affected by the statutory deeming rule, transit-day rule or exceptional-circumstances provisions. Their conditions must be checked separately.</li>
+            </ul>
+            <p>See <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20710" target="_blank" rel="noopener">HMRC RFIG20710: meaning of a day spent in the UK</a>.</p>
+          </dd>
+
+          <dt><strong>Sufficient hours</strong></dt>
+          <dd>
+            <p>This is the average-hours condition used to determine whether the individual works full-time overseas for Cases 1 and 6. It measures the amount of overseas work over the relevant period; it does not measure UK days or UK workdays.</p>
+            <ul>
+              <li><strong>Calculation:</strong> Broadly, after the statutory adjustments, the individual must average at least 35 hours of overseas work per calculated week. This is a statutory calculation, not simply a contractual description such as &ldquo;full-time employee&rdquo;.</li>
+              <li><strong>Relationship to the permitted limits:</strong> For Cases 1 and 6, the individual must pass the sufficient-hours test and remain within both the <strong>permitted UK-workday limit</strong> (HMRC table column X) and the <strong>permitted UK-day limit</strong> (HMRC table column Y). Passing one condition does not compensate for failing another.</li>
+              <li><strong>Case 5:</strong> This case instead depends on satisfying the full-time UK-work requirements over a qualifying 365-day period.</li>
+            </ul>
+          </dd>
+
+          <dt><strong>No significant break from work</strong></dt>
+          <dd><p>Cases 1 and 6 require no significant break from overseas work; Case 5 requires no significant break from UK work. Broadly, a significant break occurs if at least 31 days pass without a day on which the individual works for more than three hours in the relevant country, subject to the statutory annual, sick and parenting-leave rules.</p></dd>
+
+          <dt><strong>Short return to a UK head office</strong></dt>
+          <dd><p>A brief business trip to a UK office does not automatically invalidate Case 1 or Case 6. However, any day with more than three hours&rsquo; work in the UK counts as a <strong>UK workday</strong>, and total days spent in the UK must remain within the applicable statutory limits. The relevant case remains satisfied only if all other conditions, including the sufficient-hours test and the no-significant-break requirement, are also met. Earnings attributable to duties physically performed in the UK during the visit are generally within the scope of UK Income Tax under domestic law, although a double taxation agreement or another statutory relief may affect the final liability.</p></dd>
+        </dl>
+
+        <h4>Permitted day limits</h4>
+        <p>Exact limits depend on the case and the relevant date. Use the applicable statutory table rather than calculating an independent daily proportion. Select a table to show the figures.</p>
+
+        <details id="departure-permitted-limits">
+          <summary><strong>Cases 1 and 2: departure limits</strong></summary>
+          <p>For Case 1, the relevant date is when overseas work begins, requiring adherence to both the permitted UK-workday limit (Column X) and the permitted UK-day limit (Column Y). For Case 2, the relevant date is the deemed departure day, requiring adherence only to the permitted UK-day limit (Column Y).</p>
+          <table class="split-year-limit-table">
+            <thead>
+              <tr>
+                <th scope="col">Relevant date</th>
+                <th scope="col">Permitted UK-workday limit<br>(HMRC table column X; Case 1 only)</th>
+                <th scope="col">Permitted UK-day limit<br>(HMRC table column Y; Cases 1 and 2)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">6&ndash;30 April</th><td>30</td><td>90</td></tr>
+              <tr><th scope="row">May</th><td>27</td><td>82</td></tr>
+              <tr><th scope="row">June</th><td>25</td><td>75</td></tr>
+              <tr><th scope="row">July</th><td>22</td><td>67</td></tr>
+              <tr><th scope="row">August</th><td>20</td><td>60</td></tr>
+              <tr><th scope="row">September</th><td>17</td><td>52</td></tr>
+              <tr><th scope="row">October</th><td>15</td><td>45</td></tr>
+              <tr><th scope="row">November</th><td>12</td><td>37</td></tr>
+              <tr><th scope="row">December</th><td>10</td><td>30</td></tr>
+              <tr><th scope="row">January</th><td>7</td><td>22</td></tr>
+              <tr><th scope="row">February</th><td>5</td><td>15</td></tr>
+              <tr><th scope="row">1&ndash;31 March</th><td>2</td><td>7</td></tr>
+              <tr><th scope="row">1&ndash;5 April</th><td>0</td><td>0</td></tr>
+            </tbody>
+          </table>
+          <div class="note">
+            <p><strong>Illustrative Case 1 example:</strong> assume the relevant overseas-work period begins on 15 November and the individual has no other UK visits during that period. Because 15 November falls within the November row, that row permits 37 UK days and 12 UK workdays of more than three hours. The same limits apply to any relevant-period start date from 1 to 30 November; there is no further daily apportionment within the row.</p>
+            <p>The individual later returns to the UK for seven days and works for more than three hours at the UK head office on five of those days:</p>
+            <ul>
+              <li>UK-day limit remaining: 37 &minus; 7 = <strong>30 days</strong>.</li>
+              <li>UK-workday limit remaining: 12 &minus; 5 = <strong>7 workdays</strong>.</li>
+            </ul>
+            <p>The visit is within these two limits on the stated assumptions, but the sufficient-hours, significant-break and all other Case 1 conditions must still be satisfied.</p>
+          </div>
+          <p><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21070" target="_blank" rel="noopener">HMRC RFIG21070: Cases 1 and 2 permitted limits</a>.</p>
+        </details>
+
+        <details id="arrival-permitted-limits">
+          <summary><strong>Cases 6 and 7: arrival limits</strong></summary>
+          <p>For Case 6, the relevant date is when overseas work ends, which sets both the permitted UK-workday limit (Column X) and the permitted UK-day limit (Column Y) from the corresponding row in the HMRC table. Neither limit may be exceeded. For Case 7, the relevant date is the day before the deemed arrival day, and only the permitted UK-day limit (Column Y) applies.</p>
+          <table class="split-year-limit-table">
+            <thead>
+              <tr>
+                <th scope="col">Relevant date</th>
+                <th scope="col">Permitted UK-workday limit<br>(HMRC table column X; Case 6 only)</th>
+                <th scope="col">Permitted UK-day limit<br>(HMRC table column Y; Cases 6 and 7)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">6&ndash;30 April</th><td>2</td><td>7</td></tr>
+              <tr><th scope="row">May</th><td>5</td><td>15</td></tr>
+              <tr><th scope="row">June</th><td>7</td><td>22</td></tr>
+              <tr><th scope="row">July</th><td>10</td><td>30</td></tr>
+              <tr><th scope="row">August</th><td>12</td><td>37</td></tr>
+              <tr><th scope="row">September</th><td>15</td><td>45</td></tr>
+              <tr><th scope="row">October</th><td>17</td><td>52</td></tr>
+              <tr><th scope="row">November</th><td>20</td><td>60</td></tr>
+              <tr><th scope="row">December</th><td>22</td><td>67</td></tr>
+              <tr><th scope="row">January</th><td>25</td><td>75</td></tr>
+              <tr><th scope="row">February</th><td>27</td><td>82</td></tr>
+              <tr><th scope="row">1 March&ndash;5 April</th><td>30</td><td>90</td></tr>
+            </tbody>
+          </table>
+          <div class="note">
+            <p><strong>Illustrative Case 6 example:</strong> assume the relevant overseas-work period ends on 15 November. Because 15 November falls within the November row, that row permits 60 UK days and 20 UK workdays of more than three hours during the period. The same limits apply if the relevant period ends on any date from 1 to 30 November; there is no further daily apportionment within the row.</p>
+            <p>If the individual has spent nine days in the UK, including four days working for more than three hours:</p>
+            <ul>
+              <li>UK-day limit remaining: 60 &minus; 9 = <strong>51 days</strong>.</li>
+              <li>UK-workday limit remaining: 20 &minus; 4 = <strong>16 workdays</strong>.</li>
+            </ul>
+            <p>The limits are satisfied on the stated assumptions, but this does not by itself establish that every Case 6 condition is met.</p>
+          </div>
+          <p><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21220" target="_blank" rel="noopener">HMRC RFIG21220: Cases 6 and 7 permitted limits</a>.</p>
+        </details>
+
+        <details id="arrival-reduced-ties-limits">
+          <summary><strong>Cases 4, 5 and 8: reduced sufficient-ties thresholds</strong></summary>
+          <p>This table reduces the ordinary sufficient-ties day thresholds so that they reflect the shorter pre-arrival period tested under Cases 4, 5 and 8.</p>
+          <h4>Why the thresholds are reduced</h4>
+          <p>The ordinary Sufficient Ties Test uses day thresholds of 15, 45, 90 or 120 days when testing residence over a complete tax year. Under Cases 4, 5 and 8, the individual must instead fail that test for the shorter part of the tax year before the relevant arrival event. The legislation therefore substitutes lower day thresholds according to when that pre-arrival period ends.</p>
+          <h4>How to use the table</h4>
+          <ol>
+            <li><strong>Identify the final day of the pre-arrival period:</strong> for Case 4, this is the day before the individual first satisfies the only-UK-home test; for Case 5, it is the final day of the period before the individual first meets the relevant full-time UK-work test; and for Case 8, it is the day before the individual starts to have a UK home.</li>
+            <li><strong>Select the row:</strong> use the row containing that final day. The date within a month does not produce any further daily apportionment.</li>
+            <li><strong>Substitute the threshold:</strong> replace the ordinary 15, 45, 90 or 120-day figure with the lower figure in the corresponding column.</li>
+            <li><strong>Apply the Sufficient Ties Test:</strong> use the substituted figure together with the individual&rsquo;s actual UK ties and counted UK days during the pre-arrival period.</li>
+          </ol>
+          <p>If the complete test shows that the individual had sufficient UK ties during the pre-arrival period, the sufficient-ties condition for that case is not met. That case cannot provide split-year treatment, although another statutory case may still need to be considered.</p>
+          <table class="split-year-limit-table">
+            <thead>
+              <tr>
+                <th scope="col">Final day of pre-arrival period</th>
+                <th scope="col">For 15 substitute</th>
+                <th scope="col">For 45 substitute</th>
+                <th scope="col">For 90 substitute</th>
+                <th scope="col">For 120 substitute</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">6&ndash;30 April</th><td>1</td><td>4</td><td>7</td><td>10</td></tr>
+              <tr><th scope="row">May</th><td>2</td><td>7</td><td>15</td><td>20</td></tr>
+              <tr><th scope="row">June</th><td>4</td><td>11</td><td>22</td><td>30</td></tr>
+              <tr><th scope="row">July</th><td>5</td><td>15</td><td>30</td><td>40</td></tr>
+              <tr><th scope="row">August</th><td>6</td><td>19</td><td>37</td><td>50</td></tr>
+              <tr><th scope="row">September</th><td>7</td><td>22</td><td>45</td><td>60</td></tr>
+              <tr><th scope="row">October</th><td>9</td><td>26</td><td>52</td><td>70</td></tr>
+              <tr><th scope="row">November</th><td>10</td><td>30</td><td>60</td><td>80</td></tr>
+              <tr><th scope="row">December</th><td>11</td><td>34</td><td>67</td><td>90</td></tr>
+              <tr><th scope="row">January</th><td>12</td><td>37</td><td>75</td><td>100</td></tr>
+              <tr><th scope="row">February</th><td>14</td><td>41</td><td>82</td><td>110</td></tr>
+              <tr><th scope="row">1 March&ndash;5 April</th><td>15</td><td>45</td><td>90</td><td>120</td></tr>
+            </tbody>
+          </table>
+          <div class="note">
+            <p><strong>Illustrative Case 8 example:</strong> assume the individual starts to have a UK home on 16 November, so the pre-arrival period ends on 15 November. Because 15 November falls within the November row, that row applies. It would apply to any pre-arrival end date from 1 to 30 November, without further daily apportionment. If the sufficient-ties analysis would ordinarily use the 90-day threshold, the November row substitutes <strong>60 days</strong>.</p>
+            <ul>
+              <li>Counted UK days in the pre-arrival period: <strong>45</strong>.</li>
+              <li>Substituted threshold: <strong>60</strong>.</li>
+              <li>Comparison: 45 &le; 60, so the individual does not exceed that day threshold.</li>
+            </ul>
+            <p>This calculation illustrates only the table substitution. The individual&rsquo;s UK ties determine which threshold column applies, and all other Case 8 conditions must still be tested.</p>
+          </div>
+          <p>See <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21150" target="_blank" rel="noopener">HMRC RFIG21150: Case 4</a>, <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21170" target="_blank" rel="noopener">RFIG21170: Case 5</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21270" target="_blank" rel="noopener">RFIG21270: Case 8</a>.</p>
+        </details>
+
+        <details id="exceeding-permitted-limits">
+          <summary><strong>What happens if a permitted limit is exceeded?</strong></summary>
+          <p><strong>Purpose of retesting a candidate period:</strong> If a proposed relevant period exceeds a permitted limit, retesting determines whether the same case can still be satisfied for a different period. Exceeding a limit never increases the <strong>overseas part</strong>. An alternative qualifying period makes the overseas part shorter and the <strong>UK part</strong> longer; if no permitted period or other case qualifies, split-year treatment does not apply.</p>
+          <p>A permitted limit is a condition of the relevant case, not an allowance under which only the excess days become taxable. First determine the number of counted days under the statutory day-counting rules. Then compare that total with every limit applicable to the case.</p>
+          <ol>
+            <li><strong>Within every applicable limit:</strong> continue testing the remaining conditions. Staying within the limits does not, by itself, establish split-year treatment.</li>
+            <li><strong>Any applicable limit exceeded:</strong> that case fails for the proposed relevant period. Passing the sufficient-hours calculation does not cure the breach.</li>
+            <li><strong>Case 1 may have another relevant period:</strong> test a later period beginning on a day with more than three hours&rsquo; overseas work and ending on 5 April. Use the table row for the new start date and retest every condition. The earliest period satisfying all the conditions supplies the split date and shortens the overseas part.</li>
+            <li><strong>Case 6 may have another relevant period:</strong> test the period from 6 April to each permissible candidate end date. The overseas part ends on the latest date for which all the Case 6 conditions are satisfied. If only an earlier end date qualifies, the overseas part is shorter.</li>
+            <li><strong>Cases 2 and 7 use fixed deemed dates:</strong> the individual cannot select another start or end date merely to avoid a breached limit. If the applicable limit is exceeded, that case fails.</li>
+            <li><strong>Another statutory case may apply:</strong> if the tested case ultimately fails, consider any other available case on its own conditions and apply the relevant priority rules.</li>
+            <li><strong>No case satisfied:</strong> there is no split-year treatment. If the individual is UK resident under the whole-year SRT, the ordinary whole-year resident basis applies, subject to the relevant charging rules and any treaty relief.</li>
+          </ol>
+          <div class="note">
+            <p><strong>Illustrative Case 1 recalculation:</strong> assume a proposed relevant period starts on 15 November.</p>
+            <ul>
+              <li>November UK-day limit: <strong>37</strong>.</li>
+              <li>Counted UK days from 15 November to 5 April: <strong>38</strong>.</li>
+              <li>Comparison: 38 &gt; 37, so the proposed 15 November period fails the UK-day condition.</li>
+            </ul>
+            <p>Now assume eight of those UK days occurred between 15 and 30 November, the other 30 occurred from 1 December onwards, and 1 December was a day with more than three hours&rsquo; overseas work. A new Case 1 period may be tested from 1 December:</p>
+            <ul>
+              <li>December UK-day limit: <strong>30</strong>.</li>
+              <li>UK days counted from 1 December to 5 April: 38 &minus; 8 = <strong>30</strong>.</li>
+              <li>UK-day comparison: 30 &le; 30, so this limit is met.</li>
+              <li>Assumed UK workdays over three hours: <strong>8</strong>; December limit: <strong>10</strong>; comparison: 8 &le; 10.</li>
+            </ul>
+            <p>On these assumptions, both permitted limits are met for the later period. Case 1 applies from 1 December only if the sufficient-hours, significant-break, following-year and all other conditions are also satisfied. If so, 1 December—not 15 November—is the split date.</p>
+          </div>
+          <p>See <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21050" target="_blank" rel="noopener">HMRC RFIG21050: Case 1 relevant period</a>, <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21080" target="_blank" rel="noopener">RFIG21080: Case 1 UK and overseas parts</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21230" target="_blank" rel="noopener">RFIG21230: Case 6 UK and overseas parts</a>.</p>
+        </details>
+
+        <p>See also <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20150" target="_blank" rel="noopener">HMRC RFIG20150: sufficient hours</a>, <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20760" target="_blank" rel="noopener">RFIG20760: significant breaks</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21080" target="_blank" rel="noopener">RFIG21080: Case 1 examples</a>.</p>
+
+        <h3>Departure cases</h3>
+        <p>Cases 1 to 3 concern individuals leaving the UK. Select a case to show its conditions.</p>
+
+        <details class="split-year-case">
+          <summary><strong>Case 1: Starting full-time work overseas</strong></summary>
+          <p><strong>Purpose:</strong> Case 1 provides an <strong>overseas part</strong> for an individual who leaves the UK partway through the tax year to begin full-time work overseas and satisfies the continuing overseas-work conditions.</p>
+          <p>The individual must:</p>
+          <ul>
+            <li>be UK resident for the tax year;</li>
+            <li>have been UK resident for the previous tax year, whether or not that was a split year;</li>
+            <li>be non-UK resident for the following tax year because they satisfy the third automatic overseas test for full-time work overseas; and</li>
+            <li>satisfy the overseas-work criteria throughout a relevant period ending on the last day of the tax year.</li>
+          </ul>
+          <p>The relevant period begins on a day in the tax year on which the individual works for more than three hours overseas and ends on 5 April. Throughout that period, the individual must pass the sufficient-hours overseas calculation, have no significant break from overseas work, and remain within two separate limits: the permitted number of days spent in the UK and the permitted number of days on which they work for more than three hours in the UK. Both limits depend on when the relevant period begins.</p>
+          <p>See the <a href="#departure-permitted-limits">Cases 1 and 2 departure-limits table</a>.</p>
+          <p><strong>Split date:</strong> the <strong>overseas part</strong> begins on the first day of the relevant period; the preceding days form the <strong>UK part</strong>.</p>
+          <p><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21040" target="_blank" rel="noopener">HMRC RFIG21040: Case 1 conditions</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21060" target="_blank" rel="noopener">RFIG21060: overseas-work criteria</a>.</p>
+        </details>
+
+        <details class="split-year-case">
+          <summary><strong>Case 2: Partner of someone starting full-time work overseas</strong></summary>
+          <p><strong>Purpose:</strong> Case 2 provides an <strong>overseas part</strong> for an accompanying partner who moves overseas to continue living with a Case 1 partner but does not independently satisfy Case 1, for example because the accompanying partner does not work full-time overseas. Moving abroad alone does not end the accompanying partner&rsquo;s UK residence for the tax year. Without an applicable split-year case, foreign employment income and other foreign income arising after the move may remain within the UK tax charge under the ordinary whole-year resident rules. When Case 2 applies, the individual is treated for most purposes as non-UK resident during the overseas part; earnings attributable to overseas duties during that part are generally excluded from UK taxable earnings, although UK duties and other UK-source income may remain taxable.</p>
+          <p>The individual must:</p>
+          <ul>
+            <li>be UK resident for the tax year and have been UK resident for the previous tax year;</li>
+            <li>be non-UK resident for the following tax year;</li>
+            <li>have a partner whose circumstances fall within Case 1 for the tax year or the previous tax year;</li>
+            <li>have lived with that partner in the UK at some point in the tax year or the previous tax year; and</li>
+            <li>move overseas to continue living with the partner while the partner works overseas.</li>
+          </ul>
+          <p>From the deemed departure day to the last day of the tax year, the individual must have no UK home or, if they have UK and overseas homes, spend the greater part of their time living in the overseas home. They must also remain within the permitted UK-day limit shown in the <a href="#departure-permitted-limits">Cases 1 and 2 departure-limits table</a>.</p>
+          <p><strong>Partner:</strong> a spouse, civil partner or person with whom the individual is living as spouses or civil partners.</p>
+          <p><strong>Split date:</strong> the deemed departure day is the later of the day on which the individual joins the partner overseas and the first day of the partner&rsquo;s Case 1 overseas part. The <strong>overseas part</strong> begins on that day; the preceding days form the <strong>UK part</strong>.</p>
+          <p><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21090" target="_blank" rel="noopener">HMRC RFIG21090: Case 2 conditions</a>, <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21120" target="_blank" rel="noopener">RFIG21120: Case 2 UK and overseas parts</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim40101" target="_blank" rel="noopener">EIM40101: employment income in a split year</a>.</p>
+        </details>
+
+        <details class="split-year-case">
+          <summary><strong>Case 3: Ceasing to have a home in the UK</strong></summary>
+          <p><strong>Purpose:</strong> Case 3 provides an <strong>overseas part</strong> for an individual who leaves the UK to live overseas and ceases to have every UK home, without needing to work full-time overseas under Case 1 or accompany a Case 1 partner under Case 2. Moving overseas alone does not end the individual&rsquo;s UK residence for the tax year. Without an applicable split-year case, foreign income arising after the move may remain within the UK tax charge under the ordinary whole-year resident rules.</p>
+          <p><strong>Meaning of a UK home:</strong> This is a factual test, not simply a test of ownership. For SRT purposes, HMRC considers a home to be a place that a reasonable observer, knowing the material facts, would regard as the individual&rsquo;s home. It must be capable of being used as a home and actually used with a sufficient degree of permanence or stability.</p>
+          <ul>
+            <li><strong>A UK home may cease:</strong> where the individual moves out completely and makes no further residential use of it, sells it, or lets it commercially to a tenant with exclusive possession while retaining no right to occupy it.</li>
+            <li><strong>A UK home may remain:</strong> where it is kept empty and available for the individual&rsquo;s return, their spouse or children continue to live there, or the individual retains a room or other right to occupy it.</li>
+            <li><strong>Every UK home must cease:</strong> giving up the main home is insufficient if another UK property or place continues to be used as a home. Ownership of an unused investment property is not, by itself, decisive; equally, rented accommodation or a relative&rsquo;s home can be the individual&rsquo;s home if it is actually used with sufficient permanence.</li>
+          </ul>
+          <p>The individual must:</p>
+          <ul>
+            <li>be UK resident for the tax year and have been UK resident for the previous tax year;</li>
+            <li>be non-UK resident for the following tax year;</li>
+            <li>have one or more UK homes at the beginning of the tax year;</li>
+            <li>cease to have any UK home during the year and have no UK home for the rest of the year; and</li>
+            <li>spend fewer than 16 days in the UK after ceasing to have a UK home.</li>
+          </ul>
+          <p>Within six months after ceasing to have a UK home, the individual must, in relation to a particular overseas country, become tax resident there, be present there at the end of every day for six months, or have their only home or all their homes there.</p>
+          <p><strong>Split date:</strong> the <strong>overseas part</strong> begins when the individual ceases to have any UK home; the preceding days form the <strong>UK part</strong>.</p>
+          <p><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21130" target="_blank" rel="noopener">HMRC RFIG21130: Case 3 conditions</a>, <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig22120" target="_blank" rel="noopener">RFIG22120: meaning of home</a>, <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig22140" target="_blank" rel="noopener">RFIG22140: characteristics of a home</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig22150" target="_blank" rel="noopener">RFIG22150: what is not a home</a>.</p>
+        </details>
+
+        <h3>Arrival cases</h3>
+        <p>Cases 4 to 8 concern individuals coming to or returning to the UK. Select a case to show its conditions.</p>
+
+        <details class="split-year-case">
+          <summary><strong>Case 4: Starting to have a home only in the UK</strong></summary>
+          <p><strong>Purpose:</strong> Case 4 provides an <strong>overseas part</strong> before an individual first satisfies the only-UK-home test. The individual may already have a UK home at the beginning of the tax year, but must later reach the position in which their home, or all their homes, is in the UK and they have no overseas home. Unlike Case 8, Case 4 cannot apply while an overseas home continues.</p>
+          <p>The individual must:</p>
+          <ul>
+            <li>be UK resident for the tax year and have been non-UK resident for the previous tax year;</li>
+            <li>not satisfy the only-home test at the beginning of the tax year;</li>
+            <li>begin to satisfy the only-home test during the year and continue to satisfy it until the last day of the tax year; and</li>
+            <li>not have sufficient UK ties to be resident in the part of the year before the only-home test is first satisfied, applying the <a href="#arrival-reduced-ties-limits">reduced sufficient-ties thresholds</a>.</li>
+          </ul>
+          <p>The only-home test has detailed duration and presence conditions. Broadly, the individual must have a UK home and cease to have an overseas home for the relevant period; acquiring a UK property does not by itself satisfy the test.</p>
+          <p><strong>Split date:</strong> the <strong>overseas part</strong> ends on the day before the only-home test is first satisfied; the <strong>UK part</strong> then begins.</p>
+          <p><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21150" target="_blank" rel="noopener">HMRC RFIG21150: Case 4 conditions</a>.</p>
+        </details>
+
+        <details class="split-year-case">
+          <summary><strong>Case 5: Starting full-time work in the UK</strong></summary>
+          <p><strong>Purpose:</strong> Case 5 provides an <strong>overseas part</strong> before an individual starts a qualifying period of full-time work in the UK.</p>
+          <p>The individual must:</p>
+          <ul>
+            <li>be UK resident for the tax year;</li>
+            <li>have been non-UK resident for the previous tax year;</li>
+            <li>begin a 365-day period during which they satisfy the third automatic UK test for full-time work in the UK; and</li>
+            <li>not have sufficient UK ties to be resident in the earlier part of the tax year, applying the <a href="#arrival-reduced-ties-limits">reduced sufficient-ties thresholds</a>.</li>
+          </ul>
+          <p>The third automatic UK test requires full-time UK work without a significant break. More than 75% of the days in the 365-day period on which the individual works for more than three hours must be UK workdays, and at least one such UK workday must fall within both the period and the tax year.</p>
+          <p><strong>Split date:</strong> the <strong>UK part</strong> begins with the first qualifying 365-day period; the preceding days form the <strong>overseas part</strong>.</p>
+          <p><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21170" target="_blank" rel="noopener">HMRC RFIG21170: Case 5 conditions</a>.</p>
+        </details>
+
+        <details class="split-year-case">
+          <summary><strong>Case 6: Ceasing full-time work overseas</strong></summary>
+          <p><strong>Purpose:</strong> Case 6 provides an <strong>overseas part</strong> for the beginning of a tax year in which an individual ceases qualifying full-time work overseas and becomes UK resident.</p>
+          <p>The individual must:</p>
+          <ul>
+            <li>be UK resident for the tax year;</li>
+            <li>have been non-UK resident for the previous tax year because they satisfied the third automatic overseas test;</li>
+            <li>have been UK resident in at least one of the four tax years preceding the previous tax year;</li>
+            <li>be UK resident for the following tax year, whether or not that is a split year; and</li>
+            <li>satisfy the overseas-work criteria for the relevant period in the tax year.</li>
+          </ul>
+          <p><strong>How the two overseas-work tests fit together:</strong> Case 6 applies similar work requirements to two different periods; they should not be treated as the same test.</p>
+          <ul>
+            <li><strong>Previous tax year:</strong> the third automatic overseas test applies to the whole previous tax year. Broadly, it requires sufficient hours overseas, no significant break from overseas work, fewer than 31 UK workdays and fewer than 91 UK days.</li>
+            <li><strong>Current split year:</strong> the Case 6 overseas-work criteria apply only from 6 April to the proposed end of the relevant period. The individual must again work sufficient hours overseas and have no significant break, but the permitted UK-day and UK-workday limits are reduced for that shorter period using the <a href="#arrival-permitted-limits">Cases 6 and 7 arrival-limits table</a>.</li>
+          </ul>
+          <p><strong>Split date:</strong> the <strong>overseas part</strong> ends on the last day of the latest period for which the individual satisfies the sufficient-hours test when tested from the beginning of the tax year to that day. The following day begins the <strong>UK part</strong>. More than one candidate work period does not create more than one split.</p>
+          <p><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig20140" target="_blank" rel="noopener">HMRC RFIG20140: third automatic overseas test</a>, <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21190" target="_blank" rel="noopener">RFIG21190: Case 6 conditions</a>, <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21210" target="_blank" rel="noopener">RFIG21210: current-year overseas-work criteria</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21230" target="_blank" rel="noopener">RFIG21230: Case 6 overseas and UK parts</a>.</p>
+        </details>
+
+        <details class="split-year-case">
+          <summary><strong>Case 7: Partner of someone ceasing full-time work overseas</strong></summary>
+          <p><strong>Purpose:</strong> Case 7 applies where an accompanying partner was non-UK resident in the previous tax year but, after moving to the UK to continue living with a Case 6 partner, is determined under the SRT to be UK resident for the arrival tax year as a whole. It preserves an <strong>overseas part</strong> before the deemed arrival day even though the accompanying partner does not independently satisfy Case 6. Without an applicable split-year case, the ordinary whole-year resident tax treatment would apply. If the accompanying partner is non-UK resident for the arrival tax year under the SRT, split-year treatment is neither available nor required.</p>
+          <p>The individual must:</p>
+          <ul>
+            <li>be UK resident for the tax year and have been non-UK resident for the previous tax year;</li>
+            <li>have a partner whose circumstances fall within Case 6 for the tax year or the previous tax year;</li>
+            <li>move to the UK during the tax year to continue living with that partner;</li>
+            <li>be UK resident for the following tax year; and</li>
+            <li>remain within the permitted UK-day limit shown in the <a href="#arrival-permitted-limits">Cases 6 and 7 arrival-limits table</a> before the deemed arrival day.</li>
+          </ul>
+          <p>Before the deemed arrival day, the individual must either have no UK home or, if they have UK and overseas homes, spend the greater part of their time living in the overseas home.</p>
+          <p><strong>Split date:</strong> the <strong>UK part</strong> begins on the statutory deemed arrival day, determined by the date the individual moves to the UK and the partner&rsquo;s Case 6 date; the preceding days form the <strong>overseas part</strong>.</p>
+          <p><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21240" target="_blank" rel="noopener">HMRC RFIG21240: Case 7 conditions</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21250" target="_blank" rel="noopener">RFIG21250: deemed arrival day</a>.</p>
+        </details>
+
+        <details class="split-year-case">
+          <summary><strong>Case 8: Starting to have a home in the UK</strong></summary>
+          <p><strong>Purpose:</strong> Case 8 provides an <strong>overseas part</strong> before an individual who had no UK home at the beginning of the tax year starts to have one as part of a continuing return to UK residence. Unlike Case 4, the UK home does not have to become the individual&rsquo;s only home: an overseas home may continue. Case 8 instead requires the UK home and UK residence to continue through the specified following-year period.</p>
+          <p>The individual must:</p>
+          <ul>
+            <li>be UK resident for the tax year and have been non-UK resident for the previous tax year;</li>
+            <li>be UK resident for all of the following tax year, which must not be a split year;</li>
+            <li>have no UK home at the beginning of the tax year;</li>
+            <li>start to have a UK home during the year and continue to have a UK home for the rest of the tax year and throughout the following tax year; and</li>
+            <li>not have sufficient UK ties to be resident before starting to have the UK home, applying the <a href="#arrival-reduced-ties-limits">reduced sufficient-ties thresholds</a>.</li>
+          </ul>
+          <p>Unlike Case 4, Case 8 does not require the UK home to become the individual&rsquo;s only home: an overseas home may continue.</p>
+          <p><strong>Split date:</strong> the <strong>overseas part</strong> ends on the day before the individual starts to have the UK home; the <strong>UK part</strong> then begins.</p>
+          <p><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21270" target="_blank" rel="noopener">HMRC RFIG21270: Case 8 conditions</a>.</p>
+        </details>
 
         <h2>Apply the cases in the correct order</h2>
         <ol>
@@ -51,26 +446,191 @@
           <li>If more than one case applies, use the statutory priority rules to determine the applicable case and split date.</li>
           <li>Allocate income and gains by applying the charging rules for the UK and overseas parts; do not simply apportion every annual amount by days.</li>
         </ol>
-        <p>For departure cases, Case 1 has priority over Cases 2 and 3, and Case 2 has priority over Case 3. Arrival cases have separate priority rules that can depend on which case produces the earliest split date.</p>
+        <h3>Departure-case priority</h3>
+        <p>Priority does not trigger a case. First establish which of Cases 1 to 3 satisfy all their statutory conditions. If two or more are fully satisfied, apply this fixed hierarchy:</p>
+        <ol>
+          <li>Case 1 has priority over Cases 2 and 3.</li>
+          <li>Case 2 has priority over Case 3.</li>
+          <li>Case 3 governs only if neither higher-priority case determines the result.</li>
+        </ol>
+        <p>For example, an individual who starts full-time work overseas and also ceases to have a UK home may satisfy Cases 1 and 3. Case 1 determines the split; the two cases do not create separate overseas parts.</p>
+
+        <h3>Arrival-case priority rules (Cases 4 to 8)</h3>
+        <p>There is no fixed ranking from Case 4 to Case 8. First identify every case that fully applies and calculate its split date. Where the statutory comparison below requires a choice between dates, the case producing the <strong>earliest split date</strong> takes priority, subject to the same-date rules. Apply the comparison that matches the cases satisfied:</p>
+        <ol>
+          <li><strong>Cases 6 and 5:</strong> use the case producing the earliest split date. If both dates are the same, Case 6 has priority.</li>
+          <li><strong>Case 7 and Case 5, where Case 6 does not apply:</strong> use the case producing the earliest split date. If both dates are the same, Case 7 has priority.</li>
+          <li><strong>Two or all of Cases 4, 5 and 8, where neither Case 6 nor Case 7 applies:</strong> use the case or cases producing the earliest split date. Cases sharing that same earliest date may apply together, but they create only one boundary between the overseas and UK parts.</li>
+        </ol>
+        <p><strong>Meaning of earliest split date:</strong> for Cases 4 to 8, the split date used in the priority comparison is the final day of the <strong>overseas part</strong>. An earlier split date therefore means that the <strong>UK part</strong> begins earlier; it does not produce the longest overseas part.</p>
+        <p>See Finance Act 2013, Schedule 45, <a href="https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/53" target="_blank" rel="noopener">paragraph 53</a> for the two parts and paragraphs <a href="https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/54" target="_blank" rel="noopener">54</a> and <a href="https://www.legislation.gov.uk/ukpga/2013/29/schedule/45/paragraph/55" target="_blank" rel="noopener">55</a> for priority, together with <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21030" target="_blank" rel="noopener">HMRC RFIG21030</a>.</p>
+
+        <h3>Single split per year</h3>
+        <ul>
+          <li><strong>Only one split per tax year:</strong> a tax year can be divided only once into two contiguous parts:
+            <ul>
+              <li><strong>Leaving the UK:</strong> the year starts with a <strong>UK part</strong> and ends with an <strong>overseas part</strong>.</li>
+              <li><strong>Arriving in the UK:</strong> the year starts with an <strong>overseas part</strong> and ends with a <strong>UK part</strong>.</li>
+            </ul>
+          </li>
+          <li><strong>No alternating parts:</strong> the year cannot switch back and forth, for example from UK to overseas and then back to UK. Leaving and returning during the same tax year does not by itself create another split.</li>
+          <li><strong>Exact split date:</strong> the boundary is determined by the applicable statutory case, not automatically by the first or last physical arrival or departure.</li>
+          <li><strong>Travel counts as evidence:</strong> every journey remains relevant when testing day counts, workdays, homes, work patterns and continuing conditions.</li>
+        </ul>
+        <details id="multiple-moves">
+          <summary><strong>Multiple moves within the tax year</strong></summary>
+          <p>Use the individual&rsquo;s residence status in the previous tax year to select the departure or arrival group. Then test all the journeys and surrounding facts under that group. Departure and arrival cases are not joined together to create alternating parts.</p>
+
+        <section id="multiple-departures" class="split-year-move" aria-labelledby="multiple-departures-heading">
+          <h4 id="multiple-departures-heading">More than one departure: how the overseas part is established</h4>
+          <p>When an individual leaves the UK, returns temporarily and leaves again, establish the single split date using this sequence:</p>
+          <ol>
+            <li><strong>Record the full timeline:</strong> note all departure dates, return trips, UK midnights, UK and overseas workdays, and home status.</li>
+            <li><strong>Identify candidate start dates:</strong> for Case 1, a candidate relevant period may start on any day on which the individual works for more than three hours overseas, and it must end on 5 April.</li>
+            <li><strong>Test the earliest start date:</strong> include any temporary UK return trips when testing the <a href="#departure-permitted-limits">UK-day and UK-workday limits</a>, the sufficient-hours calculation, the significant-break rule and all other Case 1 conditions.</li>
+            <li><strong>If it fails, test a later start date:</strong> if the earliest candidate date exceeds a limit or fails another condition, test a later overseas workday. Recalculate every condition using the generally smaller permitted limits for the later corresponding table row.</li>
+            <li><strong>Apply case priority:</strong> if more than one departure case fully qualifies, apply the statutory priority order: Case 1 &gt; Case 2 &gt; Case 3.</li>
+          </ol>
+          <p><strong>Example breakdown</strong></p>
+          <p><strong>Timeline:</strong></p>
+          <ul>
+            <li><strong>1 July:</strong> the individual leaves the UK.</li>
+            <li><strong>2 July:</strong> first day with more than three hours&rsquo; overseas work.</li>
+            <li><strong>September:</strong> temporary return trip to the UK.</li>
+            <li><strong>1 November:</strong> the individual leaves again and works overseas for more than three hours.</li>
+          </ul>
+
+          <div>
+            <p><strong>Scenario A: earliest candidate date passes (2 July)</strong></p>
+            <ul>
+              <li><strong>Period tested:</strong> 2 July to 5 April.</li>
+              <li><strong>Treatment of the September trip:</strong> the return falls inside the proposed <strong>overseas part</strong> and counts towards the July UK-day and UK-workday limits.</li>
+              <li><strong>Result:</strong> if every Case 1 condition is satisfied, the <strong>overseas part</strong> begins on 2 July. The September visit does not create a separate <strong>UK part</strong>.</li>
+            </ul>
+          </div>
+
+          <div>
+            <p><strong>Scenario B: earliest candidate date fails (shift to 1 November)</strong></p>
+            <ul>
+              <li><strong>Period tested:</strong> 1 November to 5 April.</li>
+              <li><strong>Treatment of the September trip:</strong> the visit now falls within the <strong>UK part</strong>, which runs from 6 April to 31 October.</li>
+              <li><strong>Result:</strong> if the 1 November period satisfies the tighter November limits and every other Case 1 condition, the <strong>overseas part</strong> begins on 1 November. The <strong>UK part</strong> therefore extends to 31 October.</li>
+            </ul>
+          </div>
+
+          <p>If no proposed Case 1 period or other departure case fully qualifies, split-year treatment is unavailable.</p>
+          <p>A later Case 1 start date does not automatically correct an earlier failure: every condition must be retested for the new relevant period. See <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21050" target="_blank" rel="noopener">HMRC RFIG21050: relevant period</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21080" target="_blank" rel="noopener">RFIG21080: Case 1 examples</a>.</p>
+        </section>
+
+        <section id="multiple-arrivals" class="split-year-move" aria-labelledby="multiple-arrivals-heading">
+          <h4 id="multiple-arrivals-heading">More than one arrival: how the UK part is established</h4>
+          <p>When an individual visits the UK, leaves and later returns to settle or work, establish the single split date using this sequence:</p>
+          <ol>
+            <li><strong>Avoid automatic assumptions:</strong> the first physical entry into the UK does not automatically establish the split date. An early visit may remain inside the <strong>overseas part</strong>.</li>
+            <li><strong>Determine the split date for every fully satisfied arrival case:</strong>
+              <ul>
+                <li><strong>Case 4:</strong> the only-UK-home test.</li>
+                <li><strong>Case 5:</strong> the first qualifying UK-work period.</li>
+                <li><strong>Case 6:</strong> the latest qualifying overseas-work period.</li>
+                <li><strong>Case 7:</strong> the deemed arrival day for the partner of someone ceasing full-time work overseas and returning or relocating to the UK.</li>
+                <li><strong>Case 8:</strong> the date on which the individual starts to have a UK home.</li>
+              </ul>
+            </li>
+            <li><strong>Test earlier visits:</strong> count visits before the proposed <strong>UK part</strong> when checking the applicable pre-arrival conditions, including the reduced sufficient-ties thresholds, UK days, UK workdays and any overseas-work requirements.</li>
+            <li><strong>Apply the arrival priority rules:</strong> compare the dates produced by the fully satisfied cases and apply the statutory earliest-date and tie-break rules explained above.</li>
+            <li><strong>Check the effect of later overseas trips:</strong> travel after the <strong>UK part</strong> begins does not create another <strong>overseas part</strong>, but it must not break a continuing condition of the applicable case, such as maintaining a UK home or being UK resident in the following tax year.</li>
+          </ol>
+
+          <p><strong>Example breakdown</strong></p>
+          <p><strong>Timeline:</strong></p>
+          <ul>
+            <li><strong>June:</strong> the individual makes a brief visit to the UK and then leaves.</li>
+            <li><strong>10 October:</strong> the individual returns to the UK and starts to have a UK home.</li>
+            <li><strong>December:</strong> the individual makes an overseas trip.</li>
+          </ul>
+
+          <div>
+            <p><strong>Analysis and treatment</strong></p>
+            <ul>
+              <li><strong>June visit:</strong>
+                <ul>
+                  <li>It does not automatically establish the split date.</li>
+                  <li>If Case 8 is fully satisfied from 10 October, the <strong>overseas part</strong> ends on 9 October and the <strong>UK part</strong> begins on 10 October.</li>
+                  <li>The UK days in June are still counted when applying the reduced sufficient-ties thresholds and any other relevant pre-arrival conditions.</li>
+                </ul>
+              </li>
+              <li><strong>December trip:</strong>
+                <ul>
+                  <li>It does not create a second <strong>overseas part</strong> because the tax year can have only one split.</li>
+                  <li>Case 8 remains valid only if its continuing home and following-year residence conditions remain satisfied despite the trip.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <p>If more than one arrival case qualifies alongside Case 8, apply the arrival priority rules to determine the final split boundary.</p>
+          <p>See <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21030" target="_blank" rel="noopener">HMRC RFIG21030: priority ordering</a> and the detailed guidance for Cases 4 to 8 linked in the case sections above.</p>
+          </section>
+
+        </details>
 
         <h2>Effect of split-year treatment</h2>
-        <p>The overseas part is treated as a period of non-UK residence only for the provisions to which the split-year rules apply. UK-source income may remain taxable, and particular rules can produce a different result for employment income, Capital Gains Tax, attributed gains or income, and temporary non-residence.</p>
-        <p>Annual allowances and rate bands are not automatically divided according to the length of each part. The applicable charging provision must be used to determine which receipts, earnings, profits or gains belong in the UK calculation.</p>
+        <p>Split-year treatment identifies which income and gains participate in the UK tax calculation. It does not create two separate tax years or two independent tax calculations.</p>
+        <ul>
+          <li>Income and gains attributed to the <strong>UK part</strong> generally participate in the UK tax calculation.</li>
+          <li>Income and gains attributed to the <strong>overseas part</strong> are generally excluded, except for amounts that remain taxable in the UK under the normal non-resident rules or a specific statutory exception. These may include UK-source income, earnings for UK duties, certain UK-property gains, attributed income or gains, and amounts brought back into charge by the temporary non-residence rules.</li>
+          <li>The individual's available annual allowances, zero-rate bands and tax-rate bands are applied against all amounts that remain within the UK tax calculation.</li>
+          <li>There is only one set of allowances and rate bands for the tax year, not a separate set for each part. They are not normally apportioned merely because the <strong>UK part</strong> covers less than the whole tax year.</li>
+          <li>The normal eligibility requirements, income-based reductions and other restrictions continue to apply.</li>
+        </ul>
+        <p><strong>In summary:</strong> the <strong>UK part</strong> generally supplies the taxable income and gains, together with any amounts from the <strong>overseas part</strong> that remain within the UK tax charge. The available allowances and bands are then applied in the calculation for the tax year as a whole.</p>
+        <p>See <a href="https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim40101" target="_blank" rel="noopener">HMRC EIM40101: employment income in a split year</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg25799" target="_blank" rel="noopener">CG25799: Capital Gains Tax in a split year</a>.</p>
+
+        <h2>Treatment of specific income types</h2>
+        <p>The date on which an amount is paid or received does not always determine whether it belongs to the <strong>UK part</strong> or the <strong>overseas part</strong>. Apply the charging and attribution rules for the particular type of income or gain.</p>
+        <ul>
+          <li><strong>Employment earnings and bonuses:</strong> identify the duties and service period to which the payment relates. A bonus paid after arrival may relate wholly or partly to duties performed during the <strong>overseas part</strong>, while a payment received after departure may relate to duties performed during the <strong>UK part</strong>. Earnings relating to UK duties can remain taxable even where those duties are performed during the <strong>overseas part</strong>.</li>
+          <li><strong>Termination payments and employment-related securities:</strong> apply their specific charging, timing and apportionment rules. Do not allocate a termination payment, share award or option automatically by reference only to its payment, vesting, exercise or departure date.</li>
+          <li><strong>Trading and property income:</strong> profits from a UK trade carried on through a UK permanent establishment and UK property income may remain taxable during the <strong>overseas part</strong> under the ordinary rules applying to non-residents.</li>
+          <li><strong>Capital gains:</strong> gains arising during the <strong>overseas part</strong> are generally outside the UK Capital Gains Tax charge, but exceptions can apply to UK land, gains connected with a UK trade, attributed gains and temporary non-residence.</li>
+          <li><strong>Temporary non-residence:</strong> this is a separate anti-avoidance regime. Broadly, where an individual returns to the UK within five years of leaving and was UK resident in at least four of the seven tax years before departure, specified income and gains arising while non-resident may be brought into charge in the tax year of return. The rule does not apply to every item arising overseas, so each statutory category must be tested separately.</li>
+        </ul>
+        <p>See <a href="https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim40101" target="_blank" rel="noopener">HMRC EIM40101: split-year employment income</a>, <a href="https://www.gov.uk/government/publications/globally-mobile-employees/effect-of-residence-on-an-employees-liability-to-uk-income-tax" target="_blank" rel="noopener">HMRC: residence and employment-income examples</a>, <a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg25799" target="_blank" rel="noopener">HMRC CG25799: split-year Capital Gains Tax</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21630" target="_blank" rel="noopener">RFIG21630: temporary non-residence</a>.</p>
 
         <h2>International and FIG interactions</h2>
         <p>A split year remains a full year of UK residence when testing whether an individual is a qualifying new resident under the foreign income and gains (FIG) regime. Treaty residence is also considered separately: a double taxation agreement may affect taxing rights without changing the domestic SRT result.</p>
         <p>Continue to the <a href="../../INTAX/FIG/fig-index.html">Foreign Income and Gains study notes</a> for the FIG regime, treaty residence and related international rules.</p>
+
+        <h2>Reporting and compliance</h2>
+        <p>Split-year treatment is automatic when the statutory conditions are satisfied. Reporting the position on a tax return does not create an election, but the return must correctly reflect the applicable case, split date and resulting UK tax liability.</p>
+        <ul>
+          <li><strong>Check whether a return is required:</strong> split-year treatment does not by itself mean that every individual must file a Self Assessment return. A return is required where the ordinary Self Assessment rules apply or HMRC has issued a notice to file.</li>
+          <li><strong>Complete the residence pages:</strong> where a return is required, submit the SA100 together with the SA109 residence supplementary pages for the relevant tax year. The SA109 form currently published for 2025/26 uses box 3 for split-year treatment, box 3.1 where more than one case applies and box 6 for the date on which the <strong>UK part</strong> begins or ends. Use the form and notes published for 2026/27 when they become available because box numbers and instructions may change.</li>
+          <li><strong>Choose the filing method:</strong> HMRC&rsquo;s current SA109 notes state that its free online filing service does not support these residence pages. Electronic filing therefore requires compatible commercial software or an authorised agent. Alternatively, submit the complete return, including SA109, on paper; do not attach SA109 electronically to a return filed through HMRC&rsquo;s online service.</li>
+          <li><strong>Report the underlying amounts:</strong> enter employment income, foreign income, UK-source income and gains on the appropriate return pages. Apply the relevant split-year charging rules rather than excluding every amount arising during the <strong>overseas part</strong>.</li>
+          <li><strong>Observe the deadlines:</strong> for 2026/27, the normal deadline is 31 October 2027 for a paper return and 31 January 2028 for an online return and balancing payment. Different rules can apply where HMRC issues the notice to file late or another statutory exception applies.</li>
+          <li><strong>Keep supporting records:</strong> retain the travel calendar, passport and journey evidence, UK-midnight count, UK and overseas workdays and hours, employer records, home arrangements, family and other UK-tie evidence, relevant contracts and income or gain calculations. Keep the records for the statutory retention period and longer if a return is late or an HMRC enquiry remains open.</li>
+          <li><strong>Review connected years:</strong> preserve evidence for the preceding and following tax years where the applicable case depends on residence, work or home conditions continuing into those years. A later failure of a required condition may mean that the original return needs to be corrected.</li>
+        </ul>
+        <p>See <a href="https://www.gov.uk/government/publications/self-assessment-residence-remittance-basis-etc-sa109" target="_blank" rel="noopener">HMRC: SA109 residence and FIG regime pages and notes</a>, <a href="https://www.gov.uk/self-assessment-tax-returns/deadlines" target="_blank" rel="noopener">Self Assessment deadlines</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf211" target="_blank" rel="noopener">HMRC SALF211: record-retention requirements</a>.</p>
 
         <aside class="note">
           <p><strong>Official sources</strong></p>
           <ul>
             <li><a href="https://www.legislation.gov.uk/ukpga/2013/29/schedule/45" target="_blank" rel="noopener">Finance Act 2013, Schedule 45, Part 3: split years</a></li>
             <li><a href="https://www.gov.uk/government/publications/rdr3-statutory-residence-test-srt/guidance-note-for-statutory-residence-test-srt-rdr3" target="_blank" rel="noopener">HMRC RDR3: Statutory Residence Test notes</a></li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig30730" target="_blank" rel="noopener">HMRC RFIG30730: Extra-Statutory Concession A11 and the pre-2013/14 split-year rules</a></li>
             <li><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21000" target="_blank" rel="noopener">HMRC RFIG21000: split-year treatment contents</a></li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21010" target="_blank" rel="noopener">HMRC RFIG21010: one split year comprising two parts</a></li>
             <li><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21030" target="_blank" rel="noopener">HMRC RFIG21030: when split-year treatment applies and priority rules</a></li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim40101" target="_blank" rel="noopener">HMRC EIM40101: employment income in a split year</a></li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/capital-gains-manual/cg25799" target="_blank" rel="noopener">HMRC CG25799: Capital Gains Tax in a split year</a></li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig21630" target="_blank" rel="noopener">HMRC RFIG21630: temporary non-residence</a></li>
             <li><a href="https://www.gov.uk/hmrc-internal-manuals/residence-and-fig-regime-manual/rfig44000" target="_blank" rel="noopener">HMRC RFIG44000: qualifying new residents and split years</a></li>
+            <li><a href="https://www.gov.uk/government/publications/self-assessment-residence-remittance-basis-etc-sa109" target="_blank" rel="noopener">HMRC SA109: residence and FIG regime supplementary pages and notes</a></li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf211" target="_blank" rel="noopener">HMRC SALF211: Self Assessment record-retention requirements</a></li>
           </ul>
-          <p>Sources checked 18 July 2026. Schedule 45 is legislation. RDR3 and the Residence and FIG Regime Manual state HMRC&rsquo;s interpretation and practice; they are not legislation. Split-year conclusions are fact-sensitive and may require separate consideration of a double taxation agreement and the temporary non-residence rules.</p>
+          <p>Sources checked 20 July 2026. Schedule 45 is legislation. RDR3 and the Residence and FIG Regime Manual state HMRC&rsquo;s interpretation and practice; they are not legislation. Split-year conclusions are fact-sensitive and may require separate consideration of a double taxation agreement and the temporary non-residence rules.</p>
         </aside>
       </section>
       <div class="page-nav">

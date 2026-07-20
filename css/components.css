@@ -15,6 +15,10 @@
   11. Header reference launchers
   12. Global glossary reference
   13. Seven-step tax computation flow
+  14. Split-year case disclosures
+  15. Split-year case mind map
+  16. Split-year limit tables
+  17. Split-year multiple-move sections
 */
 
 /* 1. Tooltip behaviour */
@@ -901,4 +905,149 @@ body.glossary-popup-view .glossary-entry:target {
   .tax-computation-flow li:not(:last-child)::after {
     display: none;
   }
+}
+
+/* 16. Split-year limit tables */
+.split-year-limit-table {
+  border-collapse: collapse;
+}
+
+.split-year-limit-table th,
+.split-year-limit-table td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #7f919b;
+  text-align: right;
+}
+
+.split-year-limit-table th:first-child,
+.split-year-limit-table td:first-child {
+  text-align: left;
+}
+
+/* 14. Split-year case disclosures */
+.split-year-case {
+  max-width: calc(100% - 4ch);
+  margin-inline-start: 4ch;
+}
+
+/* 15. Split-year case mind map */
+.split-year-map {
+  margin: 1.75rem 0;
+  padding: 1.25rem;
+  border: 1px solid #b7cbd6;
+  border-radius: 0.75rem;
+  background: #f8fbfc;
+}
+
+.split-year-map figcaption {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.split-year-map-intro {
+  margin: 0.5rem 0 1rem;
+}
+
+.split-year-map-start,
+.split-year-map-outcome {
+  max-width: 34rem;
+  margin-inline: auto;
+  padding: 0.75rem 1rem;
+  border: 2px solid #176b87;
+  border-radius: 0.5rem;
+  background: #eaf5f8;
+  text-align: center;
+}
+
+.split-year-map-branches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.split-year-map-branch {
+  padding: 1rem;
+  border-top: 4px solid #176b87;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 12%);
+}
+
+.split-year-map-branch h4,
+.split-year-map-route {
+  margin: 0;
+  text-align: center;
+}
+
+.split-year-map-type {
+  margin: 0 0 0.5rem;
+  color: #176b87;
+  text-align: center;
+}
+
+.split-year-map-route {
+  margin-top: 0.25rem;
+  color: #425966;
+}
+
+.split-year-map-cases {
+  display: grid;
+  gap: 0.625rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.split-year-map-cases > li {
+  padding: 0.625rem 0.75rem;
+  border-inline-start: 3px solid #5a9bb0;
+  background: #f1f7f9;
+}
+
+.split-year-map-cases > li > strong {
+  color: #07556f;
+}
+
+.split-year-map-priority {
+  display: grid;
+  gap: 0.25rem;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: 1px dashed #176b87;
+  border-radius: 0.375rem;
+  background: #fffbea;
+  text-align: center;
+}
+
+.split-year-map-outcome {
+  display: grid;
+  gap: 0.25rem;
+}
+
+@media (max-width: 700px) {
+  .split-year-map {
+    padding: 1rem;
+  }
+
+  .split-year-map-branches {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 17. Split-year multiple-move sections */
+.split-year-move {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border-inline-start: 4px solid #176b87;
+  background: #f8fbfc;
+}
+
+.split-year-move h4 {
+  margin-top: 0;
+  color: #07556f;
+}
+
+.split-year-move > :last-child {
+  margin-bottom: 0;
 }
