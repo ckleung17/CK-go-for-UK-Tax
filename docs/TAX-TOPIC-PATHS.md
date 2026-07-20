@@ -30,7 +30,9 @@ This file is the authoritative folder and abbreviation map for study-area HTML f
 | Business Tax | `BTAX/` | Business Income and Partnerships | `BTAX/BIZPAR/` | Reserved |
 | Business Tax | `BTAX/` | Capital Allowances | `BTAX/CAPALL/` | Reserved |
 | Business Tax | `BTAX/` | Employer Taxes | `BTAX/EMPTAX/` | Reserved |
+| Business Tax | `BTAX/` | Oil, Gas, Electricity and Environmental Taxation | `BTAX/ENERGY/` | Published |
 | Value Added Tax | `VAT/` | — | `VAT/` | Reserved |
+| Customs, Import VAT and Excise Duties | `CUSTEX/` | — | `CUSTEX/` | Published |
 | Inheritance Tax and Estates | `IHT/` | — | `IHT/` | Reserved |
 | Stamp and Transaction Taxes | `STTAX/` | Stamp Duty Land Tax | `STTAX/SDLT/` | Published; England and Northern Ireland |
 | Stamp and Transaction Taxes | `STTAX/` | Land and Buildings Transaction Tax | `STTAX/LBTT/` | Reserved; Scotland |
@@ -42,8 +44,10 @@ This file is the authoritative folder and abbreviation map for study-area HTML f
 | International Tax | `INTAX/` | Residence and International Mobility | `INTAX/RESMOB/` | Reserved |
 | Trusts | `TRUST/` | — | `TRUST/` | Published |
 | Tax Administration and Compliance | `TAXADM/` | Returns, Claims and Elections | `TAXADM/RCE/` | Reserved |
-| Tax Administration and Compliance | `TAXADM/` | Payments, Enquiries and Records | `TAXADM/PER/` | Reserved |
-| Tax Administration and Compliance | `TAXADM/` | Penalties, Appeals and Disputes | `TAXADM/PAD/` | Reserved |
+| Tax Administration and Compliance | `TAXADM/` | Making Tax Digital and Digital Tax Compliance | `TAXADM/MTD/` | Published |
+| Tax Administration and Compliance | `TAXADM/` | HMRC Enquiries, Assessments and Compliance Powers | `TAXADM/PER/` | Published |
+| Tax Administration and Compliance | `TAXADM/` | Tax Avoidance, Abuse and Anti-Evasion Regimes | `TAXADM/AAE/` | Published |
+| Tax Administration and Compliance | `TAXADM/` | Tax Appeals, Tribunals and Dispute Resolution | `TAXADM/PAD/` | Published |
 
 ## Published entry pages
 
@@ -57,6 +61,12 @@ This file is the authoritative folder and abbreviation map for study-area HTML f
 - SDLT: `STTAX/SDLT/sdlt-index.html`
 - FIG: `INTAX/FIG/fig-index.html`
 - Trusts: `TRUST/Trust-index.html`
+- Oil, Gas, Electricity and Environmental Taxation: `BTAX/ENERGY/energy-index.html`
+- Customs, Import VAT and Excise Duties: `CUSTEX/custex-index.html`
+- Making Tax Digital and Digital Tax Compliance: `TAXADM/MTD/mtd-index.html`
+- HMRC Enquiries, Assessments and Compliance Powers: `TAXADM/PER/per-index.html`
+- Tax Avoidance, Abuse and Anti-Evasion Regimes: `TAXADM/AAE/aae-index.html`
+- Tax Appeals, Tribunals and Dispute Resolution: `TAXADM/PAD/appeals-index.html`
 
 The existing entry filenames are retained to avoid unnecessary filename churn. New study note entry pages should use the lower-case form `<code>-index.html`.
 
