@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Purpose: Explain adjusted-net-income interactions beyond the Personal Allowance. -->
+<!-- Purpose: Explain adjusted-net-income interactions beyond the Personal Allowance. Contents: 1. Scope; 2. Method; 3. Personal Allowance; 4. HICBC and childcare; 5. Distinctions and caveats; 6. Sources. -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,12 +9,12 @@
   </head>
   <body>
     <header>
-      <h1>Income Tax</h1>
-      <p>Adjusted net income and connected charges</p>
+      <h1>Adjusted net income and connected charges</h1>
+      <p>How one statutory income measure affects allowances, charges and eligibility</p>
     </header>
     <nav class="topic-nav" aria-label="Personal Tax topics">
       <a href="../../index.html">Home</a>
-      <a href="itax-index.html" aria-current="page">Income Tax</a>
+      <a href="itax-index.html">Income Tax</a>
       <a href="../CGT/cgt-index.html">Capital Gains Tax</a>
       <a href="../PAYE/paye-index.html">PAYE</a>
       <a href="../NIC/nic-index.html">National Insurance</a>
@@ -22,21 +22,81 @@
     </nav>
     <main>
       <section>
-        <h2>Why the measure matters</h2>
-        <p>Adjusted net income affects the Personal Allowance taper above &pound;100,000 and the High Income Child Benefit Charge above its applicable threshold. It can also be relevant to eligibility for childcare support and must not be confused with pension &ldquo;threshold income&rdquo; or &ldquo;adjusted income&rdquo;.</p>
-        <h2>Method</h2>
+        <!-- 1. Scope -->
+        <h2>Why adjusted net income matters</h2>
+        <p><strong>Adjusted net income (ANI)</strong> is a statutory measure based on total taxable income before Personal Allowances, reduced by specified reliefs and subject to specified add-backs. It is not the same as salary, cash received, taxable income after allowances or take-home pay.</p>
+        <p>This note covers the 2026&ndash;27 tax year. The ANI definition is UK-wide, but the Income Tax consequence can depend on the taxpayer&rsquo;s jurisdiction and the character of the income. Savings, dividends, property income, trust income, foreign income and the full taxable amount of many chargeable-event gains can all affect ANI.</p>
+
+        <!-- 2. Method -->
+        <h2>Statutory method</h2>
         <ol>
-          <li>Start with net income from all taxable sources.</li>
-          <li>Deduct the gross amount of qualifying Gift Aid.</li>
-          <li>Deduct applicable gross pension contributions, including grossed-up relief-at-source payments.</li>
-          <li>Make the remaining statutory adjustments, including specified add-backs.</li>
+          <li><strong>Establish net income.</strong> Start with income from all taxable sources and make the deductions allowed in the net-income calculation. These can include qualifying trading or property loss relief and pension contributions paid gross without tax relief having already been given.</li>
+          <li><strong>Deduct qualifying Gift Aid.</strong> Deduct the grossed-up amount: a net donation of &pound;80 is normally &pound;100 gross at a 20% basic rate.</li>
+          <li><strong>Deduct relief-at-source pension contributions.</strong> Deduct the grossed-up amount where the pension provider has already added basic-rate relief. A net payment of &pound;80 is normally &pound;100 gross.</li>
+          <li><strong>Make the statutory add-back.</strong> Add back any deduction given for qualifying payments to trade unions or police organisations under the provisions identified in section 58.</li>
         </ol>
-        <p>The Personal Allowance taper produces an effective marginal Income Tax rate above the headline rate while allowance is withdrawn. Savings, dividends, property income, trust income and chargeable-event gains can all push adjusted net income across a threshold.</p>
-        <p class="note">HICBC, Tax-Free Childcare and pension annual-allowance decisions are separate regimes with their own definitions and claim mechanics.</p>
+        <p class="note"><strong>Gift Aid tax-cover warning:</strong> grossing up a qualifying donation reduces ANI, but it does not remove the donor&rsquo;s tax-cover obligation. Under <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/424" target="_blank" rel="noopener">section 424 ITA 2007</a>, the donor must be charged enough Income Tax and/or Capital Gains Tax for the tax year to cover the basic-rate tax treated as deducted from all their Gift Aid donations. If the final amount charged is insufficient &mdash; including where the ANI reduction lowers the donor&rsquo;s tax liability &mdash; HMRC charges the donor the shortfall. The donation remains grossed up for the ANI calculation, so tax cover must be checked separately after completing the tax calculation.</p>
+        <p><strong>Salary sacrifice:</strong> where an employee and employer effectively vary the employment contract before the employee becomes entitled to the cash pay, the lower contractual salary is the starting taxable employment income. A sacrifice into an employer pension can therefore reduce total taxable income at Step 1 above; the resulting employer pension contribution is normally not taxable on the employee. This differs from a personal relief-at-source contribution, which is deducted at Step 3. An ineffective or late arrangement, or a taxable benefit received in exchange, may produce a different result, so the contractual facts matter.</p>
+        <p class="note"><strong>Avoid double counting:</strong> a pension contribution paid gross without relief is dealt with when net income is calculated. It must not then be deducted again as though it were a relief-at-source contribution. Employer contributions are not automatically deducted in the ANI calculation.</p>
+        <p>See <a href="gift-aid-pensions-relief.html">Gift Aid and pension relief</a> for the separate mechanics and donor or contributor conditions.</p>
+
+        <h3>Illustrative ANI calculation</h3>
+        <p>Assume that fictional taxpayer Maya has &pound;112,000 total taxable income in 2026&ndash;27. She pays a &pound;2,000 pension contribution gross without relief, makes an &pound;800 net Gift Aid donation and pays &pound;2,400 net into a relief-at-source pension. She has no other deductions or adjustments:</p>
+        <ol>
+          <li>Net income: &pound;112,000 &minus; &pound;2,000 gross-paid pension contribution = &pound;110,000.</li>
+          <li>Gross Gift Aid: &pound;800 &times; 100 &divide; 80 = &pound;1,000.</li>
+          <li>Gross relief-at-source pension contribution: &pound;2,400 &times; 100 &divide; 80 = &pound;3,000.</li>
+          <li>ANI: &pound;110,000 &minus; &pound;1,000 &minus; &pound;3,000 = <strong>&pound;106,000</strong>.</li>
+        </ol>
+
+        <!-- 3. Personal Allowance -->
+        <h2>Personal Allowance taper</h2>
+        <p>For 2026&ndash;27, the standard Personal Allowance is &pound;12,570. It is reduced by &pound;1 for every &pound;2 of ANI above &pound;100,000 and is nil when ANI reaches &pound;125,140.</p>
+        <p><strong>Allowance distinction:</strong> the ANI taper reduces the standard Personal Allowance, not the <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/38" target="_blank" rel="noopener">Blind Person&rsquo;s Allowance</a>. An eligible individual can therefore retain the Blind Person&rsquo;s Allowance even when their standard Personal Allowance has tapered to nil.</p>
+        <p>In Maya&rsquo;s example, ANI is &pound;6,000 above the threshold:</p>
+        <ol>
+          <li>Allowance withdrawn: &pound;6,000 &divide; 2 = &pound;3,000.</li>
+          <li>Personal Allowance remaining: &pound;12,570 &minus; &pound;3,000 = <strong>&pound;9,570</strong>.</li>
+        </ol>
+        <p>Withdrawal can create an effective marginal rate above the headline rate because additional income is taxed and also exposes income previously covered by the allowance. For an England, Wales or Northern Ireland taxpayer whose affected income is taxed at 40%, an extra &pound;100 can expose another &pound;50, producing &pound;60 Income Tax before other interactions. For a Scottish taxpayer whose affected non-savings, non-dividend income is taxed at the 45% advanced rate, the same mechanism can produce 45% on &pound;150, an effective marginal Income Tax rate of <strong>67.5%</strong> in the &pound;100,000 to &pound;125,140 taper zone. Separate benefit withdrawals or tax charges can make the combined effective burden higher; savings and dividend income continue to use UK-wide rates, so the result is fact-sensitive.</p>
+
+        <!-- 4. HICBC and childcare -->
+        <h2>High Income Child Benefit Charge</h2>
+        <p>For 2026&ndash;27, the <strong>High Income Child Benefit Charge (HICBC)</strong> starts when an individual&rsquo;s ANI exceeds &pound;60,000. The charge equals 1% of the relevant Child Benefit for every &pound;200 of ANI above &pound;60,000 and reaches 100% at &pound;80,000. If both partners exceed &pound;60,000, the partner with the higher ANI is normally responsible.</p>
+        <p><strong>Illustrative HICBC example:</strong> assume fictional taxpayer Ravi has ANI of &pound;67,600 and the other conditions for HICBC are met. The excess is &pound;7,600; &pound;7,600 &divide; &pound;200 = 38. Ravi&rsquo;s charge is therefore 38% of the relevant Child Benefit received. The actual monetary charge depends on that Child Benefit amount.</p>
+
+        <h2>Childcare eligibility</h2>
+        <p>ANI is also used for specific childcare schemes, not childcare support generally. For Tax-Free Childcare, neither the claimant nor their partner can have expected ANI above &pound;100,000 for the tax year. Working-parent childcare schemes can use a similar individual &pound;100,000 test, but the age, work, earnings, residence and reconfirmation conditions remain separate.</p>
+        <p><strong>Marriage Allowance interaction:</strong> where ANI of &pound;125,140 or more has reduced an individual&rsquo;s standard Personal Allowance to nil, there is no unused standard Personal Allowance available for that individual to transfer to a spouse or civil partner. A recipient also cannot claim Marriage Allowance if they are liable at the higher or additional rate; for a Scottish taxpayer, the recipient must be liable only at the starter, basic or intermediate rate. This is a separate eligibility test from HICBC and childcare support.</p>
         <aside class="note">
-          <h2>Sources</h2>
-          <p>
-            <a href="https://www.legislation.gov.uk/ukpga/2007/3/section/58" target="_blank" rel="noopener">ITA 2007 s.58</a>; <a href="https://www.gov.uk/guidance/adjusted-net-income" target="_blank" rel="noopener">HMRC adjusted net income</a>; <a href="https://www.gov.uk/child-benefit-tax-charge" target="_blank" rel="noopener">HMRC HICBC</a>. Checked 18 July 2026.</p>
+          <h2>Threshold warning</h2>
+          <p>ANI is an annual tax-year figure, while childcare eligibility may depend on an expected figure declared during the year. A later bonus, dividend, trust distribution or chargeable-event gain can therefore affect the final position. Eligibility should be checked under the rules of the particular scheme and jurisdiction.</p>
+        </aside>
+
+        <!-- 5. Distinctions and caveats -->
+        <h2>Do not substitute pension income measures</h2>
+        <p>Pension <strong>threshold income</strong> and <strong>adjusted income</strong> are separate statutory measures used for the tapered annual allowance. For 2026&ndash;27, the taper can apply where adjusted income exceeds &pound;260,000, but it does not apply where threshold income is &pound;200,000 or less. Those calculations treat pension contributions and employer pension savings differently from ANI, so an ANI figure must not be copied into the pension test.</p>
+        <p class="note">Gift Aid and personal pension contributions can reduce ANI only where the statutory conditions are satisfied. They do not retrospectively remove income, guarantee a repayment or override the separate conditions, elections, time limits and reporting mechanics of HICBC, childcare support or pension annual-allowance rules.</p>
+
+        <!-- 6. Sources -->
+        <aside class="note">
+          <h2>Sources and status</h2>
+          <ul>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/58" target="_blank" rel="noopener">Income Tax Act 2007, section 58</a> &mdash; enacted statutory calculation of adjusted net income.</li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/35" target="_blank" rel="noopener">Income Tax Act 2007, section 35</a> &mdash; enacted income-related reduction of the Personal Allowance.</li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/38" target="_blank" rel="noopener">Income Tax Act 2007, section 38</a> &mdash; enacted entitlement to Blind Person&rsquo;s Allowance.</li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/424" target="_blank" rel="noopener">Income Tax Act 2007, section 424</a> &mdash; enacted donor tax-cover charge for Gift Aid.</li>
+            <li><a href="https://www.gov.uk/guidance/adjusted-net-income" target="_blank" rel="noopener">HMRC: adjusted net income</a> &mdash; operational guidance and examples.</li>
+            <li><a href="https://www.gov.uk/government/publications/charities-detailed-guidance-notes/chapter-3-gift-aid" target="_blank" rel="noopener">HMRC: Chapter 3, Gift Aid</a> &mdash; operational guidance on the donor&rsquo;s Income Tax and Capital Gains Tax cover.</li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim01141" target="_blank" rel="noopener">HMRC Employment Income Manual EIM01141</a> and <a href="https://www.gov.uk/hmrc-internal-manuals/employment-income-manual/eim42780" target="_blank" rel="noopener">EIM42780</a> &mdash; HMRC guidance on effective salary sacrifice and employer pension contributions.</li>
+            <li><a href="https://www.gov.uk/income-tax-rates" target="_blank" rel="noopener">HMRC: Income Tax rates and Personal Allowances</a> &mdash; official 2026&ndash;27 allowance and threshold information.</li>
+            <li><a href="https://www.gov.uk/scottish-income-tax/how-it-works" target="_blank" rel="noopener">HMRC: Scottish Income Tax</a> &mdash; official 2026&ndash;27 Scottish bands and rates.</li>
+            <li><a href="https://www.gov.uk/marriage-allowance" target="_blank" rel="noopener">HMRC: Marriage Allowance</a> &mdash; operational guidance on transferor and recipient eligibility.</li>
+            <li><a href="https://www.gov.uk/child-benefit-tax-charge/overview" target="_blank" rel="noopener">HMRC: High Income Child Benefit Charge</a> &mdash; operational guidance on the &pound;60,000 to &pound;80,000 range and charge calculation.</li>
+            <li><a href="https://www.gov.uk/tax-free-childcare/check-if-youre-eligible" target="_blank" rel="noopener">HMRC: Tax-Free Childcare eligibility</a> &mdash; current expected-ANI and other eligibility conditions.</li>
+            <li><a href="https://www.gov.uk/guidance/pension-schemes-work-out-your-tapered-annual-allowance" target="_blank" rel="noopener">HMRC: tapered annual allowance</a> &mdash; separate threshold-income and adjusted-income calculations.</li>
+          </ul>
+          <p>Sources verified 21 July 2026. Legislation is law; HMRC pages are guidance and evidence of HMRC&rsquo;s interpretation and published thresholds. The examples are fictional and do not constitute tax or financial advice.</p>
         </aside>
       </section>
       <div class="page-nav">

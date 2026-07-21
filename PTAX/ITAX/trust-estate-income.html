@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Purpose: Explain how trust and deceased-estate income enters an individual computation. -->
+<!-- Purpose: Explain how trust and deceased-estate income enters an individual computation. Contents: 1. Scope; 2. Trust beneficiaries; 3. Deceased estates; 4. Workflow; 5. Sources. -->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,12 +9,12 @@
   </head>
   <body>
     <header>
-      <h1>Income Tax</h1>
-      <p>Trust and deceased-estate income</p>
+      <h1>Trust and deceased-estate income</h1>
+      <p>How income enters an individual&rsquo;s Income Tax computation</p>
     </header>
     <nav class="topic-nav" aria-label="Personal Tax topics">
       <a href="../../index.html">Home</a>
-      <a href="itax-index.html" aria-current="page">Income Tax</a>
+      <a href="itax-index.html">Income Tax</a>
       <a href="../CGT/cgt-index.html">Capital Gains Tax</a>
       <a href="../PAYE/paye-index.html">PAYE</a>
       <a href="../NIC/nic-index.html">National Insurance</a>
@@ -22,22 +22,88 @@
     </nav>
     <main>
       <section>
+        <!-- 1. Scope -->
+        <h2>Scope and purpose</h2>
+        <p>This note covers the 2026&ndash;27 UK Income Tax treatment of an individual beneficiary. Unless stated otherwise, it assumes that the beneficiary, trustees and personal representatives are UK resident and that the examples use the rates applying in England, Wales and Northern Ireland. Scottish rates can change the tax on non-savings income.</p>
+        <p>The practical question is whether income belongs in the beneficiary&rsquo;s computation, in which tax year it belongs and whether tax already paid by trustees or personal representatives is credited. The receipt of income must be distinguished from a transfer of the underlying trust or estate asset.</p>
+
+        <!-- 2. Trust beneficiaries -->
         <h2>Trust beneficiaries</h2>
-        <p>The amount and character entering a beneficiary&rsquo;s computation depends on the trust type and distribution. Bare-trust income is generally the beneficiary&rsquo;s income. Interest-in-possession and discretionary distributions can carry different tax credits and gross amounts. Settlor-interested rules can instead charge the settlor.</p>
-        <h2>Deceased estates</h2>
-        <p>A specific legacy does not automatically produce taxable income for the beneficiary. A residuary beneficiary may be taxed on estate income arising during administration, supported by information from the personal representatives. Estate income and the underlying asset transfer must be distinguished.</p>
-        <h2>Workflow</h2>
+        <p>A <strong>bare trust</strong> is one under which the beneficiary is absolutely entitled to the trust property and its income. The beneficiary is normally taxed on each underlying source as if they had received it directly, whether or not the trustees have paid it over.</p>
+        <p>Under an <strong>interest-in-possession trust</strong>, an income beneficiary is entitled to trust income as it arises. Income passing through UK-resident trustees normally retains its source, such as savings, dividends or property income, and the beneficiary receives credit for tax paid by the trustees. For 2026&ndash;27, the trustees normally pay 20% on non-dividend income and 10.75% on dividend-type income. Income mandated directly to the beneficiary is included without trustee tax having been deducted.</p>
+        <p>Under a <strong>discretionary trust</strong>, the trustees decide whether and when a beneficiary receives income. For 2026&ndash;27, UK-resident trustees generally pay 45% on non-dividend income and 39.35% on dividend-type income, subject to the detailed rules for expenses and deemed income. A discretionary income payment is nevertheless treated as carrying tax at 45%, whatever the source of the underlying trust income. The beneficiary&rsquo;s computation includes the cash payment grossed up at 45% and the corresponding tax credit; the credit may produce further tax or a repayment according to the beneficiary&rsquo;s circumstances.</p>
+        <p class="note"><strong>Low-income trust amount:</strong> from 6 April 2024, most trusts with total income of all types not exceeding &pound;500 do not pay Income Tax on that income as it arises. If income exceeds the applicable amount, tax is due on the full amount. The rule does not apply to bare trusts. If a settlor has more than one accumulation or discretionary trust, the &pound;500 amount is divided between those trusts, subject to a minimum of &pound;100 for each trust. This is primarily an exemption for the trustees, not a general exemption for trust beneficiaries. For example, assume an interest-in-possession trust receives &pound;400 bank interest in 2026&ndash;27, has no expenses and is entitled to the full &pound;500 amount. The trustees pay no tax, but the beneficiary entitled to that income has &pound;400 untaxed savings income in their own computation and no trustee tax credit; their Personal Savings Allowance and tax position then determine whether they pay tax.</p>
+
+        <h3>Illustrative trust example</h3>
+        <p>Assume that, in 2026&ndash;27, a UK-resident discretionary trust pays fictional beneficiary Asha &pound;5,500 in cash and provides an R185 (Trust Income). The payment is treated as the 55% net amount after tax at 45%:</p>
         <ol>
-          <li>Identify the legal capacity and beneficial entitlement.</li>
-          <li>Obtain the R185 or equivalent statement and reconcile gross income and tax credit.</li>
-          <li>Classify savings, dividend and other income for stacking.</li>
-          <li>Check settlements, foreign-income and residence interactions.</li>
+          <li>Gross trust income: &pound;5,500 &divide; 55% = &pound;10,000.</li>
+          <li>Tax credit: &pound;10,000 &times; 45% = &pound;4,500.</li>
+          <li>Asha enters the &pound;5,500 net payment from box 1 of the R185 in box 1 of the SA107 Trusts etc pages. The tax calculation treats this as &pound;10,000 gross income with &pound;4,500 tax paid.</li>
         </ol>
-        <p class="note">This page is an individual-computation bridge. Trustee and personal-representative liabilities belong to the Trust study note and require separate calculation.</p>
+        <p>The example assumes that the payment is an income distribution supported by the trustees&rsquo; <strong>tax pool</strong>, the running record of Income Tax paid by the trustees. The &pound;4,500 credit must be covered by tax in that pool. If the available pool is smaller, section 496 of the Income Tax Act 2007 requires the trustees to pay the shortfall to HMRC; this adjustment can arise even when the trust&rsquo;s income is within the &pound;500 tax-free amount. The example does not determine Asha&rsquo;s final liability or repayment, which depends on her other income and circumstances.</p>
+
         <aside class="note">
-          <h2>Sources</h2>
-          <p>
-            <a href="https://www.gov.uk/trusts-taxes/trusts-and-income-tax" target="_blank" rel="noopener">HMRC trusts and Income Tax</a>; <a href="https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual" target="_blank" rel="noopener">HMRC TSEM</a> (interpretation); <a href="https://www.gov.uk/government/publications/income-from-estates-of-deceased-persons-hs282-self-assessment-helpsheet" target="_blank" rel="noopener">HMRC HS282</a>. Checked 18 July 2026.</p>
+          <h2>Trust caveats</h2>
+          <p>The result can change for a settlor-interested trust, a parental settlement, a trust for a vulnerable person, a non-resident trust or a capital payment. A <strong>settlor</strong> is the person who provided the property or other bounty for the settlement. The settlements rules can attribute income to the settlor even when somebody else receives it. See <a href="joint-income-settlements.html">Joint income and settlements</a> for the attribution framework.</p>
+          <p>A <strong>Vulnerable Person Election</strong> is a joint election by the trustees and a qualifying vulnerable beneficiary. If it is effective and the trustees make the required annual claim, special relief broadly limits the overall Income Tax and Capital Gains Tax to the amount that would have arisen if the qualifying income and gains had belonged to the vulnerable beneficiary, taking account of that person&rsquo;s own income, gains and relevant allowances. The election does not simply transfer every trust receipt into the beneficiary&rsquo;s return.</p>
+          <p>Non-resident trusts require separate analysis. A capital payment or other benefit received from an offshore trust by a UK-resident beneficiary can be matched with relevant income and charged to Income Tax under the Transfer of Assets Abroad benefits charge in section 731 of the Income Tax Act 2007. From 2025&ndash;26, offshore income gains arising in an offshore trust that are not taxed under the transferor charges are treated as relevant income for this benefits matching rather than being matched under the capital-gains rules. Other trust gains and anti-avoidance provisions can still produce separate Capital Gains Tax consequences, so describing a payment as capital does not establish that it is tax-free.</p>
+        </aside>
+
+        <!-- 3. Deceased estates -->
+        <h2>Deceased estates</h2>
+        <p>During the administration period, the executors or administrators are the <strong>personal representatives</strong>. A gift of a particular asset or fixed sum (a specific legacy) does not by itself give the beneficiary taxable estate income. A <strong>residuary beneficiary</strong> is instead entitled to a share of what remains after debts, specific legacies and administration expenses.</p>
+        <p>A beneficiary with a <strong>limited interest</strong>, such as a life tenant, has a right to income from the residue for a period but no right to the underlying capital. They are taxed on estate-income payments made to them, with any amount still due treated as income when administration ends.</p>
+        <p>A beneficiary with an <strong>absolute interest</strong> is entitled to both the income and capital of all or part of the residue. Interim distributions are matched against the beneficiary&rsquo;s cumulative available residuary income, so the taxable amount at each stage is limited to the lower of the amount paid and the income entitlement not already attributed. When the estate accounts are finalised and administration ends, the calculation is adjusted so that any remaining income entitlement is treated as received, while any relevant shortfall is reflected in the final-year computation.</p>
+        <p>From 6 April 2024, the &pound;500 annual estate-income exemption applies across the whole estate. If the estate&rsquo;s income for a tax year does not exceed &pound;500, the personal representatives do not pay Income Tax on it and the beneficiary does not report that exempt amount. If the income exceeds &pound;500, the exemption is lost and tax applies to the full amount.</p>
+
+        <h3>Illustrative estate example</h3>
+        <p>Assume that a UK estate has more than &pound;500 income in 2026&ndash;27 and its personal representatives pay fictional residuary beneficiary Ben an amount supported by available savings income. Ben&rsquo;s R185 (Estate Income) shows &pound;800 after tax and &pound;200 tax treated as paid:</p>
+        <ol>
+          <li>Net savings income shown on the R185: &pound;800.</li>
+          <li>Associated tax credit: &pound;200.</li>
+          <li>Gross equivalent for checking the figures: &pound;800 + &pound;200 = &pound;1,000.</li>
+          <li>Ben reports the R185 savings-income amount and associated credit in the estate-income section of his return.</li>
+        </ol>
+        <p>The example assumes a UK estate and sufficient available residuary income. Different reporting applies to foreign estates, and some tax shown on an R185 can be non-repayable.</p>
+
+        <!-- 4. Workflow -->
+        <h2>Individual-computation workflow</h2>
+        <ol>
+          <li>Identify the trust or estate, the beneficiary&rsquo;s legal entitlement and the residence of every relevant person.</li>
+          <li>Identify the tax year and whether the amount is income, capital or a transfer of the underlying asset.</li>
+          <li>Obtain the correct statement: R185 (Trust Income), R185 (Estate Income), or a source breakdown for bare-trust income.</li>
+          <li>Reconcile the cash received, gross income and tax credit, then classify savings, dividend and non-savings income for the individual computation.</li>
+          <li>Check settlements, any Vulnerable Person Election and annual claim, foreign income and gains, double-taxation, Scottish-rate and residence interactions.</li>
+          <li>For a non-resident trust, test capital payments and benefits against the section 731 Transfer of Assets Abroad benefits charge and the separate capital-gains matching rules.</li>
+        </ol>
+        <p class="note">This page is an individual-computation bridge. Trustee and personal-representative liabilities require separate calculations. Trust deeds, wills, estate accounts and residence facts can change the answer, so material cases require specialist review.</p>
+
+        <!-- 5. Sources -->
+        <aside class="note">
+          <h2>Sources and status</h2>
+          <ul>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/24B" target="_blank" rel="noopener">Income Tax Act 2007, section 24B</a> &mdash; enacted calculation of net income for low-income trusts and estates.</li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/496" target="_blank" rel="noopener">Income Tax Act 2007, section 496</a> &mdash; enacted charge where discretionary-payment tax credits exceed the trustees&rsquo; available tax pool.</li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2007/3/section/731" target="_blank" rel="noopener">Income Tax Act 2007, section 731</a> &mdash; enacted Transfer of Assets Abroad benefits charge.</li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2005/5/section/624" target="_blank" rel="noopener">Income Tax (Trading and Other Income) Act 2005, section 624</a> &mdash; enacted law attributing income where a settlor retains an interest.</li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2005/5/section/649" target="_blank" rel="noopener">Income Tax (Trading and Other Income) Act 2005, section 649</a> &mdash; enacted charge on estate income.</li>
+            <li><a href="https://www.legislation.gov.uk/ukpga/2005/5/section/680B" target="_blank" rel="noopener">Income Tax (Trading and Other Income) Act 2005, section 680B</a> &mdash; enacted exemption for low-income estates.</li>
+            <li><a href="https://www.gov.uk/trusts-taxes/beneficiaries-paying-and-reclaiming-tax-on-trusts" target="_blank" rel="noopener">HMRC: beneficiaries paying and reclaiming tax on trusts</a> &mdash; operational guidance for trust beneficiaries.</li>
+            <li><a href="https://www.gov.uk/trusts-taxes/trusts-and-income-tax" target="_blank" rel="noopener">HMRC: trusts and Income Tax</a> &mdash; official 2026&ndash;27 trustee rates and the low-income trust amount.</li>
+            <li><a href="https://www.gov.uk/guidance/trusts-and-income-tax" target="_blank" rel="noopener">HMRC: taxable items, tax pools and deductions for trusts</a> &mdash; operational guidance on the tax pool and shortfall charge.</li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem3011" target="_blank" rel="noopener">HMRC TSEM3011</a> &mdash; HMRC interpretation of the &pound;500 trust-income amount.</li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem3024" target="_blank" rel="noopener">HMRC TSEM3024</a> &mdash; worked guidance on discretionary payments and tax-pool deficits.</li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem3415" target="_blank" rel="noopener">HMRC TSEM3415</a> &mdash; HMRC interpretation of special treatment for vulnerable beneficiaries.</li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem4200" target="_blank" rel="noopener">HMRC TSEM4200</a> &mdash; HMRC interpretation of the settlor-interested rule.</li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem7604" target="_blank" rel="noopener">HMRC TSEM7604</a> &mdash; HMRC interpretation of the &pound;500 estate-income limit and the personal representatives&rsquo; charge.</li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual/tsem7608" target="_blank" rel="noopener">HMRC TSEM7608</a> &mdash; HMRC interpretation of residuary-beneficiary timing, available income and R185 treatment.</li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf806" target="_blank" rel="noopener">HMRC SALF806</a> &mdash; HMRC interpretation of limited and absolute interests in residue.</li>
+            <li><a href="https://www.gov.uk/hmrc-internal-manuals/international-manual/intm601540" target="_blank" rel="noopener">HMRC INTM601540</a> &mdash; HMRC interpretation of offshore-trust benefit matching from 2025&ndash;26.</li>
+            <li><a href="https://www.gov.uk/government/publications/self-assessment-trusts-etc-sa107" target="_blank" rel="noopener">HMRC SA107 Trusts etc pages and notes</a> &mdash; current beneficiary reporting instructions, including the net discretionary-payment entry.</li>
+            <li><a href="https://www.gov.uk/government/publications/trusts-and-estates-statement-of-income-from-estates-r185-estate-income" target="_blank" rel="noopener">HMRC R185 (Estate Income), 2026&ndash;27</a> &mdash; current operational statement for estate beneficiaries.</li>
+          </ul>
+          <p>Sources verified 21 July 2026. HMRC manuals and guidance describe HMRC&rsquo;s interpretation and practice; they are not legislation.</p>
         </aside>
       </section>
       <div class="page-nav">
