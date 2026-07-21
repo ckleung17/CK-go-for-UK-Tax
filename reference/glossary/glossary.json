@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-07-19",
+  "lastReviewed": "2026-07-21",
   "taxTypes": {
     "income-tax": {
       "label": "Income Tax",
@@ -1811,6 +1811,23 @@
       ]
     },
     {
+      "id": "glossary-abbreviation-mtd",
+      "kind": "abbreviation",
+      "abbreviation": "MTD",
+      "term": "Making Tax Digital",
+      "aliases": [],
+      "meaning": "HMRC's programme of tax-specific rules requiring people and businesses within scope to keep specified digital records and use compatible software to send tax information to HMRC. The requirements and start dates differ by tax and taxpayer.",
+      "taxTypeIds": [
+        "tax-administration"
+      ],
+      "references": [
+        {
+          "label": "Making Tax Digital and digital tax compliance",
+          "href": "../../TAXADM/MTD/mtd-index.html"
+        }
+      ]
+    },
+    {
       "id": "glossary-minimum-composition",
       "kind": "technical-term",
       "abbreviation": "",
@@ -2323,6 +2340,26 @@
         {
           "label": "Breach of trust and remedies",
           "href": "../../TRUST/14-breach-and-remedies.html?v=20260716"
+        }
+      ]
+    },
+    {
+      "id": "glossary-abbreviation-ras",
+      "kind": "abbreviation",
+      "abbreviation": "RAS",
+      "term": "Relief at source",
+      "aliases": [
+        "relief-at-source"
+      ],
+      "meaning": "A pension tax-relief method in which an individual pays a net contribution after tax and the pension provider claims basic-rate relief from HMRC and adds it to the pension pot.",
+      "taxTypeIds": [
+        "income-tax",
+        "pensions-tax"
+      ],
+      "references": [
+        {
+          "label": "Gift Aid, pension contributions and adjusted net income",
+          "href": "../../PTAX/ITAX/gift-aid-pensions-relief.html"
         }
       ]
     },

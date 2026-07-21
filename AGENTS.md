@@ -31,6 +31,17 @@ This is a static website of personal UK tax learning notes and CPD material. App
 - Flag unclear, conflicting, proposed, fact-sensitive, or not-yet-effective matters for human review.
 - Do not claim the site provides legal, tax, financial, or investment advice.
 
+## Content strategy and explanatory structure
+
+Apply this framework automatically whenever drafting or substantially revising site content on any topic. If an older content or explanatory rule conflicts with this section, this section controls; continue to apply all compatible accuracy, sourcing, accessibility, privacy, and repository-integrity requirements:
+
+- **Concept before calculation:** explain why the concept or rule exists and its practical effect before introducing formulas, calculations, or detailed mechanics.
+- **Progressive technicality:** begin in plain English without avoiding necessary technical language. Define each technical term inline, in accessible language, on its first occurrence on the page. Also follow the shared-glossary requirement in the detailed guide where the term is unfamiliar.
+- **Concrete step-by-step examples:** accompany each abstract concept with at least one illustrative numerical or scenario-based walkthrough that states its assumptions and shows the inputs, intermediate steps, and outcome. Examples must remain fictional, reproducible, and consistent with the tax-content rules above.
+- **Clear caveats and edge cases:** present material exceptions, warnings, prerequisite conditions, uncertainties, and fact-sensitive limitations in dedicated callout blocks or clearly labelled note sections.
+
+Manage the content logic, clarity, and heading hierarchy within each page. Leave site-wide scaffolding, including headers, navigation, footers, and shared scripts, to the primary layout templates unless the task explicitly includes a template change.
+
 ## Editing and verification
 
 - Keep the static HTML/CSS/JavaScript architecture unless the task explicitly authorises a change.
