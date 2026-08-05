@@ -25,9 +25,11 @@ The study-pack tax tables informed the reference-page structure only. They are n
 ## Automated source monitoring
 
 The weekly GitHub Actions workflow checks the normalized visible text of every
-registered official source against source-fingerprints.json. It can also be run
-manually. A difference or fetch failure opens or updates a review issue; it
-never changes the datasets or publishes tax figures.
+registered official source against source-fingerprints.json. For
+legislation.gov.uk, it fingerprints the provision and its annotations rather
+than volatile navigation and status text. It can also be run manually. A
+difference or fetch failure opens or updates a review issue; it never changes
+the datasets or publishes tax figures.
 
 After a human has verified a genuine or harmless source change, refresh the
 baseline with:

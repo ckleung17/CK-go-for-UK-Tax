@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedOn": "2026-07-19",
-  "normalization": "Visible HTML text, whitespace collapsed, SHA-256",
+  "generatedOn": "2026-08-06",
+  "normalization": "Visible HTML text with whitespace collapsed; legislation.gov.uk provision content only; SHA-256",
   "sources": [
     {
       "ids": "scottish-rates",
@@ -211,7 +211,7 @@
       "ids": "hmrc-qualifying-care",
       "title": "BIM52765: calculation of Qualifying Care Relief",
       "url": "https://www.gov.uk/hmrc-internal-manuals/business-income-manual/bim52765",
-      "sha256": "67d084eb40c39dbb2d53b9e8b0b169d0bc7f4fb695f000429cade0757b9674ba"
+      "sha256": "492392a6979e16f07995a82ed2ea1da843d6d2fb67046d3d135e71c6fb266075"
     },
     {
       "ids": "iht-quick-succession",
@@ -235,13 +235,13 @@
       "ids": "hmrc-seis-relief",
       "title": "VCM31130: SEIS Income Tax relief",
       "url": "https://www.gov.uk/hmrc-internal-manuals/venture-capital-schemes-manual/vcm31130",
-      "sha256": "2abc81b9ccbda7a23bdb83b04cf02800b00468431e733a6d48a78bdd9b95b876"
+      "sha256": "cb0a2269caa0d4b47da66e6fa1cd37ecdb5c4c49e94a8a60ea951cf15d8e9da7"
     },
     {
       "ids": "hmrc-vct-relief",
       "title": "VCM51030: VCT Income Tax relief",
       "url": "https://www.gov.uk/hmrc-internal-manuals/venture-capital-schemes-manual/vcm51030",
-      "sha256": "272b4ca29ca86340f4353592adc94785f23b7526b6533439dfeb787300f7f8f7"
+      "sha256": "9767270430b9b669cb6af0baa916d74bfc0c1124f302247c94a672db9ee11202"
     },
     {
       "ids": "iht-taper-relief, iht-gift-exemptions",
@@ -289,13 +289,13 @@
       "ids": "cgt-short-leases",
       "title": "Taxation of Chargeable Gains Act 1992, Schedule 8",
       "url": "https://www.legislation.gov.uk/ukpga/1992/12/schedule/8",
-      "sha256": "e81108c38426b46dcc0048ac687aa2088b7927efc6f92e980ee8985bf0fc4c80"
+      "sha256": "78ba68bd57879d91a77d91f2ea087972935ece20666bc9d9105a512e111cf86f"
     },
     {
       "ids": "ita-2007",
       "title": "Income Tax Act 2007, Part 2",
       "url": "https://www.legislation.gov.uk/ukpga/2007/3/part/2",
-      "sha256": "30dbe459a9af6d8aaf64c65ddcd0c42a2604008b718d53e6771fa2cfc8845ac3"
+      "sha256": "3c4832b208f6b1c667884229fecc787ab7340c6f89803b8239277f2349114b22"
     }
   ]
 }

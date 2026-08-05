@@ -28,28 +28,46 @@ DATASETS = (
 DEFAULT_BASELINE = REFERENCE_DIR / "source-fingerprints.json"
 ALLOWED_HOSTS = ("gov.uk", "gov.scot")
 USER_AGENT = "CK-go-for-UK-Tax source monitor/1.0 (+GitHub Actions)"
+NORMALIZATION = (
+    "Visible HTML text with whitespace collapsed; legislation.gov.uk "
+    "provision content only; SHA-256"
+)
 
 
 class VisibleTextParser(html.parser.HTMLParser):
-    """Extract stable visible text while ignoring executable and vector data."""
+    """Extract stable visible text, optionally within one element ID."""
 
     IGNORED = {"script", "style", "noscript", "svg"}
 
-    def __init__(self) -> None:
+    def __init__(self, content_id: str | None = None) -> None:
         super().__init__(convert_charrefs=True)
+        self._content_id = content_id
+        self._content_depth = 0 if content_id is None else None
         self._ignored_depth = 0
         self.parts: list[str] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if self._content_depth is None:
+            if dict(attrs).get("id") == self._content_id:
+                self._content_depth = 1
+            return
+        if self._content_id is not None:
+            self._content_depth += 1
         if tag in self.IGNORED:
             self._ignored_depth += 1
 
     def handle_endtag(self, tag: str) -> None:
+        if self._content_depth is None:
+            return
         if tag in self.IGNORED and self._ignored_depth:
             self._ignored_depth -= 1
+        if self._content_id is not None:
+            self._content_depth -= 1
+            if not self._content_depth:
+                self._content_depth = None
 
     def handle_data(self, data: str) -> None:
-        if not self._ignored_depth:
+        if self._content_depth is not None and not self._ignored_depth:
             self.parts.append(data)
 
 
@@ -94,7 +112,11 @@ def fetch_fingerprint(source: dict[str, str]) -> dict[str, str]:
             raise ValueError("Source page exceeds the 5 MB monitoring limit")
         charset = response.headers.get_content_charset() or "utf-8"
 
-    parser = VisibleTextParser()
+    hostname = (urllib.parse.urlparse(source["url"]).hostname or "").lower()
+    # Legislation pages include volatile status and navigation text outside the
+    # statutory content. Hash the provision and its annotations, not that chrome.
+    content_id = "viewLegSnippet" if hostname.endswith("legislation.gov.uk") else None
+    parser = VisibleTextParser(content_id=content_id)
     parser.feed(body.decode(charset, errors="replace"))
     normalized = re.sub(r"\s+", " ", " ".join(parser.parts)).strip()
     if len(normalized) < 200:
@@ -166,7 +188,7 @@ def main() -> int:
         document = {
             "schemaVersion": 1,
             "generatedOn": date.today().isoformat(),
-            "normalization": "Visible HTML text, whitespace collapsed, SHA-256",
+            "normalization": NORMALIZATION,
             "sources": sorted(checked, key=lambda item: item["url"]),
         }
         args.baseline.write_text(
